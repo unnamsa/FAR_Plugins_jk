@@ -1,0 +1,29 @@
+﻿.Language=English,English
+
+// Plugin title
+"NewName3"
+
+//Buttons
+"OK"
+"Cancel"
+"&Yes"
+"&No"
+
+// Error message with exception class
+"Exception %s occured:"
+
+// Error messages
+"Nothing to do, no files are selected!"
+"Invalid number format!"
+"Some files couldn't be renamed:\n------------------------------------------------------------"
+
+// The main dialog
+"&Enter beginning of filename"
+"<--- &Start from this number"
+"Sa&ve the next number for this filename"
+"&Delete saved number"
+
+// Options
+"Rename file &under cursor if no files are selected"
+"Sa&ve the next number by default"
+"Allow &dots at the end of filenames"

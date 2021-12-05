@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<named_folders_lite>
+  <item>
+    <name>demo-lua-msgbox</name>
+    <description>sample: lua msgbox</description>
+    <directory>lua:local s=&quot;Hello LUA!&quot; msgbox(&quot;Named Folders&quot;,s)</directory>
+  </item>
+</named_folders_lite>

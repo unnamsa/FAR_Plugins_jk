@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<farconfig>
+    <pluginsconfig>
+        <plugin guid="FF8FC1AE-0F35-4134-9BAB-56D71B1D47B9">
+            <hierarchicalconfig>
+                <key name="FF8FC1AE-0F35-4134-9BAB-56D71B1D47B9" description="AltHistory">
+                    <!--
+                       Параметр "ScrollbarSliderSymbol" определяет символ, используемый
+                       для отображения ползунка полосы прокрутки в историях.
+                       По умолчанию значение = █
+                    -->
+                    <value name="ScrollbarSliderSymbol" type="text" value="█" />
+
+                    <!--
+                       Параметр "ScrollbarTrackSymbol" определяет символ, используемый
+                       для отображения фона полосы прокрутки в историях.
+                       По умолчанию значение = ░
+                    -->
+                    <value name="ScrollbarTrackSymbol" type="text" value="░" />
+                </key>
+            </hierarchicalconfig>
+        </plugin>
+    </pluginsconfig>
+</farconfig>

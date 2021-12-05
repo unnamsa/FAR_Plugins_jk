@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<named_folders_lite>
+  <item>
+    <name>lua NetBox folder</name>
+    <description>NetBox folder not work native nfl-call over plug-guid</description>
+    <directory>lua:Keys&quot;F9 Enter End Enter&quot; if (Menu.Select(&quot;NetBox&quot;,3) &gt; 0) then Keys&quot;Enter&quot; mf.print(&quot;cd personal/ftp-shares/&quot;) Keys&quot;Enter&quot; else Keys&quot;Esc&quot; end</directory>
+  </item>
+</named_folders_lite>

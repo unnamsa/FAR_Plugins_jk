@@ -1,0 +1,22 @@
+﻿.Language=English,English (English)
+.PluginContents=Smart BS
+
+@Contents
+$   #Smart BS 3.0 for FAR Manager 3#
+   This plugin implements a more convenient #Backspace# and #Tab# keys action:
+if cursor is positioned at the first non-space character of the line, Tab and
+Backspace keypress indents/unindents the line to justify it to one of foregoing
+non-empty lines.
+
+ ~Plugin configuration~@Settings@
+
+   _________________________________
+
+   (c) Igor Yudincev, 2013
+   Email: ~igor.yudincev@@gmail.com~@mailto:igor.yudincev@@gmail.com@
+
+@Settings
+$   #Settings#
+  #Smart TAB# - TAB keypress processing on/off.
+
+ ~Plugin description~@Contents@

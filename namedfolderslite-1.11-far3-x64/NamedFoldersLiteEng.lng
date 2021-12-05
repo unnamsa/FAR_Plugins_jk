@@ -1,0 +1,114 @@
+﻿.Language=English,English
+
+// Plugin title
+"Named Folders Lite"
+
+// Buttons
+"OK"
+"Cancel"
+"&Yes"
+"&No"
+
+// Error message with exception class
+"Exception occured in %s:"
+
+// Error message: cd:x where x is not defined
+"The requested named folder isn't defined."
+
+// Error message: cd:x where x is defined but its folder does not exist
+"Destination folder doesn't exist."
+
+// Confirmation: cd::x where x was already defined
+"The requested named folder already exists and points to"
+"Do you want to overwrite this definition?"
+
+// Error message: name of the named folder is empty
+"Invalid name: must not be empty"
+
+// Error message: name of the named folder contains prohibited characters
+"Invalid name: contains prohibited characters"
+
+// Delete an item in the plugin's panel
+"Are you sure you want to delete the selected item(s)?"
+"Deletion failed"
+
+// Editor for plugin's panel
+"&Name:"
+"D&escription:"
+"&Directory:"
+"Plugin &ID:"
+"Plugin &parameter:"
+"&Host file:"
+
+// Ask the user to choose from several partial matches for a name
+"Select the desired directory"
+
+// Errors when importing XMLs
+"Incorrect root node - not a Named Folders Lite XML"
+"Name element is missing"
+"Name element may not be empty"
+"Directory element is missing"
+
+// Confirm overwrite
+"Warning"
+"New:     "
+"Existing:"
+"&Remember choice"
+"&Overwrite"
+"&Skip"
+"Destination folder already exists."
+"Destination file already exists."
+
+// String to display instead of size for directories
+"<DIR>"
+
+// Datetime format. Leave empty for system default
+""
+
+// Error message when fileinfo couldn't be found
+"Failed to read file info"
+
+// When a directory does not exist on cd:x - ask if the user wants to try to locate an existing directory
+"Do you want to try to locate existing parent directory?"
+
+// Prompt for entering a directory name when creating a new directory
+"New folder name:"
+
+// When cannot create directory
+"Failed to create directory"
+
+// Attempting to store a new bookmark, but the destination is a directory of bookmarks
+"Can''t use this name, it is a directory of names"
+
+// Option - Remember panel's last directory
+"Remember panel's &last directory"
+
+// Option - Use substitution engines
+"Use &substitution engines"
+"&Known folders: $(DIR:TMP), $(CLSID_PROFILE)"
+"&Environment: $(ENV:USERPROFILE)"
+"&CMD environment: %USERPROFILE%"
+"&Registry: $(REG:HKCU\\Environment\\TEMP)"
+
+// Option - Allow path suffix (everything after the first "\")
+"Allow path suffi&x (after first \"\\\")"
+
+// Option - Allow plugin calls
+"Allow &plugin calls"
+
+// Option - Allow fuzzy search for named folders
+"Allow &fuzzy search"
+"Allow search &across directories"
+
+// Basic plugin commands
+"Invalid plugin command"
+"Invalid plugin call (\"%s\")"
+"GOTO(name)"
+"EXISTS(name)"
+"SETCURRENT(name)"
+"SET(name, dir [,desc [,guid [,param [,hostfile]]]])"
+"GET(name)"
+"DELETE(name)"
+
+// Error message: No bookmark to return to using cd:-
+"No remembered bookmark to return to."

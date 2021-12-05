@@ -1,0 +1,1943 @@
+Archive member included because of file (symbol)
+
+D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+                              src\globalinfo.o (Far::GlobalInfo_i::~GlobalInfo_i())
+D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+                              src\farplugin.o (Far::Plugin_i::~Plugin_i())
+D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+                              src\farplugin.o (Far::get_msg(long long))
+D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(panel.o)
+                              src\farplugin.o (Far::Panel::~Panel())
+D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(viewer.o)
+                              src\farplugin.o (Far::Viewer::get_filename(wchar_t*, long long))
+D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(messagebox.o)
+                              src\farplugin.o (Far::ebox(wchar_t const*, wchar_t const*))
+D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(new_delete.o)
+                              src\main.o (operator new(unsigned long long))
+D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(atexit.o)
+                              src\main.o (Base::init_atexit())
+D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll.o)
+                              src\fileversion.o (Base::DynamicLibrary::is_valid() const)
+D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(FileMap_t.o)
+                              src\fileversion.o (Fsys::file_map_t::~file_map_t())
+D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll_shlwapi.o)
+                              src\farplugin.o (Base::Path::is_relative(wchar_t const*))
+D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+                              D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(messagebox.o) (Base::mstring::size() const)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02012.o)
+                              src\globalinfo.o (wcscpy)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01888.o)
+                              src\fileversion.o (__imp__snwprintf)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02028.o)
+                              src\fileversion.o (wcstoul)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01965.o)
+                              src\farplugin.o (memset)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02019.o)
+                              src\farplugin.o (wcsncpy)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02016.o)
+                              src\farplugin.o (wcsncat)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02025.o)
+                              src\farplugin.o (wcsstr)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02015.o)
+                              D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o) (wcslen)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01961.o)
+                              D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o) (memcpy)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbh.o)
+                              c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02012.o) (_head_lib64_libntdll_a)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbt.o)
+                              c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbh.o) (__lib64_libntdll_a_iname)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00603.o)
+                              src\fileversion.o (__imp_GetProcessHeap)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00740.o)
+                              src\fileversion.o (__imp_HeapFree)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00744.o)
+                              src\fileversion.o (__imp_HeapReAlloc)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00734.o)
+                              src\fileversion.o (__imp_HeapAlloc)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01132.o)
+                              D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(messagebox.o) (__imp_SetLastError)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00366.o)
+                              D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll.o) (__imp_FreeLibrary)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00848.o)
+                              D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll.o) (__imp_LoadLibraryExW)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00547.o)
+                              D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll.o) (__imp_GetModuleFileNameW)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00598.o)
+                              D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll.o) (__imp_GetProcAddress)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01233.o)
+                              D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(FileMap_t.o) (__imp_UnmapViewOfFile)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00148.o)
+                              D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(FileMap_t.o) (__imp_CreateFileW)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00512.o)
+                              D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(FileMap_t.o) (__imp_GetFileSizeEx)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00145.o)
+                              D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(FileMap_t.o) (__imp_CreateFileMappingW)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00874.o)
+                              D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(FileMap_t.o) (__imp_MapViewOfFile)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00085.o)
+                              D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(FileMap_t.o) (__imp_CloseHandle)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00297.o)
+                              D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll_shlwapi.o) (__imp_ExpandEnvironmentStringsW)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqh.o)
+                              c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00603.o) (_head_lib64_libkernel32_a)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqt.o)
+                              c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqh.o) (__lib64_libkernel32_a_iname)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/libgcc.a(_chkstk_ms.o)
+                              src\farplugin.o (___chkstk_ms)
+
+Discarded input sections
+
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 src\globalinfo.o
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 src\globalinfo.o
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 src\farplugin.o
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 src\farplugin.o
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(panel.o)
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(panel.o)
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(viewer.o)
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(viewer.o)
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(messagebox.o)
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(messagebox.o)
+ .text$_ZN4Base11ref_counterD1Ev
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+ .xdata$_ZN4Base11ref_counterD1Ev
+                0x0000000000000000        0x4 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+ .pdata$_ZN4Base11ref_counterD1Ev
+                0x0000000000000000        0xc D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+ .text$_ZNK4Base11ref_counter7destroyEv
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+ .xdata$_ZNK4Base11ref_counter7destroyEv
+                0x0000000000000000        0x4 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+ .pdata$_ZNK4Base11ref_counter7destroyEv
+                0x0000000000000000        0xc D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+ .text$_ZN4Base11ref_counterD0Ev
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+ .xdata$_ZN4Base11ref_counterD0Ev
+                0x0000000000000000        0x4 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+ .pdata$_ZN4Base11ref_counterD0Ev
+                0x0000000000000000        0xc D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+ .rdata$_ZTVN4Base11ref_counterE
+                0x0000000000000000       0x40 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+ .debug_line    0x0000000000000000       0x7b c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/libgcc.a(_chkstk_ms.o)
+ .debug_info    0x0000000000000000       0xa9 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/libgcc.a(_chkstk_ms.o)
+ .debug_abbrev  0x0000000000000000       0x14 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/libgcc.a(_chkstk_ms.o)
+ .debug_aranges
+                0x0000000000000000       0x30 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/libgcc.a(_chkstk_ms.o)
+ .debug_frame   0x0000000000000000       0x48 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/libgcc.a(_chkstk_ms.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x000000006c040000                __image_base__ = 0x6c040000
+                0x0000000000000000                __dll__ = 0x0
+                0x000000006c040000                __ImageBase = 0x6c040000
+                0x0000000000001000                __section_alignment__ = 0x1000
+                0x0000000000000200                __file_alignment__ = 0x200
+                0x0000000000000004                __major_os_version__ = 0x4
+                0x0000000000000000                __minor_os_version__ = 0x0
+                0x0000000000000000                __major_image_version__ = 0x0
+                0x0000000000000000                __minor_image_version__ = 0x0
+                0x0000000000000005                __major_subsystem_version__ = 0x5
+                0x0000000000000002                __minor_subsystem_version__ = 0x2
+                0x0000000000000003                __subsystem__ = 0x3
+                0x0000000000200000                __size_of_stack_reserve__ = 0x200000
+                0x0000000000001000                __size_of_stack_commit__ = 0x1000
+                0x0000000000100000                __size_of_heap_reserve__ = 0x100000
+                0x0000000000001000                __size_of_heap_commit__ = 0x1000
+                0x0000000000000000                __loader_flags__ = 0x0
+                0x0000000000000000                __dll_characteristics__ = 0x0
+LOAD ..\src\mainW.gcc.def
+LOAD src\main.o
+LOAD src\guid.o
+LOAD src\globalinfo.o
+LOAD src\fileversion.o
+LOAD src\farplugin.o
+LOAD src\main.res
+LOAD D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a
+LOAD D:\projects\andrew-grechkin\LIB\liblog\Release-x64/libliblog.a
+LOAD D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a
+LOAD c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a
+LOAD c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a
+LOAD c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/libgcc.a
+                0x0000000000000318                . = SIZEOF_HEADERS
+                0x0000000000001000                . = ALIGN (__section_alignment__)
+
+.text           0x000000006c041000     0x4400
+ *(.init)
+ *(.text)
+ .text          0x000000006c041000      0x230 src\main.o
+                0x000000006c041030                GetGlobalInfoW
+                0x000000006c0410a0                SetStartupInfoW
+                0x000000006c0410d0                ConfigureW
+                0x000000006c0410f0                GetPluginInfoW
+                0x000000006c041140                OpenW
+                0x000000006c041190                ExitFARW
+                0x000000006c0411e0                atexit
+                0x000000006c0411f0                __cxa_pure_virtual
+                0x000000006c041200                DllMainCRTStartup
+ .text          0x000000006c041230        0x0 src\guid.o
+ .text          0x000000006c041230      0x1b0 src\globalinfo.o
+                0x000000006c041260                FarGlobalInfo::get_author() const
+                0x000000006c041270                FarGlobalInfo::get_description() const
+                0x000000006c041280                FarGlobalInfo::get_guid() const
+                0x000000006c041290                FarGlobalInfo::get_title() const
+                0x000000006c0412a0                FarGlobalInfo::get_version() const
+                0x000000006c0412d0                FarGlobalInfo::get_min_version() const
+                0x000000006c041300                FarGlobalInfo::~FarGlobalInfo()
+                0x000000006c041300                FarGlobalInfo::~FarGlobalInfo()
+                0x000000006c041310                FarGlobalInfo::~FarGlobalInfo()
+                0x000000006c041340                FarGlobalInfo::CreatePlugin(PluginStartupInfo const*) const
+                0x000000006c041350                FarGlobalInfo::FarGlobalInfo()
+                0x000000006c041350                FarGlobalInfo::FarGlobalInfo()
+                0x000000006c041380                FarGlobalInfo::load_settings()
+                0x000000006c041390                FarGlobalInfo::save_settings() const
+                0x000000006c0413a0                get_global_info()
+ .text          0x000000006c0413e0      0xb90 src\fileversion.o
+                0x000000006c041400                version_dll::inst()
+                0x000000006c0414c0                version_dll::version_dll()
+                0x000000006c0414c0                version_dll::version_dll()
+                0x000000006c041540                FileVersion::~FileVersion()
+                0x000000006c041540                FileVersion::~FileVersion()
+                0x000000006c041580                FileVersion::FileVersion(wchar_t const*)
+                0x000000006c041580                FileVersion::FileVersion(wchar_t const*)
+                0x000000006c041c60                FVI::FVI(FileVersion const&)
+                0x000000006c041c60                FVI::FVI(FileVersion const&)
+                0x000000006c041f30                version_dll::is_valid() const
+ .text          0x000000006c041f70      0xf20 src\farplugin.o
+                0x000000006c041fa0                FarPlugin::~FarPlugin()
+                0x000000006c041fa0                FarPlugin::~FarPlugin()
+                0x000000006c041fb0                FarPlugin::~FarPlugin()
+                0x000000006c041fe0                FarPlugin::GetPluginInfo(PluginInfo*)
+                0x000000006c042db0                FarPlugin::Open(OpenInfo const*)
+                0x000000006c042e10                FarPlugin::FarPlugin(PluginStartupInfo const*)
+                0x000000006c042e10                FarPlugin::FarPlugin(PluginStartupInfo const*)
+                0x000000006c042e30                create_FarPlugin(PluginStartupInfo const*)
+                0x000000006c042e70                destroy(Far::Plugin_i*)
+ .text          0x000000006c042e90      0x1d0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+                0x000000006c042e90                Far::GlobalInfo_i::~GlobalInfo_i()
+                0x000000006c042e90                Far::GlobalInfo_i::~GlobalInfo_i()
+                0x000000006c042ec0                Far::GlobalInfo_i::get_min_version() const
+                0x000000006c042ef0                Far::GlobalInfo_i::Configure(ConfigureInfo const*)
+                0x000000006c042f00                Far::GlobalInfo_i::~GlobalInfo_i()
+                0x000000006c042f30                Far::GlobalInfo_i::GetGlobalInfoW(GlobalInfo*) const
+                0x000000006c042fe0                Far::GlobalInfo_i::ConfigureW(ConfigureInfo const*)
+                0x000000006c043000                Far::GlobalInfo_i::SetStartupInfoW(PluginStartupInfo const*)
+                0x000000006c043030                Far::GlobalInfo_i::get_plugin() const
+                0x000000006c043040                Far::GlobalInfo_i::GlobalInfo_i()
+                0x000000006c043040                Far::GlobalInfo_i::GlobalInfo_i()
+ .text          0x000000006c043060       0xf0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+                0x000000006c043060                Far::Plugin_i::~Plugin_i()
+                0x000000006c043060                Far::Plugin_i::~Plugin_i()
+                0x000000006c043070                Far::Plugin_i::Open(OpenInfo const*)
+                0x000000006c043080                Far::Plugin_i::ExitFAR(ExitInfo const*)
+                0x000000006c043090                Far::Plugin_i::~Plugin_i()
+                0x000000006c0430a0                Far::Plugin_i::GetPluginInfoW(PluginInfo*)
+                0x000000006c0430c0                Far::Plugin_i::OpenW(OpenInfo const*)
+                0x000000006c0430e0                Far::Plugin_i::ExitFARW(ExitInfo const*)
+                0x000000006c043100                Far::Plugin_i::Plugin_i(PluginStartupInfo const*)
+                0x000000006c043100                Far::Plugin_i::Plugin_i(PluginStartupInfo const*)
+ .text          0x000000006c043150       0xe0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+                0x000000006c043180                Far::get_msg(long long)
+ .text          0x000000006c043230      0x750 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(panel.o)
+                0x000000006c043260                Far::Panel::~Panel()
+                0x000000006c043260                Far::Panel::~Panel()
+                0x000000006c0432c0                Far::Panel::Panel(void*, FILE_CONTROL_COMMANDS)
+                0x000000006c0432c0                Far::Panel::Panel(void*, FILE_CONTROL_COMMANDS)
+                0x000000006c043350                Far::Panel::is_ok() const
+                0x000000006c043360                Far::Panel::PanelType() const
+                0x000000006c043370                Far::Panel::size() const
+                0x000000006c043380                Far::Panel::selected() const
+                0x000000006c043390                Far::Panel::current() const
+                0x000000006c0433a0                Far::Panel::view_mode() const
+                0x000000006c0433b0                Far::Panel::flags() const
+                0x000000006c0433c0                Far::Panel::get_current_directory() const
+                0x000000006c0434d0                Far::Panel::operator[](unsigned long long) const
+                0x000000006c0435e0                Far::Panel::get_selected(unsigned long long) const
+                0x000000006c0436f0                Far::Panel::get_current() const
+                0x000000006c043800                Far::Panel::StartSelection()
+                0x000000006c043860                Far::Panel::Select(unsigned long long, bool)
+                0x000000006c0438c0                Far::Panel::clear_selection(unsigned long long)
+                0x000000006c043920                Far::Panel::CommitSelection()
+ .text          0x000000006c043980       0xa0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(viewer.o)
+                0x000000006c0439b0                Far::Viewer::get_filename(wchar_t*, long long)
+ .text          0x000000006c043a20      0x580 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(messagebox.o)
+                0x000000006c043a50                Far::ibox(wchar_t const*, wchar_t const*)
+                0x000000006c043b00                Far::mbox(wchar_t const*, wchar_t const*)
+                0x000000006c043bb0                Far::ebox(wchar_t const*, wchar_t const*)
+                0x000000006c043c60                Far::ebox(wchar_t const**, unsigned long long, wchar_t const*)
+                0x000000006c043d10                Far::ebox(Base::mstring const&, wchar_t const*)
+                0x000000006c043e30                Far::ebox(unsigned long)
+                0x000000006c043ee0                Far::question(wchar_t const*, wchar_t const*)
+ .text          0x000000006c043fa0       0xc0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(new_delete.o)
+                0x000000006c043fa0                operator new(unsigned long long)
+                0x000000006c043fd0                operator new[](unsigned long long)
+                0x000000006c044000                operator delete(void*)
+                0x000000006c044030                operator delete[](void*)
+ .text          0x000000006c044060       0xa0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(atexit.o)
+                0x000000006c044060                Base::init_atexit()
+                0x000000006c044070                Base::invoke_atexit()
+                0x000000006c0440c0                Base::atexit(void (*)())
+                0x000000006c0440f0                Base::cxa_pure_virtual()
+ .text          0x000000006c044100      0x1b0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll.o)
+                0x000000006c044100                Base::DynamicLibrary::is_valid() const
+                0x000000006c044110                Base::DynamicLibrary::~DynamicLibrary()
+                0x000000006c044110                Base::DynamicLibrary::~DynamicLibrary()
+                0x000000006c044130                Base::DynamicLibrary::~DynamicLibrary()
+                0x000000006c044160                Base::DynamicLibrary::DynamicLibrary(wchar_t const*, unsigned long)
+                0x000000006c044160                Base::DynamicLibrary::DynamicLibrary(wchar_t const*, unsigned long)
+                0x000000006c044190                Base::DynamicLibrary::DynamicLibrary(HINSTANCE__*, unsigned long)
+                0x000000006c044190                Base::DynamicLibrary::DynamicLibrary(HINSTANCE__*, unsigned long)
+                0x000000006c0441b0                Base::DynamicLibrary::DynamicLibrary(Base::DynamicLibrary&&)
+                0x000000006c0441b0                Base::DynamicLibrary::DynamicLibrary(Base::DynamicLibrary&&)
+                0x000000006c0441f0                Base::DynamicLibrary::operator=(Base::DynamicLibrary&&)
+                0x000000006c044230                Base::DynamicLibrary::swap(Base::DynamicLibrary&)
+                0x000000006c044250                Base::DynamicLibrary::operator HINSTANCE__*() const
+                0x000000006c044260                Base::DynamicLibrary::get_hmodule() const
+                0x000000006c044270                Base::DynamicLibrary::get_flags() const
+                0x000000006c044280                Base::DynamicLibrary::get_path(wchar_t*, unsigned long long) const
+                0x000000006c0442a0                Base::DynamicLibrary::get_function(char const*) const
+ .text          0x000000006c0442b0      0x1b0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(FileMap_t.o)
+                0x000000006c0442b0                Fsys::file_map_t::~file_map_t()
+                0x000000006c0442b0                Fsys::file_map_t::~file_map_t()
+                0x000000006c0442d0                Fsys::file_map_t::file_map_t(wchar_t const*, unsigned long long, bool)
+                0x000000006c0442d0                Fsys::file_map_t::file_map_t(wchar_t const*, unsigned long long, bool)
+                0x000000006c0443f0                Fsys::file_map_t::size() const
+                0x000000006c044400                Fsys::file_map_t::data() const
+                0x000000006c044410                Fsys::file_map_t::is_writeble() const
+                0x000000006c044420                Fsys::file_map_t::is_ok() const
+                0x000000006c044430                Fsys::file_map_t::get_size(void*) const
+ .text          0x000000006c044460      0x6c0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll_shlwapi.o)
+                0x000000006c0444c0                Base::Path::is_relative(wchar_t const*)
+                0x000000006c0445c0                Base::Path::canonicalize(wchar_t*, wchar_t const*)
+                0x000000006c0446d0                Base::Path::expand(wchar_t*, unsigned long long, wchar_t const*)
+                0x000000006c0446f0                Base::Path::unexpand(wchar_t*, unsigned long long, wchar_t const*)
+                0x000000006c044800                Base::Path::compact(wchar_t*, unsigned long long, wchar_t const*)
+                0x000000006c044910                Base::Path::is_mask_match(wchar_t const*, wchar_t const*, unsigned long)
+                0x000000006c044a20                Base::Directory::is_empty(wchar_t const*)
+ .text          0x000000006c044b20      0x630 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+                0x000000006c044b20                Base::mstring::impl::~impl()
+                0x000000006c044b20                Base::mstring::impl::~impl()
+                0x000000006c044b50                Base::mstring::impl::impl(wchar_t const*)
+                0x000000006c044b50                Base::mstring::impl::impl(wchar_t const*)
+                0x000000006c044c20                Base::mstring::impl::impl(Base::mstring::impl const&)
+                0x000000006c044c20                Base::mstring::impl::impl(Base::mstring::impl const&)
+                0x000000006c044c90                Base::mstring::impl::push_back(wchar_t const*)
+                0x000000006c044d40                Base::mstring::~mstring()
+                0x000000006c044d40                Base::mstring::~mstring()
+                0x000000006c044d90                Base::mstring::mstring(wchar_t const*)
+                0x000000006c044d90                Base::mstring::mstring(wchar_t const*)
+                0x000000006c044e70                Base::mstring::mstring(Base::mstring const&)
+                0x000000006c044e70                Base::mstring::mstring(Base::mstring const&)
+                0x000000006c044ef0                Base::mstring::operator=(Base::mstring const&)
+                0x000000006c044fa0                Base::mstring::mstring(Base::mstring&&)
+                0x000000006c044fa0                Base::mstring::mstring(Base::mstring&&)
+                0x000000006c044fb0                Base::mstring::operator=(Base::mstring&&)
+                0x000000006c045010                Base::mstring::push_back(wchar_t const*)
+                0x000000006c0450c0                Base::mstring::size() const
+                0x000000006c0450d0                Base::mstring::capacity() const
+                0x000000006c0450e0                Base::mstring::c_str() const
+                0x000000006c0450f0                Base::mstring::operator[](unsigned long long) const
+                0x000000006c045140                Base::mstring::swap(Base::mstring&)
+ .text          0x000000006c045150        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02012.o)
+                0x000000006c045150                wcscpy
+ .text          0x000000006c045158        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01888.o)
+                0x000000006c045158                _snwprintf
+ .text          0x000000006c045160        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02028.o)
+                0x000000006c045160                wcstoul
+ .text          0x000000006c045168        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01965.o)
+                0x000000006c045168                memset
+ .text          0x000000006c045170        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02019.o)
+                0x000000006c045170                wcsncpy
+ .text          0x000000006c045178        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02016.o)
+                0x000000006c045178                wcsncat
+ .text          0x000000006c045180        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02025.o)
+                0x000000006c045180                wcsstr
+ .text          0x000000006c045188        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02015.o)
+                0x000000006c045188                wcslen
+ .text          0x000000006c045190        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01961.o)
+                0x000000006c045190                memcpy
+ *fill*         0x000000006c045198        0x8 
+ .text          0x000000006c0451a0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbh.o)
+ .text          0x000000006c0451a0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbt.o)
+ .text          0x000000006c0451a0        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00603.o)
+                0x000000006c0451a0                GetProcessHeap
+ .text          0x000000006c0451a8        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00740.o)
+                0x000000006c0451a8                HeapFree
+ .text          0x000000006c0451b0        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00744.o)
+                0x000000006c0451b0                HeapReAlloc
+ .text          0x000000006c0451b8        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00734.o)
+                0x000000006c0451b8                HeapAlloc
+ .text          0x000000006c0451c0        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01132.o)
+                0x000000006c0451c0                SetLastError
+ .text          0x000000006c0451c8        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00366.o)
+                0x000000006c0451c8                FreeLibrary
+ .text          0x000000006c0451d0        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00848.o)
+                0x000000006c0451d0                LoadLibraryExW
+ .text          0x000000006c0451d8        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00547.o)
+                0x000000006c0451d8                GetModuleFileNameW
+ .text          0x000000006c0451e0        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00598.o)
+                0x000000006c0451e0                GetProcAddress
+ .text          0x000000006c0451e8        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01233.o)
+                0x000000006c0451e8                UnmapViewOfFile
+ .text          0x000000006c0451f0        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00148.o)
+                0x000000006c0451f0                CreateFileW
+ .text          0x000000006c0451f8        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00512.o)
+                0x000000006c0451f8                GetFileSizeEx
+ .text          0x000000006c045200        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00145.o)
+                0x000000006c045200                CreateFileMappingW
+ .text          0x000000006c045208        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00874.o)
+                0x000000006c045208                MapViewOfFile
+ .text          0x000000006c045210        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00085.o)
+                0x000000006c045210                CloseHandle
+ .text          0x000000006c045218        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00297.o)
+                0x000000006c045218                ExpandEnvironmentStringsW
+ .text          0x000000006c045220        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqh.o)
+ .text          0x000000006c045220        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqt.o)
+ .text          0x000000006c045220       0x40 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/libgcc.a(_chkstk_ms.o)
+                0x000000006c045220                ___chkstk_ms
+ *(SORT(.text$*))
+ .text$_ZN11version_dllD0Ev
+                0x000000006c045260       0x30 src\fileversion.o
+                0x000000006c045260                version_dll::~version_dll()
+ .text$_ZN11version_dllD1Ev
+                0x000000006c045290       0x10 src\fileversion.o
+                0x000000006c045290                version_dll::~version_dll()
+ .text$_ZN4Base11ref_counterD0Ev
+                0x000000006c0452a0       0x10 src\farplugin.o
+                0x000000006c0452a0                Base::ref_counter::~ref_counter()
+ .text$_ZN4Base11ref_counterD1Ev
+                0x000000006c0452b0       0x10 src\farplugin.o
+                0x000000006c0452b0                Base::ref_counter::~ref_counter()
+ .text$_ZNK4Base11ref_counter7destroyEv
+                0x000000006c0452c0       0x10 src\farplugin.o
+                0x000000006c0452c0                Base::ref_counter::destroy() const
+ *(.text.*)
+ *(.gnu.linkonce.t.*)
+ *(.glue_7t)
+ *(.glue_7)
+                0x000000006c0452d0                . = ALIGN (0x8)
+                0x000000006c0452d0                ___CTOR_LIST__ = .
+                0x000000006c0452d0                __CTOR_LIST__ = .
+                0x000000006c0452d0        0x4 LONG 0xffffffffffffffff
+                0x000000006c0452d4        0x4 LONG 0xffffffffffffffff
+ *(.ctors)
+ *(.ctor)
+ *(SORT(.ctors.*))
+                0x000000006c0452d8        0x4 LONG 0x0
+                0x000000006c0452dc        0x4 LONG 0x0
+                0x000000006c0452e0                ___DTOR_LIST__ = .
+                0x000000006c0452e0                __DTOR_LIST__ = .
+                0x000000006c0452e0        0x4 LONG 0xffffffffffffffff
+                0x000000006c0452e4        0x4 LONG 0xffffffffffffffff
+ *(.dtors)
+ *(.dtor)
+ *(SORT(.dtors.*))
+                0x000000006c0452e8        0x4 LONG 0x0
+                0x000000006c0452ec        0x4 LONG 0x0
+ *(.fini)
+ *(.gcc_exc)
+                0x000000006c0452f0                PROVIDE (etext, .)
+ *(.gcc_except_table)
+
+.data           0x000000006c046000      0x400
+                0x000000006c046000                __data_start__ = .
+ *(.data)
+ .data          0x000000006c046000        0x0 src\main.o
+ .data          0x000000006c046000        0x0 src\guid.o
+ .data          0x000000006c046000        0x0 src\globalinfo.o
+ .data          0x000000006c046000      0x120 src\fileversion.o
+ .data          0x000000006c046120      0x140 src\farplugin.o
+                0x000000006c046120                Machines
+ .data          0x000000006c046260        0x0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .data          0x000000006c046260        0x0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .data          0x000000006c046260        0x0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .data          0x000000006c046260        0x0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(panel.o)
+ .data          0x000000006c046260        0x0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(viewer.o)
+ .data          0x000000006c046260        0x0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(messagebox.o)
+ .data          0x000000006c046260        0x0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(new_delete.o)
+ .data          0x000000006c046260       0x10 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(atexit.o)
+                0x000000006c046260                Base::atexit_index
+ .data          0x000000006c046270        0x0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll.o)
+ .data          0x000000006c046270        0x0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(FileMap_t.o)
+ .data          0x000000006c046270        0x0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll_shlwapi.o)
+ .data          0x000000006c046270        0x0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02012.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01888.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02028.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01965.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02019.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02016.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02025.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02015.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01961.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbh.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbt.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00603.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00740.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00744.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00734.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01132.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00366.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00848.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00547.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00598.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01233.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00148.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00512.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00145.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00874.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00085.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00297.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqh.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqt.o)
+ .data          0x000000006c046270        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/libgcc.a(_chkstk_ms.o)
+ *(.data2)
+ *(SORT(.data$*))
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x000000006c046270       0x10 src\main.o
+                0x000000006c046270                guard variable for Far::helper_t::inst()::ret
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x000000006c046280       0x10 src\main.o
+                0x000000006c046280                Far::helper_t::inst()::ret
+ *(.jcr)
+                0x000000006c046290                __data_end__ = .
+ *(.data_cygwin_nocopy)
+
+.rdata          0x000000006c047000     0x2000
+ *(.rdata)
+ .rdata         0x000000006c047000       0xb0 src\globalinfo.o
+ .rdata         0x000000006c0470b0      0x250 src\fileversion.o
+ .rdata         0x000000006c047300      0x170 src\farplugin.o
+ .rdata         0x000000006c047470       0x10 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .rdata         0x000000006c047480       0x10 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(panel.o)
+ *fill*         0x000000006c047490       0x10 
+ .rdata         0x000000006c0474a0       0xe0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll_shlwapi.o)
+ *(SORT(.rdata$*))
+ .rdata$ALL_POWERSCHEMES_GUID
+                0x000000006c047580       0x10 src\guid.o
+                0x000000006c047580                ALL_POWERSCHEMES_GUID
+ .rdata$DialogGuid
+                0x000000006c047590       0x10 src\guid.o
+                0x000000006c047590                DialogGuid
+ .rdata$GUID_ACDC_POWER_SOURCE
+                0x000000006c0475a0       0x10 src\guid.o
+                0x000000006c0475a0                GUID_ACDC_POWER_SOURCE
+ .rdata$GUID_ACTIVE_POWERSCHEME
+                0x000000006c0475b0       0x10 src\guid.o
+                0x000000006c0475b0                GUID_ACTIVE_POWERSCHEME
+ .rdata$GUID_ADAPTIVE_POWER_BEHAVIOR_SUBGROUP
+                0x000000006c0475c0       0x10 src\guid.o
+                0x000000006c0475c0                GUID_ADAPTIVE_POWER_BEHAVIOR_SUBGROUP
+ .rdata$GUID_ALLOW_AWAYMODE
+                0x000000006c0475d0       0x10 src\guid.o
+                0x000000006c0475d0                GUID_ALLOW_AWAYMODE
+ .rdata$GUID_ALLOW_DISPLAY_REQUIRED
+                0x000000006c0475e0       0x10 src\guid.o
+                0x000000006c0475e0                GUID_ALLOW_DISPLAY_REQUIRED
+ .rdata$GUID_ALLOW_RTC_WAKE
+                0x000000006c0475f0       0x10 src\guid.o
+                0x000000006c0475f0                GUID_ALLOW_RTC_WAKE
+ .rdata$GUID_ALLOW_STANDBY_STATES
+                0x000000006c047600       0x10 src\guid.o
+                0x000000006c047600                GUID_ALLOW_STANDBY_STATES
+ .rdata$GUID_ALLOW_SYSTEM_REQUIRED
+                0x000000006c047610       0x10 src\guid.o
+                0x000000006c047610                GUID_ALLOW_SYSTEM_REQUIRED
+ .rdata$GUID_APPLAUNCH_BUTTON
+                0x000000006c047620       0x10 src\guid.o
+                0x000000006c047620                GUID_APPLAUNCH_BUTTON
+ .rdata$GUID_BACKGROUND_TASK_NOTIFICATION
+                0x000000006c047630       0x10 src\guid.o
+                0x000000006c047630                GUID_BACKGROUND_TASK_NOTIFICATION
+ .rdata$GUID_BATTERY_DISCHARGE_ACTION_0
+                0x000000006c047640       0x10 src\guid.o
+                0x000000006c047640                GUID_BATTERY_DISCHARGE_ACTION_0
+ .rdata$GUID_BATTERY_DISCHARGE_ACTION_1
+                0x000000006c047650       0x10 src\guid.o
+                0x000000006c047650                GUID_BATTERY_DISCHARGE_ACTION_1
+ .rdata$GUID_BATTERY_DISCHARGE_ACTION_2
+                0x000000006c047660       0x10 src\guid.o
+                0x000000006c047660                GUID_BATTERY_DISCHARGE_ACTION_2
+ .rdata$GUID_BATTERY_DISCHARGE_ACTION_3
+                0x000000006c047670       0x10 src\guid.o
+                0x000000006c047670                GUID_BATTERY_DISCHARGE_ACTION_3
+ .rdata$GUID_BATTERY_DISCHARGE_FLAGS_0
+                0x000000006c047680       0x10 src\guid.o
+                0x000000006c047680                GUID_BATTERY_DISCHARGE_FLAGS_0
+ .rdata$GUID_BATTERY_DISCHARGE_FLAGS_1
+                0x000000006c047690       0x10 src\guid.o
+                0x000000006c047690                GUID_BATTERY_DISCHARGE_FLAGS_1
+ .rdata$GUID_BATTERY_DISCHARGE_FLAGS_2
+                0x000000006c0476a0       0x10 src\guid.o
+                0x000000006c0476a0                GUID_BATTERY_DISCHARGE_FLAGS_2
+ .rdata$GUID_BATTERY_DISCHARGE_FLAGS_3
+                0x000000006c0476b0       0x10 src\guid.o
+                0x000000006c0476b0                GUID_BATTERY_DISCHARGE_FLAGS_3
+ .rdata$GUID_BATTERY_DISCHARGE_LEVEL_0
+                0x000000006c0476c0       0x10 src\guid.o
+                0x000000006c0476c0                GUID_BATTERY_DISCHARGE_LEVEL_0
+ .rdata$GUID_BATTERY_DISCHARGE_LEVEL_1
+                0x000000006c0476d0       0x10 src\guid.o
+                0x000000006c0476d0                GUID_BATTERY_DISCHARGE_LEVEL_1
+ .rdata$GUID_BATTERY_DISCHARGE_LEVEL_2
+                0x000000006c0476e0       0x10 src\guid.o
+                0x000000006c0476e0                GUID_BATTERY_DISCHARGE_LEVEL_2
+ .rdata$GUID_BATTERY_DISCHARGE_LEVEL_3
+                0x000000006c0476f0       0x10 src\guid.o
+                0x000000006c0476f0                GUID_BATTERY_DISCHARGE_LEVEL_3
+ .rdata$GUID_BATTERY_PERCENTAGE_REMAINING
+                0x000000006c047700       0x10 src\guid.o
+                0x000000006c047700                GUID_BATTERY_PERCENTAGE_REMAINING
+ .rdata$GUID_BATTERY_SUBGROUP
+                0x000000006c047710       0x10 src\guid.o
+                0x000000006c047710                GUID_BATTERY_SUBGROUP
+ .rdata$GUID_CONSOLE_DISPLAY_STATE
+                0x000000006c047720       0x10 src\guid.o
+                0x000000006c047720                GUID_CONSOLE_DISPLAY_STATE
+ .rdata$GUID_CRITICAL_POWER_TRANSITION
+                0x000000006c047730       0x10 src\guid.o
+                0x000000006c047730                GUID_CRITICAL_POWER_TRANSITION
+ .rdata$GUID_DEVICE_IDLE_POLICY
+                0x000000006c047740       0x10 src\guid.o
+                0x000000006c047740                GUID_DEVICE_IDLE_POLICY
+ .rdata$GUID_DEVICE_POWER_POLICY_VIDEO_BRIGHTNESS
+                0x000000006c047750       0x10 src\guid.o
+                0x000000006c047750                GUID_DEVICE_POWER_POLICY_VIDEO_BRIGHTNESS
+ .rdata$GUID_DEVICE_POWER_POLICY_VIDEO_DIM_BRIGHTNESS
+                0x000000006c047760       0x10 src\guid.o
+                0x000000006c047760                GUID_DEVICE_POWER_POLICY_VIDEO_DIM_BRIGHTNESS
+ .rdata$GUID_DEVINTERFACE_CDCHANGER
+                0x000000006c047770       0x10 src\guid.o
+                0x000000006c047770                GUID_DEVINTERFACE_CDCHANGER
+ .rdata$GUID_DEVINTERFACE_CDROM
+                0x000000006c047780       0x10 src\guid.o
+                0x000000006c047780                GUID_DEVINTERFACE_CDROM
+ .rdata$GUID_DEVINTERFACE_COMPORT
+                0x000000006c047790       0x10 src\guid.o
+                0x000000006c047790                GUID_DEVINTERFACE_COMPORT
+ .rdata$GUID_DEVINTERFACE_DISK
+                0x000000006c0477a0       0x10 src\guid.o
+                0x000000006c0477a0                GUID_DEVINTERFACE_DISK
+ .rdata$GUID_DEVINTERFACE_FLOPPY
+                0x000000006c0477b0       0x10 src\guid.o
+                0x000000006c0477b0                GUID_DEVINTERFACE_FLOPPY
+ .rdata$GUID_DEVINTERFACE_MEDIUMCHANGER
+                0x000000006c0477c0       0x10 src\guid.o
+                0x000000006c0477c0                GUID_DEVINTERFACE_MEDIUMCHANGER
+ .rdata$GUID_DEVINTERFACE_PARTITION
+                0x000000006c0477d0       0x10 src\guid.o
+                0x000000006c0477d0                GUID_DEVINTERFACE_PARTITION
+ .rdata$GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR
+                0x000000006c0477e0       0x10 src\guid.o
+                0x000000006c0477e0                GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR
+ .rdata$GUID_DEVINTERFACE_STORAGEPORT
+                0x000000006c0477f0       0x10 src\guid.o
+                0x000000006c0477f0                GUID_DEVINTERFACE_STORAGEPORT
+ .rdata$GUID_DEVINTERFACE_TAPE
+                0x000000006c047800       0x10 src\guid.o
+                0x000000006c047800                GUID_DEVINTERFACE_TAPE
+ .rdata$GUID_DEVINTERFACE_VOLUME
+                0x000000006c047810       0x10 src\guid.o
+                0x000000006c047810                GUID_DEVINTERFACE_VOLUME
+ .rdata$GUID_DEVINTERFACE_WRITEONCEDISK
+                0x000000006c047820       0x10 src\guid.o
+                0x000000006c047820                GUID_DEVINTERFACE_WRITEONCEDISK
+ .rdata$GUID_DISK_ADAPTIVE_POWERDOWN
+                0x000000006c047830       0x10 src\guid.o
+                0x000000006c047830                GUID_DISK_ADAPTIVE_POWERDOWN
+ .rdata$GUID_DISK_BURST_IGNORE_THRESHOLD
+                0x000000006c047840       0x10 src\guid.o
+                0x000000006c047840                GUID_DISK_BURST_IGNORE_THRESHOLD
+ .rdata$GUID_DISK_COALESCING_POWERDOWN_TIMEOUT
+                0x000000006c047850       0x10 src\guid.o
+                0x000000006c047850                GUID_DISK_COALESCING_POWERDOWN_TIMEOUT
+ .rdata$GUID_DISK_IDLE_TIMEOUT
+                0x000000006c047860       0x10 src\guid.o
+                0x000000006c047860                GUID_DISK_IDLE_TIMEOUT
+ .rdata$GUID_DISK_POWERDOWN_TIMEOUT
+                0x000000006c047870       0x10 src\guid.o
+                0x000000006c047870                GUID_DISK_POWERDOWN_TIMEOUT
+ .rdata$GUID_DISK_SUBGROUP
+                0x000000006c047880       0x10 src\guid.o
+                0x000000006c047880                GUID_DISK_SUBGROUP
+ .rdata$GUID_ENABLE_SWITCH_FORCED_SHUTDOWN
+                0x000000006c047890       0x10 src\guid.o
+                0x000000006c047890                GUID_ENABLE_SWITCH_FORCED_SHUTDOWN
+ .rdata$GUID_EXECUTION_REQUIRED_REQUEST_TIMEOUT
+                0x000000006c0478a0       0x10 src\guid.o
+                0x000000006c0478a0                GUID_EXECUTION_REQUIRED_REQUEST_TIMEOUT
+ .rdata$GUID_GLOBAL_USER_PRESENCE
+                0x000000006c0478b0       0x10 src\guid.o
+                0x000000006c0478b0                GUID_GLOBAL_USER_PRESENCE
+ .rdata$GUID_HIBERNATE_FASTS4_POLICY
+                0x000000006c0478c0       0x10 src\guid.o
+                0x000000006c0478c0                GUID_HIBERNATE_FASTS4_POLICY
+ .rdata$GUID_HIBERNATE_TIMEOUT
+                0x000000006c0478d0       0x10 src\guid.o
+                0x000000006c0478d0                GUID_HIBERNATE_TIMEOUT
+ .rdata$GUID_IDLE_BACKGROUND_TASK
+                0x000000006c0478e0       0x10 src\guid.o
+                0x000000006c0478e0                GUID_IDLE_BACKGROUND_TASK
+ .rdata$GUID_IDLE_RESILIENCY_PERIOD
+                0x000000006c0478f0       0x10 src\guid.o
+                0x000000006c0478f0                GUID_IDLE_RESILIENCY_PERIOD
+ .rdata$GUID_IDLE_RESILIENCY_SUBGROUP
+                0x000000006c047900       0x10 src\guid.o
+                0x000000006c047900                GUID_IDLE_RESILIENCY_SUBGROUP
+ .rdata$GUID_LIDCLOSE_ACTION
+                0x000000006c047910       0x10 src\guid.o
+                0x000000006c047910                GUID_LIDCLOSE_ACTION
+ .rdata$GUID_LIDOPEN_POWERSTATE
+                0x000000006c047920       0x10 src\guid.o
+                0x000000006c047920                GUID_LIDOPEN_POWERSTATE
+ .rdata$GUID_LIDSWITCH_STATE_CHANGE
+                0x000000006c047930       0x10 src\guid.o
+                0x000000006c047930                GUID_LIDSWITCH_STATE_CHANGE
+ .rdata$GUID_LOCK_CONSOLE_ON_WAKE
+                0x000000006c047940       0x10 src\guid.o
+                0x000000006c047940                GUID_LOCK_CONSOLE_ON_WAKE
+ .rdata$GUID_MAX_POWER_SAVINGS
+                0x000000006c047950       0x10 src\guid.o
+                0x000000006c047950                GUID_MAX_POWER_SAVINGS
+ .rdata$GUID_MIN_POWER_SAVINGS
+                0x000000006c047960       0x10 src\guid.o
+                0x000000006c047960                GUID_MIN_POWER_SAVINGS
+ .rdata$GUID_MONITOR_POWER_ON
+                0x000000006c047970       0x10 src\guid.o
+                0x000000006c047970                GUID_MONITOR_POWER_ON
+ .rdata$GUID_NON_ADAPTIVE_INPUT_TIMEOUT
+                0x000000006c047980       0x10 src\guid.o
+                0x000000006c047980                GUID_NON_ADAPTIVE_INPUT_TIMEOUT
+ .rdata$GUID_PCIEXPRESS_ASPM_POLICY
+                0x000000006c047990       0x10 src\guid.o
+                0x000000006c047990                GUID_PCIEXPRESS_ASPM_POLICY
+ .rdata$GUID_PCIEXPRESS_SETTINGS_SUBGROUP
+                0x000000006c0479a0       0x10 src\guid.o
+                0x000000006c0479a0                GUID_PCIEXPRESS_SETTINGS_SUBGROUP
+ .rdata$GUID_POWERBUTTON_ACTION
+                0x000000006c0479b0       0x10 src\guid.o
+                0x000000006c0479b0                GUID_POWERBUTTON_ACTION
+ .rdata$GUID_POWERSCHEME_PERSONALITY
+                0x000000006c0479c0       0x10 src\guid.o
+                0x000000006c0479c0                GUID_POWERSCHEME_PERSONALITY
+ .rdata$GUID_PROCESSOR_ALLOW_THROTTLING
+                0x000000006c0479d0       0x10 src\guid.o
+                0x000000006c0479d0                GUID_PROCESSOR_ALLOW_THROTTLING
+ .rdata$GUID_PROCESSOR_CORE_PARKING_AFFINITY_HISTORY_DECREASE_FACTOR
+                0x000000006c0479e0       0x10 src\guid.o
+                0x000000006c0479e0                GUID_PROCESSOR_CORE_PARKING_AFFINITY_HISTORY_DECREASE_FACTOR
+ .rdata$GUID_PROCESSOR_CORE_PARKING_AFFINITY_HISTORY_THRESHOLD
+                0x000000006c0479f0       0x10 src\guid.o
+                0x000000006c0479f0                GUID_PROCESSOR_CORE_PARKING_AFFINITY_HISTORY_THRESHOLD
+ .rdata$GUID_PROCESSOR_CORE_PARKING_AFFINITY_WEIGHTING
+                0x000000006c047a00       0x10 src\guid.o
+                0x000000006c047a00                GUID_PROCESSOR_CORE_PARKING_AFFINITY_WEIGHTING
+ .rdata$GUID_PROCESSOR_CORE_PARKING_DECREASE_POLICY
+                0x000000006c047a10       0x10 src\guid.o
+                0x000000006c047a10                GUID_PROCESSOR_CORE_PARKING_DECREASE_POLICY
+ .rdata$GUID_PROCESSOR_CORE_PARKING_DECREASE_THRESHOLD
+                0x000000006c047a20       0x10 src\guid.o
+                0x000000006c047a20                GUID_PROCESSOR_CORE_PARKING_DECREASE_THRESHOLD
+ .rdata$GUID_PROCESSOR_CORE_PARKING_DECREASE_TIME
+                0x000000006c047a30       0x10 src\guid.o
+                0x000000006c047a30                GUID_PROCESSOR_CORE_PARKING_DECREASE_TIME
+ .rdata$GUID_PROCESSOR_CORE_PARKING_INCREASE_POLICY
+                0x000000006c047a40       0x10 src\guid.o
+                0x000000006c047a40                GUID_PROCESSOR_CORE_PARKING_INCREASE_POLICY
+ .rdata$GUID_PROCESSOR_CORE_PARKING_INCREASE_THRESHOLD
+                0x000000006c047a50       0x10 src\guid.o
+                0x000000006c047a50                GUID_PROCESSOR_CORE_PARKING_INCREASE_THRESHOLD
+ .rdata$GUID_PROCESSOR_CORE_PARKING_INCREASE_TIME
+                0x000000006c047a60       0x10 src\guid.o
+                0x000000006c047a60                GUID_PROCESSOR_CORE_PARKING_INCREASE_TIME
+ .rdata$GUID_PROCESSOR_CORE_PARKING_MAX_CORES
+                0x000000006c047a70       0x10 src\guid.o
+                0x000000006c047a70                GUID_PROCESSOR_CORE_PARKING_MAX_CORES
+ .rdata$GUID_PROCESSOR_CORE_PARKING_MIN_CORES
+                0x000000006c047a80       0x10 src\guid.o
+                0x000000006c047a80                GUID_PROCESSOR_CORE_PARKING_MIN_CORES
+ .rdata$GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_HISTORY_DECREASE_FACTOR
+                0x000000006c047a90       0x10 src\guid.o
+                0x000000006c047a90                GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_HISTORY_DECREASE_FACTOR
+ .rdata$GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_HISTORY_THRESHOLD
+                0x000000006c047aa0       0x10 src\guid.o
+                0x000000006c047aa0                GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_HISTORY_THRESHOLD
+ .rdata$GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_THRESHOLD
+                0x000000006c047ab0       0x10 src\guid.o
+                0x000000006c047ab0                GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_THRESHOLD
+ .rdata$GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_WEIGHTING
+                0x000000006c047ac0       0x10 src\guid.o
+                0x000000006c047ac0                GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_WEIGHTING
+ .rdata$GUID_PROCESSOR_DISTRIBUTE_UTILITY
+                0x000000006c047ad0       0x10 src\guid.o
+                0x000000006c047ad0                GUID_PROCESSOR_DISTRIBUTE_UTILITY
+ .rdata$GUID_PROCESSOR_IDLESTATE_POLICY
+                0x000000006c047ae0       0x10 src\guid.o
+                0x000000006c047ae0                GUID_PROCESSOR_IDLESTATE_POLICY
+ .rdata$GUID_PROCESSOR_IDLE_ALLOW_SCALING
+                0x000000006c047af0       0x10 src\guid.o
+                0x000000006c047af0                GUID_PROCESSOR_IDLE_ALLOW_SCALING
+ .rdata$GUID_PROCESSOR_IDLE_DEMOTE_THRESHOLD
+                0x000000006c047b00       0x10 src\guid.o
+                0x000000006c047b00                GUID_PROCESSOR_IDLE_DEMOTE_THRESHOLD
+ .rdata$GUID_PROCESSOR_IDLE_DISABLE
+                0x000000006c047b10       0x10 src\guid.o
+                0x000000006c047b10                GUID_PROCESSOR_IDLE_DISABLE
+ .rdata$GUID_PROCESSOR_IDLE_PROMOTE_THRESHOLD
+                0x000000006c047b20       0x10 src\guid.o
+                0x000000006c047b20                GUID_PROCESSOR_IDLE_PROMOTE_THRESHOLD
+ .rdata$GUID_PROCESSOR_IDLE_STATE_MAXIMUM
+                0x000000006c047b30       0x10 src\guid.o
+                0x000000006c047b30                GUID_PROCESSOR_IDLE_STATE_MAXIMUM
+ .rdata$GUID_PROCESSOR_IDLE_TIME_CHECK
+                0x000000006c047b40       0x10 src\guid.o
+                0x000000006c047b40                GUID_PROCESSOR_IDLE_TIME_CHECK
+ .rdata$GUID_PROCESSOR_PARKING_CONCURRENCY_THRESHOLD
+                0x000000006c047b50       0x10 src\guid.o
+                0x000000006c047b50                GUID_PROCESSOR_PARKING_CONCURRENCY_THRESHOLD
+ .rdata$GUID_PROCESSOR_PARKING_CORE_OVERRIDE
+                0x000000006c047b60       0x10 src\guid.o
+                0x000000006c047b60                GUID_PROCESSOR_PARKING_CORE_OVERRIDE
+ .rdata$GUID_PROCESSOR_PARKING_HEADROOM_THRESHOLD
+                0x000000006c047b70       0x10 src\guid.o
+                0x000000006c047b70                GUID_PROCESSOR_PARKING_HEADROOM_THRESHOLD
+ .rdata$GUID_PROCESSOR_PARKING_PERF_STATE
+                0x000000006c047b80       0x10 src\guid.o
+                0x000000006c047b80                GUID_PROCESSOR_PARKING_PERF_STATE
+ .rdata$GUID_PROCESSOR_PERFSTATE_POLICY
+                0x000000006c047b90       0x10 src\guid.o
+                0x000000006c047b90                GUID_PROCESSOR_PERFSTATE_POLICY
+ .rdata$GUID_PROCESSOR_PERF_BOOST_MODE
+                0x000000006c047ba0       0x10 src\guid.o
+                0x000000006c047ba0                GUID_PROCESSOR_PERF_BOOST_MODE
+ .rdata$GUID_PROCESSOR_PERF_BOOST_POLICY
+                0x000000006c047bb0       0x10 src\guid.o
+                0x000000006c047bb0                GUID_PROCESSOR_PERF_BOOST_POLICY
+ .rdata$GUID_PROCESSOR_PERF_DECREASE_POLICY
+                0x000000006c047bc0       0x10 src\guid.o
+                0x000000006c047bc0                GUID_PROCESSOR_PERF_DECREASE_POLICY
+ .rdata$GUID_PROCESSOR_PERF_DECREASE_THRESHOLD
+                0x000000006c047bd0       0x10 src\guid.o
+                0x000000006c047bd0                GUID_PROCESSOR_PERF_DECREASE_THRESHOLD
+ .rdata$GUID_PROCESSOR_PERF_DECREASE_TIME
+                0x000000006c047be0       0x10 src\guid.o
+                0x000000006c047be0                GUID_PROCESSOR_PERF_DECREASE_TIME
+ .rdata$GUID_PROCESSOR_PERF_HISTORY
+                0x000000006c047bf0       0x10 src\guid.o
+                0x000000006c047bf0                GUID_PROCESSOR_PERF_HISTORY
+ .rdata$GUID_PROCESSOR_PERF_INCREASE_POLICY
+                0x000000006c047c00       0x10 src\guid.o
+                0x000000006c047c00                GUID_PROCESSOR_PERF_INCREASE_POLICY
+ .rdata$GUID_PROCESSOR_PERF_INCREASE_THRESHOLD
+                0x000000006c047c10       0x10 src\guid.o
+                0x000000006c047c10                GUID_PROCESSOR_PERF_INCREASE_THRESHOLD
+ .rdata$GUID_PROCESSOR_PERF_INCREASE_TIME
+                0x000000006c047c20       0x10 src\guid.o
+                0x000000006c047c20                GUID_PROCESSOR_PERF_INCREASE_TIME
+ .rdata$GUID_PROCESSOR_PERF_LATENCY_HINT
+                0x000000006c047c30       0x10 src\guid.o
+                0x000000006c047c30                GUID_PROCESSOR_PERF_LATENCY_HINT
+ .rdata$GUID_PROCESSOR_PERF_TIME_CHECK
+                0x000000006c047c40       0x10 src\guid.o
+                0x000000006c047c40                GUID_PROCESSOR_PERF_TIME_CHECK
+ .rdata$GUID_PROCESSOR_SETTINGS_SUBGROUP
+                0x000000006c047c50       0x10 src\guid.o
+                0x000000006c047c50                GUID_PROCESSOR_SETTINGS_SUBGROUP
+ .rdata$GUID_PROCESSOR_THROTTLE_MAXIMUM
+                0x000000006c047c60       0x10 src\guid.o
+                0x000000006c047c60                GUID_PROCESSOR_THROTTLE_MAXIMUM
+ .rdata$GUID_PROCESSOR_THROTTLE_MINIMUM
+                0x000000006c047c70       0x10 src\guid.o
+                0x000000006c047c70                GUID_PROCESSOR_THROTTLE_MINIMUM
+ .rdata$GUID_PROCESSOR_THROTTLE_POLICY
+                0x000000006c047c80       0x10 src\guid.o
+                0x000000006c047c80                GUID_PROCESSOR_THROTTLE_POLICY
+ .rdata$GUID_SESSION_DISPLAY_STATUS
+                0x000000006c047c90       0x10 src\guid.o
+                0x000000006c047c90                GUID_SESSION_DISPLAY_STATUS
+ .rdata$GUID_SESSION_USER_PRESENCE
+                0x000000006c047ca0       0x10 src\guid.o
+                0x000000006c047ca0                GUID_SESSION_USER_PRESENCE
+ .rdata$GUID_SLEEPBUTTON_ACTION
+                0x000000006c047cb0       0x10 src\guid.o
+                0x000000006c047cb0                GUID_SLEEPBUTTON_ACTION
+ .rdata$GUID_SLEEP_IDLE_THRESHOLD
+                0x000000006c047cc0       0x10 src\guid.o
+                0x000000006c047cc0                GUID_SLEEP_IDLE_THRESHOLD
+ .rdata$GUID_SLEEP_SUBGROUP
+                0x000000006c047cd0       0x10 src\guid.o
+                0x000000006c047cd0                GUID_SLEEP_SUBGROUP
+ .rdata$GUID_STANDBY_TIMEOUT
+                0x000000006c047ce0       0x10 src\guid.o
+                0x000000006c047ce0                GUID_STANDBY_TIMEOUT
+ .rdata$GUID_SYSTEM_AWAYMODE
+                0x000000006c047cf0       0x10 src\guid.o
+                0x000000006c047cf0                GUID_SYSTEM_AWAYMODE
+ .rdata$GUID_SYSTEM_BUTTON_SUBGROUP
+                0x000000006c047d00       0x10 src\guid.o
+                0x000000006c047d00                GUID_SYSTEM_BUTTON_SUBGROUP
+ .rdata$GUID_SYSTEM_COOLING_POLICY
+                0x000000006c047d10       0x10 src\guid.o
+                0x000000006c047d10                GUID_SYSTEM_COOLING_POLICY
+ .rdata$GUID_TYPICAL_POWER_SAVINGS
+                0x000000006c047d20       0x10 src\guid.o
+                0x000000006c047d20                GUID_TYPICAL_POWER_SAVINGS
+ .rdata$GUID_UNATTEND_SLEEP_TIMEOUT
+                0x000000006c047d30       0x10 src\guid.o
+                0x000000006c047d30                GUID_UNATTEND_SLEEP_TIMEOUT
+ .rdata$GUID_USERINTERFACEBUTTON_ACTION
+                0x000000006c047d40       0x10 src\guid.o
+                0x000000006c047d40                GUID_USERINTERFACEBUTTON_ACTION
+ .rdata$GUID_VIDEO_ADAPTIVE_DISPLAY_BRIGHTNESS
+                0x000000006c047d50       0x10 src\guid.o
+                0x000000006c047d50                GUID_VIDEO_ADAPTIVE_DISPLAY_BRIGHTNESS
+ .rdata$GUID_VIDEO_ADAPTIVE_PERCENT_INCREASE
+                0x000000006c047d60       0x10 src\guid.o
+                0x000000006c047d60                GUID_VIDEO_ADAPTIVE_PERCENT_INCREASE
+ .rdata$GUID_VIDEO_ADAPTIVE_POWERDOWN
+                0x000000006c047d70       0x10 src\guid.o
+                0x000000006c047d70                GUID_VIDEO_ADAPTIVE_POWERDOWN
+ .rdata$GUID_VIDEO_ANNOYANCE_TIMEOUT
+                0x000000006c047d80       0x10 src\guid.o
+                0x000000006c047d80                GUID_VIDEO_ANNOYANCE_TIMEOUT
+ .rdata$GUID_VIDEO_CONSOLE_LOCK_TIMEOUT
+                0x000000006c047d90       0x10 src\guid.o
+                0x000000006c047d90                GUID_VIDEO_CONSOLE_LOCK_TIMEOUT
+ .rdata$GUID_VIDEO_CURRENT_MONITOR_BRIGHTNESS
+                0x000000006c047da0       0x10 src\guid.o
+                0x000000006c047da0                GUID_VIDEO_CURRENT_MONITOR_BRIGHTNESS
+ .rdata$GUID_VIDEO_DIM_TIMEOUT
+                0x000000006c047db0       0x10 src\guid.o
+                0x000000006c047db0                GUID_VIDEO_DIM_TIMEOUT
+ .rdata$GUID_VIDEO_POWERDOWN_TIMEOUT
+                0x000000006c047dc0       0x10 src\guid.o
+                0x000000006c047dc0                GUID_VIDEO_POWERDOWN_TIMEOUT
+ .rdata$GUID_VIDEO_SUBGROUP
+                0x000000006c047dd0       0x10 src\guid.o
+                0x000000006c047dd0                GUID_VIDEO_SUBGROUP
+ .rdata$IID_AsyncIAdviseSink
+                0x000000006c047de0       0x10 src\guid.o
+                0x000000006c047de0                IID_AsyncIAdviseSink
+ .rdata$IID_AsyncIAdviseSink2
+                0x000000006c047df0       0x10 src\guid.o
+                0x000000006c047df0                IID_AsyncIAdviseSink2
+ .rdata$IID_AsyncIMultiQI
+                0x000000006c047e00       0x10 src\guid.o
+                0x000000006c047e00                IID_AsyncIMultiQI
+ .rdata$IID_AsyncIUnknown
+                0x000000006c047e10       0x10 src\guid.o
+                0x000000006c047e10                IID_AsyncIUnknown
+ .rdata$IID_IAddrExclusionControl
+                0x000000006c047e20       0x10 src\guid.o
+                0x000000006c047e20                IID_IAddrExclusionControl
+ .rdata$IID_IAddrTrackingControl
+                0x000000006c047e30       0x10 src\guid.o
+                0x000000006c047e30                IID_IAddrTrackingControl
+ .rdata$IID_IAdviseSink
+                0x000000006c047e40       0x10 src\guid.o
+                0x000000006c047e40                IID_IAdviseSink
+ .rdata$IID_IAdviseSink2
+                0x000000006c047e50       0x10 src\guid.o
+                0x000000006c047e50                IID_IAdviseSink2
+ .rdata$IID_IAgileObject
+                0x000000006c047e60       0x10 src\guid.o
+                0x000000006c047e60                IID_IAgileObject
+ .rdata$IID_IApartmentShutdown
+                0x000000006c047e70       0x10 src\guid.o
+                0x000000006c047e70                IID_IApartmentShutdown
+ .rdata$IID_IAsyncManager
+                0x000000006c047e80       0x10 src\guid.o
+                0x000000006c047e80                IID_IAsyncManager
+ .rdata$IID_IAsyncRpcChannelBuffer
+                0x000000006c047e90       0x10 src\guid.o
+                0x000000006c047e90                IID_IAsyncRpcChannelBuffer
+ .rdata$IID_IAuthenticate
+                0x000000006c047ea0       0x10 src\guid.o
+                0x000000006c047ea0                IID_IAuthenticate
+ .rdata$IID_IAuthenticateEx
+                0x000000006c047eb0       0x10 src\guid.o
+                0x000000006c047eb0                IID_IAuthenticateEx
+ .rdata$IID_IBindCallbackRedirect
+                0x000000006c047ec0       0x10 src\guid.o
+                0x000000006c047ec0                IID_IBindCallbackRedirect
+ .rdata$IID_IBindCtx
+                0x000000006c047ed0       0x10 src\guid.o
+                0x000000006c047ed0                IID_IBindCtx
+ .rdata$IID_IBindHost
+                0x000000006c047ee0       0x10 src\guid.o
+                0x000000006c047ee0                IID_IBindHost
+ .rdata$IID_IBindProtocol
+                0x000000006c047ef0       0x10 src\guid.o
+                0x000000006c047ef0                IID_IBindProtocol
+ .rdata$IID_IBindStatusCallback
+                0x000000006c047f00       0x10 src\guid.o
+                0x000000006c047f00                IID_IBindStatusCallback
+ .rdata$IID_IBindStatusCallbackEx
+                0x000000006c047f10       0x10 src\guid.o
+                0x000000006c047f10                IID_IBindStatusCallbackEx
+ .rdata$IID_IBinding
+                0x000000006c047f20       0x10 src\guid.o
+                0x000000006c047f20                IID_IBinding
+ .rdata$IID_IBlockingLock
+                0x000000006c047f30       0x10 src\guid.o
+                0x000000006c047f30                IID_IBlockingLock
+ .rdata$IID_ICallFactory
+                0x000000006c047f40       0x10 src\guid.o
+                0x000000006c047f40                IID_ICallFactory
+ .rdata$IID_ICancelMethodCalls
+                0x000000006c047f50       0x10 src\guid.o
+                0x000000006c047f50                IID_ICancelMethodCalls
+ .rdata$IID_ICatalogFileInfo
+                0x000000006c047f60       0x10 src\guid.o
+                0x000000006c047f60                IID_ICatalogFileInfo
+ .rdata$IID_IChannelHook
+                0x000000006c047f70       0x10 src\guid.o
+                0x000000006c047f70                IID_IChannelHook
+ .rdata$IID_IClassActivator
+                0x000000006c047f80       0x10 src\guid.o
+                0x000000006c047f80                IID_IClassActivator
+ .rdata$IID_IClassFactory
+                0x000000006c047f90       0x10 src\guid.o
+                0x000000006c047f90                IID_IClassFactory
+ .rdata$IID_IClientSecurity
+                0x000000006c047fa0       0x10 src\guid.o
+                0x000000006c047fa0                IID_IClientSecurity
+ .rdata$IID_ICodeInstall
+                0x000000006c047fb0       0x10 src\guid.o
+                0x000000006c047fb0                IID_ICodeInstall
+ .rdata$IID_IComThreadingInfo
+                0x000000006c047fc0       0x10 src\guid.o
+                0x000000006c047fc0                IID_IComThreadingInfo
+ .rdata$IID_IContinue
+                0x000000006c047fd0       0x10 src\guid.o
+                0x000000006c047fd0                IID_IContinue
+ .rdata$IID_ICreateErrorInfo
+                0x000000006c047fe0       0x10 src\guid.o
+                0x000000006c047fe0                IID_ICreateErrorInfo
+ .rdata$IID_ICreateTypeInfo
+                0x000000006c047ff0       0x10 src\guid.o
+                0x000000006c047ff0                IID_ICreateTypeInfo
+ .rdata$IID_ICreateTypeInfo2
+                0x000000006c048000       0x10 src\guid.o
+                0x000000006c048000                IID_ICreateTypeInfo2
+ .rdata$IID_ICreateTypeLib
+                0x000000006c048010       0x10 src\guid.o
+                0x000000006c048010                IID_ICreateTypeLib
+ .rdata$IID_ICreateTypeLib2
+                0x000000006c048020       0x10 src\guid.o
+                0x000000006c048020                IID_ICreateTypeLib2
+ .rdata$IID_IDataAdviseHolder
+                0x000000006c048030       0x10 src\guid.o
+                0x000000006c048030                IID_IDataAdviseHolder
+ .rdata$IID_IDataFilter
+                0x000000006c048040       0x10 src\guid.o
+                0x000000006c048040                IID_IDataFilter
+ .rdata$IID_IDataObject
+                0x000000006c048050       0x10 src\guid.o
+                0x000000006c048050                IID_IDataObject
+ .rdata$IID_IDirectWriterLock
+                0x000000006c048060       0x10 src\guid.o
+                0x000000006c048060                IID_IDirectWriterLock
+ .rdata$IID_IDispatch
+                0x000000006c048070       0x10 src\guid.o
+                0x000000006c048070                IID_IDispatch
+ .rdata$IID_IDropSource
+                0x000000006c048080       0x10 src\guid.o
+                0x000000006c048080                IID_IDropSource
+ .rdata$IID_IDropSourceNotify
+                0x000000006c048090       0x10 src\guid.o
+                0x000000006c048090                IID_IDropSourceNotify
+ .rdata$IID_IDropTarget
+                0x000000006c0480a0       0x10 src\guid.o
+                0x000000006c0480a0                IID_IDropTarget
+ .rdata$IID_IDummyHICONIncluder
+                0x000000006c0480b0       0x10 src\guid.o
+                0x000000006c0480b0                IID_IDummyHICONIncluder
+ .rdata$IID_IEncodingFilterFactory
+                0x000000006c0480c0       0x10 src\guid.o
+                0x000000006c0480c0                IID_IEncodingFilterFactory
+ .rdata$IID_IEnumFORMATETC
+                0x000000006c0480d0       0x10 src\guid.o
+                0x000000006c0480d0                IID_IEnumFORMATETC
+ .rdata$IID_IEnumMoniker
+                0x000000006c0480e0       0x10 src\guid.o
+                0x000000006c0480e0                IID_IEnumMoniker
+ .rdata$IID_IEnumOLEVERB
+                0x000000006c0480f0       0x10 src\guid.o
+                0x000000006c0480f0                IID_IEnumOLEVERB
+ .rdata$IID_IEnumSTATDATA
+                0x000000006c048100       0x10 src\guid.o
+                0x000000006c048100                IID_IEnumSTATDATA
+ .rdata$IID_IEnumSTATPROPSETSTG
+                0x000000006c048110       0x10 src\guid.o
+                0x000000006c048110                IID_IEnumSTATPROPSETSTG
+ .rdata$IID_IEnumSTATPROPSTG
+                0x000000006c048120       0x10 src\guid.o
+                0x000000006c048120                IID_IEnumSTATPROPSTG
+ .rdata$IID_IEnumSTATSTG
+                0x000000006c048130       0x10 src\guid.o
+                0x000000006c048130                IID_IEnumSTATSTG
+ .rdata$IID_IEnumString
+                0x000000006c048140       0x10 src\guid.o
+                0x000000006c048140                IID_IEnumString
+ .rdata$IID_IEnumUnknown
+                0x000000006c048150       0x10 src\guid.o
+                0x000000006c048150                IID_IEnumUnknown
+ .rdata$IID_IEnumVARIANT
+                0x000000006c048160       0x10 src\guid.o
+                0x000000006c048160                IID_IEnumVARIANT
+ .rdata$IID_IErrorInfo
+                0x000000006c048170       0x10 src\guid.o
+                0x000000006c048170                IID_IErrorInfo
+ .rdata$IID_IErrorLog
+                0x000000006c048180       0x10 src\guid.o
+                0x000000006c048180                IID_IErrorLog
+ .rdata$IID_IExternalConnection
+                0x000000006c048190       0x10 src\guid.o
+                0x000000006c048190                IID_IExternalConnection
+ .rdata$IID_IFastRundown
+                0x000000006c0481a0       0x10 src\guid.o
+                0x000000006c0481a0                IID_IFastRundown
+ .rdata$IID_IFillLockBytes
+                0x000000006c0481b0       0x10 src\guid.o
+                0x000000006c0481b0                IID_IFillLockBytes
+ .rdata$IID_IForegroundTransfer
+                0x000000006c0481c0       0x10 src\guid.o
+                0x000000006c0481c0                IID_IForegroundTransfer
+ .rdata$IID_IGetBindHandle
+                0x000000006c0481d0       0x10 src\guid.o
+                0x000000006c0481d0                IID_IGetBindHandle
+ .rdata$IID_IGlobalInterfaceTable
+                0x000000006c0481e0       0x10 src\guid.o
+                0x000000006c0481e0                IID_IGlobalInterfaceTable
+ .rdata$IID_IGlobalOptions
+                0x000000006c0481f0       0x10 src\guid.o
+                0x000000006c0481f0                IID_IGlobalOptions
+ .rdata$IID_IHttpNegotiate
+                0x000000006c048200       0x10 src\guid.o
+                0x000000006c048200                IID_IHttpNegotiate
+ .rdata$IID_IHttpNegotiate2
+                0x000000006c048210       0x10 src\guid.o
+                0x000000006c048210                IID_IHttpNegotiate2
+ .rdata$IID_IHttpNegotiate3
+                0x000000006c048220       0x10 src\guid.o
+                0x000000006c048220                IID_IHttpNegotiate3
+ .rdata$IID_IHttpSecurity
+                0x000000006c048230       0x10 src\guid.o
+                0x000000006c048230                IID_IHttpSecurity
+ .rdata$IID_IInitializeSpy
+                0x000000006c048240       0x10 src\guid.o
+                0x000000006c048240                IID_IInitializeSpy
+ .rdata$IID_IInternalUnknown
+                0x000000006c048250       0x10 src\guid.o
+                0x000000006c048250                IID_IInternalUnknown
+ .rdata$IID_IInternet
+                0x000000006c048260       0x10 src\guid.o
+                0x000000006c048260                IID_IInternet
+ .rdata$IID_IInternetBindInfo
+                0x000000006c048270       0x10 src\guid.o
+                0x000000006c048270                IID_IInternetBindInfo
+ .rdata$IID_IInternetBindInfoEx
+                0x000000006c048280       0x10 src\guid.o
+                0x000000006c048280                IID_IInternetBindInfoEx
+ .rdata$IID_IInternetHostSecurityManager
+                0x000000006c048290       0x10 src\guid.o
+                0x000000006c048290                IID_IInternetHostSecurityManager
+ .rdata$IID_IInternetPriority
+                0x000000006c0482a0       0x10 src\guid.o
+                0x000000006c0482a0                IID_IInternetPriority
+ .rdata$IID_IInternetProtocol
+                0x000000006c0482b0       0x10 src\guid.o
+                0x000000006c0482b0                IID_IInternetProtocol
+ .rdata$IID_IInternetProtocolInfo
+                0x000000006c0482c0       0x10 src\guid.o
+                0x000000006c0482c0                IID_IInternetProtocolInfo
+ .rdata$IID_IInternetProtocolRoot
+                0x000000006c0482d0       0x10 src\guid.o
+                0x000000006c0482d0                IID_IInternetProtocolRoot
+ .rdata$IID_IInternetProtocolSink
+                0x000000006c0482e0       0x10 src\guid.o
+                0x000000006c0482e0                IID_IInternetProtocolSink
+ .rdata$IID_IInternetProtocolSinkStackable
+                0x000000006c0482f0       0x10 src\guid.o
+                0x000000006c0482f0                IID_IInternetProtocolSinkStackable
+ .rdata$IID_IInternetSecurityManager
+                0x000000006c048300       0x10 src\guid.o
+                0x000000006c048300                IID_IInternetSecurityManager
+ .rdata$IID_IInternetSecurityMgrSite
+                0x000000006c048310       0x10 src\guid.o
+                0x000000006c048310                IID_IInternetSecurityMgrSite
+ .rdata$IID_IInternetSession
+                0x000000006c048320       0x10 src\guid.o
+                0x000000006c048320                IID_IInternetSession
+ .rdata$IID_IInternetThreadSwitch
+                0x000000006c048330       0x10 src\guid.o
+                0x000000006c048330                IID_IInternetThreadSwitch
+ .rdata$IID_IInternetZoneManager
+                0x000000006c048340       0x10 src\guid.o
+                0x000000006c048340                IID_IInternetZoneManager
+ .rdata$IID_ILayoutStorage
+                0x000000006c048350       0x10 src\guid.o
+                0x000000006c048350                IID_ILayoutStorage
+ .rdata$IID_ILockBytes
+                0x000000006c048360       0x10 src\guid.o
+                0x000000006c048360                IID_ILockBytes
+ .rdata$IID_IMalloc
+                0x000000006c048370       0x10 src\guid.o
+                0x000000006c048370                IID_IMalloc
+ .rdata$IID_IMallocSpy
+                0x000000006c048380       0x10 src\guid.o
+                0x000000006c048380                IID_IMallocSpy
+ .rdata$IID_IMarshal
+                0x000000006c048390       0x10 src\guid.o
+                0x000000006c048390                IID_IMarshal
+ .rdata$IID_IMarshal2
+                0x000000006c0483a0       0x10 src\guid.o
+                0x000000006c0483a0                IID_IMarshal2
+ .rdata$IID_IMarshalingStream
+                0x000000006c0483b0       0x10 src\guid.o
+                0x000000006c0483b0                IID_IMarshalingStream
+ .rdata$IID_IMessageFilter
+                0x000000006c0483c0       0x10 src\guid.o
+                0x000000006c0483c0                IID_IMessageFilter
+ .rdata$IID_IMoniker
+                0x000000006c0483d0       0x10 src\guid.o
+                0x000000006c0483d0                IID_IMoniker
+ .rdata$IID_IMonikerProp
+                0x000000006c0483e0       0x10 src\guid.o
+                0x000000006c0483e0                IID_IMonikerProp
+ .rdata$IID_IMultiQI
+                0x000000006c0483f0       0x10 src\guid.o
+                0x000000006c0483f0                IID_IMultiQI
+ .rdata$IID_INoMarshal
+                0x000000006c048400       0x10 src\guid.o
+                0x000000006c048400                IID_INoMarshal
+ .rdata$IID_IOleAdviseHolder
+                0x000000006c048410       0x10 src\guid.o
+                0x000000006c048410                IID_IOleAdviseHolder
+ .rdata$IID_IOleCache
+                0x000000006c048420       0x10 src\guid.o
+                0x000000006c048420                IID_IOleCache
+ .rdata$IID_IOleCache2
+                0x000000006c048430       0x10 src\guid.o
+                0x000000006c048430                IID_IOleCache2
+ .rdata$IID_IOleCacheControl
+                0x000000006c048440       0x10 src\guid.o
+                0x000000006c048440                IID_IOleCacheControl
+ .rdata$IID_IOleClientSite
+                0x000000006c048450       0x10 src\guid.o
+                0x000000006c048450                IID_IOleClientSite
+ .rdata$IID_IOleContainer
+                0x000000006c048460       0x10 src\guid.o
+                0x000000006c048460                IID_IOleContainer
+ .rdata$IID_IOleInPlaceActiveObject
+                0x000000006c048470       0x10 src\guid.o
+                0x000000006c048470                IID_IOleInPlaceActiveObject
+ .rdata$IID_IOleInPlaceFrame
+                0x000000006c048480       0x10 src\guid.o
+                0x000000006c048480                IID_IOleInPlaceFrame
+ .rdata$IID_IOleInPlaceObject
+                0x000000006c048490       0x10 src\guid.o
+                0x000000006c048490                IID_IOleInPlaceObject
+ .rdata$IID_IOleInPlaceSite
+                0x000000006c0484a0       0x10 src\guid.o
+                0x000000006c0484a0                IID_IOleInPlaceSite
+ .rdata$IID_IOleInPlaceUIWindow
+                0x000000006c0484b0       0x10 src\guid.o
+                0x000000006c0484b0                IID_IOleInPlaceUIWindow
+ .rdata$IID_IOleItemContainer
+                0x000000006c0484c0       0x10 src\guid.o
+                0x000000006c0484c0                IID_IOleItemContainer
+ .rdata$IID_IOleLink
+                0x000000006c0484d0       0x10 src\guid.o
+                0x000000006c0484d0                IID_IOleLink
+ .rdata$IID_IOleObject
+                0x000000006c0484e0       0x10 src\guid.o
+                0x000000006c0484e0                IID_IOleObject
+ .rdata$IID_IOleWindow
+                0x000000006c0484f0       0x10 src\guid.o
+                0x000000006c0484f0                IID_IOleWindow
+ .rdata$IID_IOplockStorage
+                0x000000006c048500       0x10 src\guid.o
+                0x000000006c048500                IID_IOplockStorage
+ .rdata$IID_IPSFactoryBuffer
+                0x000000006c048510       0x10 src\guid.o
+                0x000000006c048510                IID_IPSFactoryBuffer
+ .rdata$IID_IParseDisplayName
+                0x000000006c048520       0x10 src\guid.o
+                0x000000006c048520                IID_IParseDisplayName
+ .rdata$IID_IPersist
+                0x000000006c048530       0x10 src\guid.o
+                0x000000006c048530                IID_IPersist
+ .rdata$IID_IPersistFile
+                0x000000006c048540       0x10 src\guid.o
+                0x000000006c048540                IID_IPersistFile
+ .rdata$IID_IPersistMoniker
+                0x000000006c048550       0x10 src\guid.o
+                0x000000006c048550                IID_IPersistMoniker
+ .rdata$IID_IPersistStorage
+                0x000000006c048560       0x10 src\guid.o
+                0x000000006c048560                IID_IPersistStorage
+ .rdata$IID_IPersistStream
+                0x000000006c048570       0x10 src\guid.o
+                0x000000006c048570                IID_IPersistStream
+ .rdata$IID_IPipeByte
+                0x000000006c048580       0x10 src\guid.o
+                0x000000006c048580                IID_IPipeByte
+ .rdata$IID_IPipeDouble
+                0x000000006c048590       0x10 src\guid.o
+                0x000000006c048590                IID_IPipeDouble
+ .rdata$IID_IPipeLong
+                0x000000006c0485a0       0x10 src\guid.o
+                0x000000006c0485a0                IID_IPipeLong
+ .rdata$IID_IPrintDialogCallback
+                0x000000006c0485b0       0x10 src\guid.o
+                0x000000006c0485b0                IID_IPrintDialogCallback
+ .rdata$IID_IPrintDialogServices
+                0x000000006c0485c0       0x10 src\guid.o
+                0x000000006c0485c0                IID_IPrintDialogServices
+ .rdata$IID_IProcessInitControl
+                0x000000006c0485d0       0x10 src\guid.o
+                0x000000006c0485d0                IID_IProcessInitControl
+ .rdata$IID_IProcessLock
+                0x000000006c0485e0       0x10 src\guid.o
+                0x000000006c0485e0                IID_IProcessLock
+ .rdata$IID_IProgressNotify
+                0x000000006c0485f0       0x10 src\guid.o
+                0x000000006c0485f0                IID_IProgressNotify
+ .rdata$IID_IPropertyBag
+                0x000000006c048600       0x10 src\guid.o
+                0x000000006c048600                IID_IPropertyBag
+ .rdata$IID_IPropertySetStorage
+                0x000000006c048610       0x10 src\guid.o
+                0x000000006c048610                IID_IPropertySetStorage
+ .rdata$IID_IPropertyStorage
+                0x000000006c048620       0x10 src\guid.o
+                0x000000006c048620                IID_IPropertyStorage
+ .rdata$IID_IROTData
+                0x000000006c048630       0x10 src\guid.o
+                0x000000006c048630                IID_IROTData
+ .rdata$IID_IRecordInfo
+                0x000000006c048640       0x10 src\guid.o
+                0x000000006c048640                IID_IRecordInfo
+ .rdata$IID_IReleaseMarshalBuffers
+                0x000000006c048650       0x10 src\guid.o
+                0x000000006c048650                IID_IReleaseMarshalBuffers
+ .rdata$IID_IRootStorage
+                0x000000006c048660       0x10 src\guid.o
+                0x000000006c048660                IID_IRootStorage
+ .rdata$IID_IRpcChannelBuffer
+                0x000000006c048670       0x10 src\guid.o
+                0x000000006c048670                IID_IRpcChannelBuffer
+ .rdata$IID_IRpcChannelBuffer2
+                0x000000006c048680       0x10 src\guid.o
+                0x000000006c048680                IID_IRpcChannelBuffer2
+ .rdata$IID_IRpcChannelBuffer3
+                0x000000006c048690       0x10 src\guid.o
+                0x000000006c048690                IID_IRpcChannelBuffer3
+ .rdata$IID_IRpcHelper
+                0x000000006c0486a0       0x10 src\guid.o
+                0x000000006c0486a0                IID_IRpcHelper
+ .rdata$IID_IRpcOptions
+                0x000000006c0486b0       0x10 src\guid.o
+                0x000000006c0486b0                IID_IRpcOptions
+ .rdata$IID_IRpcProxyBuffer
+                0x000000006c0486c0       0x10 src\guid.o
+                0x000000006c0486c0                IID_IRpcProxyBuffer
+ .rdata$IID_IRpcStubBuffer
+                0x000000006c0486d0       0x10 src\guid.o
+                0x000000006c0486d0                IID_IRpcStubBuffer
+ .rdata$IID_IRpcSyntaxNegotiate
+                0x000000006c0486e0       0x10 src\guid.o
+                0x000000006c0486e0                IID_IRpcSyntaxNegotiate
+ .rdata$IID_IRunnableObject
+                0x000000006c0486f0       0x10 src\guid.o
+                0x000000006c0486f0                IID_IRunnableObject
+ .rdata$IID_IRunningObjectTable
+                0x000000006c048700       0x10 src\guid.o
+                0x000000006c048700                IID_IRunningObjectTable
+ .rdata$IID_ISequentialStream
+                0x000000006c048710       0x10 src\guid.o
+                0x000000006c048710                IID_ISequentialStream
+ .rdata$IID_IServerSecurity
+                0x000000006c048720       0x10 src\guid.o
+                0x000000006c048720                IID_IServerSecurity
+ .rdata$IID_ISoftDistExt
+                0x000000006c048730       0x10 src\guid.o
+                0x000000006c048730                IID_ISoftDistExt
+ .rdata$IID_IStdMarshalInfo
+                0x000000006c048740       0x10 src\guid.o
+                0x000000006c048740                IID_IStdMarshalInfo
+ .rdata$IID_IStorage
+                0x000000006c048750       0x10 src\guid.o
+                0x000000006c048750                IID_IStorage
+ .rdata$IID_IStream
+                0x000000006c048760       0x10 src\guid.o
+                0x000000006c048760                IID_IStream
+ .rdata$IID_ISupportErrorInfo
+                0x000000006c048770       0x10 src\guid.o
+                0x000000006c048770                IID_ISupportErrorInfo
+ .rdata$IID_ISurrogate
+                0x000000006c048780       0x10 src\guid.o
+                0x000000006c048780                IID_ISurrogate
+ .rdata$IID_ISurrogateService
+                0x000000006c048790       0x10 src\guid.o
+                0x000000006c048790                IID_ISurrogateService
+ .rdata$IID_ISynchronize
+                0x000000006c0487a0       0x10 src\guid.o
+                0x000000006c0487a0                IID_ISynchronize
+ .rdata$IID_ISynchronizeContainer
+                0x000000006c0487b0       0x10 src\guid.o
+                0x000000006c0487b0                IID_ISynchronizeContainer
+ .rdata$IID_ISynchronizeEvent
+                0x000000006c0487c0       0x10 src\guid.o
+                0x000000006c0487c0                IID_ISynchronizeEvent
+ .rdata$IID_ISynchronizeHandle
+                0x000000006c0487d0       0x10 src\guid.o
+                0x000000006c0487d0                IID_ISynchronizeHandle
+ .rdata$IID_ISynchronizeMutex
+                0x000000006c0487e0       0x10 src\guid.o
+                0x000000006c0487e0                IID_ISynchronizeMutex
+ .rdata$IID_IThumbnailExtractor
+                0x000000006c0487f0       0x10 src\guid.o
+                0x000000006c0487f0                IID_IThumbnailExtractor
+ .rdata$IID_ITimeAndNoticeControl
+                0x000000006c048800       0x10 src\guid.o
+                0x000000006c048800                IID_ITimeAndNoticeControl
+ .rdata$IID_ITypeChangeEvents
+                0x000000006c048810       0x10 src\guid.o
+                0x000000006c048810                IID_ITypeChangeEvents
+ .rdata$IID_ITypeComp
+                0x000000006c048820       0x10 src\guid.o
+                0x000000006c048820                IID_ITypeComp
+ .rdata$IID_ITypeFactory
+                0x000000006c048830       0x10 src\guid.o
+                0x000000006c048830                IID_ITypeFactory
+ .rdata$IID_ITypeInfo
+                0x000000006c048840       0x10 src\guid.o
+                0x000000006c048840                IID_ITypeInfo
+ .rdata$IID_ITypeInfo2
+                0x000000006c048850       0x10 src\guid.o
+                0x000000006c048850                IID_ITypeInfo2
+ .rdata$IID_ITypeLib
+                0x000000006c048860       0x10 src\guid.o
+                0x000000006c048860                IID_ITypeLib
+ .rdata$IID_ITypeLib2
+                0x000000006c048870       0x10 src\guid.o
+                0x000000006c048870                IID_ITypeLib2
+ .rdata$IID_ITypeMarshal
+                0x000000006c048880       0x10 src\guid.o
+                0x000000006c048880                IID_ITypeMarshal
+ .rdata$IID_IUrlMon
+                0x000000006c048890       0x10 src\guid.o
+                0x000000006c048890                IID_IUrlMon
+ .rdata$IID_IViewObject
+                0x000000006c0488a0       0x10 src\guid.o
+                0x000000006c0488a0                IID_IViewObject
+ .rdata$IID_IViewObject2
+                0x000000006c0488b0       0x10 src\guid.o
+                0x000000006c0488b0                IID_IViewObject2
+ .rdata$IID_IWaitMultiple
+                0x000000006c0488c0       0x10 src\guid.o
+                0x000000006c0488c0                IID_IWaitMultiple
+ .rdata$IID_IWinInetFileStream
+                0x000000006c0488d0       0x10 src\guid.o
+                0x000000006c0488d0                IID_IWinInetFileStream
+ .rdata$IID_IWinInetHttpInfo
+                0x000000006c0488e0       0x10 src\guid.o
+                0x000000006c0488e0                IID_IWinInetHttpInfo
+ .rdata$IID_IWinInetHttpTimeouts
+                0x000000006c0488f0       0x10 src\guid.o
+                0x000000006c0488f0                IID_IWinInetHttpTimeouts
+ .rdata$IID_IWinInetInfo
+                0x000000006c048900       0x10 src\guid.o
+                0x000000006c048900                IID_IWinInetInfo
+ .rdata$IID_IWindowForBindingUI
+                0x000000006c048910       0x10 src\guid.o
+                0x000000006c048910                IID_IWindowForBindingUI
+ .rdata$IID_IWrappedProtocol
+                0x000000006c048920       0x10 src\guid.o
+                0x000000006c048920                IID_IWrappedProtocol
+ .rdata$MenuGuid
+                0x000000006c048930       0x10 src\guid.o
+                0x000000006c048930                MenuGuid
+ .rdata$NO_SUBGROUP_GUID
+                0x000000006c048940       0x10 src\guid.o
+                0x000000006c048940                NO_SUBGROUP_GUID
+ .rdata$PPM_IDLESTATES_DATA_GUID
+                0x000000006c048950       0x10 src\guid.o
+                0x000000006c048950                PPM_IDLESTATES_DATA_GUID
+ .rdata$PPM_IDLESTATE_CHANGE_GUID
+                0x000000006c048960       0x10 src\guid.o
+                0x000000006c048960                PPM_IDLESTATE_CHANGE_GUID
+ .rdata$PPM_IDLE_ACCOUNTING_EX_GUID
+                0x000000006c048970       0x10 src\guid.o
+                0x000000006c048970                PPM_IDLE_ACCOUNTING_EX_GUID
+ .rdata$PPM_IDLE_ACCOUNTING_GUID
+                0x000000006c048980       0x10 src\guid.o
+                0x000000006c048980                PPM_IDLE_ACCOUNTING_GUID
+ .rdata$PPM_PERFMON_PERFSTATE_GUID
+                0x000000006c048990       0x10 src\guid.o
+                0x000000006c048990                PPM_PERFMON_PERFSTATE_GUID
+ .rdata$PPM_PERFSTATES_DATA_GUID
+                0x000000006c0489a0       0x10 src\guid.o
+                0x000000006c0489a0                PPM_PERFSTATES_DATA_GUID
+ .rdata$PPM_PERFSTATE_CHANGE_GUID
+                0x000000006c0489b0       0x10 src\guid.o
+                0x000000006c0489b0                PPM_PERFSTATE_CHANGE_GUID
+ .rdata$PPM_PERFSTATE_DOMAIN_CHANGE_GUID
+                0x000000006c0489c0       0x10 src\guid.o
+                0x000000006c0489c0                PPM_PERFSTATE_DOMAIN_CHANGE_GUID
+ .rdata$PPM_THERMALCONSTRAINT_GUID
+                0x000000006c0489d0       0x10 src\guid.o
+                0x000000006c0489d0                PPM_THERMALCONSTRAINT_GUID
+ .rdata$PPM_THERMAL_POLICY_CHANGE_GUID
+                0x000000006c0489e0       0x10 src\guid.o
+                0x000000006c0489e0                PPM_THERMAL_POLICY_CHANGE_GUID
+ .rdata$PluginGuid
+                0x000000006c0489f0       0x10 src\guid.o
+                0x000000006c0489f0                PluginGuid
+ .rdata$_ZTV11version_dll
+                0x000000006c048a00       0x40 src\fileversion.o
+                0x000000006c048a00                vtable for version_dll
+ .rdata$_ZTV13FarGlobalInfo
+                0x000000006c048a40       0x60 src\globalinfo.o
+                0x000000006c048a40                vtable for FarGlobalInfo
+ .rdata$_ZTV9FarPlugin
+                0x000000006c048aa0       0x40 src\farplugin.o
+                0x000000006c048aa0                vtable for FarPlugin
+ .rdata$_ZTVN3Far12GlobalInfo_iE
+                0x000000006c048ae0       0x60 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+                0x000000006c048ae0                vtable for Far::GlobalInfo_i
+ .rdata$_ZTVN3Far8Plugin_iE
+                0x000000006c048b40       0x40 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+                0x000000006c048b40                vtable for Far::Plugin_i
+ .rdata$_ZTVN4Base11ref_counterE
+                0x000000006c048b80       0x40 src\farplugin.o
+                0x000000006c048b80                vtable for Base::ref_counter
+ .rdata$_ZTVN4Base14DynamicLibraryE
+                0x000000006c048bc0       0x40 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll.o)
+                0x000000006c048bc0                vtable for Base::DynamicLibrary
+ .rdata$zzz     0x000000006c048c00       0x20 src\main.o
+ .rdata$zzz     0x000000006c048c20       0x20 src\guid.o
+ .rdata$zzz     0x000000006c048c40       0x20 src\globalinfo.o
+ .rdata$zzz     0x000000006c048c60       0x20 src\fileversion.o
+ .rdata$zzz     0x000000006c048c80       0x20 src\farplugin.o
+ .rdata$zzz     0x000000006c048ca0       0x20 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .rdata$zzz     0x000000006c048cc0       0x20 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .rdata$zzz     0x000000006c048ce0       0x20 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .rdata$zzz     0x000000006c048d00       0x20 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(panel.o)
+ .rdata$zzz     0x000000006c048d20       0x20 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(viewer.o)
+ .rdata$zzz     0x000000006c048d40       0x20 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(messagebox.o)
+ .rdata$zzz     0x000000006c048d60       0x20 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(new_delete.o)
+ .rdata$zzz     0x000000006c048d80       0x20 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(atexit.o)
+ .rdata$zzz     0x000000006c048da0       0x20 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll.o)
+ .rdata$zzz     0x000000006c048dc0       0x20 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(FileMap_t.o)
+ .rdata$zzz     0x000000006c048de0       0x20 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll_shlwapi.o)
+ .rdata$zzz     0x000000006c048e00       0x20 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+                0x000000006c048e20                __rt_psrelocs_start = .
+ *(.rdata_runtime_pseudo_reloc)
+                0x000000006c048e20                __rt_psrelocs_end = .
+                0x0000000000000000                __rt_psrelocs_size = (__rt_psrelocs_end - __rt_psrelocs_start)
+                0x000000006c048e20                ___RUNTIME_PSEUDO_RELOC_LIST_END__ = .
+                0x000000006c048e20                __RUNTIME_PSEUDO_RELOC_LIST_END__ = .
+                0x000000006c048e20                ___RUNTIME_PSEUDO_RELOC_LIST__ = (. - __rt_psrelocs_size)
+                0x000000006c048e20                __RUNTIME_PSEUDO_RELOC_LIST__ = (. - __rt_psrelocs_size)
+
+.eh_frame
+ *(.eh_frame*)
+
+.pdata          0x000000006c049000      0x800
+ *(.pdata*)
+ .pdata         0x000000006c049000       0x78 src\main.o
+ .pdata         0x000000006c049078       0xa8 src\globalinfo.o
+ .pdata$_ZN11version_dllD1Ev
+                0x000000006c049120        0xc src\fileversion.o
+ .pdata         0x000000006c04912c       0x54 src\fileversion.o
+ .pdata$_ZN11version_dllD0Ev
+                0x000000006c049180        0xc src\fileversion.o
+ .pdata         0x000000006c04918c       0x6c src\farplugin.o
+ .pdata$_ZN4Base11ref_counterD1Ev
+                0x000000006c0491f8        0xc src\farplugin.o
+ .pdata$_ZNK4Base11ref_counter7destroyEv
+                0x000000006c049204        0xc src\farplugin.o
+ .pdata$_ZN4Base11ref_counterD0Ev
+                0x000000006c049210        0xc src\farplugin.o
+ .pdata         0x000000006c04921c       0x6c D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .pdata         0x000000006c049288       0x60 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .pdata         0x000000006c0492e8       0x18 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .pdata         0x000000006c049300       0xd8 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(panel.o)
+ .pdata         0x000000006c0493d8       0x18 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(viewer.o)
+ .pdata         0x000000006c0493f0       0x60 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(messagebox.o)
+ .pdata         0x000000006c049450       0x30 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(new_delete.o)
+ .pdata         0x000000006c049480       0x30 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(atexit.o)
+ .pdata         0x000000006c0494b0       0x9c D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll.o)
+ .pdata         0x000000006c04954c       0x54 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(FileMap_t.o)
+ .pdata         0x000000006c0495a0       0x78 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll_shlwapi.o)
+ .pdata         0x000000006c049618       0xc0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+
+.xdata          0x000000006c04a000      0x600
+ *(.xdata*)
+ .xdata         0x000000006c04a000       0x48 src\main.o
+ .xdata         0x000000006c04a048       0x44 src\globalinfo.o
+ .xdata$_ZN11version_dllD1Ev
+                0x000000006c04a08c        0x4 src\fileversion.o
+ .xdata         0x000000006c04a090       0x54 src\fileversion.o
+ .xdata$_ZN11version_dllD0Ev
+                0x000000006c04a0e4        0x8 src\fileversion.o
+ .xdata         0x000000006c04a0ec       0x58 src\farplugin.o
+ .xdata$_ZN4Base11ref_counterD1Ev
+                0x000000006c04a144        0x4 src\farplugin.o
+ .xdata$_ZNK4Base11ref_counter7destroyEv
+                0x000000006c04a148        0x4 src\farplugin.o
+ .xdata$_ZN4Base11ref_counterD0Ev
+                0x000000006c04a14c        0x4 src\farplugin.o
+ .xdata         0x000000006c04a150       0x34 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .xdata         0x000000006c04a184       0x24 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .xdata         0x000000006c04a1a8       0x10 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .xdata         0x000000006c04a1b8       0xa0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(panel.o)
+ .xdata         0x000000006c04a258       0x10 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(viewer.o)
+ .xdata         0x000000006c04a268       0x50 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(messagebox.o)
+ .xdata         0x000000006c04a2b8       0x20 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(new_delete.o)
+ .xdata         0x000000006c04a2d8       0x18 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(atexit.o)
+ .xdata         0x000000006c04a2f0       0x48 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll.o)
+ .xdata         0x000000006c04a338       0x2c D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(FileMap_t.o)
+ .xdata         0x000000006c04a364       0x58 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll_shlwapi.o)
+ .xdata         0x000000006c04a3bc       0xb4 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+
+.bss            0x000000006c04b000      0x200
+                0x000000006c04b000                __bss_start__ = .
+ *(.bss)
+ .bss           0x000000006c04b000        0x0 src\main.o
+ .bss           0x000000006c04b000        0x0 src\guid.o
+ .bss           0x000000006c04b000        0x0 src\globalinfo.o
+ .bss           0x000000006c04b000       0x60 src\fileversion.o
+ .bss           0x000000006c04b060       0x30 src\farplugin.o
+ .bss           0x000000006c04b090        0x0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .bss           0x000000006c04b090        0x0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .bss           0x000000006c04b090        0x0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .bss           0x000000006c04b090        0x0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(panel.o)
+ .bss           0x000000006c04b090        0x0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(viewer.o)
+ .bss           0x000000006c04b090        0x0 D:\projects\andrew-grechkin\LIB\libfar3\Release-x64-NoStr/liblibfar3.a(messagebox.o)
+ .bss           0x000000006c04b090        0x0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(new_delete.o)
+ *fill*         0x000000006c04b090       0x10 
+ .bss           0x000000006c04b0a0      0x100 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(atexit.o)
+                0x000000006c04b0a0                Base::pf_atexitlist
+ .bss           0x000000006c04b1a0        0x0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll.o)
+ .bss           0x000000006c04b1a0        0x0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(FileMap_t.o)
+ .bss           0x000000006c04b1a0       0x60 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(dll_shlwapi.o)
+ .bss           0x000000006c04b200        0x0 D:\projects\andrew-grechkin\LIB\libbase\Release-x64-NoStr/liblibbase.a(mstring.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02012.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01888.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02028.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01965.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02019.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02016.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02025.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02015.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01961.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbh.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbt.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00603.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00740.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00744.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00734.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01132.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00366.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00848.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00547.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00598.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01233.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00148.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00512.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00145.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00874.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00085.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00297.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqh.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqt.o)
+ .bss           0x000000006c04b200        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/libgcc.a(_chkstk_ms.o)
+ *(COMMON)
+                0x000000006c04b200                __bss_end__ = .
+
+.edata          0x000000006c04c000      0x200
+ *(.edata)
+ .edata         0x000000006c04c000       0xbc dll stuff
+
+/DISCARD/
+ *(.debug$S)
+ *(.debug$T)
+ *(.debug$F)
+ *(.drectve)
+ *(.note.GNU-stack)
+ *(.gnu.lto_*)
+
+.idata          0x000000006c04d000      0x400
+ SORT(*)(.idata$2)
+ .idata$2       0x000000006c04d000       0x14 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqh.o)
+                0x000000006c04d000                _head_lib64_libkernel32_a
+ .idata$2       0x000000006c04d014       0x14 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbh.o)
+                0x000000006c04d014                _head_lib64_libntdll_a
+ SORT(*)(.idata$3)
+                0x000000006c04d028        0x4 LONG 0x0
+                0x000000006c04d02c        0x4 LONG 0x0
+                0x000000006c04d030        0x4 LONG 0x0
+                0x000000006c04d034        0x4 LONG 0x0
+                0x000000006c04d038        0x4 LONG 0x0
+ SORT(*)(.idata$4)
+ .idata$4       0x000000006c04d03c        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqh.o)
+ .idata$4       0x000000006c04d03c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00085.o)
+ .idata$4       0x000000006c04d044        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00145.o)
+ .idata$4       0x000000006c04d04c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00148.o)
+ .idata$4       0x000000006c04d054        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00297.o)
+ .idata$4       0x000000006c04d05c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00366.o)
+ .idata$4       0x000000006c04d064        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00512.o)
+ .idata$4       0x000000006c04d06c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00547.o)
+ .idata$4       0x000000006c04d074        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00598.o)
+ .idata$4       0x000000006c04d07c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00603.o)
+ .idata$4       0x000000006c04d084        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00734.o)
+ .idata$4       0x000000006c04d08c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00740.o)
+ .idata$4       0x000000006c04d094        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00744.o)
+ .idata$4       0x000000006c04d09c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00848.o)
+ .idata$4       0x000000006c04d0a4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00874.o)
+ .idata$4       0x000000006c04d0ac        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01132.o)
+ .idata$4       0x000000006c04d0b4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01233.o)
+ .idata$4       0x000000006c04d0bc        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqt.o)
+ .idata$4       0x000000006c04d0c4        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbh.o)
+ .idata$4       0x000000006c04d0c4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01888.o)
+ .idata$4       0x000000006c04d0cc        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01961.o)
+ .idata$4       0x000000006c04d0d4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01965.o)
+ .idata$4       0x000000006c04d0dc        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02012.o)
+ .idata$4       0x000000006c04d0e4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02015.o)
+ .idata$4       0x000000006c04d0ec        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02016.o)
+ .idata$4       0x000000006c04d0f4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02019.o)
+ .idata$4       0x000000006c04d0fc        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02025.o)
+ .idata$4       0x000000006c04d104        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02028.o)
+ .idata$4       0x000000006c04d10c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbt.o)
+                0x000000006c04d114                __IAT_start__ = .
+ SORT(*)(.idata$5)
+ .idata$5       0x000000006c04d114        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqh.o)
+ .idata$5       0x000000006c04d114        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00085.o)
+                0x000000006c04d114                __imp_CloseHandle
+ .idata$5       0x000000006c04d11c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00145.o)
+                0x000000006c04d11c                __imp_CreateFileMappingW
+ .idata$5       0x000000006c04d124        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00148.o)
+                0x000000006c04d124                __imp_CreateFileW
+ .idata$5       0x000000006c04d12c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00297.o)
+                0x000000006c04d12c                __imp_ExpandEnvironmentStringsW
+ .idata$5       0x000000006c04d134        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00366.o)
+                0x000000006c04d134                __imp_FreeLibrary
+ .idata$5       0x000000006c04d13c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00512.o)
+                0x000000006c04d13c                __imp_GetFileSizeEx
+ .idata$5       0x000000006c04d144        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00547.o)
+                0x000000006c04d144                __imp_GetModuleFileNameW
+ .idata$5       0x000000006c04d14c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00598.o)
+                0x000000006c04d14c                __imp_GetProcAddress
+ .idata$5       0x000000006c04d154        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00603.o)
+                0x000000006c04d154                __imp_GetProcessHeap
+ .idata$5       0x000000006c04d15c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00734.o)
+                0x000000006c04d15c                __imp_HeapAlloc
+ .idata$5       0x000000006c04d164        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00740.o)
+                0x000000006c04d164                __imp_HeapFree
+ .idata$5       0x000000006c04d16c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00744.o)
+                0x000000006c04d16c                __imp_HeapReAlloc
+ .idata$5       0x000000006c04d174        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00848.o)
+                0x000000006c04d174                __imp_LoadLibraryExW
+ .idata$5       0x000000006c04d17c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00874.o)
+                0x000000006c04d17c                __imp_MapViewOfFile
+ .idata$5       0x000000006c04d184        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01132.o)
+                0x000000006c04d184                __imp_SetLastError
+ .idata$5       0x000000006c04d18c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01233.o)
+                0x000000006c04d18c                __imp_UnmapViewOfFile
+ .idata$5       0x000000006c04d194        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqt.o)
+ .idata$5       0x000000006c04d19c        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbh.o)
+ .idata$5       0x000000006c04d19c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01888.o)
+                0x000000006c04d19c                __imp__snwprintf
+ .idata$5       0x000000006c04d1a4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01961.o)
+                0x000000006c04d1a4                __imp_memcpy
+ .idata$5       0x000000006c04d1ac        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01965.o)
+                0x000000006c04d1ac                __imp_memset
+ .idata$5       0x000000006c04d1b4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02012.o)
+                0x000000006c04d1b4                __imp_wcscpy
+ .idata$5       0x000000006c04d1bc        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02015.o)
+                0x000000006c04d1bc                __imp_wcslen
+ .idata$5       0x000000006c04d1c4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02016.o)
+                0x000000006c04d1c4                __imp_wcsncat
+ .idata$5       0x000000006c04d1cc        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02019.o)
+                0x000000006c04d1cc                __imp_wcsncpy
+ .idata$5       0x000000006c04d1d4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02025.o)
+                0x000000006c04d1d4                __imp_wcsstr
+ .idata$5       0x000000006c04d1dc        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02028.o)
+                0x000000006c04d1dc                __imp_wcstoul
+ .idata$5       0x000000006c04d1e4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbt.o)
+                0x000000006c04d1ec                __IAT_end__ = .
+ SORT(*)(.idata$6)
+ .idata$6       0x000000006c04d1ec        0xe c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00085.o)
+ .idata$6       0x000000006c04d1fa       0x16 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00145.o)
+ .idata$6       0x000000006c04d210        0xe c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00148.o)
+ .idata$6       0x000000006c04d21e       0x1c c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00297.o)
+ .idata$6       0x000000006c04d23a        0xe c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00366.o)
+ .idata$6       0x000000006c04d248       0x10 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00512.o)
+ .idata$6       0x000000006c04d258       0x16 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00547.o)
+ .idata$6       0x000000006c04d26e       0x12 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00598.o)
+ .idata$6       0x000000006c04d280       0x12 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00603.o)
+ .idata$6       0x000000006c04d292        0xc c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00734.o)
+ .idata$6       0x000000006c04d29e        0xc c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00740.o)
+ .idata$6       0x000000006c04d2aa        0xe c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00744.o)
+ .idata$6       0x000000006c04d2b8       0x12 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00848.o)
+ .idata$6       0x000000006c04d2ca       0x10 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00874.o)
+ .idata$6       0x000000006c04d2da       0x10 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01132.o)
+ .idata$6       0x000000006c04d2ea       0x12 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01233.o)
+ .idata$6       0x000000006c04d2fc        0xe c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01888.o)
+ .idata$6       0x000000006c04d30a        0xa c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01961.o)
+ .idata$6       0x000000006c04d314        0xa c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01965.o)
+ .idata$6       0x000000006c04d31e        0xa c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02012.o)
+ .idata$6       0x000000006c04d328        0xa c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02015.o)
+ .idata$6       0x000000006c04d332        0xa c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02016.o)
+ .idata$6       0x000000006c04d33c        0xa c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02019.o)
+ .idata$6       0x000000006c04d346        0xa c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02025.o)
+ .idata$6       0x000000006c04d350        0xa c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02028.o)
+ SORT(*)(.idata$7)
+ *fill*         0x000000006c04d35a        0x2 
+ .idata$7       0x000000006c04d35c        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00085.o)
+ .idata$7       0x000000006c04d360        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00145.o)
+ .idata$7       0x000000006c04d364        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00148.o)
+ .idata$7       0x000000006c04d368        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00297.o)
+ .idata$7       0x000000006c04d36c        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00366.o)
+ .idata$7       0x000000006c04d370        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00512.o)
+ .idata$7       0x000000006c04d374        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00547.o)
+ .idata$7       0x000000006c04d378        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00598.o)
+ .idata$7       0x000000006c04d37c        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00603.o)
+ .idata$7       0x000000006c04d380        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00734.o)
+ .idata$7       0x000000006c04d384        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00740.o)
+ .idata$7       0x000000006c04d388        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00744.o)
+ .idata$7       0x000000006c04d38c        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00848.o)
+ .idata$7       0x000000006c04d390        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs00874.o)
+ .idata$7       0x000000006c04d394        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01132.o)
+ .idata$7       0x000000006c04d398        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqs01233.o)
+ .idata$7       0x000000006c04d39c       0x10 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dspqt.o)
+                0x000000006c04d39c                __lib64_libkernel32_a_iname
+ .idata$7       0x000000006c04d3ac        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01888.o)
+ .idata$7       0x000000006c04d3b0        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01961.o)
+ .idata$7       0x000000006c04d3b4        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs01965.o)
+ .idata$7       0x000000006c04d3b8        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02012.o)
+ .idata$7       0x000000006c04d3bc        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02015.o)
+ .idata$7       0x000000006c04d3c0        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02016.o)
+ .idata$7       0x000000006c04d3c4        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02019.o)
+ .idata$7       0x000000006c04d3c8        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02025.o)
+ .idata$7       0x000000006c04d3cc        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbs02028.o)
+ .idata$7       0x000000006c04d3d0        0xc c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a(dyubbt.o)
+                0x000000006c04d3d0                __lib64_libntdll_a_iname
+
+.CRT            0x000000006c04e000        0x0
+                0x000000006c04e000                ___crt_xc_start__ = .
+ *(SORT(.CRT$XC*))
+                0x000000006c04e000                ___crt_xc_end__ = .
+                0x000000006c04e000                ___crt_xi_start__ = .
+ *(SORT(.CRT$XI*))
+                0x000000006c04e000                ___crt_xi_end__ = .
+                0x000000006c04e000                ___crt_xl_start__ = .
+ *(SORT(.CRT$XL*))
+                0x000000006c04e000                ___crt_xp_start__ = .
+ *(SORT(.CRT$XP*))
+                0x000000006c04e000                ___crt_xp_end__ = .
+                0x000000006c04e000                ___crt_xt_start__ = .
+ *(SORT(.CRT$XT*))
+                0x000000006c04e000                ___crt_xt_end__ = .
+
+.tls            0x000000006c04e000        0x0
+                0x000000006c04e000                ___tls_start__ = .
+ *(.tls)
+ *(.tls$)
+ *(SORT(.tls$*))
+                0x000000006c04e000                ___tls_end__ = .
+
+.endjunk        0x000000006c04e000        0x0
+                0x000000006c04e000                PROVIDE (end, .)
+                0x000000006c04e000                PROVIDE (_end, .)
+                0x000000006c04e000                __end__ = .
+
+.rsrc           0x000000006c04e000      0x400
+ *(.rsrc)
+ .rsrc          0x000000006c04e000      0x2dc src\main.res
+ *(SORT(.rsrc$*))
+
+.reloc          0x000000006c04f000      0x200
+ *(.reloc)
+ .reloc         0x000000006c04f000       0xc8 dll stuff
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame*)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_types
+ *(.debug_types .gnu.linkonce.wt.*)
+OUTPUT(filever-x64.dll pei-x86-64)
+LOAD dll stuff

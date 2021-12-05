@@ -1,0 +1,73 @@
+--!SYSTEM: SysKey value revealing
+
+local EHDR = "SysKey value revealing"
+local GUID, hInstA, hInstP, sTmpFile, sArg1, sArg2 = ... 
+
+-- Get the plugin's handle
+local hInst = hInstA  or hInstP  or  unpack({nil, far.Message("No HIVER instance found", EHDR.." ERROR")})
+if  not hInst then return end
+
+-- Duplicate currently open HIVE handle
+local hHive = Plugin.SyncCall (GUID, hInst, "DupHandle")  or
+              unpack({nil, far.Message("HIVER DupHandle not successfull", EHDR.." ERROR")})
+if  not hHive then return end
+
+-- Include libhive.lua (concatenate its relative path to the dirname of the currently running script)
+local libHive   = dofile (debug.getinfo(1).source:match("@(.*\\)[^\\]*$").."Libs\\libhive.lua")
+
+-- Include libsystem.lua (concatenate its relative path to the dirname of the currently running script)
+local libSystem = dofile (debug.getinfo(1).source:match("@(.*\\)[^\\]*$").."Libs\\libsystem.lua")
+
+-- Check the HIVE type
+if  libHive.HiveType(GUID, hHive) ~= "SYSTEM"  then
+    far.Message ("This is not a SYSTEM hive!", EHDR.." ERROR")
+    Plugin.SyncCall (GUID, hHive, "CloseHandle")
+    return
+end
+
+-- Open the output file
+local hTmp  = assert(io.open(sTmpFile, "a+"))
+if  not hTmp  then return far.Message("Error opening TmpFile", EHDR.." ERROR") end
+hTmp:write [[
+;;;;====================================================================
+;;;;                   SysKey value Calculation
+;;;;    (see: http://moyix.blogspot.ru/2008/02/syskey-and-sam.html)
+;;;;====================================================================
+]]
+
+local sLsaRoot = "/TreeView/" .. libSystem.CurrentControlSet(GUID, hHive) .. "/Control/Lsa/"
+local tKeys    = {"JD", "Skew1", "GBG", "Data"}
+local sUnord   = ""
+
+-- Check for SYSKEY presence
+local nSecBoot = libHive.GetValue(GUID, hHive, sLsaRoot.."SecureBoot")
+if  nSecBoot ~= 1  then
+    hTmp:write (string.format("\n%s value is %08x - SYSKEY is not stored in this HIVE.\n", sLsaRoot.."SecureBoot", nSecBoot ))
+
+else
+
+    -- Extract unordered SYSKEY bytes
+    for i,v in ipairs(tKeys) do
+        local sClass = libHive.GetClass(GUID, hHive, sLsaRoot..tKeys[i])
+        sUnord       = sUnord .. sClass
+        hTmp:write (string.format("%s: Class = %s\n", sLsaRoot..tKeys[i], sClass ))
+    end
+
+    -- Reorder  sUnord string to obtain the SYSKEY
+    local sSysKey  = ""
+    local tOrder   = { 0x8, 0x5, 0x4, 0x2, 0xb, 0x9, 0xd, 0x3, 0x0, 0x6, 0x1, 0xc, 0xe, 0xa, 0xf, 0x7 }
+
+    for i,v in ipairs(tOrder) do
+        sSysKey = sSysKey .. sUnord:sub(tOrder[i]*2 + 1, tOrder[i]*2 + 2)
+    end
+
+    hTmp:write (string.format("\nCalculated SysKey: %s\n", sSysKey ))
+
+end
+
+-- Close the TMP-file
+hTmp:close()
+
+-- Close the copy of the HIVE handle
+Plugin.SyncCall (GUID, hHive, "CloseHandle")
+return true

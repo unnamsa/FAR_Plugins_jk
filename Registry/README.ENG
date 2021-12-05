@@ -1,0 +1,90 @@
+
+           Registry Browser - Registry Viewer and Editor for FAR
+           =====================================================
+
+DISTRIBUTION: FREEWARE, under the condition that this product and this
+text are left unchanged.
+
+DISCLAIMER: The author is not responsible for any consequences of using of
+this product, though in testing he didn't find anything terrible in it :)
+
+-------------------------------------------------------------------------------
+WARNING: Always back up your registry, especially before experimenting with it!
+-------------------------------------------------------------------------------
+
+Brief Description
+-----------------
+
+This FAR plugin allows you to do with registry keys and values exactly the
+same things as with directories and files, that is, view, edit, copy,
+create keys and values and change their properties. Keys are viewed/edited
+in the standard .REG format. You can also open and browse the .REG files
+and registry hives.
+
+There are a LOT of useful features in the plugin; see the Help for the
+complete description.
+
+The keyboard shortcuts introduced in this plugin are: Shift-F1, Shift-F2,
+Shift-F7, Ctrl-F, Ctrl-G, Ctrl-N, Ctrl-A, Ctrl-J, Alt-Shift-F3, Alt-Shift-F4.
+Also, three panel modes are overridden: 6, 7, and 3.
+
+You can also open the plugin if you type in the command line the
+prefix reg: followed by the path to the key you want to see, or by the .reg
+or hive filename you want to open and optional registry path in it.
+
+
+Installation and running
+------------------------
+
+Copy registry.dll, *.lng and *.hlf to a subdirectory under Plugins.
+Restart FAR, and a new item, Registry Browser, will appear in the Plugins
+menu (F11). Select it, and you will get to the root keys of the registry.
+Or, if you press Enter or Ctrl-PgDn on the .reg file or binary hive, you
+go inside it.
+
+
+Basic advantages over regedit.exe
+---------------------------------
+
+1. You can edit keys as text files with the FAR built-in editor or with any other
+   text editor (using file associations) with automatic export and import.
+
+2. Enjoy full FAR integration: copy keys to the other panel of any type, sorting,
+   Quick View, shortcuts etc. For example, you can sort keys by their creation
+   date, or by default values.
+   You can open several keys in editor simultaneously and perform a global replace,
+   even with regular expressions (using other FAR plugins).
+
+3. Directly jump to a key by its path pasted from clipboard (using command "cd"),
+   quick jump to predefined keys using FAR user menu or keyboard macros.
+
+4. Default values for all keys are displayed simultaneously.
+   Numerical values are displayed in readable format.
+
+5. Auto refresh, binary export, displaying owners of keys.
+
+6. You can easily change the value's type.
+
+7. You can export keys from a remote computer to .reg file.
+
+8. Long import/export operations can be stopped by the Esc key.
+
+9. Operating with .reg files and hives in the same way as with the system
+    registry.
+
+
+See the Help for complete description of all the features.
+
+
+The plugin works more correctly than native Regedit from 2000/XP/....
+Try to do the following with Regedit: export a key with a string value
+containing "carriage return/new line", then delete this value,
+and import the key back. You'll lose the value! Then do the same
+with this plugin with "Use Regedit" turned off...
+
+
+-----------------------------------------------------------------
+Michael Yutsis
+Ramat Gan, Israel
+http://michael-y.org/FAR
+yutsis@gmail.com

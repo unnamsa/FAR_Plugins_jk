@@ -1,0 +1,38 @@
+﻿.Language=Polish,Polish (Polski)
+.PluginContents=MsiUpdate
+
+@Contents
+$^#MsiUpdate 1.4.6#
+
+    Wtyczka informuje o nowych wersja Far Manager i pozwala na automatyczną aktualizację, korzystając z instalatowa MSI.
+    ~Aktualizacje (link do forum)~@https://forum.farmanager.com/viewtopic.php?t=4843@
+    ~Dyskusja (link do forum)~@https://forum.farmanager.com/viewtopic.php?t=4844@
+
+@config
+$^#MsiUpdate 1.4.6#
+$ #Konfiguracja#
+
+    #Użyj pełnej wersji instalatora# - pełny instalator graficzny pozwala przejrzeć i wybrać komponenty FAR.
+    #Aktualizuj stabilne wersje# - podczas aktualizacji sprawdzane są tylko stabilne wersje.
+    #Zapisz dziennik instalacji# - save installation log file (MsiUpdate_3_x86/x64.log) into system temporary directory.
+    #Pokaż dziennik zmain podczas aktualizacji# - show changelog in a separate window when update is started.
+    #Parametry dodatkowe# - parametry przekazywane do instalatora, oddzielane spacjami. Przykłady:
+    LAUNCHAPP=1 - uruchom FAR po zakończeniu instalacji.
+    MSIFASTINSTALL=1 - podczas instalacji nie twórz systemowego punktu przywracania (Windows 7 i nowsze).
+    #Pobieraj instalator na dysk# - pakiet instalacyjne będzie najpierw zapisany na dysku lokalnym, a dopiero potem uruchomiony.
+    #Maks. liczba instalatorów# - maksymalna liczna instalatorów pobranych na dysk. Po przekroczeniu tej wartości, stare pakiety zostaną usunięte.
+    #Folder pobierania# - ścieżka do folderu, gdzie będą zapisane instalatory. Może zawierać zmienne systemowe. Przykład: %FARHOME%\instalatormsi
+
+@update
+$^#MsiUpdate 1.4.6#
+$ #Okno aktualizacji#
+
+    To okno jest widoczne, gdy dostępna jest nowa wersja.
+
+Przycisk #Pokaż zmiany# pokazuje zmiany pomiędzy aktualną i nową wersją programu.
+
+Przycisk #Tak# rozpoczyna aktualizację. Wtyczka próbuje zamknąć program FAR, gdy aktualizacja jest uruchomiona.
+
+Przycisk #Nie# anuluje aktualizację. Okno informacji nie będzie się pokazywać dla tej wersji programu.
+
+Przycisk #Anuluj# zamyka okno dialogowe.

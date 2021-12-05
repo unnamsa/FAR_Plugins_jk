@@ -1,0 +1,188 @@
+Version 4.0.1
+-------------
+
+1. Refined help (.hlf) and language (.lng) files.
+
+2. Removed titles of unused functional keys from the KeyBar panel.
+
+
+
+Version 4.0.0
+-------------
+
+1. Supported parsing for PIDL extensions:  0xbeef0005, 0xbeef0008, 0xbeef0009, 
+   0xbeef000C, 0xbeef000D, 0xbeef000E, 0xbeef0016, 0xbeef0021, 0xbeef0022, 0xbeef0023
+   (as a result of shell32.dll decompilation ;-)
+
+2. Enhanced parsing algorithm for PIDL extensions:  0xbeef0000, 0xbeef0001, 
+   0xbeef0002, 0xbeef001A, 0xbeef001B, 0xbeef001D, 0xbeef0010.
+
+3. Parsing of IDListItem for CscFile (PIDL type 0x4444), WebDAV (PIDL type 0x4C) 
+   and SyncCenter (PIDL type 0x5344) is now supported.
+
+4. Parsing of IDListItem for ftp-Folder and  zip-Compressed Folder is now supported.
+   NOTE: these two are a real headache because msieftp.dll nor zipfldr.dll do not even 
+         initialize PIDL type field, so it contains arbitrary junk bytes!!! :-((
+
+5. Bug fixed in the parsing algorithm for <VECTOR OF LPWSTR> property typed value.
+
+6. Subdirectory .\samples contains the most interesting (from the internal structure 
+   point of view) examples of lnk-files - a rather nice testing suite for a lnk-parser ;-)
+
+
+
+Version 3.5.1
+-------------
+
+1. Parsing of IDListItem for a few rare PIDL type (0x4D, 0x4E, 0x61, 0xFF) is supported.
+
+2. Enhanced parsing algorithm for PIDL extension  0xbeef0001.
+
+3. Supported parsing for PIDL extension 0xbeef0002.
+
+3. Enhanced execution algorithm for "parse PCache" command.
+
+
+Version 3.5.0
+-------------
+
+1. The plugin's interface with LUA-code is fully reworked.
+   Now, all lnk: console commands are available thru Plugin.SyncCall() also.
+   Unfortunately, this leads to incompatibility with previous versions of the plugin.
+   Modifications in LUA-code designed for a previous version of the plugin are
+   trivial, though: it is necessary just to add the string "extract " before the
+   LNK-file name in the second argument of the Plugin.SyncCall().
+
+2. The new "parse" command (available from LUA-code only) allows to parse contents
+   of a LUA variable (see the plugin's help for details).
+
+3. The new "ver" command retuns the plugin's version to a LUA-program.
+
+4. A few minor enhancements.
+
+
+Version 3.4.1
+-------------
+
+1. Now, 32-bit version of the plugin does not depend on libgcc_s_sjlj-1.dll
+
+
+Version 3.4.0
+-------------
+
+1. Now, the F3 key pressed on a virtual file/folder on the plugin's panel shows the corresponding
+   element of the exploring LNK-file in the raw HEX-format (the internal HEX-viewer is based on
+   the HEXITOR plugin's engine). 
+   In the HEX-viewer's window the F6 key switches the display of the formatted data under cursor.
+   In the codepage changing process (F8 key) the codepage 1200 (UNICODE) is switched on twice - with the
+   even and odd offset of unicode symbols from the beginning of the displayed LNK-file fragment.
+
+2. Contents of the PortableDevice.h header file is added to the plugin's internal GUIDs database.
+   So, the majority of WPD-related property keys are now displayed with its mnemonic names. 
+
+
+
+Version 3.3.0
+--------------
+
+1. Now, the lnk:create command, when invoked without <folder name> parameter, creates LNK-file in the folder
+   currently displayed on the ACTIVE panel if the PASSIVE panel is invisible or is not a regular file panel.
+
+2. Now, the lnk:create command generates the "Command Args" data field in the output LNK-file (see the plugin's help).
+
+3. Now, the lnk:follow command displays the target file on the ACTIVE panel if the PASSIVE panel is invisible.
+
+4. Default path to the "Favorite Links" folder in the configuration dialog is changed to %FARLOCALPROFILE%\..\FavLinks.
+
+5. A new command option "Create shortcuts with full target path" added to the configuration dialog.
+   When this option is OFF, the lnk:create command does not include the full target-file path in the name of the
+   created LNK-file. In such a case it generates the LNK-file name based on the target filename only.
+   The default value for this option is ON.
+
+
+
+ 
+Version 3.2.0
+-------------
+
+1. Now, it is allowed to not to specify <out-file> argument for lnk:cat plugin's command.
+   In such a case the plugin will export the LNK-file data into a temporary file and will open it
+   in the internal FAR's Viewer.
+   If <LNK-file> argument would not specified also, the plugin would export and show contents of
+   the current file of the ACTIVE panel.
+
+2. Now, all the data fields containing TIME information are showed with the maximum precision (100-ns).
+
+3. Now, the plugin's item in the plugins menu shows the command the plugin would execute if
+   it would invoked from the plugins menu.
+
+
+
+Version 3.1.1
+-------------
+
+1. Bug fixed in lnk:create command implementation when the command invoked from plugins menu
+   or with "*" as the first argument and the ACTIVE far panel is set to a root folder of a drive.
+
+
+
+Version 3.1.0
+-------------
+
+1. Now, "*" is allowed as the first argument of the lnk:cat command.
+   This form of the command allows to export at once a set of LNK-files selected on the ACTIVE panel
+   into a csv-file, which then could be imported into MS Excel or any other SpreadSheet for analysis.
+
+2. Thanks to http://www.symantec.com/connect/articles/working-darwin-descriptors the plugin now parses
+   the internal structure of Darwin Descriptors in the corresponding block of the ExtraData section of a LNK-file
+   as well as in a 0xbeef000b PIDL extension.
+
+3. The new lnk:pcache command allows to export the contents of the
+   HKCU\SoftWare\Microsoft\Windows\CurrentVersion\Explorer\StartPage\ProgramsCache
+   registry key into a set of LNK-files (see the plugin's help).
+
+
+ 
+Version 3.0.0
+-------------
+
+1. The new lnk:follow command allows quick jumping to the target of an LNK-file.
+   This command could be assigned to, say <Ctrl-PgDn> key (thru the configuration dialog).
+   In such a configuration you could do "jump to the target" operation in one click.
+
+2. The new lnk:create allows to create LNK-files.
+   By default the command creates shortcuts to the selected files on the ACTIVE panel
+   and places these to the current directory of the PASSIVE panel.
+   This command could be assigned to <F11> (launch from plugins menu) key.
+
+   NOTE:
+   This command allows to create shortcuts to shortcuts 
+   (which is not possible to do with the usual means thru the MS Shell interface).
+   When such an indirect shortcut is handled by the MS Shell, the target of the 
+   last shortcut in the chain is opened.
+   PLEASE, BE CAREFULL - DO NOT CREATE CYCLIC SHORTCUT CHAINS.
+
+3. Now, the plugin could be launched from the Disk Menu.
+   Such an invocation opens "Favorite Links" folder (the name of this folder is configurable).
+   The same directory could be opened with the new lnk:fav command.
+   The "Favorite Links" folder in combination with lnk:follow assigned to <Ctrl-PgDn> key
+   would allow to quickly jump to the preferred directories and files.
+
+   One could create favorite links with the lnk:create command when the "Favorite Links" folder
+   is opened on the PASSIVE panel, but it would more comfortable to do it
+   with the new lnk:addfav command.
+   This command is fully equivalent to lnk:create, but places the resulting shortcut
+   to the "Favorite Links" folder.
+   The lnk:addfav could be assinged to the launch from plugins menu key also.
+
+4. Now, the lnk:bagmru command can take a <hive-file> parameter and export data
+   from a standalone registry hive-file.
+   In such a case the hive-file is opened in read only mode and is handled manually,
+   so administrative privileges to the hive access are not needed.
+
+5. To support the new features the plugin's configuration dialog was changed.
+
+   Please, read the plugin's help to get the full description of the new features.
+
+
+

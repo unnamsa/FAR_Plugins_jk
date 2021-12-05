@@ -1,0 +1,214 @@
+ ______________________________________________________________________________
+|                                                                              |
+|   Named Folders Lite v1.11          (c) 2014+ Pepak, https://www.pepak.net   |
+|______________________________________________________________________________|
+
+
+  [!] Major change
+  [+] Feature added
+  [-] Bug fixed
+  [*] Minor change
+
+_______________________________________________________________________________
+
+v1.11
+
+  [+] Added support for opening the plugin's panel from the plugins menu
+      (F11).
+
+  [-] Fixed incorrect drawing of the plugin's dialogs in FAR versions 5788
+      and newer.
+
+  [*] Support building with Delphi 10.4 Sydney.
+
+  [*] Cleaned up the source code.
+
+_______________________________________________________________________________
+
+v1.10
+
+  [!] Rewritten the plugin to the new framework for FAR plugins. This will
+      enable far easier maintenance in the future.
+
+  [*] In the panel, changed the hotkey for opening of a named folder in the
+      inactive panel from ALT+ENTER to SHIFT+ENTER. The latter combination
+      works in FAR2, too.
+
+  [*] Minor fixes for compatibility with Delphi 10.1 and newer.
+
+  [-] Fixed incorrect displaying of the confirmation dialogs.
+
+_______________________________________________________________________________
+
+v1.04
+
+  [+] Support for "cd:-": Every time a current folder is changed using this
+      plugin (i.e. by "cd:xxx" or by pressing ENTER in the plugin's panel),
+      the previous location gets saved to a memory variable. "cd:-" will then
+      return to this saved location. The save is done even with "cd:-" itself,
+      meaning that by repeating "cd:-", it is possible to switch back and
+      forth between two locations.
+
+  [+] Support for exporting and importing whole directories of bookmarks.
+      When exporting a directory, a directory tree containing a set of XML
+      files for each individual non-directory bookmark will be created.
+      When importing a directory, all subdirectories will be scanned for
+      XML files in the right format, and any found will be imported to the
+      right bookmark directory.
+
+  [-] Named Folders could not open a bookmark to itself, e.g. by opening
+      a Named Folders panel, navigating to a directory, saving the location
+      with "cd::nf", switching to "C:\" and then performing "cd:nf".
+
+      Note that the same problem still applies to some third-party plugins,
+      e.g. NetBox, because the cause lies primarily in the destination 
+      plugin (or possibly FAR Manager itself).
+
+  [-] If a bookmark "x" existed when using "cd::x" command, it would get
+      completely replaced with new data. Now the Description will be copied
+      to the new bookmark.
+
+_______________________________________________________________________________
+
+v1.03
+
+  [+] Support for directly entering a subdirectory of a named folder with
+      "cd:a/b\c\d". Here "a/b" is the name of the named folder and "\c\d" is
+      a subdirectory to go to, determined as everything starting from the
+      first backslash ("\"). E.g., assume that "a/b" points to "C:\WINDOWS".
+      Then "cd:a/b\system32" opens "C:\WINDOWS\System32".
+      This feature is disabled by default. If you want to use it, go to the
+      plugin's options and activate the "Allow path suffix" option.
+
+  [+] Support for paths starting with "\\", such as "\\server\share" or
+      "\\.\pipe". For some reason, FAR will happily accept these paths on
+      command line with a "CD \\path" command, but refuses to set panel
+      directory to them - so I had to write an ugly hack which simulates a
+      macro. For this reason, the support is rather shaky and requires that
+      the command line be empty.
+
+  [+] Optional support for plugin-based directories. Generally, with plugins
+      you want to use the already existing functionality of linking directly
+      to the plugin's panel (using Plugin ID, parameter and host file), but
+      in some cases it may be better to use a plugin-starting command line.
+      In that case, you can create a named folder without a link to plugin
+      and provide a command line for directory: "edit:<for /?". This allows
+      you to create shortcuts to non-panel functionality of a plugin.
+      This feature is disabled by default. If you want to use it, go to the
+      plugin's options and activate the "Allow plugin calls" option.
+      Be wary of creating loops as these are not being detected and will
+      eventually crash FAR Manager.
+
+  [+] Enhanced the Plugin.Call("...", "OPEN") function to allow jumping to
+      a specified named folder.  Simply add the named folder to the end
+      of the path. Example: Plugin.Call("...", "OPEN", "sys/win"), where
+      "sys" is a directory of named folders and "win" is a named folder.
+
+  [+] Fuzzy search for a named folder ("cd:a" where you have no "a" named
+      folder, but perhaps have "a123") is now optional and can be set in
+      plugin's options. Default value is enabled, consistent with plugin's
+      behavior so far.
+
+  [+] Search for a named folder can now ignore directories. That is, "cd:a"
+      will now also find "b\a" or even "b\a123" (with the standard fuzzy
+      search). This feature is disabled by default but can be enabled in the
+      options.
+
+  [+] Added Ukrainian translation.
+
+  [+] Added a selection of samples (by q726xan5on) which demonstrates the
+      use of some of the more advanced features of Named Folders Lite,
+      particularly this version's support for plugin-based directories.
+
+  [+] Added English help file.
+
+  [-] When editing an item from the panel without changing its name, the item
+      got deleted.
+
+  [-] Fixed a bug where creating a new named folder from the panel and
+      giving it an already-existing name could lead to the old value being
+      overwritten regardless of the answer to the confirmation dialog (more
+      specifically, answering "No" would overwrite the value and then reopen
+      the new/edit dialog).
+
+_______________________________________________________________________________
+
+v1.02
+
+  [ ] FAR Forum user q726xan5on provided a number of ideas (and example
+      code) for enhancing Named Folders Lite. Thanks!
+
+  [+] Added Russian translation.
+
+  [+] Command "cd:" opens the plugin's panel.
+
+  [+] Support for remembering the last used directory in the plugin's panel.
+      Note that this feature is turned off by default; if you want to use it,
+      enable it in Plugin Options.
+
+  [+] Support for using "variables" within directory-based named folders.
+      The support is disabled by default, but can be enabled in Plugin
+      Options globally and then for each kind of variable separately:
+
+      - Known folders:   "$(DIR:STARTMENU)", "$(CSIDL_STARTMENU)"
+        - Known Windows folders, as per Microsoft CSIDL constants:
+          https://msdn.microsoft.com/en-us/library/windows/desktop/bb762494(v=vs.85).aspx
+      - Environment:     "$(ENV:USERPROFILE)", "$(ENV:TEMP)"
+        - Environment variables of the current process.
+      - CMD environment: "%USERPROFILE%", "%TEMP%"
+        - Same as above, but with a different syntax (like in CMD.EXE).
+      - Registry:        "$(REG:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\SomeApp)"
+        - The last element is the name of the value to be used.
+        - Note: Only string values are supported.
+
+      You need to enter these variables by hand in a named folder's definition.
+      There is no support for determining a variable name from the directory.
+
+  [+] Support for Plugin.Call functionality of FAR's macro language. Read the
+      details in the documentation.
+
+  [-] Fixed an endless loop in case the users attempts to jump to a directory
+      which doesn't have any existing component (e.g. target is "D:\A\B" but
+      there is no "D:" drive present).
+
+  [-] When creating new named folders from command line using "cd::name",
+      create all intermediate directories. Before, "cd::a\b" correctly created
+      a named folder, but unless directory "a" was created manually from the
+      panels, "a\b" would not be visible (though you could still use it with
+      "cd:a\b").
+
+  [-] Fixed overflowing edit in the Make Directory dialog.
+
+  [*] Support for building Named Folders Lite with Delphi 10.1 Berlin.
+
+_______________________________________________________________________________
+
+v1.01
+
+  [!] When attempting to jump to a stored directory (cd:x), if that directory
+      does not exist, you are offered to jump to the nearest existing parent
+      directory instead.
+
+  [!] Support for subdirectories in the names: You can now use names such as
+      "a\b\c" (or "a/b/c") to better organize your bookmarks, though it is
+      only really usable in the panels.
+
+_______________________________________________________________________________
+
+v1.00
+
+  [!] The plugin is now published on FAR PlugRing.
+
+_______________________________________________________________________________
+
+v0.02
+
+  [-] The plugin no longer appears when F11 is pressed in a dialog.
+
+_______________________________________________________________________________
+
+v0.01
+
+  [!] Initial release. Currently a very tiny subset of the original Named
+      Folder's functionality is supported.
+

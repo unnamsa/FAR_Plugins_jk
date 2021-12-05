@@ -1,0 +1,67 @@
+--!RE:/\\TreeView\\SAM\\([^\\]+\\)*C$/
+
+local EHDR = "SAM Group Descriptor Explorer"
+local GUID, hInstA, hInstP, sTmpFile, sArg1, xArg2 = ... 
+
+-- Include libsam.lua
+local libSAM = dofile (debug.getinfo(1).source:match("@(.*\\)[^\\]*$").."..\\Libs\\libsam.lua")
+
+-- Get plugin handle
+local hInst = hInstA  or hInstP  or  unpack({nil, far.Message("No HIVER instance found", EHDR.." ERROR")})
+if  not hInst then return end
+
+-- Duplicate currently open HIVE handle
+local hHive = Plugin.SyncCall (GUID, hInst, "DupHandle")  or
+              unpack({nil, far.Message("HIVER DupHandle not successfull", EHDR.." ERROR")})
+if  not hHive then return end
+
+-- The type of the value MUST be binary
+if  not(type(xArg2) =="table")  or  not(type(xArg2[1]) == "string")  then
+    return far.Message("Invalid argument2 type\n"..type(xArg2), EHDR.." ERROR")
+end
+
+-- Parse the registry value
+local Parsed = libSAM.Parse_C( xArg2[1] )
+if  not Parsed  then
+    return far.Message("Unsuccessfull Group Descriptor parsing...", EHDR.." ERROR")
+end
+
+-- Parse the Security Descrptor structure
+local Names,Values,Descs,Offsets,Lengths,Depths = Plugin.SyncCall (GUID, hHive, "parse SecDesc", Parsed.SD)
+if  not Names  then
+    return far.Message("Unsuccessfull Security Descrptor parsing...", EHDR.." ERROR")
+end
+
+-- Open the output file
+local hTmp  = assert(io.open(sTmpFile, "a+"))
+if    hTmp    then
+
+    -- Output the Security Descriptor structure        
+    for i,_ in ipairs(Names) do
+        hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %s\n", 
+                                  sArg1, Offsets[i]+Parsed.nOffsSD, Lengths[i], Depths[i], Names[i], Descs[i]))
+    end
+
+    -- There is no GroupName nor MembersList for 0x00010007 format (actually, only /TreeView/SAM/C value is known to have such a format)
+    if  not(Parsed.nFormat == 0)  then
+        hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %s\n", 
+                                  sArg1, Parsed.nOffsName, Parsed.nLenName, 0, "GroupName", Parsed.sGroupName))
+        hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %s\n", 
+                                  sArg1, Parsed.nOffsComm, Parsed.nLenComm, 0, "Comment",   Parsed.sGroupComm))
+        hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %s%d\n", 
+                                  sArg1, Parsed.nOffsList, Parsed.nLenList, 0, "Members List", "Members: ", Parsed.nMembers))
+
+        for i = 1, Parsed.nMembers do
+            hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %s\n", 
+                                      sArg1, Parsed.Members[i].nMemOffs, Parsed.Members[i].nMemLen, 1, i.."."..Parsed.Members[i].sMemType, Parsed.Members[i].sMemID))
+        end
+    end
+
+    -- Close the TMP-file
+    hTmp:close()
+else
+    return far.Message("Error opening TmpFile", EHDR.." ERROR")
+end
+
+-- return true if the parsing was successfull
+return  (type(Names) == "table")

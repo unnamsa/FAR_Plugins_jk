@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renewal>
+	<plugin guid="{05708D26-79EC-407D-BC61-F6A48A3EF004}">
+		<home arch="any">http://michael-y.org/FAR/</home>
+		<url arch="any">http://michael-y.org/FAR/</url>
+		<regex arch="x86">farreg(\d)(\d\d)W3\.zip</regex>
+		<regex arch="x64">farreg(\d)(\d\d)W3x64\.zip</regex>
+		<srcpath arch="any">Registry</srcpath>
+		<postinstall arch="any">del /F /Q whatsnew.txt</postinstall>
+	</plugin>
+</renewal>

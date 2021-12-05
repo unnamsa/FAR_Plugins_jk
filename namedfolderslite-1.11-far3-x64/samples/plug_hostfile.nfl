@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<named_folders_lite>
+  <item>
+    <name>demo-plug-hostfile</name>
+    <description>sample: folder in archive</description>
+    <directory>\Source</directory>
+    <plugin>{65642111-AA69-4B84-B4B8-9249579EC4FA}</plugin>
+    <hostfile>C:\temp\nfl.zip</hostfile>
+  </item>
+</named_folders_lite>

@@ -1,0 +1,33 @@
+--!Registry's ProgramCache key parsing
+
+local GUID, hInstA, hInstP, sTmpFile, sArg1, sArg2 = ...
+local msg 
+
+-- Gets LnkView plugin version
+local LnkGUID    = "53415453-E31E-4D4C-8FE5-D6B0C6853E7C"
+local LnkViewVer = Plugin.SyncCall (LnkGUID, "ver")
+if  LnkViewVer < 350  then
+    far.Message ("Min LnkView Version required: 350", "pcache Artifact error")
+    return
+end
+
+-- Gets plugin handle
+local hInst = hInstA  or hInstP  or  unpack({nil, far.Message("No hiver instance found")})
+if not hInst then return  end
+
+-- Duplicate currently open HIVE handle
+local hHive = Plugin.SyncCall (GUID, hInst, "DupHandle")  or  unpack({nil, far.Message("DupHandle not successfull")})
+if not hHive then return  end
+
+-- Get the HIVE FileName
+local sHive = Plugin.SyncCall (GUID, hHive, "HiveName")  or  unpack({nil, far.Message("HiveName not successfull")})
+if not sHive then return  end
+
+-- Invoke LnkView plugin
+local sOutDir = sArg1
+Plugin.SyncCall (LnkGUID, "pcache \"" .. sOutDir .. "\" " .. sHive .. "\" ")
+
+
+-- Close the copy of the HIVE handle
+Plugin.SyncCall (GUID, hHive, "CloseHandle")
+return

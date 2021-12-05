@@ -1,0 +1,82 @@
+.Language=English, English
+.PluginContents=Anamorphosis
+
+.Options TabSize=4
+
+@Contents
+$^#Anamorphosis 1.0#
+$^#(C) Copyright 2004 [WARP ItSelf]#
+$
+$^#Contents#
+
+	~Brief description~@main.Description@
+
+	~Plugin configuration~@main.Configuration@
+
+	~Author and other involved ones~@main.Credits@
+
+@main.Description
+$^#Anamorphosis 1.0#
+$^#(C) Copyright 2004 [WARP ItSelf]#
+$
+$^#Brief description#
+
+	Anamorphosis plugin was created as a replacement of Far Manager standard quick view
+functionality. Such standard functionality allows user to see only file contents, but
+usually it doesn't give a user any useful information. This plugin (and it's sub-plugins)
+gives user an ability to customize quick view panel contents.
+
+@main.Configuration
+$^#Anamorphosis 1.0#
+$^#(C) Copyright 2004 [WARP ItSelf]#
+$
+$^#Plugin configuration#
+
+ #Enable transformation#
+
+	This switch toggles Anamorphosis on/off.
+
+  #Morph files opened for writting#
+
+	Plugin will process files opened for writting by other programs.
+
+ #Work mode#
+ 
+	Anamorphosis can work in two work modes. Depending on it, it can load on Far Manager startup
+or "on demand".
+
+   #PF_PRELOAD mode# - in this mode plugin will be loaded at Far Manager startup 
+and quick view will be intercepted immediately. All previously opened
+quick view panels will show information from Anamorphosis. If user wants to
+remove/modify plugin in this mode, he/she has to exit Far Manager first.
+
+   #Macro mode# - in this mode plugin will be loaded then user selects
+plugin menu item in plugins menu. If user wants this mode to be similar to
+PF_PRELOAD mode, he has to use a macro on Ctrl-Q combination. In that mode
+user can remove plugin directly from Far Manager, but only if it was not
+started before.
+		
+@main.Credits
+$^#Anamorphosis 1.0#
+$^#(C) Copyright 2004 [WARP ItSelf]#
+$
+$^#Author and other involved ones#
+
+ #(C) Copyright 2003-2004 [WARP ItSelf].# 
+	
+ And the author is... yea, it's me, #WARP ItSelf#. 
+
+ I want to thank:
+
+  #Jouri Mamaev#		- for testing and ideas.
+
+  #Sergey Dindikov#	- for testing and macroses.
+
+  #George Shuklin#		- for testing and original idea.
+
+  #Valentin Skirdin#	- for fixing Far bugs, it will be hard to
+						do plugins without it.
+
+ All bugs, wishes and blames are to be written here: ~WARP_ItSelf@@mail.ru~@mailto:WARP_ItSelf@@mail.ru@
+
+	                         #I'm WARPing Your Mind! [WARP ItSelf]#

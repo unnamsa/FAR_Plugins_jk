@@ -1,0 +1,120 @@
+﻿.Language=Ukrainian,Ukrainian (Українська)
+// Version: 2016.0929.2217
+
+// Plugin name
+"Named Folders Lite"
+
+// Buttons
+"&OK"
+//"&Так"
+"&Cancel"
+//"&Відміна"
+"&Yes"
+//"&Так"
+"&No"
+//"&Ні"
+
+// Error message with exception class
+"Збій %s:"
+
+// Error message: cd:x where x is not defined
+"Запитуване ім'я папки не визначене."
+
+// Error message: cd:x where x is defined but its folder does not exist
+"Папку призначення не знайдено."
+
+// Confirmation: cd::x where x was already defined
+"Визначення вже існує"
+"Ви хочете переписати це визначення?"
+
+// Error message: name of the named folder is empty
+"Ім'я повинно бути заповнене"
+
+// Error message: name of the named folder contains prohibited characters
+"Невірний вираз: виявлені заборонені символи"
+
+// Delete an item in the plugin's panel
+"Ви впевнені, що бажаєте видалити вибраний елемент(и)?"
+"Не вдалося видалити"
+
+// Editor for plugin's panel
+"&І'мя (Alias):"
+"Опис:"
+"Папка:"
+"Plugin &ID:"
+"Plugin &parameter:"
+"&Host file:"
+
+// Ask the user to choose from several partial matches for a name
+"Виберіть потрібну папку"
+
+// Errors when importing XMLs
+"Некоректний кореневий вузол - XML не Named Folders Lite"
+"Не знайдено элемент Name"
+"Элемент Name не може бути не заповненим"
+"Не знайдено элемент Directory"
+
+// Confirm overwrite
+"Зауваження"
+"Новий:       "
+"Існуючий:"
+"&Запам'ятати вибір"
+"&Перезаписати"
+"Пр&опустити"
+"Папка призначення вже існує."
+"Файл призначення вже уснує."
+
+// String to display instead of size for directories
+"<DIR>"
+
+// Datetime format. Leave empty for system default
+""
+
+// Error message when fileinfo couldn't be found
+"Не вдалося прочитати інформацію про файл"
+
+// When a directory does not exist on cd:x - ask if the user wants to try to locate an existing directory
+"Спробувати перейти в батьківську папку?"
+
+// Prompt for entering a directory name when creating a new directory
+"Нове ім'я папки:"
+
+// When cannot create directory
+"Не вдалося створити папку"
+
+// Attempting to store a new bookmark, but the destination is a directory of bookmarks
+"Неможливо використовувати це ім'я бо вже існує папка з таким же іменем"
+
+// Option - Remember panel's last directory
+"&Запам'ятовувати останню папку"
+
+// Option - Use substitution engines
+//          Processing of aliases
+"Обробка &умовних позначень"
+"&Відома папка: $(DIR:TMP), $(CLSID_PROFILE)"
+"&Змінна оточення: $(ENV:USERPROFILE)"
+"Змінна оточення &ОС: %USERPROFILE%"
+"Значення &реєстру ОС: $(REG:HKCU\\Environment\\TEMP)"
+
+// Option - Allow path suffix (everything after the first "\")
+"Дозволяти пі&сля \"\\\" кінечну частину шляху "
+
+// Option - Allow plugin calls
+"Дозволити &виклик розширень (плагінів)"
+
+// Option - Allow fuzzy search for named folders
+"Дозволити &нечіткий пошук"
+"Дозволити нечі&ткий пошук в папках"
+
+// Basic plugin commands
+"Невірна команда розширення (плагіна)"
+"Помилка виклику розширення (плагіна) (\"%s\")"
+"GOTO(name)"
+"EXISTS(name)"
+"SETCURRENT(name)"
+"SET(name, dir [,desc [,guid [,param [,hostfile]]]])"
+"GET(name)"
+"DELETE(name)"
+
+// Error message: No bookmark to return to using cd:-
+"No remembered bookmark to return to."

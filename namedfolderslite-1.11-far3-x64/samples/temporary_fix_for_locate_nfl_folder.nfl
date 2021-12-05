@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<named_folders_lite>
+  <item>
+    <name>lua NFL folder</name>
+    <description>NamedFoldersLite folder not work native nfl-call over plug-guid</description>
+    <directory>lua:Plugin.Call(&quot;6073FF5D-703E-4C1E-8182-26400240073A&quot;, &quot;OPEN&quot;, &quot;/test&quot;)</directory>
+  </item>
+</named_folders_lite>

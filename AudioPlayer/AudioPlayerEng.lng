@@ -1,0 +1,47 @@
+﻿.Language=English,English
+
+"AudioPlayer"
+
+"Output &device:"
+"&WASAPI Output device:"
+"&More..."
+"AS&IO driver:"
+
+"&Open by Enter key press"
+"&Add to the plugin menu"
+"Prefi&x:"
+"&Restore dialog position"
+"Exit by Out dialog clic&k"
+"&Skip exts"
+"Def&.detect codepage"
+"B&uttons"
+"A&ctions"
+"I&gnores"
+"Buttons on &top"
+"Doub&le box"
+"Remove [Al&bum]"
+"&Enter ="
+"&Pause/Play"
+"&Forward"
+"Play mo&ves"
+
+"Disabled"
+"Default"
+"WASAPI Play URL"
+"ASIO Play URL"
+"ASIO Mirror mono"
+"Shift:"
+"Buf %u-%u/%u:"
+
+"OK"
+"Cancel"
+"De&fault"
+
+"Error playing file"
+
+"Volume"
+"&Playback"
+"Current &only"
+"Repeat &current"
+"To the &end"
+"Repeat &all"

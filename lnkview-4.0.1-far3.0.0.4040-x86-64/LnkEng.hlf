@@ -1,0 +1,361 @@
+﻿.Language=English,English (English)
+.PluginContents=LnkView
+
+@Contents
+$ #LnkView: Summary#
+This plugin for FAR Manager is initially intended to parse and display
+contents of Windows Shortcut Files (ones with .lnk extension).
+
+Starting with Version 2.0, the plugin allows also viewing contents of Custom Jump Lists
+(files with the extension .customDestinations-ms, which usually reside in the %USERPROFILE%\Recent\CustomDestinations folder).
+Also, contents of Automatic Jump Lists (files with the extension .automaticDestinations-ms, 
+which usually reside in the %USERPROFILE%\Recent\AutomaticDestinations folder) could be viewed.
+To view Automatic Jump Lists it is necessary to open an .automaticDestinations-ms file with the standard
+ArcLite plugin (or some other plugin, which could open .msi files) and then view the contents with this plugin.
+
+Starting with the version 2.1 the plugin is able to export to a set of LNK-files the history of
+the folders navigated by a user, which is kept for each user in the system registry (BagMRU "database").
+
+Version 3.0 of the plugin introduces a few service ~functions~@Command@ to operate with LNK-files.  
+
+The plugin recognizes format of a LNK-file (or a JumpList) by its internal signature, not by filename extension.
+In the case of successful format recognition the plugin represents an LNK-file (or a JumpList) as a virtual file system 
+and shows complex objects as folders (and subfolders) and simple data items as files.
+
+Any data element (an item as well as a folder) could be ~displayed in HEX format~@HexView@ by pressing the #F3# key.
+
+The description field of each of the panel items starts with a sequence of hex digits which represents the offset
+of the corresponding object or data item inside the source LNK-file. 
+This ensures that sorting by descriptions (the default sort order) allows to see the objects and data items in their native order 
+(in which these are located in the source LNK-file).
+
+The "length" field of each of the panel items equals to the length of the corresponding object of the source LNK-file.
+Despite the fact that FAR does not show lengths for "subfolders", it takes these in consideration when calculates the total
+files length in a "folder". When a LNK-file is ~exported to a plain text file~@Command@, lengths for "folders" and "subfolders" 
+are showed explicitly.
+
+The plugin executes parsing of an LNK-file in strict accordance with [MS-SHLLINK]... but a little bit deeper.
+
+In particular, thanks to the WINE project (from which was borrowed the header file pidl.h) as well as to my own investigations
+and the information obtained from the paper of Joachim Metz "Windows Shell item format specification" the plugin 
+successfully parses internal structure of majority of the PIDL formats. 
+
+Furthermore, thanks to the Harry Parsonage's work "The meaning of LIFE", it became possible to decipher the
+MS File Tracker's DROIDs (including the MAC address of the computer on which the target file was created).
+
+The plugin's starting method could be configured thru the plugin's configuration dialog.
+By default the plugin is started automatically when the user presses <Enter> or <Ctrl-PgDn> keys on the file of the relevant format.
+Besides, the plugin could be started from the Plugins Menu (opened with <F11> key), from the FAR's command line
+(with the "lnk:" ~command prefix~@Command@), from a ~LUA-macro~@CallFromMacro@ and from Disks Menu (<ALT-F1> or <ALT-F2>).
+
+By default the plugin's panel is opened in the "Long Descriptions" view mode. 
+This default could be changed thru the plugin configuration dialog.
+Besides, a view mode could be changed at any time with the standard FAR means.
+
+If you face any problem related to this plugin, don't hesitate to drop an email with subject "lnkviewer" and attached LNK-file
+which caused the problem to stasf@@rbcmail.ru
+
+
+@Config
+$ #LnkView: Settings#
+
+Please, select the desired options and press #OK# to confirm or #Cancel# to discard the changes.
+
+
+@HexView
+$ #LnkView: HEX view window#
+
+The HEX view window format and functionality is similar to the HEXITOR plugin's one.
+
+The only essential distinction is the presence of the "data under cursor" analysis panel.
+The panel could be switched on/off with the #F6# key and is designed to display in various formats
+a file content's fragment started at the current cursor position.
+
+Given panel supports "data under cursor" representation as:
+
+- signed and unsigned integer values of various capacities (from BYTE to QWORD),
+
+- SINGLE and DOUBLE floating point values,
+
+- DATE and TIME values as NTFS FILETIME (8 bytes), DOS FILETIME (4 bytes) and VARIANT TIME (8 bytes). 
+
+Note: DATE and TIME values are displayed only in case that the data under cursor could be interpreted
+as a valid internal representation of a timestamp in corresponding forrmat.
+
+
+@Command
+$ #LnkView: Calling from the FAR command line#
+
+Plugin supports the following invocations from the FAR command line: 
+@-
+
+#lnk:#
+@+
+The plugin analyses and (in case of success) opens the current file on the active FAR panel.
+@-
+
+#lnk:ver#
+@+
+The plugin displays its build version as a decimal number.
+@-
+
+#lnk:cat [<lnk-file>] [<text-file>]#
+@+
+The plugin exports data from the given LNK-file (or Custom JumpList) into plain text file with the given name (with the UTF-8 encoding).
+If the <lnk-file> parameter is specified as "*" (asterisk), the plugin exports data from selected LNK-files (and/or Custom JumpLists) 
+of the ACTIVE file panel.
+If there are no selected files on the ACTIVE panel, the current file of the ACTIVE panel is exported (if it has an appropriate format).
+When the <text-file> argument is not specified the plugin exports the LNK-file data into a temporary file and opens it
+in the internal FAR's Viewer.
+If in such a case the <LNK-file> argument would not specified also, the plugin would export and show contents of
+the current file of the ACTIVE panel.
+
+@-
+
+#lnk:follow [<lnk-file>]#
+@+
+The plugin searches and displays on the PASSIVE panel the target of a given LNK-file (if such a target is an existing file or directory object).
+If the PASSIVE panel is closed, the target file is displayed on the ACTIVE panel.
+If the <lnk-file> parameter is not specified, the plugin analyzes and tries to follow the current file on the ACTIVE panel.
+This command could be assigned to <ENTER>, <CTRL-PGDN> or <F11> (launch from plugins menu) keys thru the plugin configuration dialog.
+@-
+
+#lnk:create [<target-file>] [<folder name>] [<target args>]#
+@+
+The plugin creates shortcut to the specified target-file and places it to the specified folder.
+If the <folder name> parameter is not specified, the plugin places the created shortcut to the directory, currently displayed on the PASSIVE panel
+if such a panel is visible and it is a normal file panel. Otherwise the plugin tries to place the created shortcut to the directory, 
+currently displayed on the ACTIVE panel.
+If the <target-file> parameter is not specified or specified as "*" (asterisk), the plugin creates shortcuts to selected files of the ACTIVE file panel.
+If there is no selected files on the ACTIVE panel, shortcut to the current file of the ACTIVE panel is created.
+If both <target-file> and <folder name> parameters are specified, the rest of the command line is supposed to be the <target args> parameter
+which is written down to the \StringData\Command Args data field of the created LNK-file. 
+
+This command could be assigned to <F11> (launch from plugins menu) key thru the plugin configuration dialog.
+
+NOTE:
+This command allows to create shortcuts to shortcuts (which is not possible to do with the usual means thru the MS Shell interface).
+When such an indirect shortcut is handled by the MS Shell, the target of the last shortcut in the chain is opened.
+PLEASE, BE CAREFULL TO NOT TO CREATE CYCLIC SHORTCUT CHAINS.
+@-
+
+#lnk:addfav [<target-file>]#
+@+
+This command is equivalent to "create", but the created shortcut to the specified target-file is placed to the "Favorites Links" folder.
+The name of the "Favorites Links" folder could be specified thru the plugin configuration dialog.
+If the <target-file> parameter is not specified, the plugin creates shortcuts to selected files of the ACTIVE file panel.
+If there is no selected files on the ACTIVE panel, shortcut to the current file of the ACTIVE panel is created.
+This command could be assigned to <F11> (launch from plugins menu) key thru the plugin configuration dialog.
+@-
+
+#lnk:fav#
+@+
+Switches the ACTIVE panel to the "Favorites Links" folder. This command is analog of launching the plugin from the Disk Menu on the ACTIVE panel.
+The name of the "Favorites Links" folder could be specified thru the plugin configuration dialog.
+@-
+
+#lnk:bagmru <folder name> [<hive-file>]#
+@+
+The plugin exports BagMRU database (history of a user's recent folders) from the system registry
+or a standalone registry file (if the second parameter is set).
+
+The data is exported into a set of LNK-files, located under the given folder name. 
+Inside this folder the plugin creates subfolders which correspond to the locations of BagMRU root keys in the system registry:
+@-
+
+# Subfolder name           BagMRU location#
+ %SID%\Shell              HKU\%SID%\SoftWare\Microsoft\Windows\Shell
+ %SID%\ShellNoRoam        HKU\%SID%\SoftWare\Microsoft\Windows\ShellNoRoam
+ %SID%\Local_Shell        HKU\%SID%\SoftWare\Classes\Local Settings\SoftWare\Microsoft\Windows\Shell
+
+@+
+Where %SID% is the SID of the currently logged in user. If the plugin is executed with administrative privileges it
+carves BagMRUs of all of the logged in users.
+
+When the plugin carves BagMRUs from a standalone registry hive file, %SID% subdirectories are not created and the \Shell,
+\ShellNoRoam and \Local_Shell subdirectories are created only if the hive file contains corresponding BagMRU root keys.
+The registry hive file is opened in read-only mode. Administrative privileges are not required.
+
+Each exported LNK-file corresponds to a BagMRU's NodeSlot.
+The "last modification" time of each created LNK-file equals to the modification time of the "Shell"
+subkey of the corresponding Bags\%NodeSlot% registry key.
+@-
+
+#lnk:pcache <folder name> [<hive-file>]#
+@+
+This command allows to export data from the registry (or hive-file) key
+@-
+
+HKCU\SoftWare\Microsoft\Windows\CurrentVersion\Explorer\StartPage\ProgramsCache   (for Win XP) or
+HKCU\SoftWare\Microsoft\Windows\CurrentVersion\Explorer\StartPage2\ProgramsCache  (for Vista+)
+@+
+
+If the corresponding registry key exists, the data is exported into a set of LNK-files, located under the given folder.
+The name of an exported LNK-file represents offset of the corresponding data chunk inside the registry key.
+The hive-file, if specified, is opened in read-only mode. Administrative privileges are not required.
+
+@CallFromMacro
+$ #LnkView: Calling from a macro#
+
+To call the plugin from a macro program the following syntax should be used:
+@-
+
+#local Var1{,VarN} = Plugin.SyncCall (LnkViewGuid, "Command [Arg1[ Arg2]]"{, MCallParms})#
+
+Where:
+    LnkViewGuid - GUID of the plugin: "53415453-E31E-4D4C-8FE5-D6B0C6853E7C";
+    Command     - any ~plugin's command~@Command@ without "lnk:" prefix,
+                  or a special command (#ver#, #extract#, or #parse#);
+    Arg1,Arg2   - the command's arguments (analog of the command line's arguments);
+    MCallParms  - zero or more additional parameters;
+    Var1..VarN  - one or more LUA-variables to accept values returned by the plugin.
+@+
+
+Description of the special commands follows. 
+@-
+
+
+#ver# command:
+
+#local Version = Plugin.SyncCall (LnkViewGuid, "ver")#
+@+
+
+This command returns to LUA-code the plugin's version in the numeric format.
+
+For example:
+@-
+
+#guid = "53415453-E31E-4D4C-8FE5-D6B0C6853E7C"#
+#local LnkViewVer = Plugin.SyncCall (guid, "ver")  or  0#
+#if  LnkViewVer < 350  then#
+#    return far.Message ("LnkView plugin Version required: 3.5.0+")#
+#end#
+@-
+
+
+#extract# command:
+
+#local Flag{,Field} = Plugin.SyncCall (LnkViewGuid, "extract FileName"{, FieldName[qualifier]})#
+
+Where:
+    LnkViewGuid - GUID of the plugin: "53415453-E31E-4D4C-8FE5-D6B0C6853E7C";
+    FileName    - fully specified absolute or relative path of the LNK-file
+                  (should be quoted if contains white spaces);
+    FieldName   - zero or more datafield queries in the virtual path form
+                  (for example: "/LinkInfo/Lnk_LocalPath");
+    qualifier   - zero or one query qualifier, which could be #"@@NAMES"# or #"@@VALUES"# (the default);
+    Flag        - the first returned value equals #0# if #FileName# is not found 
+                  or has an invalid format; equals #1# if #FileName# has LNK-file format
+                  and equals #2# if #FileName# is a CustomJumpList;
+    Field       - zero or more LUA-macro variables which accept the returning values
+                  of the #FieldName# queries (if any).
+@+
+
+So, arbitrary number of LNK-file data fields could be extracted at once.
+
+In a case when a #FieldName# specifies the name of an atomic LNK-file data field, the type of returning #Field# corresponds 
+to the type of that LNK-file data field (#STRING# or #INTEGER#).
+
+In a case when a #FieldName# specifies the name of a virtual folder, the type of returning #Field# is #TABLE#
+which contents values (if no qualifier or the #"@@VALUES"# qualifier specified) or names (if the #"@@NAMES"# qualifier specified) 
+of the virtual folder items. When the names of the virtual folder items are returned, names of subfolders are
+terminated with "/" to distinct these from the terminal data elements names.
+
+For example:
+@-
+
+#guid = "53415453-E31E-4D4C-8FE5-D6B0C6853E7C"#
+#local Flg,names,values = Plugin.SyncCall (guid, "extract Far2.lnk", "/Header/@@names", "/Header/@@values")#
+
+#if Flg then#
+#    if type(names) == "table" then for i,v in ipairs(names) do#
+#        local c = string.format("%d %s=%s", i,v,tostring(values[i]));#
+#        far.Message (c);#
+#        end#
+#    else#
+#        local c = string.format("%s=%s", names,tostring(values));#
+#        far.Message (c)#
+#    end#
+#end#
+
+@+
+
+There are three special FieldNames: #"@@Flags"#, #"@@Target"# and #"@@WorkDir"# to extract the LNK-file 
+header flags, the target path and the target's working directory path (if set in the LNK-file).
+
+Example:
+@-
+
+#guid = "53415453-E31E-4D4C-8FE5-D6B0C6853E7C"#
+#local Flg,HeaderFlags,Target,WorkDir = Plugin.SyncCall (guid, "extract \"Far Manager 3.lnk\"", "@@flags", "@@target", "@@workdir")#
+
+#if Flg then#
+#    local c = string.format ("Flags: %08x\nTarget : %s\nWorkDir: %s",HeaderFlags,Target,WorkDir)#
+#    far.Message (c)#
+#end#
+
+@+
+
+To use these special FieldNames with a CustomJumpList it is necessary to specify a shortcut inside the Jump List:
+@-
+
+#guid = "53415453-E31E-4D4C-8FE5-D6B0C6853E7C"#
+#local Flg,Target = Plugin.SyncCall (guid, "extract 5afe4de1b92fc382.customDestinations-ms", "Shortcut 0/@@target")#
+
+#if Flg then#
+#    local c = string.format ("Target : %s",Target)#
+#    far.Message (c)#
+#end#
+
+@-
+
+
+#parse# command:
+
+#local Names,Values,Descs,Offsets,Lengths,Depths = Plugin.SyncCall (LnkViewGuid, "parse <what>", xParm[, nOffset])#
+
+Where:
+    <what>      - a required argument, which defines format of the parsed object
+                  (may have one of the following values: #Shortcut#, #JumpList#, #IDList#, #PCaсhe# or #PropStor#);
+    xParm       - LUA-variable, which contains the parsed object;
+    nOffset     - numeric parameter which defines offset (in bytes) of the parsed object
+                  within the xParm value (0 by default);
+    Names       - table of the names of elements of the parsed object or #nil# (if parsing failed);
+    Values      - table of the values of elements of the parsed object or #nil# (if parsing failed);
+    Descs       - table of the descriptions of elements of the parsed object or #nil# (if parsing failed);
+    Offsets     - table of the offsets of elements of the parsed object or #nil# (if parsing failed);
+    Lengths     - table of the lengths of elements of the parsed object or #nil# (if parsing failed);
+    Depths      - table of the nesting levels of elements of the parsed object or #nil# (if parsing failed).
+@+
+
+The #parse# command allows LUA-code to parse data contained in a xParm LUA-variable value.
+Such a parsing could be useful when the xParm value would loaded from some external source (read from
+the system registry, for example) and contains a data structure defined by the #<what># argument:
+@-
+
+    #parse Shortcut# - the xParm value contents is treated as a full-fledged SHORTCUT,
+                     which conforms to the [MS-SHLLINK] specification;
+    #parse JumpList# - the xParm value contents is treated as a Custom JumpList; 
+    #parse IDList#   - the xParm value contents is treated as a ShellItemIDList; 
+    #parse PCache#   - the xParm value contents is treated as a sequence of ShellItemIDList
+                     structures, contained in a ProgramsCache registry value.
+    #parse PropStor# - the xParm value contents is treated as a Serialized Property Store,
+                     which conforms to the [MS-PROPSTOR] specification;
+@+
+
+The #xParm# parameter has to be a LUA-table containing JUST ONE element of the "string" type.
+In other words the following conditions must be true: type(xParm)=="table", ##xParm==1 and type(xParm[1])=="string".
+This is necessary for passing the xParm value to the plugin as a binary data without any transformation.
+
+The #nOffset# parameter must have an integer value within the range from zero to the xParm data length (##xParm[1]).
+If the xParm data contains more than one structure to be parsed (for example, a few ShellItemIDList),
+it is possible to sequentially execute the #parse# command with the same #xParm# and different #nOffset# values.
+
+As a parsing result LUA-program receives six linear LUA-tables. The set of these tables represents linearized
+parsing tree of the given object. The sequence of the elements of these tables conforms with the sequence
+of the recursive traversal of the nodes of the parsing tree.  In this context, for each given i-th node
+the value of Depths[i] represents the nesting level of the node.
+
+Such a representation of the parsing tree allows both to trivially export parsing results to a plain file
+and to fully recover the parsing tree for, say, its displaying on a FAR panel.
+

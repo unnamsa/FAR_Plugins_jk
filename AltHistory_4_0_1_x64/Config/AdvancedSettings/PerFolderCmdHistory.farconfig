@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<farconfig>
+    <pluginsconfig>
+        <plugin guid="FF8FC1AE-0F35-4134-9BAB-56D71B1D47B9">
+            <hierarchicalconfig>
+                <key name="FF8FC1AE-0F35-4134-9BAB-56D71B1D47B9" description="AltHistory">
+                    <!--
+                       Параметр "PerFolderCmdHistory" управляет возможностью сохранения в истории 
+                       дубликатов команд, запущенных из разных папок. Сохранение дубликатов полезно
+                       для пользователей "Локальной истории команд", для прочих это пока бессмысленный
+                       расход ресурсов.
+                       Может быть одним из следующих значений:
+                         0000000000000000 - Дубликаты не сохраняются.
+                         0000000000000001 - Дубликаты сохраняются.
+                       По умолчанию значение = 0000000000000000 (дубликаты не сохраняются).
+                    -->
+                    <value name="PerFolderCmdHistory" type="qword" value="0000000000000001" />
+                </key>
+            </hierarchicalconfig>
+        </plugin>
+    </pluginsconfig>
+</farconfig>

@@ -1,0 +1,84 @@
+History:
+--------
+v1.5
+----
+- Correct operation in Far 3.0 build 5821 and above.
+
+v1.4
+----
+- LeftPos could change on long lines.
+
+v1.3
+----
+- Bookmarks highlighting works.
+
+v1.2
+----
+- Far 3.0 build 2873 and ESC 2.9 support.
+- Bookmarks highlighting doesn't work yet.
+
+v1.1
+----
+ - Remove scrollbar as it exists in Far 3.0
+
+v1.0
+----
+ + Far 3.0 support.
+
+v0.9
+----
+ from Maximus5:
+ + Support for "far /w".
+
+v0.8
+----
+ from Maximus5:
+ + Option for tab symbol.
+ + Option "Show symbol" for "EOL".
+
+v0.7 (15/06/2009)
+-----------------
+ * Far 2.0 build 992 support.
+
+v0.6 (09/05/2009)
+-----------------
+ + Added support of [ESC] unicode version.
+
+v0.5 (14/03/09)
+---------------
+ + Bookmarks visualization, from Drkns.
+ ! In Far 2.0, dialogs could contain cut off text.
+
+v0.4 (21/12/08)
+---------------
+ + Far 2.0 build 677 support.
+ * Changes in build system.
+
+v0.3 (25/11/08)
+---------------
+ + Option to draw a small cross.
+
+v0.2 (29/03/06)
+---------------
+ + Added cross drawing.
+ + Full configuration of everything.
+ * Plugin can now work correctly without other coloring plugins.
+ ! Could crash if there was less lines in the editor than on the
+   screen.
+
+v0.1 (28/03/06)
+---------------
+ + Visualize end of line.
+ + Visualize tabulation.
+ + Sources released under GPL.
+ * Changed name to Visualizer (from VisualBorder) as the
+   functionality has increased (still no configuration, I'm lazy).
+ ! No longer crashes if [ESC] plugin is not found.
+ ! Color is applied in the right position even when tabs are
+   present but because it is only possible to color a tab symbol as
+   a whole or just its starting location the right border marker
+   will look a bit weird when a tab symbol crosses it.
+
+v0.0 (27/03/06)
+---------------
+ + First version, doesn't really do that much.

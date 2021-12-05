@@ -1,0 +1,314 @@
+.Language=English,English
+.PluginContents=Named Folders Lite
+
+@Contents
+$^#Named Folders Lite#
+$^#version 1.11#
+$^#Copyright (c) 2014+ Pepak#
+
+ ~About the plugin~@About@
+ ~Command line usage~@CommandLine@
+ ~Panel usage~@Panel@
+   ~Visual editor~@Editor@
+ ~Scripting~@Scripting@
+ ~Options~@Options@
+ ~Known bugs~@KnownBugs@
+ ~Contact the author~@Contact@
+ ~License~@License@
+
+@About
+$# About Named Folders Lite#
+
+ This plugin lets you assign names to any number of directories and use these names to quickly access those directories. It is very much a copy of the plugin Named Folders by Victor Derevyanko (~http://code.google.com/p/namedfolders/~@http://code.google.com/p/namedfolders/@), but completely reimplemented: I decided to write it because the original version exhibits serious database locking issues when used with FAR Manager 3 and it seemed easier to rewrite the plugin than to fix it.
+
+@CommandLine
+$# Command line usage#
+
+ Command line is the primary control method for Named Folders Lite. The following commands are available:
+
+ #cd::name#
+
+   This command will create a new bookmark called #name# for the active panel. Both standard filesystem panels and plugin-based panels are supported. If a bookmark of the same name exists, you will be asked whether you wish to overwrite it.
+
+   Note that #name# can contain any characters and is case sensitive. A slash ("#/#") and backslash ("#\#") characters have a special significance, as they can be used to create directories (which make no difference for command line usage, but are very significant in ~panels~@Panel@).
+
+ #cd:name#
+
+   This command will restore the active panel to that defined by the content of bookmark #name#, in effect jumping to the bookmarked place.
+
+   If the bookmark #name# doesn't exist, you will be informed of that fact. However, several ~options~@Options@ can modify this behavior, to provide e.g. a fuzzy search or search across directories.
+
+   If the bookmark #name# exists but the target directory does not, you will be informed of this fact and will be given an option to jump to that part of the target directory which does exist.
+
+ #cd:-#
+ 
+  This command will jump to the location which was active before the last location change caused by the plugin, e.g. before the last #cd:name# or #cd:-#. By repeatedly invoking #cd:-#, you can switch back and forth between two locations.
+
+  The last location is only temporary, it doesn't get saved into the database.
+
+ #cd:#
+
+   This command will open the plugin's ~panel~@Panel@.
+
+@Panel
+$# Panel usage#
+
+ A panel can be accessed through various methods, including a disk menu, a ~command line call~@CommandLine@ or a ~plugin call~@Scripting@. It provides the standard FAR Manager controls, such as these:
+
+ #ENTER# ......... Activate the focused bookmark and jump to its target.
+ #SHIFT+ENTER# ... Switch the passive panel to the focused item's target.
+ #F3# ............ View focused item as XML.
+ #F4# ............ ~Edit~@Editor@ focused item.
+ #SHIFT+F4# ...... Create a new item in a visual ~editor~@Editor@.
+ #F5# ............ Copy the selected items to XML files (or back).
+ #F6# ............ Move the selected items to XML files (or back).
+ #F7# ............ Create a subdirectory for bookmarks.
+ #F8# ............ Delete selected items.
+
+@Editor
+$# Visual editor#
+
+ A visual editor can be activated from the plugin's ~panel~@Panel@ by pressing #F4# or #SHIFT+F4#. The following items can be defined:
+
+ #Name#
+
+   Defines the name of the bookmark. The name is used to activate the bookmark using e.g. command line #cd:name#, where #name# is the name you put here.
+
+ #Description#
+
+   Description is an optional description of the bookmark. It is only used for visual feedback, e.g. when displaying items in a panel with description or when showing a menu with a selection of bookmarks. If it is left empty, a standard description composed by the plugin from other data will be shown.
+
+ #Directory#
+
+   This is the main component of a bookmark. It defines a directory for the given panel. For filesystem panels, this is simply a directory name as used by the operating system. For plugin-based panels, the meaning is defined by the plugin, but usually it behaves much like the filesystem panel's directory.
+
+   Note that a directory may be influenced by ~options~@Options@ to behave in a somewhat special manner, supporting e.g. variable substitution ("#C:\Ftp\%USERNAME%#") or plugin command lines (#edit:<for /?#).
+
+ #Plugin ID#
+
+   Defines the plugin that "owns" the bookmark. If empty or all-zero, the bookmark is a simple filesystem bookmark. Otherwise the bookmark belongs to the plugin with the given ID (you can find an ID of a plugin by pressing #F3# in a plugin list such as that of Plugin Commands #F11#).
+
+ #Plugin parameter#
+
+   Defines a parameter of the plugin. The actual meaning depends on the plugin.
+
+ #Host file#
+
+   Defines another parameter of the plugin. Most commonly, the host file is used with #ArcLite# plugin, where it defines the archive file which is being displayed (e.g. "#C:\Temp\Example.zip#").
+
+@Scripting
+$# Scripting support#
+
+ Scripting support is provided through ~command line~@CommandLine@ and through a #Plugin.Call# of FAR's macro language. The syntax for Plugin.Call takes generally the following form:
+
+ #Plugin.Call("6073FF5D-703E-4C1E-8182-26400240073A", command, params)#
+
+ Available commands are:
+
+ #OPEN#
+
+   This command opens the plugin's panel, much like opening the plugin manually from the Disk menu. No #params# are necessary, but you may provide one parameter which would force the panel to open in that directory and/or move the cursor to a particular bookmark.
+
+   Example:
+
+     #Plugin.Call("...", "OPEN")#
+       Opens the plugin's panel in its root (or last used) directory.
+     #Plugin.Call("...", "OPEN", "\\devel")#
+       Opens the plugin's panel in the "#devel#" directory.
+     #Plugin.Call("...", "OPEN", "\\devel\\c")#
+       Opens the plugin's panel in the "#devel#" directory and moves the cursor to the "#c#" bookmark.
+
+ #GO# or #GOTO#
+
+   This command activates the bookmark identified by the first parameter. This is essentially the same functionality as command-line's "#cd:param#".
+
+   Example:
+     #Plugin.Call("...", "GO", "WIN")#
+       Activates the bookmark with name "#WIN#".
+     #Plugin.Call("...", "GO", "WORK\\FAR")#
+       Activates the bookmark with name "#WORK\FAR#" (a bookmark named "#FAR#" stored in the "#WORK#" directory).
+
+ #EXISTS#
+
+   This command checks whether a named folder identified by the first parameter is defined. The result is given as a boolean value at the function's exit.
+
+   Example:
+     #if Plugin.Call("...", "EXISTS", "WIN") then mf.print("OK")#
+
+ #SETCURRENT#
+
+   This command creates a new named folder (identified by the first parameter) targeting the current location in the active panel. Basically the same functionality as command-line's "#cd::param#".
+
+   Example:
+     #Plugin.Call("...", "SETCURRENT", "NAME")#
+
+ #SET#
+
+   This command creates a new named folder (identified by the first parameter) targeting a destination identified by further parameters:
+   - 1st parameter: the name of the bookmark (required)
+   - 2nd parameter: target directory (required)
+   - 3rd parameter: description
+   - 4th parameter: plugin's GUID (for plugin-based targets)
+   - 5th parameter: plugin's parameters
+   - 6th parameter: plugin's host file
+   All arguments starting with the 3rd are optional.
+
+   Example:
+     #Plugin.Call("...", "SET", "WIN", "C:\\Windows")#
+       Creates a new bookmark "#WIN#" pointing to the "#C:\Windows#" directory of the local filesystem.
+     #Plugin.Call("...", "SET", "WIN", "C:\\Windows", "Windows")#
+       Same as above, except that description will be set to "#Windows#".
+
+ #GET#
+
+   This command returns information about named folder identified by the first parameter. The result is returned as five string values:
+   - 1st value: target directory
+   - 2nd value: description
+   - 3rd value: plugin's GUID (for plugin-based targets)
+   - 4th value: plugin's parameters
+   - 5th value: plugin's host file
+
+   Example:
+     #dir,desc,guid,param,host = Plugin.Call("...", "GET", "WIN")#
+       Returns the five components of bookmark "#WIN#" and stores them in variables #dir#, #desc#, #guid#, #param# and #host#.
+
+ #DELETE#
+
+   This command deletes a named folder identified by the first parameter.
+
+   Example:
+     #Plugin.Call("...", "DELETE", "WIN")#
+       Deletes a bookmark "#WIN#".
+
+ ---
+
+ Note: If no command is provided, "OPEN" is used as default.
+
+@Options
+$# Options#
+
+ #Remember panel's last directory#
+
+   If enabled, the plugin's panels will remember the last used directory and when reopening a panel, will jump to that directory (unless the user overrides it with the ~GO command~@Scripting@).
+
+   Default value: disabled.
+
+ #Use substitution engines#
+
+   If enabled, the behavior of the #Directory# component of a filesystem-based bookmark (see ~Visual editor~@Editor@) may be modified in various ways, depending on the following options.
+
+   Default value: disabled.
+
+   #Known folders#
+
+     If enabled, sequences in the form of #$(DIR:name)# or #$(CLSID_name)# will be replaced by their respective values from known Windows folders. The available names are derived from Microsoft CSIDL constants: ~https://msdn.microsoft.com/en-us/library/windows/desktop/bb762494(v=vs.85).aspx~@https://msdn.microsoft.com/en-us/library/windows/desktop/bb762494(v=vs.85).aspx@
+
+	 Some useful constants are #PROFILE# (path to the user's profile directory), #TMP# (path to the user's temporary directory), #SYSTEM# (Windows #SYSTEM32# directory), #STARTUP# (#Startup# submenu of the Start menu) etc.
+
+	 Note that most if not all of these constants contain a full path, which means that generally you will only ever use the substitution sequence and nothing else.
+
+	 Example:
+	   #$(CLSID_PROFILE)#
+	     Bookmark will point to the directory containing current user's profile.
+
+   #Environment#
+
+     If enabled, sequences in the form of #$(ENV:name)# will be replaced by the values of the respective environment variables. Some of these mimic known folders, others are unique.
+
+	 Note that while some environment variables contains directory paths (e.g. #SYSTEMROOT# or #USERPROFILE#), others may contain non-path values (e.g. #USERNAME# or #PROCESSOR_ARCHITECTURE#).
+
+	 Example:
+	   #C:\Ftp\Home\$(ENV:USERNAME)#
+	   #$(ENV:SYSTEMROOT)\#
+
+   #CMD Environment#
+
+     Same thing as Environment above, only it uses a different syntax: #%name%# rather than #$(ENV:name)#.
+
+	 Note that if you enable this substitution, you must double literal percent signs: #C:\Done\50%%\#
+
+	 Example:
+	   #C:\Ftp\Home\%USERNAME%#
+	   #%SYSTEMROOT%\#
+
+   #Registry values#
+
+     If enabled, sequences in the form of #$(REG:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\SomeApp)# will be replaced by the value of the respective registry key. The last element of the path identifies the value to be used (e.g. in the example above, #HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run# is the key and #SomeApp# is the identifier of the value).
+
+	 You may also use the short form of the root keys, e.g. #HKLM# in place of #HKEY_LOCAL_MACHINE#, #HKCU# in place of #HKEY_CURRENT_USER# etc.
+
+     Note: Only string values are supported.
+
+ #Allow path suffix#
+
+   If enabled, it is possible to use ~command~@CommandLine@ #cd:name# to jump directly to a subdirectory of a bookmark. The command then takes the form of #cd:a/b/c\d\e\f#, where everything up to the first backslash (here "#a/b/c#") identifies a bookmark and everything starting with the first backslash identifies a subdirectory (here "#\d\e\f#"). Assuming that #a/b/c# is a filesystem bookmark to #C:\WINDOWS#, the command above would try to open directory #C:\WINDOWS\d\e\f#.
+
+   Default value: disabled.
+
+ #Allow plugin calls#
+
+   If enabled, the behavior of the #Directory# component of a filesystem-based bookmark (see ~Visual editor~@Editor@) is modified: Upon activation of a bookmark, if that bookmark's directory begins with a command-line specifier belonging to a FAR plugin (e.g. "#lua:#" for LUAMacro plugin or "#net:#" for Network Browser plugin), the directory will not be changed; instead, that plugin will be called with the directory for its bookmark. This feature may be useful for creating shortcuts to long or difficult-to-remember plugin command lines. For example, if you find yourself to be repeatedly displaying some command's output, it makes sense to create a named folder bookmark with content such as "#edit:<somecommand /argument1 /argument2 ...#". Then instead of typing the whole command, you could simply type "#cd:somecommand#" (assuming "#somecommand#" to be the name of the bookmark).
+
+   Default value: disabled.
+
+ #Allow fuzzy search#
+
+   If enabled, the behavior of #cd:name# ~command~@CommandLine@ is modified so that #name# need not be an exact match but suffices to form a beginning of a bookmark's name. If an exact match exists, it will always be used, but otherwise you will be presented with a ~list of matching bookmarks~@ChooseNameMenu@.
+
+   For example, assume that bookmarks #far#, #far2#, #far3x86# and #far3x64# are defined and you enter the following commands:
+
+   #cd:f# ...... If allow fuzzy search is disabled, you get an error that the bookmark #f# does not exist. Otherwise you are shown a menu containing items for all four bookmarks above and you are asked to choose.
+   #cd:far# .... Regardless of the state of allow fuzzy search, bookmark #far# will be activated.
+   #cd:far3# ... If allow fuzzy search is disabled, you get an error that the bookmark #far3# does not exist. Otherwise you are shown a menu containing items for #far3x86# and #far3x64# and you are asked to choose.
+
+   Default value: enabled.
+
+ #Allow search across directories#
+
+   If enabled, the behavior of #cd:name# ~command~@CommandLine@ is modified so that a path-less #name# (one not containing either "#\#" or "#/#" character) is searched for not only in the root directory of Named Folder's panel, but in any directory. If a match is found in the root directory, it is used; otherwise if there is a match in only one subdirectory, it is used; otherwise you are presented with a list of possibles and can choose which one you want to use.
+
+   For example, assume that bookmarks #far#, #test\far2#, #test\far3#, #devel\far3# and #devel\bad\far3# exist and you enter the following commands:
+
+   #cd:far# ........ Regardless of the search across directories value, bookmark #far# is activated because it is an exact match in the root directory.
+   #cd:far2# ....... If search across directories is enabled, bookmark #test\far2# is activated because it is the only exact match in directories. If search across directories is disabled, you get an error message because #far2# bookmark does not exist.
+   #cd:far3# ....... If search across directories is enabled, you are presented with a menu of #test\far3#, #devel\far3# and #devel\test\far3#. Otherwise you get an error message because bookmark #far3# does not exist.
+   #cd:bad\far3# ... Regardless of the search across directories value, you get an error message because bookmark #bad\far3# does not exist and because there is a path component in the desired bookmark's name, an exact match is required.
+
+   Note that this option can be used in conjunction with #Allow fuzzy search# to perform a fuzzy search across directories.
+
+   Default value: disabled.
+
+@KnownBugs
+$# Known bugs#
+
+ #*# Bookmarks to some plugin panels do not work. The reason is unknown at the moment, but we know that SvcMgr or NetworkBrowser work and NetBox doesn't.
+
+ #*# The support for directories starting with #\\# is somewhat shaky due to a bug in Far Manager (~Mantis 0003313~@https://bugs.farmanager.com/view.php?id=3313@) which I could only overcome in an unreliable manner.
+
+@Contact
+$# Contact the author#
+
+ If you have any questions or want to suggest a new feature, you can do so either at FAR Manager's forums in my Named Folders Lite thread ( ~https://forum.farmanager.com/viewtopic.php?f=39&t=9721~@https://forum.farmanager.com/viewtopic.php?f=39&t=9721@ ) or my own forums ( ~https://forum.pepak.net~@https://forum.pepak.net@ ).
+
+@ChooseNameMenu
+$# Choose a bookmark#
+
+ More that one bookmark matches your search criteria. Please select the bookmark you want to activate.
+
+@License
+$# License#
+
+ The plugin is released under the Modified (3-clause) BSD License:
+
+ #Copyright (c) 2014+ Pepak (~https://www.pepak.net~@https://www.pepak.net@)#
+ #All rights reserved.#
+
+ Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+ #*# Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+ #*# Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+ #*# Neither the name of Pepak nor the names of his contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL PEPAK BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

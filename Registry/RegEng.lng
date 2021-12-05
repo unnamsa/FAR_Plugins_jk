@@ -1,0 +1,156 @@
+.Language=English,English
+
+"Registry Browser"
+"registry"
+
+"OK"
+"Cancel"
+"Error"
+"&Ignore"
+"Ignore &All"
+
+"WARNING!"
+
+"Copy"
+"Copy"
+"MkKey"
+"Value"
+"FarUsr"
+"FarMch"
+"DirMod"
+
+"<ERROR>"
+
+" Registry "
+
+"  It is extremely dangerous      "
+" to tamper with the registry     "
+"if you don't know what you do!   "
+
+"(Default)"
+
+"&Copy %d items to directory"
+"&Copy \"%s\" to"
+
+"Warning"
+"This operation may take a long time!"
+"Do you still want to export the whole branch?"
+"&Yes"
+"&No"
+
+"Value Type"
+"&None"
+"&String"
+"E&xpanded String"
+"&Binary"
+"&DWORD"
+"DWORD Big &Endian"
+"&Link"
+"&Multi-String"
+"&Resource List"
+"&Full Resource Descriptor"
+"Resrc List in the &Hrdw Description"
+"&QWORD"
+
+"Set"
+
+"WARNING"
+"Deleting some entries may seriously damage your system!"
+"Do you want to delete the selected entry from the registry?"
+"&Delete"
+
+"Delete %d entries from the registry"
+"Delete"
+
+"Cannot delete the key"
+
+"Create"
+"Create the key"
+
+"Registry Browser Options"
+"&Add to Disks Menu"
+"Disks Menu &hotkey ('1'-'9'). Leave empty to autoassign"
+"Add to &Plugins Menu"
+" Special Panel Modes "
+"Column &types"
+"&Full mode (3)"
+"Column &widths"
+"&Descriptions mode (6)"
+"&Long desc. mode (7)"
+"&Silent Import (Regedit)"
+"Use &Regedit.exe"
+
+"Wildcards are not allowed here"
+"You cannot copy multiple items to a single file"
+
+"File already exists"
+"&Overwrite"
+"&All"
+"&Skip"
+"S&kip all"
+"A&ppend"
+"&Cancel"
+
+"Value"
+"Enter the value of %s"
+"Incorrect data entered"
+"Cannot change the value"
+
+"Keys: %d of %d"
+"Subkeys: %d"
+"Exporting"
+"REGEDIT launched..."
+
+"Import is not yet implemented"
+"Importing"
+
+"Export keys as"
+"REGEDIT&4 files"
+"REGEDIT&5 (Unicode) files"
+"&Binary files (\"hives\")"
+
+"Reading %.64s"
+"&Browse .reg files and hives"
+"&Skip \"Access denied\" messages"
+
+"ViewGr"
+"EditGr"
+
+"REG format version"
+"File size"
+"Total keys"
+"Total values"
+
+"The size of this DWORD value is different from 4!"
+"Do you want to change it to 4?"
+"If you do, the value will be truncated!"
+
+"64-bit"
+"32-bit"
+
+"CopyReg"
+"RenMov"
+
+"Copy to Registry"
+"Move/Rename in Registry"
+"&Copy %d items to key"
+"&Move %d items to key"
+"&Rename/move \"%s\" to"
+
+"Cannot copy/move %d items. The destination key does not exist."
+"This operation with remote registry is not supported"
+
+"Shortcuts"
+"Favorites"
+"The target of symbolic link %s is"
+"Do you want to UNLOAD the selected hive(s) from the registry?"
+"&Unload"
+
+"64-bit registry security is unavailable from the 32-bit FAR"
+"Do you want to remove the entry \"%s\" from Favorites?"
+"Add to Favorites"
+"&Favorite name:"
+"This name already exists!"
+
+"ToHKLM"
+"ToHKCU"

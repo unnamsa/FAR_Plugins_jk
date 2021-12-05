@@ -1,0 +1,101 @@
+--!UserAssist values revealing
+
+local GUID, hInstA, hInstP, sTmpFile, sArg1, sArg2 = ... 
+local msg
+
+-- Get plugin handle
+local hInst = hInstA  or hInstP  or  unpack({nil, far.Message("No HIVER instance found")})
+if  not hInst then return end
+
+-- Duplicate currently open HIVE handle
+local hHive = Plugin.SyncCall (GUID, hInst, "DupHandle")  or
+              unpack({nil, far.Message("No HIVER instance found", "@userassist ERROR")})
+if  not hHive then return end
+
+-- Open the output file
+local hTmp  = assert(io.open(sTmpFile, "a+"))
+if  not hTmp  then return end
+hTmp:write [[
+;;;;====================================================================
+;;;;                   UserAssist key contents
+;;;;====================================================================
+]]
+
+-- UserAssist value datatypes
+local ffi = require "ffi"
+ffi.cdef [[
+    typedef struct { uint32_t nSession; uint32_t nCount; } ua8;
+    typedef struct { uint32_t nSession; uint32_t nCount; uint64_t tLastAccess; } ua16;
+    typedef struct { uint32_t nUnk[14]; uint32_t nCount; uint64_t tLastAccess; uint32_t nZero; } ua72;
+]]
+
+-- Set current virtual directory to UserAssist key
+local sDir         = "/TreeView/Software/Microsoft/Windows/CurrentVersion/Explorer/UserAssist"
+--local sDir         = "\\TreeView\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\UserAssist"
+local bRet, nItems = Plugin.SyncCall (GUID, hHive, "cd \""..sDir.."\"")
+if bRet then
+    hTmp:write (string.format(";;;;%s\n", Plugin.SyncCall (GUID, hHive, "pwd") ))
+end
+
+-- Iterate UserAssist directory
+if bRet then for i = 1, nItems do
+    local t = {}
+    local sName = Plugin.SyncCall (GUID, hHive, "getitem", i)
+    Plugin.SyncCall (GUID, hHive, "cd \""..sName.."\"")
+
+    local bRet, nLines = Plugin.SyncCall (GUID, hHive, "cd  Count")
+    hTmp:write (string.format("\n;;;;%s;%s\n", Plugin.SyncCall (GUID, hHive, "pwd") ))
+
+    -- Iterate a UserAssist\{GUID}\Count virt directory
+    if bRet then for j = 1, nLines do
+        local sName, xValue = Plugin.SyncCall (GUID, hHive, "getitem", j)
+        sName = Plugin.SyncCall (GUID, hHive, "rot13", sName)                -- decode the target name
+
+        local cValue, tLAT, nSess = nil,0,0
+
+        if      #xValue[1] == 16  then                     -- Analyse data structure of the item value      
+            cValue = ffi.cast ("ua16*", xValue[1])
+            tLAT   = tonumber (cValue.tLastAccess)
+            nSess  = tonumber (cValue.nSession)
+
+        elseif  #xValue[1] == 72  then      
+            cValue = ffi.cast ("ua72*", xValue[1])
+            tLAT   = tonumber (cValue.tLastAccess)
+
+        elseif  #xValue[1] == 8   then
+            cValue = ffi.cast ("ua8*",  xValue[1])
+            nSess  = tonumber (cValue.nSession)
+        end
+
+        -- Skip values with unknown format
+        if cValue then                 -- Calculate the correct Count and save the record  in the table
+            table.insert (t, {name=sName, count=(cValue.nCount<6) and cValue.nCount or cValue.nCount-5, time=tLAT, sess=nSess})
+        end
+    end
+    else
+        hTmp:write ("There is no\n"..sDir.."\\"..sName.."\\Count\nregistry key found...")
+    end
+   
+    table.sort (t, function(a,b)    -- Sort the saved data
+        return ( (a.sess == b.sess) and ((a.time == b.time) and (a.count > b.count) or (a.time > b.time)) or (a.sess > b.sess) )
+    end)
+
+    -- Write the results
+    hTmp:write (string.format("%-10s; %-16s;   Session;  Count; Program\n", "Date", "Time"))
+    for i,v in ipairs(t) do
+        local sDate, sTime = Plugin.SyncCall (GUID, hHive, "GetFileTime", t[i].time)
+        hTmp:write (string.format("%10s; %16s; %9d; %6d; %s\n", sDate, sTime, t[i].sess, t[i].count, t[i].name))
+    end
+
+    Plugin.SyncCall (GUID, hHive, "cd \""..sDir.."\"")
+end
+else
+    hTmp:write ("There is no\n"..sDir.."\nregistry key found...")
+end
+
+-- Close the TMP-file
+hTmp:close()
+
+-- Close the copy of the HIVE handle
+Plugin.SyncCall (GUID, hHive, "CloseHandle")
+return true

@@ -1,0 +1,45 @@
+--!RE:/.*\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RecentDocs\\([^\\]+\\)*\d+$/
+--!RE:/.*\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ComDlg32\\LastVisitedPidlMRU\\([^\\]+\\)*\d+$/
+
+local EHDR = "RecentDoc Explorer"
+
+local ffi = require "ffi"
+local GUID, hInstA, hInstP, sTmpFile, sArg1, xArg2 = ... 
+--far.Message(sArg1, "RecentDoc Explorer")
+
+-- Check LnkView plugin version
+local LnkGUID    = "53415453-E31E-4D4C-8FE5-D6B0C6853E7C"
+local LnkViewVer = Plugin.SyncCall (LnkGUID, "ver")  or  0
+if  LnkViewVer < 350  then
+    return far.Message ("LnkView plugin Version required: 3.5.0+", "RecentDoc Explorer ERROR")
+end
+
+-- The type of the value MUST be binary
+if  not(type(xArg2) =="table")  or  not(type(xArg2[1]) == "string")  then
+    return far.Message("Invalid argument2 type", EHDR.." ERROR")
+end
+
+local wsName   = ffi.cast ("wchar_t*", xArg2[1])               -- Prepare to calculate the item name length
+local nItmBgn  = tonumber ((ffi.C.wcslen(wsName) +1) *2)       -- Calculate offset of the ShellItem in the data buffer
+local sItemNam = win.Utf16ToUtf8(string.char(string.byte(xArg2[1], 1, nItmBgn-2)))   -- Convert the item name into LUA string
+
+-- Parse the ShellItemIDList
+local Names,Values,Descs,Offsets,Lengths,Depths = Plugin.SyncCall (LnkGUID, "parse IDList", xArg2, nItmBgn)
+
+-- Open the output file
+local hTmp  = assert(io.open(sTmpFile, "a+"))
+if    hTmp    then
+    hTmp:write (string.format("; 0x%08x; %5d; %3d; %-64s; %s\n", 0, nItmBgn, 0, "Target Name", sItemNam))
+        
+    if  (type(Names) == "table")  then  for i,_ in ipairs(Names) do
+        hTmp:write (string.format("; 0x%08x; %5d; %3d; %-64s; %s\n", Offsets[i], Lengths[i], Depths[i], Names[i], Descs[i]))
+    end end
+
+    -- Close the TMP-file
+    hTmp:close()
+else
+    return far.Message("Error opening TmpFile", EHDR.." ERROR")
+end
+
+-- return true if the parsing was successfull
+return  (type(Names) == "table")

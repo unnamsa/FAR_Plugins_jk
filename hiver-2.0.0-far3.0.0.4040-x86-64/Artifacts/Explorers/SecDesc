@@ -1,0 +1,50 @@
+--!RE:/\\TreeView\\Classes\\AppID\\[^\\]+\\(Launch|Access)Permission$/
+--!RE:/\\TreeView\\ControlSet\d+\\Services\\.*\\Security$/
+--!RE:/\\TreeView\\ControlSet\d+\\Services\\lanmanserver\\DefaultSecurity\\Srvsvc[^\\]+$/
+--!RE:/\\TreeView\\ControlSet\d+\\Control\\Terminal Server\\WinStations\\(Default|Console)Security$/
+--!RE:/\\TreeView\\ControlSet\d+\\Control\\WMI\\Security\\[^\\]+$/
+--!RE:/\\TreeView\\Policy\\.*SecDesc\\.*/
+--!RE:/\\TreeView\\Microsoft\\.*\\Security(Descriptor)?$/
+--!RE:/\\TreeView\\Microsoft\\Ole\\(DefaultLaunchPermission|Machine(Launch|Access)Restriction)$/
+
+local EHDR = "Security Descriptor Explorer"
+local GUID, hInstA, hInstP, sTmpFile, sArg1, xArg2 = ... 
+
+-- Get plugin handle
+local hInst = hInstA  or hInstP  or  unpack({nil, far.Message("No HIVER instance found", EHDR.." ERROR")})
+if  not hInst then return end
+
+-- Duplicate currently open HIVE handle
+local hHive = Plugin.SyncCall (GUID, hInst, "DupHandle")  or
+              unpack({nil, far.Message("HIVER DupHandle not successfull", EHDR.." ERROR")})
+if  not hHive then return end
+
+-- The type of the value MUST be binary
+if  not(type(xArg2) =="table")  or  not(type(xArg2[1]) == "string")  then
+    return far.Message("Invalid argument2 type\n"..type(xArg2), EHDR.." ERROR")
+end
+
+-- Parse the Security Descrptor structure
+local Names,Values,Descs,Offsets,Lengths,Depths = Plugin.SyncCall (GUID, hHive, "parse SecDesc", xArg2)
+if  not Names  then
+    return far.Message("Unsuccessfull Security Descrptor parsing...", EHDR.." ERROR")
+end
+
+-- Open the output file
+local hTmp  = assert(io.open(sTmpFile, "a+"))
+if    hTmp    then
+
+    -- Output the Security Descriptor structure        
+    for i,_ in ipairs(Names) do
+        hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %s\n", 
+                                  sArg1, Offsets[i], Lengths[i], Depths[i], Names[i], Descs[i]))
+    end
+
+    -- Close the TMP-file
+    hTmp:close()
+else
+    return far.Message("Error opening TmpFile", EHDR.." ERROR")
+end
+
+-- return true if the parsing was successfull
+return  (type(Names) == "table")

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<farconfig>
+    <pluginsconfig>
+        <plugin guid="FF8FC1AE-0F35-4134-9BAB-56D71B1D47B9">
+            <hierarchicalconfig>
+                <key name="FF8FC1AE-0F35-4134-9BAB-56D71B1D47B9" description="AltHistory">
+                    <!--
+                       Параметр "HiddenCommandsSpacesCount" задает количество пробелов, которые
+                       должны предшествовать команде, попадающей в стандартную историю FAR,
+                       чтобы она не попала в историю команд AltHistory.
+                       Минимальное значение = 0000000000000001, максимальное = 0000000000000010.
+                       По умолчанию значение = 0000000000000004.
+                    -->
+                    <value name="HiddenCommandsSpacesCount" type="qword" value="0000000000000004" />
+                </key>
+            </hierarchicalconfig>
+        </plugin>
+    </pluginsconfig>
+</farconfig>

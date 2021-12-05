@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<farconfig>
+    <pluginsconfig>
+        <plugin guid="FF8FC1AE-0F35-4134-9BAB-56D71B1D47B9">
+            <hierarchicalconfig>
+                <key name="FF8FC1AE-0F35-4134-9BAB-56D71B1D47B9" description="AltHistory">
+                    <!--
+                       Параметр "AepApplyNowDefault" управляет состоянием флажка
+                       "Применить к существующей истории" при открытии окна
+                       "Добавить в список исключений".
+                       Может быть одним из следующих значений:
+                         0000000000000000 - Флажок снят.
+                         0000000000000001 - Флажок установлен.
+                       По умолчанию значение = 1 (Флажок установлен).
+                    -->
+                    <value name="AepApplyNowDefault" type="qword" value="0000000000000001" />
+                </key>
+            </hierarchicalconfig>
+        </plugin>
+    </pluginsconfig>
+</farconfig>

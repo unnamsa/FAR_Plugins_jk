@@ -1,0 +1,198 @@
+--!SYSTEM: devices list
+
+local EHDR = "Devices List Explorer"
+-- local ffi  = require "ffi"
+
+local GUID, hInstA, hInstP, sTmpFile, sArg1, sArg2 = ... 
+local msg
+
+-- Get plugin handle
+local hInst = hInstA  or hInstP  or  unpack({nil, far.Message("No HIVER instance found", EHDR.."ERROR")})
+if  not hInst then return end
+
+-- Duplicate currently open HIVE handle
+local hHive = Plugin.SyncCall (GUID, hInst, "DupHandle")  or
+              unpack({nil, far.Message("HIVER DupHandle not successfull", EHDR.."ERROR")})
+if  not hHive then return end
+
+
+-- Include libservice.lua (concatenate the relative path to libservice.lua to the dirname of the currently running script)
+local libService = dofile (debug.getinfo(1).source:match("@(.*\\)[^\\]*$").."Libs\\libservice.lua")
+
+
+--------------------  ControlSet name generation routine  --------------------------
+function CSName (iCCS)
+    return  string.format("ControlSet%03d", iCCS)
+end
+
+
+----------------------  Devices tree iteration routine  ----------------------------
+function IterateDevices (sDir, iDep, tDevices, qMTime)
+
+
+    local sCurDir      = Plugin.SyncCall (GUID, hHive, "pwd")
+    local bRet, nItems = Plugin.SyncCall (GUID, hHive, "cd \""..sDir.."\"")
+--far.Message(string.format("cd <%s>\nItems=%d", Plugin.SyncCall (GUID, hHive, "pwd"), nItems), "point1")
+
+    if  bRet  then 
+
+        if  iDep == 3  then
+
+            -- We reached a device descriptor - extract its data into the new tDevices element
+            local _, sClass, sGUID, sDesc, sDriver, sMfg, sServ, sName, sLoc  
+            local sKey = Plugin.SyncCall (GUID, hHive, "pwd")
+            _, sClass  = Plugin.SyncCall (GUID, hHive, "getitem Class")
+            _, sGUID   = Plugin.SyncCall (GUID, hHive, "getitem ClassGUID")
+            _, sDesc   = Plugin.SyncCall (GUID, hHive, "getitem DeviceDesc")
+            _, sDriver = Plugin.SyncCall (GUID, hHive, "getitem Driver")
+            _, sMfg    = Plugin.SyncCall (GUID, hHive, "getitem Mfg")
+            _, sServ   = Plugin.SyncCall (GUID, hHive, "getitem Service")
+            _, sName   = Plugin.SyncCall (GUID, hHive, "getitem FriendlyName")
+            _, sLoc    = Plugin.SyncCall (GUID, hHive, "getitem LocationInformation")
+
+            table.insert (tDevices, {key=sKey, name=sName, desc=sDesc, loc=sLoc or "N/A", mtime=qMTime, cls=sClass, 
+                                     clsGUID=sGUID or "{None}", drv=sDriver, mfg=sMfg or "", serv=sServ})
+        else
+            for i = 1, nItems do
+
+                local sName, xValue, nSubItems = Plugin.SyncCall (GUID, hHive, "getitem", i)
+
+                if  nSubItems  then        -- We have a registry key - iterate its subitems
+                    bRet = IterateDevices (sName, iDep+1, tDevices, xValue)
+                end
+            end
+        end
+
+    end
+
+    -- Restore the hive's "directory"
+    Plugin.SyncCall (GUID, hHive, "cd \""..sCurDir.."\"")
+    return bRet
+end
+
+---------------------------------------------------------------------------------------------------
+
+function  ParseCCS (sCSName, hTmp)
+
+    local sDir         = "/TreeView/" .. sCSName .. "/"
+    local iDep         = 0
+    local tDevices     = {}
+
+    -- Build the list of the devices in this ControlSet
+    IterateDevices (sDir.."Enum", iDep, tDevices)
+
+    -- Sort the results
+    table.sort (tDevices, function(a,b)
+        return ( (a.clsGUID < b.clsGUID)  or  (a.clsGUID == b.clsGUID  and  a.mtime > b.mtime) )
+    end)
+
+    -- Extract all the available info for each device and write the results
+    local clsRoot = sDir.."Control/Class/"
+    local oldGUID = ""
+
+    for i,v in ipairs(tDevices) do
+
+        if  oldGUID ~= v.clsGUID  then      -- Device group (the primary sort criteria) changed
+            oldGUID  = v.clsGUID
+
+            local clsDescKey   = clsRoot..v.clsGUID
+            local f1, clsDesc  = Plugin.SyncCall (GUID, hHive, "getitem \""..clsDescKey.."/.(default)\" -nocase")
+            if  not clsDesc  then
+                f1, clsDesc    = Plugin.SyncCall (GUID, hHive, "getitem \""..clsDescKey.."/Class\" -nocase")
+            end
+            local f2, clsHide  = Plugin.SyncCall (GUID, hHive, "getitem \""..clsDescKey.."/NoDisplayClass\" -nocase")
+
+            hTmp:write (string.format("\n%s\n%s %s %s\n", ((not f1) and "ERROR: Class name for "..clsDescKey.." is not found !" or ""), 
+                                                          (clsDesc  or  v.cls  or  "Device Class not specified"), v.clsGUID,
+                                                          ((clsHide and clsHide == "1") and "HIDDEN" or "") ))
+        end
+
+        hTmp:write (string.format("\n    %s: %s\n        Manufacturer:    %s\n        Location:        %s\n        DeviceKeyMTime:  %10s %16s\n", 
+                                   v.name or v.desc, v.key,              v.mfg,                        v.loc,  Plugin.SyncCall (GUID, hHive, "GetFileTime", v.mtime) ))
+
+        if  v.serv  then                    -- The Service Process
+
+            local srvRoot = sDir .. "Services/" .. v.serv
+
+            local f1, srvType  = Plugin.SyncCall (GUID, hHive, "getitem \""..srvRoot.."/Type\" -nocase")
+            local f2, srvStrt  = Plugin.SyncCall (GUID, hHive, "getitem \""..srvRoot.."/Start\" -nocase")
+
+            hTmp:write (string.format("        Service Process: %s;  Service Type: %s; Service StartType: %s\n", v.serv,
+                                                              ((not f1) and "N/A" or libService.ServiceType(tonumber(srvType))),
+                                                              ((not f2) and "N/A" or libService.ServiceStartType(tonumber(srvStrt))) ))
+        end
+
+        if  v.drv  then                     -- Device Driver
+
+            local drvRoot = clsRoot .. v.drv
+            local f1, drvKeyMTime = Plugin.SyncCall (GUID, hHive, "getitem \""..drvRoot.."\" -nocase")
+            local f2, drvDate     = Plugin.SyncCall (GUID, hHive, "getitem \""..drvRoot.."/DriverDate\" -nocase")
+            local f3, drvDesc     = Plugin.SyncCall (GUID, hHive, "getitem \""..drvRoot.."/DriverDesc\" -nocase")
+            local f4, drvVer      = Plugin.SyncCall (GUID, hHive, "getitem \""..drvRoot.."/DriverVersion\" -nocase")
+            local f5, drvInfPath  = Plugin.SyncCall (GUID, hHive, "getitem \""..drvRoot.."/InfPath\" -nocase")
+            local f6, drvInfSect  = Plugin.SyncCall (GUID, hHive, "getitem \""..drvRoot.."/InfSection\" -nocase")
+            local f7, drvInfSectX = Plugin.SyncCall (GUID, hHive, "getitem \""..drvRoot.."/InfSectionExt\" -nocase")
+
+            hTmp:write (string.format("        Device Driver:   %s [%s]  version %s\n        DriverInfFile :  %s [%s%s]\n        DriverKeyMTime:  %10s %16s\n", 
+                                               v.drv, drvDesc,           drvVer,       drvInfPath,drvInfSect,drvInfSectX or "",  Plugin.SyncCall (GUID, hHive, "GetFileTime", drvKeyMTime) ))
+        end
+    end
+end
+------------------------------------------------------------------------------------
+
+
+
+-- Open the output file
+local hTmp  = assert(io.open(sTmpFile, "a+"))
+if  not hTmp  then  return far.Message("Error opening TmpFile", EHDR.." ERROR")  end
+hTmp:write [[
+;;;;====================================================================
+;;;;                        Devices List
+;;;;====================================================================
+]]
+
+-- Just test for getitem function --------------------
+-- local v1, v2, v3, v4  = Plugin.SyncCall (GUID, hHive, "getitem /TreeView/ControlSet001/Control/Lsa/Data")
+-- far.Message(string.format("Name: <%s>\nValue: <%s>\nChilds: %d\nClass/Type: <%s>", v1, v2, v3, v4), "GetItem test")
+-------------------------------------------------------
+
+local bSysHive  = Plugin.SyncCall (GUID, hHive, "cd /TreeView/Select/")
+if  not bSysHive  then
+    far.Message ("This is not a SYSTEM hive !", EHDR.."ERROR")
+    return false
+end
+
+
+local f00, nCCS = Plugin.SyncCall (GUID, hHive, "getitem Current")
+local f01, nDCS = Plugin.SyncCall (GUID, hHive, "getitem Default")
+local f02, nLCS = Plugin.SyncCall (GUID, hHive, "getitem LastKnownGood")
+local f03, nFCS = Plugin.SyncCall (GUID, hHive, "getitem Failed")
+
+local  __, nRootChilds = Plugin.SyncCall (GUID, hHive, "cd ..")
+
+-- Iterate thru the registered ControlSets
+for i = 1, nRootChilds   do
+
+    local sName, iMTime = Plugin.SyncCall (GUID, hHive, "getitem", i)
+    if  sName:match("^ControlSet")  then
+
+        hTmp:write (string.format("\n\n%s %s %s %s %s %10s %16s\n\n", sName,
+                                  sName == CSName(nCCS)  and  "Current"  or "",
+                                  sName == CSName(nDCS)  and  "Default"  or "",
+                                  sName == CSName(nFCS)  and  "Failed"   or "",
+                                  sName == CSName(nLCS)  and  "LastKnownGood"  or "",
+                                  Plugin.SyncCall (GUID, hHive, "GetFileTime", iMTime)   ))
+        ParseCCS (sName, hTmp)
+    end
+end
+
+-- Close the TMP-file
+hTmp:close()
+
+-- Close the copy of the HIVE handle
+Plugin.SyncCall (GUID, hHive, "CloseHandle")
+return true
+
+
+
+

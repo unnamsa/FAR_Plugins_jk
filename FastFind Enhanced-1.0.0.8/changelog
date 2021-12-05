@@ -1,0 +1,11 @@
+shmuel 17.02.2020 18:50:30 +0200 - build 1.0.0.8
+
+1. Rebuild the plugin due to a fix in luaplug.c.
+
+shmuel 01.09.2019 20:29:37 +0300 - build 1.0.0.7
+
+1. Fix setting counters' color (by DrKnS).
+
+shmuel 01.09.2019 16:20:35 +0300 - build 1.0.0.6
+
+1. A few minor fixes.

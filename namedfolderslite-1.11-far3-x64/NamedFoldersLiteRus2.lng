@@ -1,0 +1,117 @@
+﻿.Language=Russian,Russian (Русский)
+// Version: 2016.0929.2217
+// Note:    Mixed translation (rus, eng) for developers :)
+
+// Plugin name
+"Named Folders Lite"
+
+// Buttons
+"&OK"
+"&Cancel"
+"&Yes"
+"&No"
+
+// Error message with exception class
+"Exception %s occured:"
+
+// Error message: cd:x where x is not defined
+"Запрошенное имя папки не определено."
+
+// Error message: cd:x where x is defined but its folder does not exist
+"Папка назначения не найдена."
+
+// Confirmation: cd::x where x was already defined
+"Определение уже существует"
+"Вы хотите переписать это определение?"
+
+// Error message: name of the named folder is empty
+"Неверное имя: пусто"
+
+// Error message: name of the named folder contains prohibited characters
+"Неверное выражение: обнаружены запрещенные символы"
+
+// Delete an item in the plugin's panel
+"Вы уверены, что хотите удалить выбранный элемент (ы)?"
+"Не удалось удалить"
+
+// Editor for plugin's panel
+"&Name (Alias):"
+"Описание:"
+"&Directory:"
+"Plugin &ID:"
+"Plugin &parameter:"
+"&Host file:"
+
+// Ask the user to choose from several partial matches for a name
+"Выберите нужную папку"
+
+// Errors when importing XMLs
+"Некорректный корневой узел - XML не Named Folders Lite"
+"Не найден элемент Name"
+"Элемент Name не может быть не заполненным"
+"Не найден элемент Directory"
+
+// Confirm overwrite
+"Замечание"
+"Новый:       "
+"Существующий:"
+"&Запомнить выбор"
+"&Перезаписать"
+"Пр&опустить"
+"Папка назначения уже существует."
+"Файл назначения уже существует."
+
+// String to display instead of size for directories
+"<DIR>"
+
+// Datetime format. Leave empty for system default
+""
+
+// Error message when fileinfo couldn't be found
+"Не удалось прочитать информацию о файле"
+
+// When a directory does not exist on cd:x - ask if the user wants to try to locate an existing directory
+"Попытаться перейти в родительский каталог?"
+
+// Prompt for entering a directory name when creating a new directory
+"Новое имя папки:"
+
+// When cannot create directory
+"Не удалось создать каталог"
+
+// Attempting to store a new bookmark, but the destination is a directory of bookmarks
+"Невозможно использовать это имя т.к. существует каталог с таким же именем"
+
+// Option - Remember panel's last directory
+"&Запоминать последнюю папку"
+
+// Option - Use substitution engines
+//          Processing of aliases
+"Обработка &условных обозначений"
+"&Известная папка: $(DIR:TMP), $(CLSID_PROFILE)"
+"&Переменная окружения: $(ENV:USERPROFILE)"
+"Переменная окружения &ОС: %USERPROFILE%"
+"Значение &реестра ОС: $(REG:HKCU\\Environment\\TEMP)"
+
+// Option - Allow path suffix (everything after the first "\")
+"Разрешать по&сле \"\\\" конечный путь назначения"
+
+// Option - Allow plugin calls
+"Разрешить &вызов плагинов"
+
+// Option - Allow fuzzy search for named folders
+"Разрешить &нечёткий поиск"
+"Разрешить нечё&ткий поиск в папках"
+
+// Basic plugin commands
+"Invalid plugin command"
+"Invalid plugin call (\"%s\")"
+"GOTO(name)"
+"EXISTS(name)"
+"SETCURRENT(name)"
+"SET(name, dir [,desc [,guid [,param [,hostfile]]]])"
+"GET(name)"
+"DELETE(name)"
+
+// Error message: No bookmark to return to using cd:-
+"No remembered bookmark to return to."

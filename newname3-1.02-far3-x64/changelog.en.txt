@@ -1,0 +1,69 @@
+ ______________________________________________________________________________
+|                                                                              |
+|   NewName3 v1.02                    (c) 2014+ Pepak, https://www.pepak.net   |
+|______________________________________________________________________________|
+
+
+  [!] Major change
+  [+] Feature added
+  [-] Bug fixed
+  [*] Minor change
+
+_______________________________________________________________________________
+
+v1.02
+
+  [+] Support for renaming files from a temporary panel (the TMPPANEL plugin).
+
+  [+] By default the plugin no longer creates "incompatible" filenames
+      ending with a dot (e.g. with a template such as "%#.%e" if the
+      source file has no extension). The old behavior can be enabled in
+      the plugin's options, but is not recommended as many applications
+      do not work with these filenames.
+
+_______________________________________________________________________________
+
+v1.01
+
+
+  [!] Rewritten the plugin to the new plugin framework.
+
+  [+] If the plugin is called with no selected files, the active file (the
+      one under the cursor) can be used for renaming. This functionality
+      must be enabled in the plugin's configuration first.
+
+  [+] Added support for saving the counter value for each filename pattern
+      separately. If enabled by the checkbox available in the NewName dialog,
+      the saved value will be restored when you enter the same filename
+      pattern later.
+
+      Note that the search for saved patterns is case-sensitive.
+
+  [-] Fixed a bug that increased the counter even when a rename failed.
+      That would have caused skipped values in the renamed sequence.
+
+  [*] Removed the "No 'odd' zeros" option because it is not really needed -
+      in order to remove the leading zeroes, simply remove them from the
+      number.
+
+  [*] Optimized the processing of options: They are now only open for a
+      limited time, allowing for a better concurrent execution of the plugin
+      in multiple FAR windows. The options are only saved if their contents
+      changed, preventing unnecessary modifications to the plugin's config
+      file.
+
+  [*] Cleaned up the source code.
+
+_______________________________________________________________________________
+
+v1.00
+
+  [!] The plugin is now published on FAR PlugRing. In order to make this
+      possible, the name was changed to "NewName3" to differentiate the
+      plugin from the original "NewName" made by Ivan Sintyurin.
+
+_______________________________________________________________________________
+
+v0.01
+
+  [!] First public version.

@@ -1,0 +1,140 @@
+﻿.Language=English,English
+.PluginContents="FastFind Enhanced"
+
+@Contents
+$
+$^ #FastFind Enhanced (v1.0)#
+$
+    This plugin replaces default functionality of ~fast search~@:FastFind@ in file panels - 
+you can type partial name of a file while holding Alt to reposition cursor to the file matching 
+a pattern you entered. Better visual presentation and improved algorithms provide more satisfying 
+user experience.
+  
+    Extended functionality can be disabled if undesired, forcing the plugin to mimic behaviour of the
+native tool.
+
+    Just like the standard fast search dialogue, FastFind Enhanced supports use of '?' and '*' as
+wildcard characters and trailing '/' or '\' to limit search to folders only.
+
+    Input dialogue provides numeric indication of how many files in the panel match current pattern: 
+the number in the top-right corner shows number of files matched above current file, the number in 
+the bottom-right corner - for files matched below current ("above" and "below" are according to 
+the sorting order used by the file panel at the moment).
+
+   ~#Configuration#~@Config@
+   ~#Controls#~@Hotkeys@
+   ~#Macro integration#~@Macro@
+
+© Gleb "Acerbic" Varenov, 2013
+
+
+@Config
+$
+$^ #FastFind Enhanced (v1.0)#
+$  #Configuration#
+
+ #[x] Auto '*' as 1st char# - asterisk is inserted in the beginning of the input string every time 
+new search is started. This asterisk is a normal wildcard character just as if you typed it yourself, 
+so if you don't need it you can delete it with 'Backspace' key. 
+
+ #[x] Favour shorter matches# - use different search algorithm from Far to search for the file matching 
+input string. Best explained with an example.
+
+  Say, you have two files:
+       #my images#
+       #Summercamp.img#
+
+  and you input string is #*im#. It can be matched to both of the files, but the 1st match is shorter
+(4th position in the file name vs 12th for the second). When several files are equally short and 
+current file is NOT among them, then the panel's sort mode is used to determine the winner.
+
+  Of course, this option only makes sense if the input string starts with '*', which makes it a great 
+complement to the previous one. 
+
+  Far default search strategy is to move cursor to the next file matching 
+input string below current file in the panel. If the end of the list is reached and match has not 
+been found yet, the search rolls over and starts from the top.
+
+ #[ ] Input dialogue on the bottom# - enable if you want old style static input dialogue position.
+
+ #[x] Better scrolling algorithm# - scrolling happens when there are more files in the panel than panel 
+can show. If this option is disabled then the plugin will try to scroll panel to always keep current 
+file in the centre of the first file column (mimicking default scrolling behaviour).
+
+  If enabled, 
+  1) If file to which cursor will be moved is off-screen, then scrolling will happen and the file will
+be placed in the middle of the panel.
+  2) If said file is visible on the panel, then "Scroll margin" value is used to determine if scrolling 
+is required.
+
+ #Scroll margin# - when "Better scrolling algorithm" is enabled, this value (0-100%) determines if 
+scrolling is required. Value 100 means to "scroll always", almost as if "Better scrolling algorithm" 
+is disabled; value 0 means "Never scroll if you can do without it (new current file is on screen)". 
+Values between these extremes form a scroll margin - see diagram below.
+@-
+    ....
+     10
+ ╔═════════╗                                  
+ ║   11    ║ <──┐                             
+ ╠═══12════╣    │                             
+ │   13    │    │                             
+ │   14    │  Top and bottom scroll       
+ │   15    │  margins (roughly 40% value)
+ │   16    │    │
+ ╠═══17════╣    │
+ ║   18    ║ <──┘
+ ╚═════════╝
+     19
+    .... 
+@+
+
+    If matched file is within scroll margin bands, the panel will be scrolled so file's
+new position on screen is just outside the margin (i.e. closer to the center of the panel)
+                                           
+ #[ ] Use XLat for non-English keyboards# - this is a bit cryptic option aimed to fix possible issues with
+non-English locales. The problem might arise when typing file name while holding Alt. One way to 
+resolve it is to use Far internal XLat function based on predefined conversion tables, another option 
+is to let Windows re-send adjusted key strokes. If you can't type correct input in your language when 
+Alt is pressed, try toggling this option.
+
+@Hotkeys
+$
+$^ #FastFind Enhanced (v1.0)#
+$  #Controls / Hotkeys#
+    You start a search by typing partial name of a file while holding Alt and when input dialogue pops
+up you can continue typing with Alt pressed, or you can release it. #Esc# will close the dialogue but 
+is not necessary, as many key combos that don't make a proper input towards a file name will result in
+input dialogue closed and the key combo responsible will be passed through to the Far manager - nothing 
+new here, just as the default fast find works.
+
+    That being said, the following keys have special meaning for FastFind Enhanced:
+  - #CtrlV# and #ShiftIns# to paste a string from the clipboard.
+  - #AltDown# and #CtrtEnter# to cycle forward through files matching current input string
+  - #AltUp# and #CtrlShiftEnter# to cycle backwards through files matching current input string
+  - #AltHome# to move to the first (topmost) file matched
+  - #AltEnd# to move to the last file matched
+
+@Macro
+$
+$^ #FastFind Enhanced (v1.0)#
+$  #Calling the plugin from a macro#
+    The plugin exposes two functions for macro writers.
+
+  #Arguments: 1, KeyName#
+  Calls plugin and sends KeyName as the first pressed input key. If 
+plugin is already running on screen then nothing happens (nil is returned).
+
+ Plugin.Call("3106d308-a685-415c-96e6-84c8ebb361fe", 1, akey(1))
+
+  #Arguments: 2#
+  Returns current match pattern from the FastFind Enhanced dialogue. If plugin is
+not running, returns nil.
+
+ Plugin.Call("3106d308-a685-415c-96e6-84c8ebb361fe", 2)
+
+ #All GUIDs:#
+ {3106d308-a685-415c-96e6-84c8ebb361fe} plugin itself
+ {a1770ccc-5933-4661-bc8c-53192d0c06fa} input dialogue (main plugin dialogue)
+ {8195eb6d-9651-4d60-9a16-ed0d90e20be7} plugins menu (F11) item
+ {30ed409d-b5e6-4ed0-a3ef-d1757a36b6f5} configuration dialogue
+ {22595d6e-fc1e-4317-9935-5e9d3a39bea7} plugins' configuration menu item

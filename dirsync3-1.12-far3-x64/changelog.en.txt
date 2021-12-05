@@ -1,0 +1,476 @@
+ ______________________________________________________________________________
+|                                                                              |
+|   DirSync3 v1.12                    (c) 2014+ Pepak, https://www.pepak.net   |
+|______________________________________________________________________________|
+
+
+  [!] Major change
+  [+] Feature added
+  [-] Bug fixed
+  [*] Minor change
+
+_______________________________________________________________________________
+
+v1.12
+
+  [*] Updated the underlying components used by DirSync3.
+
+  [*] Cleaned up the source code.
+
+  [-] Fixed an error where the difference between files was always shown
+      using the left file's path and name. Now the newer file is used for
+      the choice of path and name. This can be significant if there's
+      a change in capitalization between the left and right file (e.g. if
+      a.txt and A.txt are compared and found different).
+
+_______________________________________________________________________________
+
+v1.11
+
+  [+] Added DirSync.IsEditorLine() function to DirSync3.lua. It returns
+      true if the active editor is a DirSync3's editor and the current line
+      is a line displaying a difference item.
+
+  [+] Added macros for all scripting-enabled functionalities to DirSync3.lua.
+
+  [+] Option to disable internal hotkeys (ALT+F1 etc.). This may be useful
+      if you use these hotkeys for another functionality. You may want to
+      redefine the functions to new hotkeys using the provided scripting
+      (see DirSync3.lua for examples).
+
+  [+] Option to allow a direction change (ALT+F1/F2) on incomplete blocks.
+      This is particularly useful when you search for some specific direction
+      (e.g. <---) with the "Select Found" editor option enabled (or using
+      the Regular Expression Search and Replace plugin).
+
+  [*] Only save the settings if they are actually different from the previous
+      version. This will prevent unnecessary changes to the plugin's data file,
+      e.g. when performing incremental backups.
+
+  [*] Support building with Delphi 10.4 Sydney.
+
+  [*] When changing the direction through the supported functions, an Undo
+      block is created for the operation. That basically means that you can
+      undo the whole operation in just one Undo (CTRL+Z) step.
+
+  [-] Fixed a minor memory leak in several functions.
+
+  [-] Fixed DirSync.IsEditor() scripting function to be usable from within
+      LUA macro conditions.
+
+_______________________________________________________________________________
+
+v1.10
+
+  [+] Support for synchronizing directories which loop into itself, such as
+      Windows user profiles. Looped directories are detected during scan and
+      either considered matching (if both left and right directory are in their
+      respective loops) or non-matching (if only one of the directories is
+      looped). During synchronization, looped directories are detected and
+      a warning is issued instead of endlessly copying.
+
+  [+] When a reparse point such as a junction is encountered while deleting
+      directories during synchronization, the reparse point is now deleted
+      non-recursively - that is, the reparse point itself will get deleted
+      but its contents will remain at the other end of the reparse point.
+
+  [+] Support for proper detection of reading failures (e.g. because of
+      insufficient privileges). Until now, these errors would be reported as
+      differences in the file contents, but the direction of the difference
+      would be based solely on the file dates of both files. Now a failed
+      file is marked as such (<!--, --!>, <!!>) and considered the "older"
+      one for the purposes of synchronization (i.e. it will be marked for
+      overwriting with the readable file). A similar behavior is implemented
+      for unreadable directories, except that unreadable directories will
+      not get synchronized - you must change the difference to one of the
+      non-error differences (<---, --->).
+      
+  [+] Implemented a PluginCall interface for all editor tasks. All available
+      functionality can be found in DirSync3.lua, along with a demonstration
+      of how the calls can be used. You can modify the macro at the end of
+      the file or add extra macros with other functions, as needed.
+
+  [+] Support for CTRL+F5/F6 hotkeys in the editor to jump to the left/right
+      file of the selected difference.
+
+  [+] Support for comparing file names case-sensitively.
+
+  [+] When comparing directories, if the two directories refer to the same
+      filesystem object (e.g. after using junctions), consider them matching
+      without performing the actual comparison.
+
+  [*] Updated the plugin to a newer version of Dialog API. Among other things,
+      this allows the plugin to properly react to resizing of the FAR's window.
+
+  [*] Minor fixes for compatibility with Delphi 10.1 and newer.
+
+  [*] Display the contents of the "Remember directory" edit as "changed"
+      for a better readability. We don't really need the "unchanged" option
+      here anyway, since most of the modifications will involve either
+      deleting path components (which is more comfortably achieved by pressing
+      BACKSPACE on the checkbox than in the edit) or adding extra path
+      components (where we don't want to delete the previous content anyway).
+
+  [*] Implemented a more consistent work with file-times. Sub-millisecond
+      times are now supported.
+
+  [*] Far window's title gets updated during both looking for differences and
+      synchronization.
+
+  [*] Changed the way compare options work in regards to persistence: In the
+      previous versions, if an option was disabled, it would also be saved as
+      unchecked. In this version, disabled option's value is kept for the
+      purpose of saving it. This means that, e.g. if you normally have the
+      "compare by content" option checked and perform a comparison with a
+      plugin panel (this comparison does not support comparing by content),
+      that one comparison would be done disregarding the content but future
+      comparisons with non-plugin panels will still have "compare by content"
+      checked.
+
+  [-] Move the cursor to the first difference even if the editor is reopened
+      after the synchronization had been finished (e.g. if an error occurred
+      during synchronization or a difference had been skipped by the user).
+
+  [-] Fixed incorrect display of the synchronization progress after an
+      interruption (if e.g. a confirmation had to be displayed, the succeeding
+      progress windows would only be displayed partially).
+
+  [-] Fixed incorrect display of file times in UTC rather than the local time.
+
+  [-] Fixed the incorrect version information shown in FAR's Plugin list.
+
+_______________________________________________________________________________
+
+v1.03
+
+  [!] Completely rewritten the underlying framework for my FAR plugins.
+      As a result it will be much easier to maintain the plugin, but it
+      is possible (likely) that in the short term, some new bugs will 
+      manifest.
+
+  [*] Support for building the plugin using Delphi versions up to 10.3 Rio.
+
+  [-] Fixed remembering of directories in the "files are different, which
+      one do you want to overwrite" mode. In the old version, incorrect
+      directories might possibly be remembered.
+
+  [-] Fixed incorrect "Remember choice" checkbox caption when the "Global
+      remember" option was active.
+
+  [-] Fixed the "ignore differences in new line characters" and "ignore 
+      differences in whitespace" options which haven't been working correctly
+      for ages.
+
+  [-] Fixed the unnecessarily large size of Retry/Skip dialogs if only one
+      file was concerned (e.g. when deleting a file).
+
+_______________________________________________________________________________
+
+v1.02
+
+  [-] If no synchronization items remained in the editor when it was being
+      closed, the editor would reappear immediately. It was not possible to
+      leave the editor unless at least one item remained in it.
+
+  [+] When opening the editor with the differences for the first time (not
+      using "return to editor"), the cursor is positioned at the first 
+      synchronization item.
+
+  [-] The progress window no longer shows the NT schematics (\\?\) in
+      filenames. The same is true for various confirmation dialogs.
+
+  [*] Tightened checks for error conditions:
+      - A source file or directory requested for synchronization does not 
+        exist at the time synchronization is to be actually performed.
+      - A source directory is no longer a directory when synchronizing.
+      - A destination for a directory copy exists but is not a directory.
+
+  [+] When running the visual comparison command, environment variables such
+      as %ProgramFiles% in the command get expanded.
+
+_______________________________________________________________________________
+
+v1.01
+
+  [-] Fixed very long filenames from version v0.90 - the feature did not
+      actually work.
+
+  [*] The user's decision for the "delete directory" operation (Delete/Skip)
+      is now applied to files within that directory, too.
+
+  [-] Fixed incorrect redraw after pressing ESC during the synchronization
+      phase.
+
+  [-] When synchronizing directories, copy also file attributes (read-only,
+      hidden etc.).
+
+  [*] During the initial scan for differences, show the indeterminate
+      progress status in the FAR Manager icon. It will get removed when
+      the scan completes.
+
+  [*] Refresh the panels when synchronization completes.
+
+_______________________________________________________________________________
+
+v1.00
+
+  [!] The plugin is now published on FAR PlugRing. In order to make this
+      possible, the name was changed to "DirSync3" to differentiate the
+      plugin from the original "DirSync" (made by me for FAR 1) and DirSyncW
+      (updated by Igor Yudincev and Maximus5 for FAR 2).
+
+  [-] Keybar hints for for ALT+F5/F6 were missing.
+
+  [*] Cleaned up the language files. Unused messages are gone. Hopefully
+      I didn't damage the Russian or Spanish translations too much. In case
+      you notice anything strange, I would appreciate a fix.
+
+_______________________________________________________________________________
+
+v0.97
+
+  [+] Changed the way "Remember" checkbox works: Now it is directory-specific,
+      i.e., it only works for a given directory and its subdirectories. For
+      example, suppose that you are synchronizing drives C:\ (source) and 
+      D:\ (destination). When syncing file C:\SomeDir\a.txt, an overwrite 
+      confirmation dialog pops up. You want to overwrite the destination file,
+      as well as the thousand other files in the C:\SomeDir directory, but 
+      you don't want to overwrite files in C:\Windows without confirmations.
+      In the previous versions, you were out of luck - you could either
+      remember "Overwrite" for all files or for no files. In 0.97, you can
+      remember "Overwrite" for directory "C:\SomeDir" and its subdirectories,
+      but keep the default "Ask me" for all other directories. If you wanted
+      to remember "Overwrite" for all directories, you could simply empty
+      the "remember directory" editbox, or perhaps change it to "C:\".
+
+      As long as the "Remember" checkbox is focused, you can use the following
+      keyboard shortcuts:
+
+        Backspace ... Remove the last path element from the directory (i.e.,
+                      remember the selection for the parent directory of the
+                      currently selected directory).
+        Delete ...... Set the directory to en empty string (i.e. remember the
+                      selection for all directories).
+        F5 .......... Reset the directory to its original value, e.g. if you
+                      mistakenly press Backspace or Delete, undo the change.
+
+      The original behavior (with the same "Remember" setting for all files
+      and directories) can be restored by activating the "Global remember"
+      option in the Synchronize Options dialog; the default value can be
+      set in the Plugin Options.
+
+  [*] While adding the previous feature, I also fixed some illogical behavior
+      of the "Remember" checkbox. E.g., if you confirmed that you wanted to
+      delete a directory, the plugin would still ask for confirmation before
+      deleting files within that directory.
+
+  [*] Removed the options "Show report of found differences" and "Display 
+      a message if no differences were found". Both of these date back to
+      the days when the plugin was based on Advanced Compare and don't
+      really make much sense as far as DirSync is concerned - they should
+      be enabled all the time.
+
+  [+] Added option "Select differences on both panels". When unchecked
+      (the default state), differences are only marked on that panel which
+      contains the newer version (which is useful if you intend to do
+      something other than just the synchronization with these files). When
+      checked, differences are marked on both panels, just like it used to
+      work with the Advanced Compare plugin.
+
+  [+] The synchronization editor got a new functionality to locate the next 
+      difference of a given type. Currently available are:
+
+        ALT+F5 ... Locate file missing on the left, file older on the left,
+                   or files different but of the same age.
+        ALT+F6 ... Locate file missing on the right, file older on the right,
+                   or files different but of the same age.
+
+      These functions are also available from the plugin menu, to facilitate
+      their re-mapping to different keys through a macro.
+
+  [-] The plugin no longer appears when F11 is pressed in a dialog.
+
+_______________________________________________________________________________
+
+v0.96
+
+  [-] Fixed the incorrect behavior of "selected items only" option: If a file
+      was selected on one panel only, it would be marked as missing on the
+      other panel. For correct function, you needed to select the file on
+      both panels. Now it suffices to select the file on one panel.
+
+  [-] Fixed display of "..\*" difference when comparing a root of some drive
+      with a non-root directory.
+
+  [+] Display a total progress bar in the tray area for synchronization. The 
+      progress is based on the number of processed lines compared to the 
+      number of all lines, not on the size of the respective files or 
+      directories; this is done to prevent unnecessary slow calculations.
+
+_______________________________________________________________________________
+
+v0.95
+
+  [+] Spanish translation by Mauro72.
+
+  [*] After changing the direction of a block, the cursor remains where it
+      was before starting the change.
+
+  [*] Reworked the editor's event handling to be more powerful and easier
+      to understand. Hopefully this didn't break anything.
+
+  [+] After a synchronization is finished, if there are any unsynchronized
+      items, then the list of such files is displayed again. The same is
+      done in case a synchronization is stopped by the Cancel button. You
+      can exit the synchronization by pressing Cancel on the "what to do"
+      dialog.
+
+  [+] Separated the deletion confirmations for files and directories (i.e.,
+      it is now possible to select "delete all" for files but "ask" for
+      directories).
+
+  [-] Fixed the non-working keyboard shortcuts in editor if used from FAR2.
+
+_______________________________________________________________________________
+
+v0.94
+
+  [-] Silent Mode wasn't working correctly in case file/directory copy/erase
+      failed (e.g. if one directory was a junction targetting a non-existent
+      directory).
+
+  [-] Silent Mode wasn't working correctly in case of <--> differences.
+
+  [-] The "Copy/Erase Failed" dialog now has button "Skip All" to ignore
+      this error for all future items.
+
+_______________________________________________________________________________
+
+v0.93
+
+  [-] Error messages in case of an exception are shown in red.
+
+  [-] Fixed an Access Violation at the end of synchronization if Silent Mode
+      was used.
+
+  [-] Silent Mode wasn't working correctly - in the second pass (the one in
+      which dialogs are shown), all files were synchronized again, regardless
+      of their success in the first pass. In fact, files which were missing
+      on one panel and were correctly copied, would require an overwrite
+      confirmation.
+
+_______________________________________________________________________________
+
+v0.92
+
+  [-] Incorrect check caused that the "Overwrite left" and "Overwrite right"
+      buttons would have the same effect as "Skip" if used in the dialog
+      shown for two files with the same timestamp ("<-->").
+
+  [+] When the synchronization is complete, failed synchronization items are
+      shown in a new editor, giving you the opportunity to synchronize them
+      again.
+
+  [+] Support for the silent mode. When enabled, the plugin postpones all
+      confirmations until after all synchronization items are processed. You
+      can set the silent mode in the synchronization dialog, the default value
+      can be set in the plugin's options.
+
+  [-] Fixed reading of options in FAR3, which could fail and revert to defaults
+      in some situations.
+
+  [+] The descriptions (language items MReportFileNotes1, MReportFileNotes2)
+      in the sync file can now be turned off in the plugin's configuration.
+
+  [*] Build script updated.
+
+_______________________________________________________________________________
+
+v0.91
+
+  [-] Fixed incorrect display of the progress window in case a warning or
+      confirmation had to be displayed.
+
+  [*] If the "change the operation to overwrite left/right file" was used
+      on a block, the current line was moved to the very top of the screen,
+      which made it rather inconvenient in the common case where the current
+      line was under the block - the user had to scroll to visually verify
+      that the operation really was changed. Now the current line will be
+      the sixth from the top, providing a quick peek at last lines of the 
+      block.
+
+  [+] It is now possible to return from the synchronization dialog to the 
+      synchronization editor using the appropriate button.
+
+  [+] New menu item "Show file information" in the synchronization editor's
+      menu will show some details about the left and the right file. Keyboard
+      shortcut is CTRL+F3.
+
+_______________________________________________________________________________
+
+v0.90
+
+  [!] Rewritten into Delphi.
+
+  [+] Support for FAR2, FAR3. 64bit versions are also published, but these
+      haven't been tested at all. They compile fine and don't output any
+      warnings, but that's the limit of my tests of them. If you use them,
+      please let me know how they behave.
+
+  [+] Support for very long filenames using the \\?\ namespace. All file
+      operations should now use this namespace.
+
+  [+] All confirmation dialogs now have the "Remember" checkbox for applying
+      the selected answer to all further confirmations of the same kind.
+
+  [+] All confirmation dialogs which need the user's decision between two 
+      files now have the "Compare" button to execute the visual comparison 
+      program on the files before the final decision is made.
+
+  [+] The synchronization operation no longer skips same-date files (marked
+      as "<--> in the editor". Instead, the user is given a choice as to
+      what to do in such a situation - overwrite the left file, overwrite
+      the right file, skip. The main synchronization dialog shown when the
+      editor with results is closed allows to select the answer beforehand,
+      removing the need for confirmations later.
+
+  [+] The plugin can now be started from the editor, provided that the editor
+      contains synchronization results. In that case, a menu is shown with
+      several useful functions (change the operation to overwrite left/right,
+      edit file on left/right, compare the two files). This makes it easy to
+      create keyboard macros for these tasks using CTRL+dot.
+
+  [+] The editor with sync. results now responds to some predefined keyboard
+      shortcuts: ALT+F1/F2 changes the synchronization operation to "overwrite
+      the left/right file". ALT+F3 invokes the visual comparison program.
+      CTRL+F1/F2 opens the left/right file in FAR's editor.
+
+      These shortcuts are also displayed in FAR's keybar.
+
+  [+] The "change the operation to overwrite left/right file" now also works
+      for multiple files in a block, if a block is active in the editor.
+
+  [+] Program used for visual comparison of two files is now configurable in
+      the plugin's options. Note that you must correctly configure its ability
+      to use the \\?\ namespace - for example, WinMerge does not use it, and
+      thus is limited to short 260 character filenames.
+
+  [+] The synchronization results have been updated to display not only the
+      synchronization operation, but (right after the "arrows") also the reason 
+      for that decision: "F" for "file missing", "T" for "different date/time",
+      "S" for "different size" and "C" for "different contents".
+
+  [*] Some features of DirSyncW are missing:
+      
+      - "Use filter" is gone, because I noticed its existence too late. If
+        there is interest in it, I can try to resurrect it.
+
+      - "Use self settings" is also gone, because I have no idea what was its
+         purpose.
+
+      - The russian translation is incomplete; what I could copy from DirSyncW,
+        that I did, but a lot of new strings remain untranslated.
+
+  [*] Various internal changes to the program's logic. For example, editors
+      are now identified by their ID, not by the name of the files loaded
+      in them.

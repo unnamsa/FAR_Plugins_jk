@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<named_folders_lite>
+  <item>
+    <name>06-demo-lua+cd</name>
+    <description>sample: lua multi line: cd %SystemDrive% (ps: &quot;cd&quot; need replace to &quot;pushd&quot;)</description>
+    <!--
+      "cd " prefix handled by far.
+      This can be circumvented with the "pushd" command :)
+    -->
+    <!--<directory>lua:mf.print(&apos;cd %SystemDrive%&apos;) Keys&quot;Enter&quot;</directory>-->
+    <directory>lua:mf.print(&quot;pushd %SystemDrive%&quot;) Keys&quot;Enter&quot;</directory>
+
+  </item>
+</named_folders_lite>

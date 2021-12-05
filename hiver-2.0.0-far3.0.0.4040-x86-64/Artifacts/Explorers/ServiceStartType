@@ -1,0 +1,41 @@
+--!RE:/.*\\Services\\[^\\]+\\Start$/
+-- hive = SYSTEM
+
+local EHDR = "Service Start value Explorer"
+
+local ffi = require "ffi"
+local GUID, hInstA, hInstP, sTmpFile, sArg1, xArg2 = ... 
+
+-- The type of the value MUST be binary
+if  not(type(xArg2) =="table")  or  not(type(xArg2[1]) == "string")  then
+    return far.Message("Invalid argument2 type", EHDR.." ERROR")
+end
+
+local aList  = ffi.cast ("short*", xArg2[1])                 -- Represent the registry key value as array of int16
+local iType  = tonumber (aList[0])
+local sType  = string.format ("0x%04x", iType)
+
+-- Include libservice.lua (concatenate the relative path to libservice.lua to the dirname of the currently running script)
+local libservice = dofile (debug.getinfo(1).source:match("@(.*\\)[^\\]*$").."..\\Libs\\libservice.lua")
+
+-- Open the output file
+local hTmp  = assert(io.open(sTmpFile, "a+"))
+if    hTmp    then
+
+    hTmp:write (string.format("; 0x%08x; %5d; %3d; %-64s; %s\n", 
+            0, 
+            4, 
+            0, 
+            "Service Start type", 
+            sType .. "  [" .. libservice.ServiceStartType(iType) .. "]"
+    ))
+    
+
+    -- Close the TMP-file
+    hTmp:close()
+else
+    return far.Message("Error opening TmpFile", EHDR.." ERROR")
+end
+
+-- return true if the parsing was successfull
+return  true

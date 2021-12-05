@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<farconfig>
+    <pluginsconfig>
+        <plugin guid="FF8FC1AE-0F35-4134-9BAB-56D71B1D47B9">
+            <hierarchicalconfig>
+                <key name="FF8FC1AE-0F35-4134-9BAB-56D71B1D47B9" description="AltHistory">
+                    <!--
+                       Параметр "BackSpaceRemoveFilterWrongPart" управляет поведением плагина при
+                       нажатии BackSpace в окне истории.
+                       Может быть одним из следующих значений:
+                         0000000000000000 - BackSpace всегда удаляет последний символ.
+                         0000000000000001 - BackSpace удаляет неверную часть фильтра, если она присутствует,
+                                            иначе удаляет последний символ.
+                       По умолчанию значение = 0000000000000001.
+                    -->
+                    <value name="BackSpaceRemoveFilterWrongPart" type="qword" value="0000000000000001" />
+                </key>
+            </hierarchicalconfig>
+        </plugin>
+    </pluginsconfig>
+</farconfig>

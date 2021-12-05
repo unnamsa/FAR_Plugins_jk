@@ -1,0 +1,106 @@
+--!SOFTWARE or USRCLASS: Shell Extensions
+
+local EHDR = "Shell Extensions Explorer"
+local ffi  = require "ffi"
+
+local GUID, hInstA, hInstP, sTmpFile, sArg1, sArg2 = ... 
+local msg
+
+-- Get plugin handle
+local hInst = hInstA  or hInstP  or  unpack({nil, far.Message("No HIVER instance found", EHDR.." ERROR")})
+if  not hInst then return end
+
+-- Duplicate currently open HIVE handle
+local hHive = Plugin.SyncCall (GUID, hInst, "DupHandle")  or
+              unpack({nil, far.Message("HIVER DupHandle not successfull", EHDR.."ERROR")})
+if  not hHive then return end
+
+
+-- Include libhive.lua
+local libHive = dofile (debug.getinfo(1).source:match("@(.*\\)[^\\]*$").."Libs\\libhive.lua")
+
+
+
+-- Open the output file
+local hTmp  = assert(io.open(sTmpFile, "a+"))
+if  not hTmp  then  return far.Message("Error opening TmpFile", EHDR.." ERROR")  end
+hTmp:write [[
+;;;;====================================================================
+;;;;                        ShellExt List
+;;;;====================================================================
+]]
+
+
+local ClsTab     = {}
+local sRoot      = "/"
+local sHiveType  = libHive.HiveType(GUID, hHive)
+
+if  sHiveType == "SOFTWARE" then
+    sRoot = "/Classes/"
+else if  sHiveType ~= "USRCLASS" then
+    return far.Message ("Hive type "..sHiveType.."\nis not a SOFTWARE nor a USRCLASS hive !", EHDR.." ERROR")
+end end
+
+--    local sCurDir  = Plugin.SyncCall (GUID, hHive, "pwd")
+local bRet, nClasses = Plugin.SyncCall (GUID, hHive, "cd /TreeView"..sRoot)
+if  not bRet  then
+    return far.Message ("/TreeView"..sRoot.."  key is not found !", EHDR.." ERROR")
+end
+
+
+-- Iterate thru the registered file extensions
+for i = 1, nClasses   do
+
+    local sClass, iMTime = Plugin.SyncCall (GUID, hHive, "getitem", i)
+    if  sClass ~= ".(default)"  and  sClass:sub(1,1) == "."  then
+
+        local _0_, sFileType  = Plugin.SyncCall (GUID, hHive, "getitem "..sClass.."/.(default)")
+        local _1_, sCLSID     = nil, nil
+        if  sFileType  then  
+              _1_, sCLSID     = Plugin.SyncCall (GUID, hHive, "getitem "..sFileType.."/CLSID/.(default)")
+        end
+        if  sCLSID  then
+            if  ClsTab[sCLSID]  then
+                ClsTab[sCLSID]   = ClsTab[sCLSID] ..",".. sClass
+            else
+                ClsTab[sCLSID]   = sClass
+            end
+        end
+--        hTmp:write (string.format("\n%s %s %s (%s) %10s %16s", sClass, sFileType, sCLSID, ClsTab[sCLSID], Plugin.SyncCall (GUID, hHive, "GetFileTime", iMTime)   ))
+    end
+end
+
+bRet, nClasses = Plugin.SyncCall (GUID, hHive, "cd /TreeView"..sRoot.."CLSID")
+if  not bRet  then
+    return far.Message ("/TreeView"..sRoot.."CLSID  key is not found !", EHDR.." ERROR")
+end
+
+-- Iterate thru the registered Classes
+for i = 1, nClasses   do
+
+    local sCLSID = Plugin.SyncCall (GUID, hHive, "getitem", i)
+    local _0_, nAttr    = Plugin.SyncCall (GUID, hHive, "getitem "..sCLSID.."/ShellFolder/Attributes")
+    local _1_, sDesc    = Plugin.SyncCall (GUID, hHive, "getitem "..sCLSID.."/.(default)")
+
+    if  nAttr  then
+        local _1_, sDLL = Plugin.SyncCall (GUID, hHive, "getitem "..sCLSID.."/InProcServer32/.(default)")
+        if  sDLL  then
+            if  type(nAttr) =="table"  then
+                nAttr = tonumber( ffi.cast ("size_t*", nAttr[1])[1] )
+            end
+            hTmp:write (string.format( "\n%-32s; %s; %08X; %s; %s", sDLL, sCLSID, nAttr, ClsTab[sCLSID], sDesc ))
+        end
+    end
+end
+
+
+-- Close the TMP-file
+hTmp:close()
+
+-- Close the copy of the HIVE handle
+Plugin.SyncCall (GUID, hHive, "CloseHandle")
+return true
+
+
+
+

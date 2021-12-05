@@ -1,0 +1,169 @@
+
+                    Registry Browser Plugin for FAR
+                    What's new in the newer versions
+
+[+] New feature
+[-] Bugfixes
+[*] Changes
+
+
+Version 3.60, 2 Sep 2016
+
+[+] Keys can be renamed with Shift-F6 (at last!) - on XP and above
+[-] Fixed international chars in renaming values in FAR1 version
+[-] Memory leak when editing security
+
+
+Version 3.53, 18 Jun 2016
+
+[-] Ctrl-J also works when UAC is enabled.
+[-] Numeric sort works (in FAR2/FAR3 only).
+
+
+Version 3.52, 24 Mar 2016 (64-bit only)
+
+[-] Crash in FAR/x64 under Windows 10 when opening from command line.
+
+
+Version 3.51, 13 Jun 2015
+
+[-] When no Favourite keys are defined, adding the first key could cause an error message.
+[-] Memory leak when the plugin is open
+
+
+Version 3.50, 24 May 2015
+
+[+] In 64-bit Windows, command-line prefixes reg32: and reg64: make sure you open the exact registry key in any FAR.
+[+] Favorites list can be edited with Ins/Del keys
+[*] In Favorites list, entry names are also displayed.
+[+] Ctrl-Shift-F2 jumps between HKLM and HKCU to the same subkey as the current key (inspired by Windows 10)
+[-] Alt-Shift-F4 sometimes caused crash
+[-] Permission editor error messages were not displayed correctly
+[*] Removed obsolete code supporting Win98/ME and also the text about it from help
+
+
+Version 3.44, 16 Aug 2014
+    
+[-] Default values for keys were created with wrong names by Ctrl-Z.
+
+
+Version 3.43, 9 Jun 2014  (FAR 3 only)
+
+[-] Configuration menu stopped working in latest FAR3 versions
+
+
+Version 3.42, 21 Dec 2012  (FAR 3 only)
+
+[-] When plugin is open, "far /export" resulted in 'database is opened in memory' error
+
+
+Version 3.41, 4 Dec 2012 (FAR 3 only)
+
+[*] FAR 3 API changes
+
+
+Version 3.40, 31 May 2012
+
+[+] Symbolic link targets are displayed in descriptions. (Previously they were indicated only by the attribute.)
+[+] Ctrl-Shift-F1 displays regedit's Favorites menu. (Can be changed in future, or combined with Shift-F1.)
+[+] In Unicode versions, Ctrl-Z can edit descriptions longer than 512 chars (Far 1 limitation).
+[+] First-level subkeys of HKLM and HKU can be deleted using "unload hive" operation (on your own risk!).
+[-] Locked files and handle leaks after opening hives
+[-] In Unicode versions, selection was lost when panel was auto updated
+
+ 
+Version 3.33, 20 May 2012 (FAR 2 only)
+
+[-] Crash when importing keys and values
+
+
+Version 3.32, 19 May 2012
+
+[-] Editing in "keys as files" mode didn’t work
+[-] Editing problems in unicode-only FAR installations where files could not be found
+    because of relative path names.
+[-] ANSI version got stuck when entering into keys in "keys as files" mode
+[*] Unused "Disks menu hotkey" config item removed in Unicode versions
+[*] In Far3, Shift-F1/F2 goes to its own registry settings (it makes sense for ANSI plugins only)
+[*] New-style package with subdirectory and Renewal.xml for Renewal plugin (FAR3)
+
+
+Version 3.31, 10 May 2012 (FAR 3 only)
+
+[-] Fixed incompatibility with changed and poorly documented Far3 API
+[-] Absolute .reg file path is saved in history even if relative path was specified in the command line
+
+
+Version 3.30, 8 May 2012
+
+[+] Versions for Far 3.0 (32- and 64-bit; now 5 builds are released in total)
+[+] "Effective Permissions" tab is displayed in Permissions->Advanced dialog (local registry only)
+[+] On Vista/Win7/8, when UAC is on, export with "Use Regedit" works. (Ctrl-J and hive operations don't.)
+[+] On Vista/Win7/8, hidden files are cleaned up after unloading hive files.
+[+] F5/F6 pressed on ".." copy the whole current key
+[*] If opening from command line is unsuccessful, an error message is displayed
+[*] String values in .reg can be multi-line and are processed until the closing quote
+[*] On 64-bit systems, when browsing 32-bit registry, 32-bit regedit is launched on Ctrl-J
+     and on F5/F6 (when "Use Regedit" is on)
+[-] Garbage was displayed in Owner column when owner SID could not be translated to a name
+[-] On 64-bit systems, Ctrl-A editor didn't display permission names in 32-bit FAR
+[-] Ctrl-Z/Ctrl-G didn't work on values longer than 128 bytes
+
+
+Version 3.21, 3 Aug 2010 (64-bit only)
+
+[-] Crashes in dialogs in the 64-bit version
+
+
+Version 3.20, 25 Jul 2010
+
+[+] On 64-bit Windows, Shift-F3 switches the 32-bit plugin to 64-bit registry,
+     or the 64-bit plugin to 32-bit registry. Pressing Shift-F3 switches it back.
+[+] Owner names are cached, the limitation of displaying owners only for 100 items is removed.
+[-] Owner sometimes was not displayed for remote machines and for TrustedInstaller user
+[-] In Unicode version, F4 pressed on keys sometimes opened
+    Permissions dialog instead of editing.
+[-] Multi-string values in .reg are displayed as multi-line when pressing F4, like in registry
+
+Version 3.10, 17 Jul 2009
+
+[+] The first 64-bit version is available.
+[+] Export to both old REGEDIT4 and newer Unicode REG files
+    is possible in both versions of the plugin.
+[-] ANSI version: FAR crash when sorting by descriptions.
+[-] ANSI version: fixed some old bugs in export from Unicode
+     REG files
+[-] ANSI version: descriptions for multi-line and expanded strings
+     in Unicode .reg files were not displayed correctly.
+
+Version 3.02, 3 Jul 2009
+
+[-] Unicode version: memory allocation bug crashed FAR sometimes.
+[-] ANSI version: fixed sorting by names and descriptions (intl chars).
+
+Version 3.01, 28 Jun 2009
+
+[-] Lastt characterr wass duplicatedd when F4-editing values
+    in the Unicode version
+[-] Ctrl-G didn't work in the Unicode version.
+[-] Some unnecessary permissions were still requested when deleting a key.
+
+Version 3.00, 27 Jun 2009
+
+[+] The first Unicode version (for FAR 2.00). Keys and values can be
+    imported/exported/edited/created in Unicode.
+[+] Buttons added to copy dialog from .reg files (mouse-friendly).
+[*] List of locations for GUID/ProgID Lookup was defined more correctly
+    and expanded.
+[-] Security editor didn't work correctly on Vista/2008.
+[-] Ctrl-J didn't jump to right location in REGEDIT on 64-bit systems.
+[-] Hive file sometimes remained locked after closing. Restarting FAR was
+    required.
+[-] When deleting a key, the plugin attempted to open its parent key
+    with unnecessary KEY_ENUMERATE_SUB_KEYS flag.
+
+-----------------------------------------------------------------
+Michael Yutsis
+Ramat Gan, Israel
+http://michael-y.org/FAR
+yutsis@gmail.com

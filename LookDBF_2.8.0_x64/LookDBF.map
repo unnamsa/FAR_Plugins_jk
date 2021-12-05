@@ -1,0 +1,1155 @@
+ LookDBF
+
+ Timestamp is 579b5119 (Fri Jul 29 12:50:33 2016)
+
+ Preferred load address is 0000000180000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000620H .rdata                  CODE
+ 0001:00000620 00019c1eH .text$mn                CODE
+ 0001:0001a240 00001610H .xdata                  CODE
+ 0001:0001b850 000000a9H .edata                  CODE
+ 0002:00000000 00000120H .data                   DATA
+ 0002:00000120 00000490H .bss                    DATA
+ 0003:00000000 00000f78H .pdata                  DATA
+ 0004:00000000 00000138H .idata$5                DATA
+ 0004:00000138 0000003cH .idata$2                DATA
+ 0004:00000174 00000014H .idata$3                DATA
+ 0004:00000188 00000138H .idata$4                DATA
+ 0004:000002c0 0000025eH .idata$6                DATA
+ 0005:00000000 00000058H .rsrc$01                DATA
+ 0005:00000060 000003a8H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000180000000     <linker-defined>
+ 0001:00000000       ??_C@_02EOPBOLLC@dd?$AA@   0000000180001000     db_use.obj
+ 0001:00000004       ??_C@_02JAOCGLHE@mm?$AA@   0000000180001004     db_use.obj
+ 0001:00000008       ??_C@_04HOPFPECK@yyyy?$AA@ 0000000180001008     db_use.obj
+ 0001:00000010       ??_C@_02OLFOFNNK@hh?$AA@   0000000180001010     db_use.obj
+ 0001:00000014       ??_C@_02PEIOKOHA@mi?$AA@   0000000180001014     db_use.obj
+ 0001:00000018       ??_C@_02EOIDGPAG@se?$AA@   0000000180001018     db_use.obj
+ 0001:0000001c       ??_C@_03GLKMLICL@iii?$AA@  000000018000101c     db_use.obj
+ 0001:00000020       ??_C@_04ELDICIIG@?4FPT?$AA@ 0000000180001020     db_use.obj
+ 0001:00000028       ??_C@_04POJDJHBD@?4DBT?$AA@ 0000000180001028     db_use.obj
+ 0001:00000030       ??_C@_04NJCHBGKH@?$CD?$CFd?$CD?$AA@ 0000000180001030     db_use.obj
+ 0001:00000038       ??_C@_0L@MBPIFBNG@_NullFlags?$AA@ 0000000180001038     db_use.obj
+ 0001:00000048       ??_C@_0N@LONMLHHO@?$CFc?$CF3u?4?$CFu?5?5?$CFs?$AA@ 0000000180001048     db_use.obj
+ 0001:00000058       ??_C@_09EDIHJNKH@Character?$AA@ 0000000180001058     db_use.obj
+ 0001:00000068       ??_C@_09JLKKLGMN@?$CFc?$CF5u?5?5?$CFs?$AA@ 0000000180001068     db_use.obj
+ 0001:00000074       ??_C@_06IONACMBM@Number?$AA@ 0000000180001074     db_use.obj
+ 0001:0000007c       ??_C@_04FMEGDJGD@Date?$AA@ 000000018000107c     db_use.obj
+ 0001:00000088       ??_C@_07LBAMDMLH@Logical?$AA@ 0000000180001088     db_use.obj
+ 0001:00000090       ??_C@_04DHCMLMDA@Memo?$AA@ 0000000180001090     db_use.obj
+ 0001:00000098       ??_C@_08BFOPGFLN@DateTime?$AA@ 0000000180001098     db_use.obj
+ 0001:000000a8       ??_C@_07EDADKEAH@Integer?$AA@ 00000001800010a8     db_use.obj
+ 0001:000000b0       ??_C@_05KKPNNHNB@Float?$AA@ 00000001800010b0     db_use.obj
+ 0001:000000b8       ??_C@_06NCCPDBPF@Double?$AA@ 00000001800010b8     db_use.obj
+ 0001:000000c0       ??_C@_08BJADOJGE@Currency?$AA@ 00000001800010c0     db_use.obj
+ 0001:000000cc       ??_C@_06JIODDOFH@System?$AA@ 00000001800010cc     db_use.obj
+ 0001:000000d8       ??_C@_07ECEMPDJM@General?$AA@ 00000001800010d8     db_use.obj
+ 0001:000000e0       ??_C@_07EAPJJCOP@Picture?$AA@ 00000001800010e0     db_use.obj
+ 0001:000000e8       ??_C@_07NHGCHGFK@VarChar?$AA@ 00000001800010e8     db_use.obj
+ 0001:000000f0       ??_C@_09PNGNHPIF@VarBinary?$AA@ 00000001800010f0     db_use.obj
+ 0001:000000fc       ??_C@_05JMHIMMIL@Dummy?$AA@ 00000001800010fc     db_use.obj
+ 0001:00000108       ??_C@_07NBCGADJA@Unknown?$AA@ 0000000180001108     db_use.obj
+ 0001:00000110       ??_C@_05HKDGPLAD@?5Null?$AA@ 0000000180001110     db_use.obj
+ 0001:00000118       ??_C@_04KHKKIIL@Null?$AA@  0000000180001118     db_use.obj
+ 0001:00000120       ??_C@_05INNGFIMM@?$CF11ld?$AA@ 0000000180001120     db_use.obj
+ 0001:00000128       ??_C@_06HFGOOHHB@?$CF21?4?$CKg?$AA@ 0000000180001128     db_use.obj
+ 0001:00000130       ??_C@_04JGMKJEBO@Gnrl?$AA@ 0000000180001130     db_use.obj
+ 0001:00000138       ??_C@_04EGCCLGCL@Pict?$AA@ 0000000180001138     db_use.obj
+ 0001:00000140       ??_C@_0N@OLFGFMKB@?$AB$?$AB?$BC?$AB?$AC?$AB2?$ABB?$ABR?$AA@ 0000000180001140     db_use.obj
+ 0001:00000150       ??_C@_06KMFNNCAE@?$AB$?$AB?$BC?$AB?$AC?$AA@ 0000000180001150     db_use.obj
+ 0001:00000158       __real@4024000000000000    0000000180001158     db_use.obj
+ 0001:00000160       __xmm@00000008000000000000000400000006 0000000180001160     db_use.obj
+ 0001:00000170       ??_C@_07EPBKEOKM@LookDBF?$AA@ 0000000180001170     Plugin.obj
+ 0001:00000178       ??_C@_03CAJNCLOD@DOS?$AA@  0000000180001178     Plugin.obj
+ 0001:0000017c       ??_C@_03DEBJKBHO@Win?$AA@  000000018000117c     Plugin.obj
+ 0001:00000180       ??_C@_0BL@MAKJBOAD@Current?5Windows?5Code?5Table?$AA@ 0000000180001180     Plugin.obj
+ 0001:0000019c       ??_C@_01OGPIMHDM@?$DP?$AA@ 000000018000119c     Plugin.obj
+ 0001:000001a0       ??_C@_0M@JGNKJNHI@CodeDefault?$AA@ 00000001800011a0     Plugin.obj
+ 0001:000001b0       ??_C@_0L@FJBIJMPL@ShowRecNum?$AA@ 00000001800011b0     Plugin.obj
+ 0001:000001c0       ??_C@_0N@BKOODFKG@ShowMemoFull?$AA@ 00000001800011c0     Plugin.obj
+ 0001:000001d0       ??_C@_06NCJIMFEN@ExpSep?$AA@ 00000001800011d0     Plugin.obj
+ 0001:000001d8       ??_C@_08GBPFIECL@AutoSave?$AA@ 00000001800011d8     Plugin.obj
+ 0001:000001e8       ??_C@_08CAAENNBN@MaskChar?$AA@ 00000001800011e8     Plugin.obj
+ 0001:000001f4       ??_C@_06ICDCBJPI@Colors?$AA@ 00000001800011f4     Plugin.obj
+ 0001:000001fc       ??_C@_06MDKPDEDI@MemExt?$AA@ 00000001800011fc     Plugin.obj
+ 0001:00000208       ??_C@_07DCMEIOPA@D_fmt_V?$AA@ 0000000180001208     Plugin.obj
+ 0001:00000210       ??_C@_07EOHPLPNL@T_fmt_V?$AA@ 0000000180001210     Plugin.obj
+ 0001:00000218       ??_C@_05HFKGACGC@D_fmt?$AA@ 0000000180001218     Plugin.obj
+ 0001:00000220       ??_C@_05HGHAAAPJ@T_fmt?$AA@ 0000000180001220     Plugin.obj
+ 0001:00000228       ??_C@_07FDCLMPGC@D_fmt_E?$AA@ 0000000180001228     Plugin.obj
+ 0001:00000230       ??_C@_07CPJAPOEJ@T_fmt_E?$AA@ 0000000180001230     Plugin.obj
+ 0001:00000238       ??_C@_09JMCICOGO@CodeTable?$AA@ 0000000180001238     Plugin.obj
+ 0001:00000244       ??_C@_03PHINJBAN@Alt?$AA@  0000000180001244     Plugin.obj
+ 0001:00000248       ??_C@_01JLIPDDHJ@?3?$AA@   0000000180001248     Plugin.obj
+ 0001:00000250       ??_C@_0BN@CDJFOOEF@D?5?$CIDate?$CJ?5?5?5?5?5?5?5?5T?5?$CIDateTime?$CJ?$AA@ 0000000180001250     Plugin.obj
+ 0001:00000270       ??_C@_06LLCHJONG@Config?$AA@ 0000000180001270     Plugin.obj
+ 0001:00000280       __xmm@00000030000000120000000d0000000a 0000000180001280     Plugin.obj
+ 0001:000002a8       ??_C@_0L@OBGMJBLF@dd?1mm?1yyyy?$AA@ 00000001800012a8     LookDBF.obj
+ 0001:000002b8       ??_C@_0BE@NDDBGNFD@dd?1mm?1yyyy?9hh?3mi?3se?$AA@ 00000001800012b8     LookDBF.obj
+ 0001:000002d0       ??_C@_0DA@DOMBOLGE@DBC?3DCT?0FRX?3FRT?0SCX?3SCT?0MNX?3MNT?0@ 00000001800012d0     LookDBF.obj
+ 0001:00000300       ??_C@_04FJKEHHHB@?5N?1A?$AA@ 0000000180001300     LookDBF.obj
+ 0001:00000308       ??_C@_04DFKFDCHF@?5AND?$AA@ 0000000180001308     LookDBF.obj
+ 0001:00000310       ??_C@_03INMCHKPG@?5OR?$AA@ 0000000180001310     LookDBF.obj
+ 0001:00000314       ??_C@_04FOOPFIA@?5XOR?$AA@ 0000000180001314     LookDBF.obj
+ 0001:0000031c       ??_C@_04JGJJCECK@?5NXO?$AA@ 000000018000131c     LookDBF.obj
+ 0001:00000324       ??_C@_06GCAAPDFN@0?5?$BK?599?$AA@ 0000000180001324     LookDBF.obj
+ 0001:0000032c       ??_C@_06GFHDHOIJ@99?5?$BK?50?$AA@ 000000018000132c     LookDBF.obj
+ 0001:00000334       ??_C@_03CMCMIBID@?5?5?$DN?$AA@ 0000000180001334     LookDBF.obj
+ 0001:00000338       ??_C@_03BCDNIIFE@?5?$DM?$DO?$AA@ 0000000180001338     LookDBF.obj
+ 0001:0000033c       ??_C@_03HABNCEA@?5?5?$DO?$AA@ 000000018000133c     LookDBF.obj
+ 0001:00000340       ??_C@_03DKJEAPPJ@?5?$DO?$DN?$AA@ 0000000180001340     LookDBF.obj
+ 0001:00000344       ??_C@_03DFDHLAMC@?5?5?$DM?$AA@ 0000000180001344     LookDBF.obj
+ 0001:00000348       ??_C@_03DJBANLJH@?5?$DM?$DN?$AA@ 0000000180001348     LookDBF.obj
+ 0001:0000034c       ??_C@_01GINFCBDK@?$LC?$AA@ 000000018000134c     LookDBF.obj
+ 0001:00000350       ??_C@_01NMOKPBNE@?$NL?$AA@ 0000000180001350     LookDBF.obj
+ 0001:00000352       ??_C@_00CNPNBAHC@?$AA@     0000000180001352     LookDBF.obj
+ 0001:00000358       ??_C@_0M@KHFLCPAC@?$CK?$DM?$CK?$DO?$CK?$CB?$CK?$DM?$CK?$DO?$CK?$AA@ 0000000180001358     LookDBF.obj
+ 0001:00000364       ??_C@_01KHDNNMEB@?$AB?$AA@ 0000000180001364     LookDBF.obj
+ 0001:00000368       ??_C@_09GLFFPDKE@Functions?$AA@ 0000000180001368     LookDBF.obj
+ 0001:00000374       ??_C@_04PGONJDDE@memo?$AA@ 0000000180001374     LookDBF.obj
+ 0001:00000380       ??_C@_0N@KEFCGKMK@?$CFs?D?$BA?$CFlu?D?$BA?$CFlu?$AA@ 0000000180001380     LookDBF.obj
+ 0001:00000390       ??_C@_04GDKCMOG@?5DOS?$AA@ 0000000180001390     LookDBF.obj
+ 0001:00000398       ??_C@_05EGODNCHK@1?1?$CFlu?$AA@ 0000000180001398     LookDBF.obj
+ 0001:000003a0       ??_C@_04DBADCPAE@1?1?$CFu?$AA@ 00000001800013a0     LookDBF.obj
+ 0001:000003a8       ??_C@_04OMPGFIDL@?$CF?$CKlu?$AA@ 00000001800013a8     LookDBF.obj
+ 0001:000003b0       ??_C@_03COMFDBGK@?$CF?$CKu?$AA@ 00000001800013b0     LookDBF.obj
+ 0001:000003b8       ??_C@_09POKJNFIM@?$CI?$CFs?$CFs?5?$CFs?$CJ?$AA@ 00000001800013b8     LookDBF.obj
+ 0001:000003c8       ??_C@_0N@GJEONPEN@?$CFs?5?$CI?$CFs?$CFs?5?$CFs?$CJ?$AA@ 00000001800013c8     LookDBF.obj
+ 0001:000003d8       ??_C@_01PPODPGHN@?$DO?$AA@ 00000001800013d8     LookDBF.obj
+ 0001:000003dc       ??_C@_03JALODAI@?$CFld?$AA@ 00000001800013dc     LookDBF.obj
+ 0001:000003e0       ??_C@_04LCMACLFG@?4txt?$AA@ 00000001800013e0     LookDBF.obj
+ 0001:000003e8       ??_C@_04DKBFJDAN@?4htm?$AA@ 00000001800013e8     LookDBF.obj
+ 0001:000003f0       ??_C@_04ILJMCKLM@?4dbf?$AA@ 00000001800013f0     LookDBF.obj
+ 0001:000003f8       ??_C@_06BFGAPCKF@Export?$AA@ 00000001800013f8     LookDBF.obj
+ 0001:00000400       ??_C@_07BIIFAMIN@?$CF21?4?$CKlf?$AA@ 0000000180001400     LookDBF.obj
+ 0001:00000408       ??_C@_0L@ODBLHPHN@dBase?5III?$CL?$AA@ 0000000180001408     LookDBF.obj
+ 0001:00000418       ??_C@_08LBPMNNMJ@dBase?5IV?$AA@ 0000000180001418     LookDBF.obj
+ 0001:00000424       ??_C@_06LFFLCLH@FoxPro?$AA@ 0000000180001424     LookDBF.obj
+ 0001:00000430       ??_C@_0L@GHAKLHCD@FoxPro?$CIai?$CJ?$AA@ 0000000180001430     LookDBF.obj
+ 0001:00000440       ??_C@_09MGFHLAFE@?$DMUnknown?$DO?$AA@ 0000000180001440     LookDBF.obj
+ 0001:00000450       ??_C@_0BC@BEJBJIOP@?$CF?916s?5?$CF10s?5?5?$CF02Xh?$AA@ 0000000180001450     LookDBF.obj
+ 0001:00000468       ??_C@_0BD@BIALBONH@?$CF?922s?$CF2u?1?$CF02u?1?$CF04u?$AA@ 0000000180001468     LookDBF.obj
+ 0001:00000480       ??_C@_0M@MMDKEDOM@?$CF?924s?5?5?5?$CF5s?$AA@ 0000000180001480     LookDBF.obj
+ 0001:00000490       ??_C@_0M@JKGAOEGK@?$CF?924s?5?5?5?$CF5u?$AA@ 0000000180001490     LookDBF.obj
+ 0001:000004a0       ??_C@_07DPGFBFEG@?$CF?910s?5?5?$AA@ 00000001800014a0     LookDBF.obj
+ 0001:000004a8       ??_C@_04BCLOKGHL@?5Win?$AA@ 00000001800014a8     LookDBF.obj
+ 0001:000004b0       ??_C@_04NBCKJGAI@?5Alt?$AA@ 00000001800014b0     LookDBF.obj
+ 0001:000004b8       ??_C@_04JFFKLGJF@?$CF02X?$AA@ 00000001800014b8     LookDBF.obj
+ 0001:000004c0       ??_C@_02EGJHDPJI@HH?$AA@   00000001800014c0     LookDBF.obj
+ 0001:000004c8       ??_C@_0P@HGDHGBCL@?$CF02u?1?$CF02u?1?$CF04u?$AA@ 00000001800014c8     LookDBF.obj
+ 0001:000004d8       ??_C@_08GBNJIMFP@Contents?$AA@ 00000001800014d8     LookDBF.obj
+ 0001:000004e4       ??_C@_04BBNPPDNC@Edit?$AA@ 00000001800014e4     LookDBF.obj
+ 0001:000004ec       ??_C@_01NBENCBCI@?$CK?$AA@ 00000001800014ec     LookDBF.obj
+ 0001:000004f0       ??_C@_06MBPBFGJN@?$CF?$CKld?$CFc?$AA@ 00000001800014f0     LookDBF.obj
+ 0001:000004f8       ??_C@_07NPJOFNML@?$DM?$DMDOS?$DO?$DO?$AA@ 00000001800014f8     LookDBF.obj
+ 0001:00000500       ??_C@_02FODMEDOG@?$DM?$DM?$AA@ 0000000180001500     LookDBF.obj
+ 0001:00000504       ??_C@_02GPIOPFAK@?$DO?$DO?$AA@ 0000000180001504     LookDBF.obj
+ 0001:00000508       ??_C@_0N@NJDNLKML@LookDBFfiles?$AA@ 0000000180001508     LookDBF.obj
+ 0001:00000518       ??_C@_09LOOGEJD@?5D?5?$CIDate?$CJ?$AA@ 0000000180001518     LookDBF.obj
+ 0001:00000528       ??_C@_0O@ODILDOFL@?5T?5?$CIDateTime?$CJ?$AA@ 0000000180001528     LookDBF.obj
+ 0001:00000538       ??_C@_04LPDLOGCK@?4TXT?$AA@ 0000000180001538     LookDBF.obj
+ 0001:00000540       ??_C@_04DHOOFOHB@?4HTM?$AA@ 0000000180001540     LookDBF.obj
+ 0001:00000548       ??_C@_04IGGHOHMA@?4DBF?$AA@ 0000000180001548     LookDBF.obj
+ 0001:00000550       ??_C@_04FDGMDGHG@?$CF?9?$CKs?$AA@ 0000000180001550     LookDBF.obj
+ 0001:00000558       ??_C@_02DKCKIIND@?$CFs?$AA@ 0000000180001558     LookDBF.obj
+ 0001:0000055c       ??_C@_02PCIJFNDE@?$AN?6?$AA@ 000000018000155c     LookDBF.obj
+ 0001:00000560       ??_C@_03HIJPJGOM@?$CF?$CKs?$AA@ 0000000180001560     LookDBF.obj
+ 0001:00000564       ??_C@_04LLEBNMDN@?$CFs?$AN?6?$AA@ 0000000180001564     LookDBF.obj
+ 0001:0000056c       ??_C@_06DIJPEION@?$CFs?$CFs?$CFs?$AA@ 000000018000156c     LookDBF.obj
+ 0001:00000574       ??_C@_04NGCFCJNE@?4_$_?$AA@ 0000000180001574     LookDBF.obj
+ 0001:0000057c       ??_C@_02BEDCJCHK@?6?$AB?$AA@ 000000018000157c     LookDBF.obj
+ 0001:00000580       ??_C@_01EEMJAFIK@?6?$AA@   0000000180001580     LookDBF.obj
+ 0001:00000584       ??_C@_06IBNLALPJ@Import?$AA@ 0000000180001584     LookDBF.obj
+ 0001:00000590       ??_C@_0M@BEDJCNOI@LookDBFCond?$AA@ 0000000180001590     LookDBF.obj
+ 0001:0000059c       ??_C@_04GBDIFKH@Cond?$AA@  000000018000159c     LookDBF.obj
+ 0001:000005a8       ??_C@_0L@GJKEAJGH@SearchText?$AA@ 00000001800015a8     LookDBF.obj
+ 0001:000005b8       ??_C@_0M@BHALLDMF@ReplaceText?$AA@ 00000001800015b8     LookDBF.obj
+ 0001:000005c4       ??_C@_06KKEGOPHO@Search?$AA@ 00000001800015c4     LookDBF.obj
+ 0001:000005cc       ??_C@_01CLKCMJKC@?5?$AA@   00000001800015cc     LookDBF.obj
+ 0001:000005d0       ??_C@_06DHAIIGCK@?$CFs?5?$CFlu?$AA@ 00000001800015d0     LookDBF.obj
+ 0001:000005d8       ??_C@_01LFCBOECM@?4?$AA@   00000001800015d8     LookDBF.obj
+ 0001:000005dc       ??_C@_06PGDKHFME@Status?$AA@ 00000001800015dc     LookDBF.obj
+ 0001:000005e4       ??_C@_06CLLEJHCE@?$CFlu?5?$CFs?$AA@ 00000001800015e4     LookDBF.obj
+ 0001:000005ec       ??_C@_02MHHKFEKH@?$DP?$CF?$AA@ 00000001800015ec     LookDBF.obj
+ 0001:000005f0       ??_C@_04MMEBIPMJ@?4tmp?$AA@ 00000001800015f0     LookDBF.obj
+ 0001:000005f8       __real@3ff0000000000000    00000001800015f8     LookDBF.obj
+ 0001:00000600       __xmm@0000001200000007000000060000000a 0000000180001600     LookDBF.obj
+ 0001:00000610       __xmm@0000001800000003000000150000000a 0000000180001610     LookDBF.obj
+ 0001:00000620       ??2@YAPEAX_K@Z             0000000180001620 f   db_use.obj
+ 0001:00000640       ??3@YAXPEAX@Z              0000000180001640 f   db_use.obj
+ 0001:00000660       ?Accum@dbBase@@QEAAXPEATdbVal@@@Z 0000000180001660 f   db_use.obj
+ 0001:000006f0       ?Add@Link@@QEAAPEAV1@PEAV1@@Z 00000001800016f0 f   db_use.obj
+ 0001:00000750       ?AddF@dbBase@@QEAAXPEAUdbField@@PEADDEE@Z 0000000180001750 f   db_use.obj
+ 0001:00000880       ?AddNull@dbBase@@QEAAEXZ   0000000180001880 f   db_use.obj
+ 0001:000009d0       ?After@Link@@QEAAXPEAV1@@Z 00000001800019d0 f   db_use.obj
+ 0001:000009f0       ?Append@dbBase@@QEAAEXZ    00000001800019f0 f   db_use.obj
+ 0001:00000a70       ?Before@Link@@QEAAXPEAV1@@Z 0000000180001a70 f   db_use.obj
+ 0001:00000a90       ?Bin_Hex@@YAXPEADPEAEH@Z   0000000180001a90 f   db_use.obj
+ 0001:00000ae0       ?Close@dbBase@@QEAAXXZ     0000000180001ae0 f   db_use.obj
+ 0001:00000b60       ?Create@dbBase@@QEAAEPEADEPEAU1@@Z 0000000180001b60 f   db_use.obj
+ 0001:00000e20       ?DTbad@@YA_NPEAU_SYSTEMTIME@@@Z 0000000180001e20 f   db_use.obj
+ 0001:00000e90       ?DTd2t@@YAXHPEAU_SYSTEMTIME@@@Z 0000000180001e90 f   db_use.obj
+ 0001:00000fd0       ?DTf29@@YAPEADPEAD0@Z      0000000180001fd0 f   db_use.obj
+ 0001:00001050       ?DTf2s@@YAPEADPEBDPEAD@Z   0000000180002050 f   db_use.obj
+ 0001:000010f0       ?DTs2f@@YAPEADPEBDPEAD@Z   00000001800020f0 f   db_use.obj
+ 0001:000013c0       ?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 00000001800023c0 f   db_use.obj
+ 0001:00001590       ?DTstr@@YAPEADPEAD00@Z     0000000180002590 f   db_use.obj
+ 0001:00001680       ?DTstr@@YAPEADPEADPEAU_SYSTEMTIME@@0@Z 0000000180002680 f   db_use.obj
+ 0001:00001800       ?DTt2dat@@YAKPEAU_SYSTEMTIME@@@Z 0000000180002800 f   db_use.obj
+ 0001:00001870       ?DTt2t@@YAXHPEAU_SYSTEMTIME@@@Z 0000000180002870 f   db_use.obj
+ 0001:00001920       ?DTt2tim@@YAKPEAU_SYSTEMTIME@@@Z 0000000180002920 f   db_use.obj
+ 0001:00001970       ?DTw@@YAHPEAD@Z            0000000180002970 f   db_use.obj
+ 0001:000019a0       ?DestroyAll@Link@@QEAAPEAV1@XZ 00000001800029a0 f   db_use.obj
+ 0001:00001a40       ?Extract@Link@@QEAAXXZ     0000000180002a40 f   db_use.obj
+ 0001:00001a60       ?FiChar@dbBase@@QEAAEXZ    0000000180002a60 f   db_use.obj
+ 0001:00001a80       ?FiDisp@dbBase@@QEAAGPEADE@Z 0000000180002a80 f   db_use.obj
+ 0001:00001dd0       ?FiDispE@dbBase@@QEAAGPEAD@Z 0000000180002dd0 f   db_use.obj
+ 0001:00001ea0       ?FiNotFull@dbBase@@QEAAEXZ 0000000180002ea0 f   db_use.obj
+ 0001:00001ec0       ?FiNull@dbBase@@QEAAEXZ    0000000180002ec0 f   db_use.obj
+ 0001:00001ee0       ?FiNum@dbBase@@QEAAPEAUdbField@@G@Z 0000000180002ee0 f   db_use.obj
+ 0001:00001f10       ?FiType@dbBase@@QEAAPEADPEAD@Z 0000000180002f10 f   db_use.obj
+ 0001:00002170       ?FiWidth@dbBase@@QEAAGXZ   0000000180003170 f   db_use.obj
+ 0001:000022b0       ?Get64@dbBase@@QEAA_JXZ    00000001800032b0 f   db_use.obj
+ 0001:00002390       ?GetByte@dbBase@@QEAAPEAEPEAE@Z 0000000180003390 f   db_use.obj
+ 0001:00002410       ?GetDouble@dbBase@@QEAANXZ 0000000180003410 f   db_use.obj
+ 0001:00002560       ?GetMemo@dbBase@@QEAAEPEADPEAK@Z 0000000180003560 f   db_use.obj
+ 0001:00002900       ?Head@Link@@QEAAPEAV1@XZ   0000000180003900 f   db_use.obj
+ 0001:00002920       ?Hex_Bin@@YAXPEADPEAEH@Z   0000000180003920 f   db_use.obj
+ 0001:00002aa0       ?IsEmpty@dbBase@@QEAAEXZ   0000000180003aa0 f   db_use.obj
+ 0001:00002b30       ?NextRec@dbBase@@QEAAEXZ   0000000180003b30 f   db_use.obj
+ 0001:00002b90       ?Numeric@dbBase@@QEAAEXZ   0000000180003b90 f   db_use.obj
+ 0001:00002bc0       ?Open@dbBase@@QEAAEPEADE@Z 0000000180003bc0 f   db_use.obj
+ 0001:00003120       ?OpenMemo@dbBase@@QEAAXPEBD0@Z 0000000180004120 f   db_use.obj
+ 0001:00003390       ?ParseMemoExt@@YAGPEADPEBD@Z 0000000180004390 f   db_use.obj
+ 0001:000035a0       ?ReWrite@dbBase@@QEAAEXZ   00000001800045a0 f   db_use.obj
+ 0001:00003650       ?Read@dbBase@@QEAAEK@Z     0000000180004650 f   db_use.obj
+ 0001:000036f0       ?SaveHeader@dbBase@@QEAAXXZ 00000001800046f0 f   db_use.obj
+ 0001:000037d0       ?SetByte@dbBase@@QEAAXPEAE@Z 00000001800047d0 f   db_use.obj
+ 0001:00003810       ?SetEmpty@dbBase@@QEAAXXZ  0000000180004810 f   db_use.obj
+ 0001:000038e0       ?SetField@dbBase@@QEAAXPEAD@Z 00000001800048e0 f   db_use.obj
+ 0001:00003c10       ?SetLeft@dbBase@@QEAAXPEAD@Z 0000000180004c10 f   db_use.obj
+ 0001:00003d00       ?SetNotFull@dbBase@@QEAAXXZ 0000000180004d00 f   db_use.obj
+ 0001:00003d20       ?SetNull@dbBase@@QEAAXXZ   0000000180004d20 f   db_use.obj
+ 0001:00003d40       ?SetRight@dbBase@@QEAAXPEAD@Z 0000000180004d40 f   db_use.obj
+ 0001:00003dd0       ?Tail@Link@@QEAAPEAV1@XZ   0000000180004dd0 f   db_use.obj
+ 0001:00003df0       ?Write@dbBase@@QEAAEXZ     0000000180004df0 f   db_use.obj
+ 0001:00003e50       ?a_dbl@@YANPEAD@Z          0000000180004e50 f   db_use.obj
+ 0001:00004050       ?a_i64@@YA_JPEAD_JD@Z      0000000180005050 f   db_use.obj
+ 0001:00004130       ?ah_i64@@YA_JPEAD_J@Z      0000000180005130 f   db_use.obj
+ 0001:00004190       ?getfilen@dbField@@QEAAGXZ 0000000180005190 f i db_use.obj
+ 0001:000041b0       ?i64_a@@YAPEADPEAD_JHH@Z   00000001800051b0 f   db_use.obj
+ 0001:00004350       ?GetMsg@@YAPEBDH@Z         0000000180005350 f   Plugin.obj
+ 0001:00004360       Configure                  0000000180005360 f   Plugin.obj
+ 0001:000057b0       GetMinFarVersion           00000001800067b0 f   Plugin.obj
+ 0001:000057c0       GetPluginInfo              00000001800067c0 f   Plugin.obj
+ 0001:00005800       OpenPlugin                 0000000180006800 f   Plugin.obj
+ 0001:00005a60       SetStartupInfo             0000000180006a60 f   Plugin.obj
+ 0001:00005c00       ??1EditDialog@@QEAA@XZ     0000000180006c00 f i LookDBF.obj
+ 0001:00005d10       ?ActualRecord@LOOK@@QEAAGXZ 0000000180006d10 f   LookDBF.obj
+ 0001:00005e50       ?ActualSelected@LOOK@@QEAAGE@Z 0000000180006e50 f   LookDBF.obj
+ 0001:00005f90       ?AttrLine@LOOK@@QEAAXGGGG@Z 0000000180006f90 f   LookDBF.obj
+ 0001:00006010       ?AttrRect@LOOK@@QEAAXGGGGG@Z 0000000180007010 f   LookDBF.obj
+ 0001:000060d0       ?BuildBuffers@LOOK@@QEAA_N_N@Z 00000001800070d0 f   LookDBF.obj
+ 0001:000061d0       ?ChangeCode@LOOK@@QEAAXXZ  00000001800071d0 f   LookDBF.obj
+ 0001:000065f0       ?ClearCur@LOOK@@QEAAXXZ    00000001800075f0 f   LookDBF.obj
+ 0001:000066a0       ?ClearRect@LOOK@@QEAAXGGGG@Z 00000001800076a0 f   LookDBF.obj
+ 0001:00006710       ?Clipboard@LOOK@@QEAAXXZ   0000000180007710 f   LookDBF.obj
+ 0001:00006880       ?ClmnDelete@LOOK@@QEAAGXZ  0000000180007880 f   LookDBF.obj
+ 0001:00006910       ?ClmnEnlarge@LOOK@@QEAAGXZ 0000000180007910 f   LookDBF.obj
+ 0001:00006970       ?ClmnInsert@LOOK@@QEAAGXZ  0000000180007970 f   LookDBF.obj
+ 0001:00006c30       ?ClmnNarrow@LOOK@@QEAAGXZ  0000000180007c30 f   LookDBF.obj
+ 0001:00006cc0       ?ClmnRename@LOOK@@QEAAGXZ  0000000180007cc0 f   LookDBF.obj
+ 0001:00006f10       ?ClmnScroll@LOOK@@QEAAGF@Z 0000000180007f10 f   LookDBF.obj
+ 0001:00007040       ?CondAsk@LOOK@@QEAAFXZ     0000000180008040 f   LookDBF.obj
+ 0001:00007b40       ?CondCheck@LOOK@@QEAA_NFKK@Z 0000000180008b40 f   LookDBF.obj
+ 0001:00007c40       ?CondCheck@LOOK@@QEAA_NFN@Z 0000000180008c40 f   LookDBF.obj
+ 0001:00007d00       ?CondCheck@LOOK@@QEAA_NFPEAE@Z 0000000180008d00 f   LookDBF.obj
+ 0001:00007e30       ?CondCheck@LOOK@@QEAA_NF_J@Z 0000000180008e30 f   LookDBF.obj
+ 0001:00007ee0       ?CondCompare@LOOK@@QEAA_NF@Z 0000000180008ee0 f   LookDBF.obj
+ 0001:00008140       ?CondNext@LOOK@@QEAAKXZ    0000000180009140 f   LookDBF.obj
+ 0001:00008280       ?CondVal@LOOK@@QEAAXG@Z    0000000180009280 f   LookDBF.obj
+ 0001:000084f0       ?CondYes@LOOK@@QEAA_NXZ    00000001800094f0 f   LookDBF.obj
+ 0001:000085f0       ?CurType@LOOK@@QEAADXZ     00000001800095f0 f   LookDBF.obj
+ 0001:00008620       ?DefColors@LOOK@@QEAAXPEAD@Z 0000000180009620 f   LookDBF.obj
+ 0001:000086d0       ?DelTemplate@LOOK@@QEAAXXZ 00000001800096d0 f   LookDBF.obj
+ 0001:0000a6b0       ?EditField@LOOK@@QEAAGE@Z  000000018000b6b0 f   LookDBF.obj
+ 0001:0000ab40       ?EditHeader@LOOK@@QEAAXXZ  000000018000bb40 f   LookDBF.obj
+ 0001:0000af60       ?EditRecord@LOOK@@QEAAGXZ  000000018000bf60 f   LookDBF.obj
+ 0001:0000b7a0       ?Exec@EditDialog@@QEAAFXZ  000000018000c7a0 f   LookDBF.obj
+ 0001:0000b860       ?ExpDbf@LOOK@@QEAAGXZ      000000018000c860 f   LookDBF.obj
+ 0001:0000bdc0       ?ExpHtm@LOOK@@QEAAGXZ      000000018000cdc0 f   LookDBF.obj
+ 0001:0000c5c0       ?ExpRec0@LOOK@@QEAAGXZ     000000018000d5c0 f   LookDBF.obj
+ 0001:0000c660       ?ExpRec1@LOOK@@QEAAGXZ     000000018000d660 f   LookDBF.obj
+ 0001:0000c7c0       ?ExpRec2@LOOK@@QEAAGXZ     000000018000d7c0 f   LookDBF.obj
+ 0001:0000cf50       ?ExpTxt@LOOK@@QEAAGXZ      000000018000df50 f   LookDBF.obj
+ 0001:0000d6f0       ?Export@LOOK@@QEAAGXZ      000000018000e6f0 f   LookDBF.obj
+ 0001:0000ec50       ?FieldCompare@LOOK@@QEAAFFPEATCondValue@@0@Z 000000018000fc50 f   LookDBF.obj
+ 0001:0000edd0       ?FieldItem@LOOK@@QEAAPEAUColumn@@F@Z 000000018000fdd0 f   LookDBF.obj
+ 0001:0000ee70       ?FieldItemType@LOOK@@QEAAPEADFPEAD@Z 000000018000fe70 f   LookDBF.obj
+ 0001:0000eed0       ?FieldValue@LOOK@@QEAAXGPEATCondValue@@@Z 000000018000fed0 f   LookDBF.obj
+ 0001:0000efd0       ?FindAskSample@LOOK@@QEAAFXZ 000000018000ffd0 f   LookDBF.obj
+ 0001:0000f540       ?FindCompare@LOOK@@QEAAFG@Z 0000000180010540 f   LookDBF.obj
+ 0001:0000f960       ?FindFin@LOOK@@QEAAPEAUColumn@@F@Z 0000000180010960 f   LookDBF.obj
+ 0001:0000f9c0       ?FindMark@LOOK@@QEAAKG@Z   00000001800109c0 f   LookDBF.obj
+ 0001:0000fcf0       ?FindNext@LOOK@@QEAAKPEAFF@Z 0000000180010cf0 f   LookDBF.obj
+ 0001:0000ffb0       ?GetConfig@LOOK@@QEAAX_N@Z 0000000180010fb0 f   LookDBF.obj
+ 0001:00010db0       ?GetTemplate@LOOK@@QEAAXXZ 0000000180011db0 f   LookDBF.obj
+ 0001:000114a0       ?GoAsk@LOOK@@QEAAGXZ       00000001800124a0 f   LookDBF.obj
+ 0001:000117a0       ?GoBot@LOOK@@QEAAGXZ       00000001800127a0 f   LookDBF.obj
+ 0001:00011910       ?GoDn@LOOK@@QEAAGG@Z       0000000180012910 f   LookDBF.obj
+ 0001:00011af0       ?GoField@LOOK@@QEAAGH@Z    0000000180012af0 f   LookDBF.obj
+ 0001:00011d30       ?GoFind@LOOK@@QEAAGF@Z     0000000180012d30 f   LookDBF.obj
+ 0001:00011f50       ?GoFirst@LOOK@@QEAAGXZ     0000000180012f50 f   LookDBF.obj
+ 0001:00011ff0       ?GoLast@LOOK@@QEAAGXZ      0000000180012ff0 f   LookDBF.obj
+ 0001:000121e0       ?GoLeft@LOOK@@QEAAGXZ      00000001800131e0 f   LookDBF.obj
+ 0001:00012250       ?GoMouse@LOOK@@QEAAGPEAU_MOUSE_EVENT_RECORD@@@Z 0000000180013250 f   LookDBF.obj
+ 0001:00012500       ?GoNextMark@LOOK@@QEAAGXZ  0000000180013500 f   LookDBF.obj
+ 0001:00012710       ?GoPrevMark@LOOK@@QEAAGXZ  0000000180013710 f   LookDBF.obj
+ 0001:000128d0       ?GoRight@LOOK@@QEAAGXZ     00000001800138d0 f   LookDBF.obj
+ 0001:00012a60       ?GoTop@LOOK@@QEAAGXZ       0000000180013a60 f   LookDBF.obj
+ 0001:00012b40       ?GoUp@LOOK@@QEAAGG@Z       0000000180013b40 f   LookDBF.obj
+ 0001:00012c80       ?Import@LOOK@@QEAAGXZ      0000000180013c80 f   LookDBF.obj
+ 0001:00013060       ?Init@EditDialog@@QEAAGGGGE@Z 0000000180014060 f   LookDBF.obj
+ 0001:00013480       ?InitColumns@LOOK@@QEAAXXZ 0000000180014480 f   LookDBF.obj
+ 0001:000135f0       ?KeyShow@LOOK@@QEAAXXZ     00000001800145f0 f   LookDBF.obj
+ 0001:00013c10       ?Like@LOOK@@QEAA_NPEAE0@Z  0000000180014c10 f   LookDBF.obj
+ 0001:00013d60       ?Line@EditDialog@@QEAAFPEBD0F0@Z 0000000180014d60 f   LookDBF.obj
+ 0001:00013fc0       ?MarkAlloc@LOOK@@QEAAGXZ   0000000180014fc0 f   LookDBF.obj
+ 0001:000140a0       ?MarkClearAll@LOOK@@QEAAXXZ 00000001800150a0 f   LookDBF.obj
+ 0001:000140f0       ?MarkFindFirst@LOOK@@QEAAXXZ 00000001800150f0 f   LookDBF.obj
+ 0001:00014200       ?MarkInvert@LOOK@@QEAAXK@Z 0000000180015200 f   LookDBF.obj
+ 0001:00014250       ?MarkInvertAll@LOOK@@QEAAXXZ 0000000180015250 f   LookDBF.obj
+ 0001:00014350       ?MarkNonActual@LOOK@@QEAAXXZ 0000000180015350 f   LookDBF.obj
+ 0001:00014480       ?MarkSet@LOOK@@QEAAXK@Z    0000000180015480 f   LookDBF.obj
+ 0001:000144c0       ?MarkSetAll@LOOK@@QEAAXXZ  00000001800154c0 f   LookDBF.obj
+ 0001:00014500       ?Move@Indicator@@QEAA_NK@Z 0000000180015500 f   LookDBF.obj
+ 0001:000145e0       ?PackDbf@LOOK@@QEAAGXZ     00000001800155e0 f   LookDBF.obj
+ 0001:00014b40       ?PutTemplate@LOOK@@QEAAX_N@Z 0000000180015b40 f   LookDBF.obj
+ 0001:00015520       ?Replace@LOOK@@QEAAFXZ     0000000180016520 f   LookDBF.obj
+ 0001:00015600       ?ReplaceAll@LOOK@@QEAAXFK@Z 0000000180016600 f   LookDBF.obj
+ 0001:00015950       ?ReplaceAsk@LOOK@@QEAAFXZ  0000000180016950 f   LookDBF.obj
+ 0001:00015b40       ?ReplaceDlg@LOOK@@QEAAFXZ  0000000180016b40 f   LookDBF.obj
+ 0001:000162f0       ?ReplaceStr@LOOK@@QEAAFPEAD@Z 00000001800172f0 f   LookDBF.obj
+ 0001:00016540       ?ShowCur@LOOK@@QEAAXXZ     0000000180017540 f   LookDBF.obj
+ 0001:000166d0       ?ShowDBF@LOOK@@QEAAXXZ     00000001800176d0 f   LookDBF.obj
+ 0001:00016c20       ?ShowError@LOOK@@QEAAXH@Z  0000000180017c20 f   LookDBF.obj
+ 0001:00016e50       ?ShowExpMsg@LOOK@@QEAAXK@Z 0000000180017e50 f   LookDBF.obj
+ 0001:00016f60       ?ShowF5@LOOK@@QEAAXXZ      0000000180017f60 f   LookDBF.obj
+ 0001:00017150       ?ShowFields@LOOK@@QEAAHXZ  0000000180018150 f   LookDBF.obj
+ 0001:00017840       ?ShowFindMsg@LOOK@@QEAAXK@Z 0000000180018840 f   LookDBF.obj
+ 0001:00017be0       ?ShowMemo@LOOK@@QEAAXF@Z   0000000180018be0 f   LookDBF.obj
+ 0001:00017f00       ?ShowPage@LOOK@@QEAAXXZ    0000000180018f00 f   LookDBF.obj
+ 0001:00018680       ?ShowReplMsg@LOOK@@QEAAXK@Z 0000000180019680 f   LookDBF.obj
+ 0001:00018710       ?ShowStatus@LOOK@@QEAAXH@Z 0000000180019710 f   LookDBF.obj
+ 0001:00019310       ?ShowStrI@LOOK@@QEAAXPEBDGGG@Z 000000018001a310 f   LookDBF.obj
+ 0001:000193f0       ?ShowSum@LOOK@@QEAAXXZ     000000018001a3f0 f   LookDBF.obj
+ 0001:00019980       ?SortAlloc@LOOK@@QEAAGXZ   000000018001a980 f   LookDBF.obj
+ 0001:00019bb0       ?SortFree@LOOK@@QEAAXXZ    000000018001abb0 f   LookDBF.obj
+ 0001:00019c20       ?Start@Indicator@@QEAAXPEBDK@Z 000000018001ac20 f   LookDBF.obj
+ 0001:00019d50       ?TableSelect@LOOK@@QEAAHXZ 000000018001ad50 f   LookDBF.obj
+ 0001:00019f90       ?TableSet@LOOK@@QEAAHH@Z   000000018001af90 f   LookDBF.obj
+ 0001:0001a0c0       ?ToAlt@LOOK@@QEAAXPEAD0@Z  000000018001b0c0 f   LookDBF.obj
+ 0001:0001a120       ?TopMouse@LOOK@@QEAAGHPEAU_MOUSE_EVENT_RECORD@@@Z 000000018001b120 f   LookDBF.obj
+ 0001:0001a1f0       _alloca_probe              000000018001b1f0 f   MSVCRT:chkstk.obj
+ 0001:0001a1f0       __chkstk                   000000018001b1f0 f   MSVCRT:chkstk.obj
+ 0002:00000000       ?Mon@@3PAEA                000000018001d000     db_use.obj
+ 0002:00000010       ?DTcode@@3PAPEADA          000000018001d010     db_use.obj
+ 0002:00000048       ?Title@@3PEBDEB            000000018001d048     Plugin.obj
+ 0002:00000090       ?DefD@@3PEBDEB             000000018001d090     LookDBF.obj
+ 0002:00000098       ?DefT@@3PEBDEB             000000018001d098     LookDBF.obj
+ 0002:000000a0       ?DefMemExt@@3PEBDEB        000000018001d0a0     LookDBF.obj
+ 0002:000000a8       ?DefExpSep@@3DA            000000018001d0a8     LookDBF.obj
+ 0002:00000118       _fltused                   000000018001d118     MSVCRT:dllsupp.obj
+ 0002:00000120       ?Info@@3UPluginStartupInfo@@A 000000018001d120     Plugin.obj
+ 0002:00000300       ?FSF@@3UFarStandardFunctions@@A 000000018001d300     Plugin.obj
+ 0002:000004c8       ?LookHeap@@3PEAXEA         000000018001d4c8     Plugin.obj
+ 0002:000004d0       ?RootKey@@3PEADEA          000000018001d4d0     Plugin.obj
+ 0002:000004d8       ?data@@3PEAULOOK@@EA       000000018001d4d8     Plugin.obj
+ 0004:00000000       __imp_RegCreateKeyExA      000000018001f000     advapi32:ADVAPI32.dll
+ 0004:00000008       __imp_RegQueryValueExA     000000018001f008     advapi32:ADVAPI32.dll
+ 0004:00000010       __imp_RegSetValueExA       000000018001f010     advapi32:ADVAPI32.dll
+ 0004:00000018       __imp_RegCloseKey          000000018001f018     advapi32:ADVAPI32.dll
+ 0004:00000020       \177ADVAPI32_NULL_THUNK_DATA 000000018001f020     advapi32:ADVAPI32.dll
+ 0004:00000028       __imp_CloseHandle          000000018001f028     kernel32:KERNEL32.dll
+ 0004:00000030       __imp_GetSystemTime        000000018001f030     kernel32:KERNEL32.dll
+ 0004:00000038       __imp_lstrcpynA            000000018001f038     kernel32:KERNEL32.dll
+ 0004:00000040       __imp_lstrcpyA             000000018001f040     kernel32:KERNEL32.dll
+ 0004:00000048       __imp_lstrcatA             000000018001f048     kernel32:KERNEL32.dll
+ 0004:00000050       __imp_lstrlenA             000000018001f050     kernel32:KERNEL32.dll
+ 0004:00000058       __imp_CreateFileA          000000018001f058     kernel32:KERNEL32.dll
+ 0004:00000060       __imp_DeleteFileA          000000018001f060     kernel32:KERNEL32.dll
+ 0004:00000068       __imp_RtlMoveMemory        000000018001f068     kernel32:KERNEL32.dll
+ 0004:00000070       __imp_RtlCopyMemory        000000018001f070     kernel32:KERNEL32.dll
+ 0004:00000078       __imp_RtlZeroMemory        000000018001f078     kernel32:KERNEL32.dll
+ 0004:00000080       __imp_SetFilePointer       000000018001f080     kernel32:KERNEL32.dll
+ 0004:00000088       __imp_HeapDestroy          000000018001f088     kernel32:KERNEL32.dll
+ 0004:00000090       __imp_GetProcessHeap       000000018001f090     kernel32:KERNEL32.dll
+ 0004:00000098       __imp_Sleep                000000018001f098     kernel32:KERNEL32.dll
+ 0004:000000a0       __imp_GetStdHandle         000000018001f0a0     kernel32:KERNEL32.dll
+ 0004:000000a8       __imp_GetTickCount         000000018001f0a8     kernel32:KERNEL32.dll
+ 0004:000000b0       __imp_lstrcmpA             000000018001f0b0     kernel32:KERNEL32.dll
+ 0004:000000b8       __imp_MoveFileA            000000018001f0b8     kernel32:KERNEL32.dll
+ 0004:000000c0       __imp_ReadConsoleInputA    000000018001f0c0     kernel32:KERNEL32.dll
+ 0004:000000c8       __imp_GetNumberOfConsoleInputEvents 000000018001f0c8     kernel32:KERNEL32.dll
+ 0004:000000d0       __imp_GetConsoleScreenBufferInfo 000000018001f0d0     kernel32:KERNEL32.dll
+ 0004:000000d8       __imp_RtlFillMemory        000000018001f0d8     kernel32:KERNEL32.dll
+ 0004:000000e0       __imp_ReadFile             000000018001f0e0     kernel32:KERNEL32.dll
+ 0004:000000e8       __imp_WriteFile            000000018001f0e8     kernel32:KERNEL32.dll
+ 0004:000000f0       __imp_HeapFree             000000018001f0f0     kernel32:KERNEL32.dll
+ 0004:000000f8       __imp_HeapCreate           000000018001f0f8     kernel32:KERNEL32.dll
+ 0004:00000100       __imp_HeapAlloc            000000018001f100     kernel32:KERNEL32.dll
+ 0004:00000108       \177KERNEL32_NULL_THUNK_DATA 000000018001f108     kernel32:KERNEL32.dll
+ 0004:00000110       __imp_CharUpperBuffA       000000018001f110     user32:USER32.dll
+ 0004:00000118       __imp_OemToCharA           000000018001f118     user32:USER32.dll
+ 0004:00000120       __imp_CharToOemA           000000018001f120     user32:USER32.dll
+ 0004:00000128       __imp_IsCharAlphaNumericA  000000018001f128     user32:USER32.dll
+ 0004:00000130       \177USER32_NULL_THUNK_DATA 000000018001f130     user32:USER32.dll
+ 0004:00000138       __IMPORT_DESCRIPTOR_KERNEL32 000000018001f138     kernel32:KERNEL32.dll
+ 0004:0000014c       __IMPORT_DESCRIPTOR_USER32 000000018001f14c     user32:USER32.dll
+ 0004:00000160       __IMPORT_DESCRIPTOR_ADVAPI32 000000018001f160     advapi32:ADVAPI32.dll
+ 0004:00000174       __NULL_IMPORT_DESCRIPTOR   000000018001f174     kernel32:KERNEL32.dll
+
+ entry point at        0000:00000000
+
+ Static symbols
+
+ 0001:00000290       atd                        0000000180001290     LookDBF.obj
+ 0001:0000156c       $LN33                      000000018000256c     db_use.obj
+ 0001:000017e4       $LN39                      00000001800027e4     db_use.obj
+ 0001:00001d6c       $LN105                     0000000180002d6c     db_use.obj
+ 0001:00001d98       $LN104                     0000000180002d98     db_use.obj
+ 0001:000020e8       $LN28                      00000001800030e8     db_use.obj
+ 0001:0000212c       $LN27                      000000018000312c     db_use.obj
+ 0001:0000225c       $LN38                      000000018000325c     db_use.obj
+ 0001:0000227c       $LN37                      000000018000327c     db_use.obj
+ 0001:000029dc       $LN32                      00000001800039dc     db_use.obj
+ 0001:000029f8       $LN31                      00000001800039f8     db_use.obj
+ 0001:000032b0       $LN23                      00000001800042b0     db_use.obj
+ 0001:000032c0       $LN22                      00000001800042c0     db_use.obj
+ 0001:00003bb8       $LN79                      0000000180004bb8     db_use.obj
+ 0001:00003bdc       $LN78                      0000000180004bdc     db_use.obj
+ 0001:00005a18       $LN43                      0000000180006a18     Plugin.obj
+ 0001:00005a2c       $LN42                      0000000180006a2c     Plugin.obj
+ 0001:00006500       ?CheckForEsc@@YAHXZ        0000000180007500 f   LookDBF.obj
+ 0001:00007c24       $LN26                      0000000180008c24     LookDBF.obj
+ 0001:00007ce8       $LN24                      0000000180008ce8     LookDBF.obj
+ 0001:00007e18       $LN55                      0000000180008e18     LookDBF.obj
+ 0001:00007ebc       $LN23                      0000000180008ebc     LookDBF.obj
+ 0001:000080f8       $LN62                      00000001800090f8     LookDBF.obj
+ 0001:00008114       $LN61                      0000000180009114     LookDBF.obj
+ 0001:000084b4       $LN31                      00000001800094b4     LookDBF.obj
+ 0001:000084d0       $LN30                      00000001800094d0     LookDBF.obj
+ 0001:00008750       ?DiCond@@YA_JPEAXHH_J@Z    0000000180009750 f   LookDBF.obj
+ 0001:00008b60       ?DiExp@@YA_JPEAXHH_J@Z     0000000180009b60 f   LookDBF.obj
+ 0001:00008dd0       ?DiField@@YA_JPEAXHH_J@Z   0000000180009dd0 f   LookDBF.obj
+ 0001:00008e60       ?DiProc@@YA_JPEAXHH_J@Z    0000000180009e60 f   LookDBF.obj
+ 0001:0000a384       $LN522                     000000018000b384     LookDBF.obj
+ 0001:0000a3ac       $LN521                     000000018000b3ac     LookDBF.obj
+ 0001:0000a408       $LN520                     000000018000b408     LookDBF.obj
+ 0001:0000a4ec       $LN519                     000000018000b4ec     LookDBF.obj
+ 0001:0000a524       $LN518                     000000018000b524     LookDBF.obj
+ 0001:0000a610       $LN517                     000000018000b610     LookDBF.obj
+ 0001:0000a640       $LN516                     000000018000b640     LookDBF.obj
+ 0001:0000a6a0       ?DiRepl@@YA_JPEAXHH_J@Z    000000018000b6a0 f   LookDBF.obj
+ 0001:0000eda0       $LN36                      000000018000fda0     LookDBF.obj
+ 0001:0000edb0       $LN35                      000000018000fdb0     LookDBF.obj
+ 0001:00011454       $LN217                     0000000180012454     LookDBF.obj
+ 0001:00016e18       $LN23                      0000000180017e18     LookDBF.obj
+ 0001:0001772c       $LN68                      000000018001872c     LookDBF.obj
+ 0001:00017740       $LN67                      0000000180018740     LookDBF.obj
+ 0001:00017ec0       $LN144                     0000000180018ec0     LookDBF.obj
+ 0001:0001a1e0       $$000000                   000000018001b1e0     MSVCRT:chkstk.obj
+ 0001:0001a240       $unwind$?a_i64@@YA_JPEAD_JD@Z 000000018001b240     db_use.obj
+ 0001:0001a254       $unwind$?i64_a@@YAPEADPEAD_JHH@Z 000000018001b254     db_use.obj
+ 0001:0001a270       $unwind$?a_dbl@@YANPEAD@Z  000000018001b270     db_use.obj
+ 0001:0001a27c       $unwind$?Hex_Bin@@YAXPEADPEAEH@Z 000000018001b27c     db_use.obj
+ 0001:0001a284       $unwind$?GoTop@LOOK@@QEAAGXZ 000000018001b284     db_use.obj
+ 0001:0001a284       $unwind$?DTt2dat@@YAKPEAU_SYSTEMTIME@@@Z 000000018001b284     db_use.obj
+ 0001:0001a284       $unwind$?Close@dbBase@@QEAAXXZ 000000018001b284     db_use.obj
+ 0001:0001a284       $unwind$?GoLeft@LOOK@@QEAAGXZ 000000018001b284     db_use.obj
+ 0001:0001a284       $unwind$?DTt2tim@@YAKPEAU_SYSTEMTIME@@@Z 000000018001b284     db_use.obj
+ 0001:0001a284       $unwind$?ClmnDelete@LOOK@@QEAAGXZ 000000018001b284     db_use.obj
+ 0001:0001a284       $unwind$?GoPrevMark@LOOK@@QEAAGXZ 000000018001b284     db_use.obj
+ 0001:0001a284       $unwind$?Accum@dbBase@@QEAAXPEATdbVal@@@Z 000000018001b284     db_use.obj
+ 0001:0001a284       $unwind$?CurType@LOOK@@QEAADXZ 000000018001b284     db_use.obj
+ 0001:0001a284       $unwind$?GoBot@LOOK@@QEAAGXZ 000000018001b284     db_use.obj
+ 0001:0001a28c       $unwind$?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 000000018001b28c     db_use.obj
+ 0001:0001a294       $chain$4$?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 000000018001b294     db_use.obj
+ 0001:0001a2b8       $chain$6$?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 000000018001b2b8     db_use.obj
+ 0001:0001a2d0       $chain$7$?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 000000018001b2d0     db_use.obj
+ 0001:0001a2e0       $chain$8$?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 000000018001b2e0     db_use.obj
+ 0001:0001a2f8       $chain$9$?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 000000018001b2f8     db_use.obj
+ 0001:0001a30c       $chain$10$?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 000000018001b30c     db_use.obj
+ 0001:0001a31c       $unwind$?DTs2f@@YAPEADPEBDPEAD@Z 000000018001b31c     db_use.obj
+ 0001:0001a330       $chain$0$?DTs2f@@YAPEADPEBDPEAD@Z 000000018001b330     db_use.obj
+ 0001:0001a344       $chain$1$?DTs2f@@YAPEADPEBDPEAD@Z 000000018001b344     db_use.obj
+ 0001:0001a354       $chain$2$?DTs2f@@YAPEADPEBDPEAD@Z 000000018001b354     db_use.obj
+ 0001:0001a368       $unwind$?DTf2s@@YAPEADPEBDPEAD@Z 000000018001b368     db_use.obj
+ 0001:0001a378       $chain$1$?DTf2s@@YAPEADPEBDPEAD@Z 000000018001b378     db_use.obj
+ 0001:0001a390       $chain$2$?DTf2s@@YAPEADPEBDPEAD@Z 000000018001b390     db_use.obj
+ 0001:0001a3a0       $unwind$?GetDouble@dbBase@@QEAANXZ 000000018001b3a0     db_use.obj
+ 0001:0001a3a0       $unwind$?DTf29@@YAPEADPEAD0@Z 000000018001b3a0     db_use.obj
+ 0001:0001a3a8       $chain$0$?DTf29@@YAPEADPEAD0@Z 000000018001b3a8     db_use.obj
+ 0001:0001a3bc       $chain$1$?DTf29@@YAPEADPEAD0@Z 000000018001b3bc     db_use.obj
+ 0001:0001a3cc       $unwind$?DTstr@@YAPEADPEADPEAU_SYSTEMTIME@@0@Z 000000018001b3cc     db_use.obj
+ 0001:0001a3d8       $chain$2$?DTstr@@YAPEADPEADPEAU_SYSTEMTIME@@0@Z 000000018001b3d8     db_use.obj
+ 0001:0001a3f4       $chain$3$?DTstr@@YAPEADPEADPEAU_SYSTEMTIME@@0@Z 000000018001b3f4     db_use.obj
+ 0001:0001a404       $unwind$?DTstr@@YAPEADPEAD00@Z 000000018001b404     db_use.obj
+ 0001:0001a410       $chain$1$?DTstr@@YAPEADPEAD00@Z 000000018001b410     db_use.obj
+ 0001:0001a428       $chain$2$?DTstr@@YAPEADPEAD00@Z 000000018001b428     db_use.obj
+ 0001:0001a438       $unwind$?AddNull@dbBase@@QEAAEXZ 000000018001b438     db_use.obj
+ 0001:0001a448       $chain$0$?AddNull@dbBase@@QEAAEXZ 000000018001b448     db_use.obj
+ 0001:0001a45c       $chain$1$?AddNull@dbBase@@QEAAEXZ 000000018001b45c     db_use.obj
+ 0001:0001a46c       $unwind$?Open@dbBase@@QEAAEPEADE@Z 000000018001b46c     db_use.obj
+ 0001:0001a478       $chain$1$?Open@dbBase@@QEAAEPEADE@Z 000000018001b478     db_use.obj
+ 0001:0001a490       $chain$4$?Open@dbBase@@QEAAEPEADE@Z 000000018001b490     db_use.obj
+ 0001:0001a4ac       $chain$5$?Open@dbBase@@QEAAEPEADE@Z 000000018001b4ac     db_use.obj
+ 0001:0001a4bc       $chain$7$?Open@dbBase@@QEAAEPEADE@Z 000000018001b4bc     db_use.obj
+ 0001:0001a4e0       $chain$8$?Open@dbBase@@QEAAEPEADE@Z 000000018001b4e0     db_use.obj
+ 0001:0001a4f8       $unwind$?OpenMemo@dbBase@@QEAAXPEBD0@Z 000000018001b4f8     db_use.obj
+ 0001:0001a508       $chain$0$?OpenMemo@dbBase@@QEAAXPEBD0@Z 000000018001b508     db_use.obj
+ 0001:0001a51c       $chain$1$?OpenMemo@dbBase@@QEAAXPEBD0@Z 000000018001b51c     db_use.obj
+ 0001:0001a52c       $chain$2$?OpenMemo@dbBase@@QEAAXPEBD0@Z 000000018001b52c     db_use.obj
+ 0001:0001a540       $unwind$?Create@dbBase@@QEAAEPEADEPEAU1@@Z 000000018001b540     db_use.obj
+ 0001:0001a55c       $unwind$?SaveHeader@dbBase@@QEAAXXZ 000000018001b55c     db_use.obj
+ 0001:0001a564       $chain$1$?SaveHeader@dbBase@@QEAAXXZ 000000018001b564     db_use.obj
+ 0001:0001a57c       $chain$2$?SaveHeader@dbBase@@QEAAXXZ 000000018001b57c     db_use.obj
+ 0001:0001a58c       $unwind$?Read@dbBase@@QEAAEK@Z 000000018001b58c     db_use.obj
+ 0001:0001a58c       $unwind$?FiType@dbBase@@QEAAPEADPEAD@Z 000000018001b58c     db_use.obj
+ 0001:0001a598       $unwind$?Append@dbBase@@QEAAEXZ 000000018001b598     db_use.obj
+ 0001:0001a598       $unwind$?NextRec@dbBase@@QEAAEXZ 000000018001b598     db_use.obj
+ 0001:0001a598       $unwind$?Write@dbBase@@QEAAEXZ 000000018001b598     db_use.obj
+ 0001:0001a598       $unwind$?ReWrite@dbBase@@QEAAEXZ 000000018001b598     db_use.obj
+ 0001:0001a5a0       $chain$0$?ReWrite@dbBase@@QEAAEXZ 000000018001b5a0     db_use.obj
+ 0001:0001a5b4       $chain$2$?ReWrite@dbBase@@QEAAEXZ 000000018001b5b4     db_use.obj
+ 0001:0001a5c8       $unwind$?FiDisp@dbBase@@QEAAGPEADE@Z 000000018001b5c8     db_use.obj
+ 0001:0001a5d8       $chain$0$?FiDispE@dbBase@@QEAAGPEAD@Z 000000018001b5d8     db_use.obj
+ 0001:0001a5ec       $chain$2$?FiDispE@dbBase@@QEAAGPEAD@Z 000000018001b5ec     db_use.obj
+ 0001:0001a600       $unwind$?SetLeft@dbBase@@QEAAXPEAD@Z 000000018001b600     db_use.obj
+ 0001:0001a608       $unwind$?SetField@dbBase@@QEAAXPEAD@Z 000000018001b608     db_use.obj
+ 0001:0001a614       $chain$0$?SetField@dbBase@@QEAAXPEAD@Z 000000018001b614     db_use.obj
+ 0001:0001a628       $chain$3$?SetField@dbBase@@QEAAXPEAD@Z 000000018001b628     db_use.obj
+ 0001:0001a640       $chain$4$?SetField@dbBase@@QEAAXPEAD@Z 000000018001b640     db_use.obj
+ 0001:0001a650       $chain$5$?SetField@dbBase@@QEAAXPEAD@Z 000000018001b650     db_use.obj
+ 0001:0001a668       $chain$6$?SetField@dbBase@@QEAAXPEAD@Z 000000018001b668     db_use.obj
+ 0001:0001a67c       $chain$7$?SetField@dbBase@@QEAAXPEAD@Z 000000018001b67c     db_use.obj
+ 0001:0001a68c       $unwind$?GetMemo@dbBase@@QEAAEPEADPEAK@Z 000000018001b68c     db_use.obj
+ 0001:0001a698       $chain$1$?GetMemo@dbBase@@QEAAEPEADPEAK@Z 000000018001b698     db_use.obj
+ 0001:0001a6b0       $chain$2$?GetMemo@dbBase@@QEAAEPEADPEAK@Z 000000018001b6b0     db_use.obj
+ 0001:0001a6c4       $chain$4$?GetMemo@dbBase@@QEAAEPEADPEAK@Z 000000018001b6c4     db_use.obj
+ 0001:0001a6dc       $chain$5$?GetMemo@dbBase@@QEAAEPEADPEAK@Z 000000018001b6dc     db_use.obj
+ 0001:0001a6ec       $chain$6$?GetMemo@dbBase@@QEAAEPEADPEAK@Z 000000018001b6ec     db_use.obj
+ 0001:0001a6fc       $chain$8$?GetMemo@dbBase@@QEAAEPEADPEAK@Z 000000018001b6fc     db_use.obj
+ 0001:0001a720       $unwind$?Get64@dbBase@@QEAA_JXZ 000000018001b720     db_use.obj
+ 0001:0001a730       $chain$0$?GetDouble@dbBase@@QEAANXZ 000000018001b730     db_use.obj
+ 0001:0001a744       $chain$1$?GetDouble@dbBase@@QEAANXZ 000000018001b744     db_use.obj
+ 0001:0001a754       $unwind$?ParseMemoExt@@YAGPEADPEBD@Z 000000018001b754     db_use.obj
+ 0001:0001a760       $chain$2$?ParseMemoExt@@YAGPEADPEBD@Z 000000018001b760     db_use.obj
+ 0001:0001a77c       $chain$4$?ParseMemoExt@@YAGPEADPEBD@Z 000000018001b77c     db_use.obj
+ 0001:0001a798       $chain$5$?ParseMemoExt@@YAGPEADPEBD@Z 000000018001b798     db_use.obj
+ 0001:0001a7a8       $unwind$Configure          000000018001b7a8     Plugin.obj
+ 0001:0001a7b4       $chain$4$Configure         000000018001b7b4     Plugin.obj
+ 0001:0001a7d8       $chain$5$Configure         000000018001b7d8     Plugin.obj
+ 0001:0001a7f4       $chain$6$Configure         000000018001b7f4     Plugin.obj
+ 0001:0001a808       $chain$7$Configure         000000018001b808     Plugin.obj
+ 0001:0001a818       $unwind$OpenPlugin         000000018001b818     Plugin.obj
+ 0001:0001a82c       $chain$0$OpenPlugin        000000018001b82c     Plugin.obj
+ 0001:0001a840       $chain$1$OpenPlugin        000000018001b840     Plugin.obj
+ 0001:0001a854       $chain$2$OpenPlugin        000000018001b854     Plugin.obj
+ 0001:0001a864       $chain$3$OpenPlugin        000000018001b864     Plugin.obj
+ 0001:0001a874       $chain$4$OpenPlugin        000000018001b874     Plugin.obj
+ 0001:0001a888       $unwind$?DestroyAll@Link@@QEAAPEAV1@XZ 000000018001b888     Plugin.obj
+ 0001:0001a888       $unwind$?SetRight@dbBase@@QEAAXPEAD@Z 000000018001b888     Plugin.obj
+ 0001:0001a888       $unwind$?GoRight@LOOK@@QEAAGXZ 000000018001b888     Plugin.obj
+ 0001:0001a888       $unwind$?FieldValue@LOOK@@QEAAXGPEATCondValue@@@Z 000000018001b888     Plugin.obj
+ 0001:0001a888       $unwind$?TopMouse@LOOK@@QEAAGHPEAU_MOUSE_EVENT_RECORD@@@Z 000000018001b888     Plugin.obj
+ 0001:0001a888       $unwind$?GoFirst@LOOK@@QEAAGXZ 000000018001b888     Plugin.obj
+ 0001:0001a888       $unwind$?GoUp@LOOK@@QEAAGG@Z 000000018001b888     Plugin.obj
+ 0001:0001a888       $unwind$?FieldItemType@LOOK@@QEAAPEADFPEAD@Z 000000018001b888     Plugin.obj
+ 0001:0001a888       $unwind$?GetByte@dbBase@@QEAAPEAEPEAE@Z 000000018001b888     Plugin.obj
+ 0001:0001a888       $unwind$?FindFin@LOOK@@QEAAPEAUColumn@@F@Z 000000018001b888     Plugin.obj
+ 0001:0001a888       $unwind$?SortFree@LOOK@@QEAAXXZ 000000018001b888     Plugin.obj
+ 0001:0001a888       $unwind$?GoLast@LOOK@@QEAAGXZ 000000018001b888     Plugin.obj
+ 0001:0001a888       $unwind$SetStartupInfo     000000018001b888     Plugin.obj
+ 0001:0001a888       $unwind$?DTt2t@@YAXHPEAU_SYSTEMTIME@@@Z 000000018001b888     Plugin.obj
+ 0001:0001a894       $unwind$?Start@Indicator@@QEAAXPEBDK@Z 000000018001b894     LookDBF.obj
+ 0001:0001a8a8       $unwind$?Move@Indicator@@QEAA_NK@Z 000000018001b8a8     LookDBF.obj
+ 0001:0001a8b8       $chain$1$?Move@Indicator@@QEAA_NK@Z 000000018001b8b8     LookDBF.obj
+ 0001:0001a8cc       $chain$2$?Move@Indicator@@QEAA_NK@Z 000000018001b8cc     LookDBF.obj
+ 0001:0001a8dc       $unwind$?SortAlloc@LOOK@@QEAAGXZ 000000018001b8dc     LookDBF.obj
+ 0001:0001a8f0       $unwind$?MarkAlloc@LOOK@@QEAAGXZ 000000018001b8f0     LookDBF.obj
+ 0001:0001a8f8       $chain$0$?MarkAlloc@LOOK@@QEAAGXZ 000000018001b8f8     LookDBF.obj
+ 0001:0001a90c       $chain$2$?MarkAlloc@LOOK@@QEAAGXZ 000000018001b90c     LookDBF.obj
+ 0001:0001a920       $unwind$?MarkInvertAll@LOOK@@QEAAXXZ 000000018001b920     LookDBF.obj
+ 0001:0001a930       $chain$1$?MarkInvertAll@LOOK@@QEAAXXZ 000000018001b930     LookDBF.obj
+ 0001:0001a948       $chain$2$?MarkInvertAll@LOOK@@QEAAXXZ 000000018001b948     LookDBF.obj
+ 0001:0001a958       $chain$2$?MarkFindFirst@LOOK@@QEAAXXZ 000000018001b958     LookDBF.obj
+ 0001:0001a974       $chain$3$?MarkFindFirst@LOOK@@QEAAXXZ 000000018001b974     LookDBF.obj
+ 0001:0001a984       $chain$4$?MarkFindFirst@LOOK@@QEAAXXZ 000000018001b984     LookDBF.obj
+ 0001:0001a9a0       $unwind$?MarkNonActual@LOOK@@QEAAXXZ 000000018001b9a0     LookDBF.obj
+ 0001:0001a9a8       $chain$0$?MarkNonActual@LOOK@@QEAAXXZ 000000018001b9a8     LookDBF.obj
+ 0001:0001a9bc       $chain$3$?MarkNonActual@LOOK@@QEAAXXZ 000000018001b9bc     LookDBF.obj
+ 0001:0001a9d8       $chain$4$?MarkNonActual@LOOK@@QEAAXXZ 000000018001b9d8     LookDBF.obj
+ 0001:0001a9e8       $chain$5$?MarkNonActual@LOOK@@QEAAXXZ 000000018001b9e8     LookDBF.obj
+ 0001:0001a9f8       $chain$0$?GoNextMark@LOOK@@QEAAGXZ 000000018001b9f8     LookDBF.obj
+ 0001:0001aa0c       $chain$4$?GoNextMark@LOOK@@QEAAGXZ 000000018001ba0c     LookDBF.obj
+ 0001:0001aa0c       $chain$2$?GoNextMark@LOOK@@QEAAGXZ 000000018001ba0c     LookDBF.obj
+ 0001:0001aa20       $chain$0$?GoPrevMark@LOOK@@QEAAGXZ 000000018001ba20     LookDBF.obj
+ 0001:0001aa34       $chain$2$?GoPrevMark@LOOK@@QEAAGXZ 000000018001ba34     LookDBF.obj
+ 0001:0001aa34       $chain$4$?GoPrevMark@LOOK@@QEAAGXZ 000000018001ba34     LookDBF.obj
+ 0001:0001aa48       $unwind$?GoDn@LOOK@@QEAAGG@Z 000000018001ba48     LookDBF.obj
+ 0001:0001aa54       $chain$1$?GoDn@LOOK@@QEAAGG@Z 000000018001ba54     LookDBF.obj
+ 0001:0001aa6c       $chain$3$?GoDn@LOOK@@QEAAGG@Z 000000018001ba6c     LookDBF.obj
+ 0001:0001aa84       $chain$7$?GoDn@LOOK@@QEAAGG@Z 000000018001ba84     LookDBF.obj
+ 0001:0001aaa4       $chain$9$?GoDn@LOOK@@QEAAGG@Z 000000018001baa4     LookDBF.obj
+ 0001:0001aabc       $chain$10$?GoDn@LOOK@@QEAAGG@Z 000000018001babc     LookDBF.obj
+ 0001:0001aacc       $chain$0$?GoTop@LOOK@@QEAAGXZ 000000018001bacc     LookDBF.obj
+ 0001:0001aae0       $chain$2$?GoTop@LOOK@@QEAAGXZ 000000018001bae0     LookDBF.obj
+ 0001:0001aaf4       $chain$3$?GoTop@LOOK@@QEAAGXZ 000000018001baf4     LookDBF.obj
+ 0001:0001ab08       $chain$4$?GoTop@LOOK@@QEAAGXZ 000000018001bb08     LookDBF.obj
+ 0001:0001ab18       $chain$0$?GoBot@LOOK@@QEAAGXZ 000000018001bb18     LookDBF.obj
+ 0001:0001ab2c       $chain$4$?GoBot@LOOK@@QEAAGXZ 000000018001bb2c     LookDBF.obj
+ 0001:0001ab2c       $chain$2$?GoBot@LOOK@@QEAAGXZ 000000018001bb2c     LookDBF.obj
+ 0001:0001ab40       $chain$8$?GoBot@LOOK@@QEAAGXZ 000000018001bb40     LookDBF.obj
+ 0001:0001ab5c       $chain$10$?GoBot@LOOK@@QEAAGXZ 000000018001bb5c     LookDBF.obj
+ 0001:0001ab78       $unwind$?GoFind@LOOK@@QEAAGF@Z 000000018001bb78     LookDBF.obj
+ 0001:0001ab90       $unwind$?GoField@LOOK@@QEAAGH@Z 000000018001bb90     LookDBF.obj
+ 0001:0001aba4       $chain$2$?GoField@LOOK@@QEAAGH@Z 000000018001bba4     LookDBF.obj
+ 0001:0001abb8       $chain$5$?GoField@LOOK@@QEAAGH@Z 000000018001bbb8     LookDBF.obj
+ 0001:0001abb8       $chain$3$?GoField@LOOK@@QEAAGH@Z 000000018001bbb8     LookDBF.obj
+ 0001:0001abc8       $chain$4$?GoField@LOOK@@QEAAGH@Z 000000018001bbc8     LookDBF.obj
+ 0001:0001abdc       $unwind$?GoAsk@LOOK@@QEAAGXZ 000000018001bbdc     LookDBF.obj
+ 0001:0001abf8       $unwind$?GoMouse@LOOK@@QEAAGPEAU_MOUSE_EVENT_RECORD@@@Z 000000018001bbf8     LookDBF.obj
+ 0001:0001ac14       $unwind$?InitColumns@LOOK@@QEAAXXZ 000000018001bc14     LookDBF.obj
+ 0001:0001ac24       $chain$1$?InitColumns@LOOK@@QEAAXXZ 000000018001bc24     LookDBF.obj
+ 0001:0001ac3c       $chain$2$?InitColumns@LOOK@@QEAAXXZ 000000018001bc3c     LookDBF.obj
+ 0001:0001ac4c       $unwind$?GetConfig@LOOK@@QEAAX_N@Z 000000018001bc4c     LookDBF.obj
+ 0001:0001ac60       $unwind$?DefColors@LOOK@@QEAAXPEAD@Z 000000018001bc60     LookDBF.obj
+ 0001:0001ac74       $unwind$?AttrRect@LOOK@@QEAAXGGGGG@Z 000000018001bc74     LookDBF.obj
+ 0001:0001ac80       $chain$0$?AttrRect@LOOK@@QEAAXGGGGG@Z 000000018001bc80     LookDBF.obj
+ 0001:0001ac94       $chain$1$?AttrRect@LOOK@@QEAAXGGGGG@Z 000000018001bc94     LookDBF.obj
+ 0001:0001aca4       $unwind$?Like@LOOK@@QEAA_NPEAE0@Z 000000018001bca4     LookDBF.obj
+ 0001:0001aca4       $unwind$?AttrLine@LOOK@@QEAAXGGGG@Z 000000018001bca4     LookDBF.obj
+ 0001:0001acac       $chain$0$?AttrLine@LOOK@@QEAAXGGGG@Z 000000018001bcac     LookDBF.obj
+ 0001:0001acc0       $chain$1$?AttrLine@LOOK@@QEAAXGGGG@Z 000000018001bcc0     LookDBF.obj
+ 0001:0001acd0       $unwind$?MarkFindFirst@LOOK@@QEAAXXZ 000000018001bcd0     LookDBF.obj
+ 0001:0001acd0       $unwind$?ClearRect@LOOK@@QEAAXGGGG@Z 000000018001bcd0     LookDBF.obj
+ 0001:0001acd8       $chain$0$?ClearRect@LOOK@@QEAAXGGGG@Z 000000018001bcd8     LookDBF.obj
+ 0001:0001acec       $chain$1$?ClearRect@LOOK@@QEAAXGGGG@Z 000000018001bcec     LookDBF.obj
+ 0001:0001acfc       $unwind$?ReplaceDlg@LOOK@@QEAAFXZ 000000018001bcfc     LookDBF.obj
+ 0001:0001ad18       $unwind$?ReplaceAsk@LOOK@@QEAAFXZ 000000018001bd18     LookDBF.obj
+ 0001:0001ad30       $unwind$?Replace@LOOK@@QEAAFXZ 000000018001bd30     LookDBF.obj
+ 0001:0001ad44       $unwind$?ReplaceStr@LOOK@@QEAAFPEAD@Z 000000018001bd44     LookDBF.obj
+ 0001:0001ad60       $unwind$?ReplaceAll@LOOK@@QEAAXFK@Z 000000018001bd60     LookDBF.obj
+ 0001:0001ad78       $chain$1$?ReplaceAll@LOOK@@QEAAXFK@Z 000000018001bd78     LookDBF.obj
+ 0001:0001ad90       $chain$3$?ReplaceAll@LOOK@@QEAAXFK@Z 000000018001bd90     LookDBF.obj
+ 0001:0001ada8       $chain$2$?ReplaceAll@LOOK@@QEAAXFK@Z 000000018001bda8     LookDBF.obj
+ 0001:0001ada8       $chain$4$?ReplaceAll@LOOK@@QEAAXFK@Z 000000018001bda8     LookDBF.obj
+ 0001:0001adb8       $unwind$?FindAskSample@LOOK@@QEAAFXZ 000000018001bdb8     LookDBF.obj
+ 0001:0001add8       $unwind$?FindNext@LOOK@@QEAAKPEAFF@Z 000000018001bdd8     LookDBF.obj
+ 0001:0001adf4       $unwind$?FindMark@LOOK@@QEAAKG@Z 000000018001bdf4     LookDBF.obj
+ 0001:0001ae04       $chain$1$?FindMark@LOOK@@QEAAKG@Z 000000018001be04     LookDBF.obj
+ 0001:0001ae1c       $chain$2$?FindMark@LOOK@@QEAAKG@Z 000000018001be1c     LookDBF.obj
+ 0001:0001ae30       $chain$3$?FindMark@LOOK@@QEAAKG@Z 000000018001be30     LookDBF.obj
+ 0001:0001ae40       $chain$5$?FindMark@LOOK@@QEAAKG@Z 000000018001be40     LookDBF.obj
+ 0001:0001ae5c       $chain$6$?FindMark@LOOK@@QEAAKG@Z 000000018001be5c     LookDBF.obj
+ 0001:0001ae5c       $chain$4$?FindMark@LOOK@@QEAAKG@Z 000000018001be5c     LookDBF.obj
+ 0001:0001ae6c       $unwind$?FindCompare@LOOK@@QEAAFG@Z 000000018001be6c     LookDBF.obj
+ 0001:0001ae8c       $unwind$?CondAsk@LOOK@@QEAAFXZ 000000018001be8c     LookDBF.obj
+ 0001:0001aeac       $unwind$?CondVal@LOOK@@QEAAXG@Z 000000018001beac     LookDBF.obj
+ 0001:0001aec4       $chain$2$?Like@LOOK@@QEAA_NPEAE0@Z 000000018001bec4     LookDBF.obj
+ 0001:0001aee0       $chain$4$?Like@LOOK@@QEAA_NPEAE0@Z 000000018001bee0     LookDBF.obj
+ 0001:0001aee0       $chain$6$?Like@LOOK@@QEAA_NPEAE0@Z 000000018001bee0     LookDBF.obj
+ 0001:0001aefc       $unwind$?CondCheck@LOOK@@QEAA_NFPEAE@Z 000000018001befc     LookDBF.obj
+ 0001:0001af04       $unwind$?CondCompare@LOOK@@QEAA_NF@Z 000000018001bf04     LookDBF.obj
+ 0001:0001af14       $chain$1$?CondCompare@LOOK@@QEAA_NF@Z 000000018001bf14     LookDBF.obj
+ 0001:0001af2c       $chain$2$?CondCompare@LOOK@@QEAA_NF@Z 000000018001bf2c     LookDBF.obj
+ 0001:0001af40       $chain$3$?CondCompare@LOOK@@QEAA_NF@Z 000000018001bf40     LookDBF.obj
+ 0001:0001af50       $unwind$?CondYes@LOOK@@QEAA_NXZ 000000018001bf50     LookDBF.obj
+ 0001:0001af5c       $chain$0$?CondYes@LOOK@@QEAA_NXZ 000000018001bf5c     LookDBF.obj
+ 0001:0001af70       $chain$4$?CondYes@LOOK@@QEAA_NXZ 000000018001bf70     LookDBF.obj
+ 0001:0001af70       $chain$6$?CondYes@LOOK@@QEAA_NXZ 000000018001bf70     LookDBF.obj
+ 0001:0001af70       $chain$2$?CondYes@LOOK@@QEAA_NXZ 000000018001bf70     LookDBF.obj
+ 0001:0001af84       $unwind$?FieldItem@LOOK@@QEAAPEAUColumn@@F@Z 000000018001bf84     LookDBF.obj
+ 0001:0001af9c       $unwind$?Export@LOOK@@QEAAGXZ 000000018001bf9c     LookDBF.obj
+ 0001:0001afb4       $unwind$?ExpTxt@LOOK@@QEAAGXZ 000000018001bfb4     LookDBF.obj
+ 0001:0001afc8       $chain$1$?ExpTxt@LOOK@@QEAAGXZ 000000018001bfc8     LookDBF.obj
+ 0001:0001afe0       $chain$2$?ExpTxt@LOOK@@QEAAGXZ 000000018001bfe0     LookDBF.obj
+ 0001:0001aff0       $chain$3$?ExpTxt@LOOK@@QEAAGXZ 000000018001bff0     LookDBF.obj
+ 0001:0001b008       $unwind$?ExpHtm@LOOK@@QEAAGXZ 000000018001c008     LookDBF.obj
+ 0001:0001b01c       $chain$1$?ExpHtm@LOOK@@QEAAGXZ 000000018001c01c     LookDBF.obj
+ 0001:0001b034       $unwind$?ExpDbf@LOOK@@QEAAGXZ 000000018001c034     LookDBF.obj
+ 0001:0001b050       $chain$1$?ExpDbf@LOOK@@QEAAGXZ 000000018001c050     LookDBF.obj
+ 0001:0001b064       $unwind$?PackDbf@LOOK@@QEAAGXZ 000000018001c064     LookDBF.obj
+ 0001:0001b080       $chain$3$?PackDbf@LOOK@@QEAAGXZ 000000018001c080     LookDBF.obj
+ 0001:0001b094       $unwind$?ExpRec0@LOOK@@QEAAGXZ 000000018001c094     LookDBF.obj
+ 0001:0001b094       $unwind$?BuildBuffers@LOOK@@QEAA_N_N@Z 000000018001c094     LookDBF.obj
+ 0001:0001b0a4       $unwind$?ExpRec1@LOOK@@QEAAGXZ 000000018001c0a4     LookDBF.obj
+ 0001:0001b0a4       $unwind$?CondNext@LOOK@@QEAAKXZ 000000018001c0a4     LookDBF.obj
+ 0001:0001b0b8       $unwind$?ExpRec2@LOOK@@QEAAGXZ 000000018001c0b8     LookDBF.obj
+ 0001:0001b0d8       $unwind$?FieldCompare@LOOK@@QEAAFFPEATCondValue@@0@Z 000000018001c0d8     LookDBF.obj
+ 0001:0001b0e8       $chain$0$?FieldCompare@LOOK@@QEAAFFPEATCondValue@@0@Z 000000018001c0e8     LookDBF.obj
+ 0001:0001b0fc       $chain$2$?FieldCompare@LOOK@@QEAAFFPEATCondValue@@0@Z 000000018001c0fc     LookDBF.obj
+ 0001:0001b110       $unwind$?Import@LOOK@@QEAAGXZ 000000018001c110     LookDBF.obj
+ 0001:0001b124       $chain$2$?Import@LOOK@@QEAAGXZ 000000018001c124     LookDBF.obj
+ 0001:0001b140       $chain$4$?Import@LOOK@@QEAAGXZ 000000018001c140     LookDBF.obj
+ 0001:0001b15c       $unwind$?ClmnInsert@LOOK@@QEAAGXZ 000000018001c15c     LookDBF.obj
+ 0001:0001b168       $chain$0$?ClmnInsert@LOOK@@QEAAGXZ 000000018001c168     LookDBF.obj
+ 0001:0001b17c       $chain$5$?ClmnInsert@LOOK@@QEAAGXZ 000000018001c17c     LookDBF.obj
+ 0001:0001b19c       $chain$7$?ClmnInsert@LOOK@@QEAAGXZ 000000018001c19c     LookDBF.obj
+ 0001:0001b1b4       $chain$8$?ClmnInsert@LOOK@@QEAAGXZ 000000018001c1b4     LookDBF.obj
+ 0001:0001b1c4       $unwind$?ClmnNarrow@LOOK@@QEAAGXZ 000000018001c1c4     LookDBF.obj
+ 0001:0001b1d0       $unwind$?ClmnRename@LOOK@@QEAAGXZ 000000018001c1d0     LookDBF.obj
+ 0001:0001b1e8       $unwind$?ClmnScroll@LOOK@@QEAAGF@Z 000000018001c1e8     LookDBF.obj
+ 0001:0001b1f8       $chain$1$?ClmnScroll@LOOK@@QEAAGF@Z 000000018001c1f8     LookDBF.obj
+ 0001:0001b210       $chain$3$?ClmnScroll@LOOK@@QEAAGF@Z 000000018001c210     LookDBF.obj
+ 0001:0001b228       $chain$4$?ClmnScroll@LOOK@@QEAAGF@Z 000000018001c228     LookDBF.obj
+ 0001:0001b238       $unwind$?TableSet@LOOK@@QEAAHH@Z 000000018001c238     LookDBF.obj
+ 0001:0001b238       $unwind$?ActualRecord@LOOK@@QEAAGXZ 000000018001c238     LookDBF.obj
+ 0001:0001b244       $unwind$?ActualSelected@LOOK@@QEAAGE@Z 000000018001c244     LookDBF.obj
+ 0001:0001b25c       $unwind$?EditRecord@LOOK@@QEAAGXZ 000000018001c25c     LookDBF.obj
+ 0001:0001b26c       $chain$3$?EditRecord@LOOK@@QEAAGXZ 000000018001c26c     LookDBF.obj
+ 0001:0001b28c       $chain$5$?EditRecord@LOOK@@QEAAGXZ 000000018001c28c     LookDBF.obj
+ 0001:0001b2ac       $unwind$?EditField@LOOK@@QEAAGE@Z 000000018001c2ac     LookDBF.obj
+ 0001:0001b2c8       $unwind$?EditHeader@LOOK@@QEAAXXZ 000000018001c2c8     LookDBF.obj
+ 0001:0001b2e4       $chain$0$?EditHeader@LOOK@@QEAAXXZ 000000018001c2e4     LookDBF.obj
+ 0001:0001b2f8       $chain$1$?EditHeader@LOOK@@QEAAXXZ 000000018001c2f8     LookDBF.obj
+ 0001:0001b308       $unwind$?KeyShow@LOOK@@QEAAXXZ 000000018001c308     LookDBF.obj
+ 0001:0001b308       $unwind$?Init@EditDialog@@QEAAGGGGE@Z 000000018001c308     LookDBF.obj
+ 0001:0001b324       $unwind$?Clipboard@LOOK@@QEAAXXZ 000000018001c324     LookDBF.obj
+ 0001:0001b334       $unwind$?ShowCur@LOOK@@QEAAXXZ 000000018001c334     LookDBF.obj
+ 0001:0001b334       $unwind$?FiDispE@dbBase@@QEAAGPEAD@Z 000000018001c334     LookDBF.obj
+ 0001:0001b334       $unwind$?GoNextMark@LOOK@@QEAAGXZ 000000018001c334     LookDBF.obj
+ 0001:0001b340       $chain$0$?ShowCur@LOOK@@QEAAXXZ 000000018001c340     LookDBF.obj
+ 0001:0001b354       $chain$1$?ShowCur@LOOK@@QEAAXXZ 000000018001c354     LookDBF.obj
+ 0001:0001b364       $unwind$?ShowError@LOOK@@QEAAXH@Z 000000018001c364     LookDBF.obj
+ 0001:0001b370       $chain$0$?ShowError@LOOK@@QEAAXH@Z 000000018001c370     LookDBF.obj
+ 0001:0001b384       $chain$1$?ShowError@LOOK@@QEAAXH@Z 000000018001c384     LookDBF.obj
+ 0001:0001b394       $unwind$?ShowExpMsg@LOOK@@QEAAXK@Z 000000018001c394     LookDBF.obj
+ 0001:0001b3a4       $unwind$?ShowFindMsg@LOOK@@QEAAXK@Z 000000018001c3a4     LookDBF.obj
+ 0001:0001b3b0       $chain$0$?ShowFindMsg@LOOK@@QEAAXK@Z 000000018001c3b0     LookDBF.obj
+ 0001:0001b3c4       $chain$4$?ShowFindMsg@LOOK@@QEAAXK@Z 000000018001c3c4     LookDBF.obj
+ 0001:0001b3e4       $chain$5$?ShowFindMsg@LOOK@@QEAAXK@Z 000000018001c3e4     LookDBF.obj
+ 0001:0001b3f8       $chain$6$?ShowFindMsg@LOOK@@QEAAXK@Z 000000018001c3f8     LookDBF.obj
+ 0001:0001b408       $unwind$?ShowReplMsg@LOOK@@QEAAXK@Z 000000018001c408     LookDBF.obj
+ 0001:0001b414       $unwind$?ShowPage@LOOK@@QEAAXXZ 000000018001c414     LookDBF.obj
+ 0001:0001b420       $chain$6$?ShowPage@LOOK@@QEAAXXZ 000000018001c420     LookDBF.obj
+ 0001:0001b44c       $chain$7$?ShowPage@LOOK@@QEAAXXZ 000000018001c44c     LookDBF.obj
+ 0001:0001b45c       $unwind$?ShowFields@LOOK@@QEAAHXZ 000000018001c45c     LookDBF.obj
+ 0001:0001b47c       $unwind$?ShowMemo@LOOK@@QEAAXF@Z 000000018001c47c     LookDBF.obj
+ 0001:0001b490       $chain$0$?ShowMemo@LOOK@@QEAAXF@Z 000000018001c490     LookDBF.obj
+ 0001:0001b4a4       $chain$1$?ShowMemo@LOOK@@QEAAXF@Z 000000018001c4a4     LookDBF.obj
+ 0001:0001b4b4       $unwind$?ShowStrI@LOOK@@QEAAXPEBDGGG@Z 000000018001c4b4     LookDBF.obj
+ 0001:0001b4c8       $chain$0$?ShowStrI@LOOK@@QEAAXPEBDGGG@Z 000000018001c4c8     LookDBF.obj
+ 0001:0001b4dc       $chain$1$?ShowStrI@LOOK@@QEAAXPEBDGGG@Z 000000018001c4dc     LookDBF.obj
+ 0001:0001b4ec       $unwind$?ShowF5@LOOK@@QEAAXXZ 000000018001c4ec     LookDBF.obj
+ 0001:0001b500       $unwind$?ShowStatus@LOOK@@QEAAXH@Z 000000018001c500     LookDBF.obj
+ 0001:0001b520       $unwind$?ShowSum@LOOK@@QEAAXXZ 000000018001c520     LookDBF.obj
+ 0001:0001b52c       $chain$4$?ShowSum@LOOK@@QEAAXXZ 000000018001c52c     LookDBF.obj
+ 0001:0001b550       $chain$5$?ShowSum@LOOK@@QEAAXXZ 000000018001c550     LookDBF.obj
+ 0001:0001b564       $chain$6$?ShowSum@LOOK@@QEAAXXZ 000000018001c564     LookDBF.obj
+ 0001:0001b574       $chain$8$?ShowSum@LOOK@@QEAAXXZ 000000018001c574     LookDBF.obj
+ 0001:0001b59c       $chain$9$?ShowSum@LOOK@@QEAAXXZ 000000018001c59c     LookDBF.obj
+ 0001:0001b5c0       $unwind$?ShowDBF@LOOK@@QEAAXXZ 000000018001c5c0     LookDBF.obj
+ 0001:0001b5d4       $chain$1$?ShowDBF@LOOK@@QEAAXXZ 000000018001c5d4     LookDBF.obj
+ 0001:0001b5ec       $chain$2$?ShowDBF@LOOK@@QEAAXXZ 000000018001c5ec     LookDBF.obj
+ 0001:0001b5fc       $unwind$?GetTemplate@LOOK@@QEAAXXZ 000000018001c5fc     LookDBF.obj
+ 0001:0001b60c       $chain$2$?GetTemplate@LOOK@@QEAAXXZ 000000018001c60c     LookDBF.obj
+ 0001:0001b628       $chain$4$?GetTemplate@LOOK@@QEAAXXZ 000000018001c628     LookDBF.obj
+ 0001:0001b644       $chain$5$?GetTemplate@LOOK@@QEAAXXZ 000000018001c644     LookDBF.obj
+ 0001:0001b644       $chain$3$?GetTemplate@LOOK@@QEAAXXZ 000000018001c644     LookDBF.obj
+ 0001:0001b654       $unwind$?PutTemplate@LOOK@@QEAAX_N@Z 000000018001c654     LookDBF.obj
+ 0001:0001b670       $unwind$?DelTemplate@LOOK@@QEAAXXZ 000000018001c670     LookDBF.obj
+ 0001:0001b678       $unwind$?TableSelect@LOOK@@QEAAHXZ 000000018001c678     LookDBF.obj
+ 0001:0001b690       $chain$0$?TableSelect@LOOK@@QEAAHXZ 000000018001c690     LookDBF.obj
+ 0001:0001b6a4       $chain$1$?TableSelect@LOOK@@QEAAHXZ 000000018001c6a4     LookDBF.obj
+ 0001:0001b6b8       $chain$2$?TableSelect@LOOK@@QEAAHXZ 000000018001c6b8     LookDBF.obj
+ 0001:0001b6c8       $chain$3$?TableSelect@LOOK@@QEAAHXZ 000000018001c6c8     LookDBF.obj
+ 0001:0001b6d8       $unwind$?CheckForEsc@@YAHXZ 000000018001c6d8     LookDBF.obj
+ 0001:0001b6e4       $chain$0$?CheckForEsc@@YAHXZ 000000018001c6e4     LookDBF.obj
+ 0001:0001b6f8       $chain$2$?CheckForEsc@@YAHXZ 000000018001c6f8     LookDBF.obj
+ 0001:0001b70c       $unwind$?DiExp@@YA_JPEAXHH_J@Z 000000018001c70c     LookDBF.obj
+ 0001:0001b70c       $unwind$?AddF@dbBase@@QEAAXPEAUdbField@@PEADDEE@Z 000000018001c70c     LookDBF.obj
+ 0001:0001b70c       $unwind$?ChangeCode@LOOK@@QEAAXXZ 000000018001c70c     LookDBF.obj
+ 0001:0001b724       $unwind$?DiCond@@YA_JPEAXHH_J@Z 000000018001c724     LookDBF.obj
+ 0001:0001b738       $chain$0$?DiCond@@YA_JPEAXHH_J@Z 000000018001c738     LookDBF.obj
+ 0001:0001b74c       $chain$2$?DiCond@@YA_JPEAXHH_J@Z 000000018001c74c     LookDBF.obj
+ 0001:0001b760       $chain$3$?DiCond@@YA_JPEAXHH_J@Z 000000018001c760     LookDBF.obj
+ 0001:0001b774       $chain$4$?DiCond@@YA_JPEAXHH_J@Z 000000018001c774     LookDBF.obj
+ 0001:0001b784       $chain$5$?DiCond@@YA_JPEAXHH_J@Z 000000018001c784     LookDBF.obj
+ 0001:0001b784       $chain$1$?DiCond@@YA_JPEAXHH_J@Z 000000018001c784     LookDBF.obj
+ 0001:0001b794       $unwind$??1EditDialog@@QEAA@XZ 000000018001c794     LookDBF.obj
+ 0001:0001b7a0       $chain$1$??1EditDialog@@QEAA@XZ 000000018001c7a0     LookDBF.obj
+ 0001:0001b7b8       $chain$2$??1EditDialog@@QEAA@XZ 000000018001c7b8     LookDBF.obj
+ 0001:0001b7c8       $unwind$?Line@EditDialog@@QEAAFPEBD0F0@Z 000000018001c7c8     LookDBF.obj
+ 0001:0001b7dc       $chain$0$?Line@EditDialog@@QEAAFPEBD0F0@Z 000000018001c7dc     LookDBF.obj
+ 0001:0001b7f0       $chain$1$?Line@EditDialog@@QEAAFPEBD0F0@Z 000000018001c7f0     LookDBF.obj
+ 0001:0001b800       $unwind$?Exec@EditDialog@@QEAAFXZ 000000018001c800     LookDBF.obj
+ 0001:0001b80c       $unwind$?DiProc@@YA_JPEAXHH_J@Z 000000018001c80c     LookDBF.obj
+ 0001:0001b820       $chain$0$?DiProc@@YA_JPEAXHH_J@Z 000000018001c820     LookDBF.obj
+ 0001:0001b834       $chain$1$?DiProc@@YA_JPEAXHH_J@Z 000000018001c834     LookDBF.obj
+ 0001:0001b848       $xdatasym                  000000018001c848     MSVCRT:chkstk.obj
+ 0001:0001b850       .edata                     000000018001c850     LookDBF.exp
+ 0001:0001b878       rgpv                       000000018001c878     LookDBF.exp
+ 0001:0001b88c       rgszName                   000000018001c88c     LookDBF.exp
+ 0001:0001b8a0       rgwOrd                     000000018001c8a0     LookDBF.exp
+ 0001:0001b8aa       szName                     000000018001c8aa     LookDBF.exp
+ 0001:0001b8b6       $N00001                    000000018001c8b6     LookDBF.exp
+ 0001:0001b8c0       $N00002                    000000018001c8c0     LookDBF.exp
+ 0001:0001b8d1       $N00003                    000000018001c8d1     LookDBF.exp
+ 0001:0001b8df       $N00004                    000000018001c8df     LookDBF.exp
+ 0001:0001b8ea       $N00005                    000000018001c8ea     LookDBF.exp
+ 0002:00000050       T_Mask                     000000018001d050     LookDBF.obj
+ 0002:00000070       D_Mask                     000000018001d070     LookDBF.obj
+ 0002:000000b0       C_OPER                     000000018001d0b0     LookDBF.obj
+ 0002:000000e8       C_REL                      000000018001d0e8     LookDBF.obj
+ 0002:000004e0       ?PluginMenuStrings@?1??GetPluginInfo@@9@4PAPEBDA 000000018001d4e0     Plugin.obj
+ 0002:000004e8       aw                         000000018001d4e8     LookDBF.obj
+ 0002:000004f0       fmtD                       000000018001d4f0     LookDBF.obj
+ 0002:00000510       fmtT                       000000018001d510     LookDBF.obj
+ 0002:00000530       fmtDE                      000000018001d530     LookDBF.obj
+ 0002:00000550       fmtTE                      000000018001d550     LookDBF.obj
+ 0002:00000570       fmtDV                      000000018001d570     LookDBF.obj
+ 0002:00000590       fmtTV                      000000018001d590     LookDBF.obj
+ 0003:00000000       $pdata$?Accum@dbBase@@QEAAXPEATdbVal@@@Z 000000018001e000     db_use.obj
+ 0003:0000000c       $pdata$?AddF@dbBase@@QEAAXPEAUdbField@@PEADDEE@Z 000000018001e00c     db_use.obj
+ 0003:00000018       $pdata$?AddNull@dbBase@@QEAAEXZ 000000018001e018     db_use.obj
+ 0003:00000024       $pdata$0$?AddNull@dbBase@@QEAAEXZ 000000018001e024     db_use.obj
+ 0003:00000030       $pdata$1$?AddNull@dbBase@@QEAAEXZ 000000018001e030     db_use.obj
+ 0003:0000003c       $pdata$?Append@dbBase@@QEAAEXZ 000000018001e03c     db_use.obj
+ 0003:00000048       $pdata$?Close@dbBase@@QEAAXXZ 000000018001e048     db_use.obj
+ 0003:00000054       $pdata$?Create@dbBase@@QEAAEPEADEPEAU1@@Z 000000018001e054     db_use.obj
+ 0003:00000060       $pdata$?DTf29@@YAPEADPEAD0@Z 000000018001e060     db_use.obj
+ 0003:0000006c       $pdata$0$?DTf29@@YAPEADPEAD0@Z 000000018001e06c     db_use.obj
+ 0003:00000078       $pdata$1$?DTf29@@YAPEADPEAD0@Z 000000018001e078     db_use.obj
+ 0003:00000084       $pdata$?DTf2s@@YAPEADPEBDPEAD@Z 000000018001e084     db_use.obj
+ 0003:00000090       $pdata$1$?DTf2s@@YAPEADPEBDPEAD@Z 000000018001e090     db_use.obj
+ 0003:0000009c       $pdata$2$?DTf2s@@YAPEADPEBDPEAD@Z 000000018001e09c     db_use.obj
+ 0003:000000a8       $pdata$?DTs2f@@YAPEADPEBDPEAD@Z 000000018001e0a8     db_use.obj
+ 0003:000000b4       $pdata$0$?DTs2f@@YAPEADPEBDPEAD@Z 000000018001e0b4     db_use.obj
+ 0003:000000c0       $pdata$1$?DTs2f@@YAPEADPEBDPEAD@Z 000000018001e0c0     db_use.obj
+ 0003:000000cc       $pdata$2$?DTs2f@@YAPEADPEBDPEAD@Z 000000018001e0cc     db_use.obj
+ 0003:000000d8       $pdata$?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 000000018001e0d8     db_use.obj
+ 0003:000000e4       $pdata$4$?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 000000018001e0e4     db_use.obj
+ 0003:000000f0       $pdata$6$?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 000000018001e0f0     db_use.obj
+ 0003:000000fc       $pdata$7$?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 000000018001e0fc     db_use.obj
+ 0003:00000108       $pdata$8$?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 000000018001e108     db_use.obj
+ 0003:00000114       $pdata$9$?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 000000018001e114     db_use.obj
+ 0003:00000120       $pdata$10$?DTsf2t@@YAXPEAD0PEAU_SYSTEMTIME@@@Z 000000018001e120     db_use.obj
+ 0003:0000012c       $pdata$?DTstr@@YAPEADPEAD00@Z 000000018001e12c     db_use.obj
+ 0003:00000138       $pdata$1$?DTstr@@YAPEADPEAD00@Z 000000018001e138     db_use.obj
+ 0003:00000144       $pdata$2$?DTstr@@YAPEADPEAD00@Z 000000018001e144     db_use.obj
+ 0003:00000150       $pdata$?DTstr@@YAPEADPEADPEAU_SYSTEMTIME@@0@Z 000000018001e150     db_use.obj
+ 0003:0000015c       $pdata$2$?DTstr@@YAPEADPEADPEAU_SYSTEMTIME@@0@Z 000000018001e15c     db_use.obj
+ 0003:00000168       $pdata$3$?DTstr@@YAPEADPEADPEAU_SYSTEMTIME@@0@Z 000000018001e168     db_use.obj
+ 0003:00000174       $pdata$?DTt2dat@@YAKPEAU_SYSTEMTIME@@@Z 000000018001e174     db_use.obj
+ 0003:00000180       $pdata$?DTt2t@@YAXHPEAU_SYSTEMTIME@@@Z 000000018001e180     db_use.obj
+ 0003:0000018c       $pdata$?DTt2tim@@YAKPEAU_SYSTEMTIME@@@Z 000000018001e18c     db_use.obj
+ 0003:00000198       $pdata$?DestroyAll@Link@@QEAAPEAV1@XZ 000000018001e198     db_use.obj
+ 0003:000001a4       $pdata$?FiDisp@dbBase@@QEAAGPEADE@Z 000000018001e1a4     db_use.obj
+ 0003:000001b0       $pdata$?FiDispE@dbBase@@QEAAGPEAD@Z 000000018001e1b0     db_use.obj
+ 0003:000001bc       $pdata$0$?FiDispE@dbBase@@QEAAGPEAD@Z 000000018001e1bc     db_use.obj
+ 0003:000001c8       $pdata$2$?FiDispE@dbBase@@QEAAGPEAD@Z 000000018001e1c8     db_use.obj
+ 0003:000001d4       $pdata$?FiType@dbBase@@QEAAPEADPEAD@Z 000000018001e1d4     db_use.obj
+ 0003:000001e0       $pdata$?Get64@dbBase@@QEAA_JXZ 000000018001e1e0     db_use.obj
+ 0003:000001ec       $pdata$?GetByte@dbBase@@QEAAPEAEPEAE@Z 000000018001e1ec     db_use.obj
+ 0003:000001f8       $pdata$?GetDouble@dbBase@@QEAANXZ 000000018001e1f8     db_use.obj
+ 0003:00000204       $pdata$0$?GetDouble@dbBase@@QEAANXZ 000000018001e204     db_use.obj
+ 0003:00000210       $pdata$1$?GetDouble@dbBase@@QEAANXZ 000000018001e210     db_use.obj
+ 0003:0000021c       $pdata$?GetMemo@dbBase@@QEAAEPEADPEAK@Z 000000018001e21c     db_use.obj
+ 0003:00000228       $pdata$1$?GetMemo@dbBase@@QEAAEPEADPEAK@Z 000000018001e228     db_use.obj
+ 0003:00000234       $pdata$2$?GetMemo@dbBase@@QEAAEPEADPEAK@Z 000000018001e234     db_use.obj
+ 0003:00000240       $pdata$4$?GetMemo@dbBase@@QEAAEPEADPEAK@Z 000000018001e240     db_use.obj
+ 0003:0000024c       $pdata$5$?GetMemo@dbBase@@QEAAEPEADPEAK@Z 000000018001e24c     db_use.obj
+ 0003:00000258       $pdata$6$?GetMemo@dbBase@@QEAAEPEADPEAK@Z 000000018001e258     db_use.obj
+ 0003:00000264       $pdata$8$?GetMemo@dbBase@@QEAAEPEADPEAK@Z 000000018001e264     db_use.obj
+ 0003:00000270       $pdata$?Hex_Bin@@YAXPEADPEAEH@Z 000000018001e270     db_use.obj
+ 0003:0000027c       $pdata$?NextRec@dbBase@@QEAAEXZ 000000018001e27c     db_use.obj
+ 0003:00000288       $pdata$?Open@dbBase@@QEAAEPEADE@Z 000000018001e288     db_use.obj
+ 0003:00000294       $pdata$1$?Open@dbBase@@QEAAEPEADE@Z 000000018001e294     db_use.obj
+ 0003:000002a0       $pdata$4$?Open@dbBase@@QEAAEPEADE@Z 000000018001e2a0     db_use.obj
+ 0003:000002ac       $pdata$5$?Open@dbBase@@QEAAEPEADE@Z 000000018001e2ac     db_use.obj
+ 0003:000002b8       $pdata$7$?Open@dbBase@@QEAAEPEADE@Z 000000018001e2b8     db_use.obj
+ 0003:000002c4       $pdata$8$?Open@dbBase@@QEAAEPEADE@Z 000000018001e2c4     db_use.obj
+ 0003:000002d0       $pdata$?OpenMemo@dbBase@@QEAAXPEBD0@Z 000000018001e2d0     db_use.obj
+ 0003:000002dc       $pdata$0$?OpenMemo@dbBase@@QEAAXPEBD0@Z 000000018001e2dc     db_use.obj
+ 0003:000002e8       $pdata$1$?OpenMemo@dbBase@@QEAAXPEBD0@Z 000000018001e2e8     db_use.obj
+ 0003:000002f4       $pdata$2$?OpenMemo@dbBase@@QEAAXPEBD0@Z 000000018001e2f4     db_use.obj
+ 0003:00000300       $pdata$?ParseMemoExt@@YAGPEADPEBD@Z 000000018001e300     db_use.obj
+ 0003:0000030c       $pdata$2$?ParseMemoExt@@YAGPEADPEBD@Z 000000018001e30c     db_use.obj
+ 0003:00000318       $pdata$4$?ParseMemoExt@@YAGPEADPEBD@Z 000000018001e318     db_use.obj
+ 0003:00000324       $pdata$5$?ParseMemoExt@@YAGPEADPEBD@Z 000000018001e324     db_use.obj
+ 0003:00000330       $pdata$?ReWrite@dbBase@@QEAAEXZ 000000018001e330     db_use.obj
+ 0003:0000033c       $pdata$0$?ReWrite@dbBase@@QEAAEXZ 000000018001e33c     db_use.obj
+ 0003:00000348       $pdata$2$?ReWrite@dbBase@@QEAAEXZ 000000018001e348     db_use.obj
+ 0003:00000354       $pdata$?Read@dbBase@@QEAAEK@Z 000000018001e354     db_use.obj
+ 0003:00000360       $pdata$?SaveHeader@dbBase@@QEAAXXZ 000000018001e360     db_use.obj
+ 0003:0000036c       $pdata$1$?SaveHeader@dbBase@@QEAAXXZ 000000018001e36c     db_use.obj
+ 0003:00000378       $pdata$2$?SaveHeader@dbBase@@QEAAXXZ 000000018001e378     db_use.obj
+ 0003:00000384       $pdata$?SetField@dbBase@@QEAAXPEAD@Z 000000018001e384     db_use.obj
+ 0003:00000390       $pdata$0$?SetField@dbBase@@QEAAXPEAD@Z 000000018001e390     db_use.obj
+ 0003:0000039c       $pdata$3$?SetField@dbBase@@QEAAXPEAD@Z 000000018001e39c     db_use.obj
+ 0003:000003a8       $pdata$4$?SetField@dbBase@@QEAAXPEAD@Z 000000018001e3a8     db_use.obj
+ 0003:000003b4       $pdata$5$?SetField@dbBase@@QEAAXPEAD@Z 000000018001e3b4     db_use.obj
+ 0003:000003c0       $pdata$6$?SetField@dbBase@@QEAAXPEAD@Z 000000018001e3c0     db_use.obj
+ 0003:000003cc       $pdata$7$?SetField@dbBase@@QEAAXPEAD@Z 000000018001e3cc     db_use.obj
+ 0003:000003d8       $pdata$?SetLeft@dbBase@@QEAAXPEAD@Z 000000018001e3d8     db_use.obj
+ 0003:000003e4       $pdata$?SetRight@dbBase@@QEAAXPEAD@Z 000000018001e3e4     db_use.obj
+ 0003:000003f0       $pdata$?Write@dbBase@@QEAAEXZ 000000018001e3f0     db_use.obj
+ 0003:000003fc       $pdata$?a_dbl@@YANPEAD@Z   000000018001e3fc     db_use.obj
+ 0003:00000408       $pdata$?a_i64@@YA_JPEAD_JD@Z 000000018001e408     db_use.obj
+ 0003:00000414       $pdata$?i64_a@@YAPEADPEAD_JHH@Z 000000018001e414     db_use.obj
+ 0003:00000420       $pdata$Configure           000000018001e420     Plugin.obj
+ 0003:0000042c       $pdata$4$Configure         000000018001e42c     Plugin.obj
+ 0003:00000438       $pdata$5$Configure         000000018001e438     Plugin.obj
+ 0003:00000444       $pdata$6$Configure         000000018001e444     Plugin.obj
+ 0003:00000450       $pdata$7$Configure         000000018001e450     Plugin.obj
+ 0003:0000045c       $pdata$OpenPlugin          000000018001e45c     Plugin.obj
+ 0003:00000468       $pdata$0$OpenPlugin        000000018001e468     Plugin.obj
+ 0003:00000474       $pdata$1$OpenPlugin        000000018001e474     Plugin.obj
+ 0003:00000480       $pdata$2$OpenPlugin        000000018001e480     Plugin.obj
+ 0003:0000048c       $pdata$3$OpenPlugin        000000018001e48c     Plugin.obj
+ 0003:00000498       $pdata$4$OpenPlugin        000000018001e498     Plugin.obj
+ 0003:000004a4       $pdata$SetStartupInfo      000000018001e4a4     Plugin.obj
+ 0003:000004b0       $pdata$??1EditDialog@@QEAA@XZ 000000018001e4b0     LookDBF.obj
+ 0003:000004bc       $pdata$1$??1EditDialog@@QEAA@XZ 000000018001e4bc     LookDBF.obj
+ 0003:000004c8       $pdata$2$??1EditDialog@@QEAA@XZ 000000018001e4c8     LookDBF.obj
+ 0003:000004d4       $pdata$?ActualRecord@LOOK@@QEAAGXZ 000000018001e4d4     LookDBF.obj
+ 0003:000004e0       $pdata$?ActualSelected@LOOK@@QEAAGE@Z 000000018001e4e0     LookDBF.obj
+ 0003:000004ec       $pdata$?AttrLine@LOOK@@QEAAXGGGG@Z 000000018001e4ec     LookDBF.obj
+ 0003:000004f8       $pdata$0$?AttrLine@LOOK@@QEAAXGGGG@Z 000000018001e4f8     LookDBF.obj
+ 0003:00000504       $pdata$1$?AttrLine@LOOK@@QEAAXGGGG@Z 000000018001e504     LookDBF.obj
+ 0003:00000510       $pdata$?AttrRect@LOOK@@QEAAXGGGGG@Z 000000018001e510     LookDBF.obj
+ 0003:0000051c       $pdata$0$?AttrRect@LOOK@@QEAAXGGGGG@Z 000000018001e51c     LookDBF.obj
+ 0003:00000528       $pdata$1$?AttrRect@LOOK@@QEAAXGGGGG@Z 000000018001e528     LookDBF.obj
+ 0003:00000534       $pdata$?BuildBuffers@LOOK@@QEAA_N_N@Z 000000018001e534     LookDBF.obj
+ 0003:00000540       $pdata$?ChangeCode@LOOK@@QEAAXXZ 000000018001e540     LookDBF.obj
+ 0003:0000054c       $pdata$?CheckForEsc@@YAHXZ 000000018001e54c     LookDBF.obj
+ 0003:00000558       $pdata$0$?CheckForEsc@@YAHXZ 000000018001e558     LookDBF.obj
+ 0003:00000564       $pdata$2$?CheckForEsc@@YAHXZ 000000018001e564     LookDBF.obj
+ 0003:00000570       $pdata$?ClearRect@LOOK@@QEAAXGGGG@Z 000000018001e570     LookDBF.obj
+ 0003:0000057c       $pdata$0$?ClearRect@LOOK@@QEAAXGGGG@Z 000000018001e57c     LookDBF.obj
+ 0003:00000588       $pdata$1$?ClearRect@LOOK@@QEAAXGGGG@Z 000000018001e588     LookDBF.obj
+ 0003:00000594       $pdata$?Clipboard@LOOK@@QEAAXXZ 000000018001e594     LookDBF.obj
+ 0003:000005a0       $pdata$?ClmnDelete@LOOK@@QEAAGXZ 000000018001e5a0     LookDBF.obj
+ 0003:000005ac       $pdata$?ClmnInsert@LOOK@@QEAAGXZ 000000018001e5ac     LookDBF.obj
+ 0003:000005b8       $pdata$0$?ClmnInsert@LOOK@@QEAAGXZ 000000018001e5b8     LookDBF.obj
+ 0003:000005c4       $pdata$5$?ClmnInsert@LOOK@@QEAAGXZ 000000018001e5c4     LookDBF.obj
+ 0003:000005d0       $pdata$7$?ClmnInsert@LOOK@@QEAAGXZ 000000018001e5d0     LookDBF.obj
+ 0003:000005dc       $pdata$8$?ClmnInsert@LOOK@@QEAAGXZ 000000018001e5dc     LookDBF.obj
+ 0003:000005e8       $pdata$?ClmnNarrow@LOOK@@QEAAGXZ 000000018001e5e8     LookDBF.obj
+ 0003:000005f4       $pdata$?ClmnRename@LOOK@@QEAAGXZ 000000018001e5f4     LookDBF.obj
+ 0003:00000600       $pdata$?ClmnScroll@LOOK@@QEAAGF@Z 000000018001e600     LookDBF.obj
+ 0003:0000060c       $pdata$1$?ClmnScroll@LOOK@@QEAAGF@Z 000000018001e60c     LookDBF.obj
+ 0003:00000618       $pdata$3$?ClmnScroll@LOOK@@QEAAGF@Z 000000018001e618     LookDBF.obj
+ 0003:00000624       $pdata$4$?ClmnScroll@LOOK@@QEAAGF@Z 000000018001e624     LookDBF.obj
+ 0003:00000630       $pdata$?CondAsk@LOOK@@QEAAFXZ 000000018001e630     LookDBF.obj
+ 0003:0000063c       $pdata$?CondCheck@LOOK@@QEAA_NFPEAE@Z 000000018001e63c     LookDBF.obj
+ 0003:00000648       $pdata$?CondCompare@LOOK@@QEAA_NF@Z 000000018001e648     LookDBF.obj
+ 0003:00000654       $pdata$1$?CondCompare@LOOK@@QEAA_NF@Z 000000018001e654     LookDBF.obj
+ 0003:00000660       $pdata$2$?CondCompare@LOOK@@QEAA_NF@Z 000000018001e660     LookDBF.obj
+ 0003:0000066c       $pdata$3$?CondCompare@LOOK@@QEAA_NF@Z 000000018001e66c     LookDBF.obj
+ 0003:00000678       $pdata$?CondNext@LOOK@@QEAAKXZ 000000018001e678     LookDBF.obj
+ 0003:00000684       $pdata$?CondVal@LOOK@@QEAAXG@Z 000000018001e684     LookDBF.obj
+ 0003:00000690       $pdata$?CondYes@LOOK@@QEAA_NXZ 000000018001e690     LookDBF.obj
+ 0003:0000069c       $pdata$0$?CondYes@LOOK@@QEAA_NXZ 000000018001e69c     LookDBF.obj
+ 0003:000006a8       $pdata$2$?CondYes@LOOK@@QEAA_NXZ 000000018001e6a8     LookDBF.obj
+ 0003:000006b4       $pdata$4$?CondYes@LOOK@@QEAA_NXZ 000000018001e6b4     LookDBF.obj
+ 0003:000006c0       $pdata$6$?CondYes@LOOK@@QEAA_NXZ 000000018001e6c0     LookDBF.obj
+ 0003:000006cc       $pdata$?CurType@LOOK@@QEAADXZ 000000018001e6cc     LookDBF.obj
+ 0003:000006d8       $pdata$?DefColors@LOOK@@QEAAXPEAD@Z 000000018001e6d8     LookDBF.obj
+ 0003:000006e4       $pdata$?DelTemplate@LOOK@@QEAAXXZ 000000018001e6e4     LookDBF.obj
+ 0003:000006f0       $pdata$?DiCond@@YA_JPEAXHH_J@Z 000000018001e6f0     LookDBF.obj
+ 0003:000006fc       $pdata$0$?DiCond@@YA_JPEAXHH_J@Z 000000018001e6fc     LookDBF.obj
+ 0003:00000708       $pdata$1$?DiCond@@YA_JPEAXHH_J@Z 000000018001e708     LookDBF.obj
+ 0003:00000714       $pdata$2$?DiCond@@YA_JPEAXHH_J@Z 000000018001e714     LookDBF.obj
+ 0003:00000720       $pdata$3$?DiCond@@YA_JPEAXHH_J@Z 000000018001e720     LookDBF.obj
+ 0003:0000072c       $pdata$4$?DiCond@@YA_JPEAXHH_J@Z 000000018001e72c     LookDBF.obj
+ 0003:00000738       $pdata$5$?DiCond@@YA_JPEAXHH_J@Z 000000018001e738     LookDBF.obj
+ 0003:00000744       $pdata$?DiExp@@YA_JPEAXHH_J@Z 000000018001e744     LookDBF.obj
+ 0003:00000750       $pdata$?DiProc@@YA_JPEAXHH_J@Z 000000018001e750     LookDBF.obj
+ 0003:0000075c       $pdata$0$?DiProc@@YA_JPEAXHH_J@Z 000000018001e75c     LookDBF.obj
+ 0003:00000768       $pdata$1$?DiProc@@YA_JPEAXHH_J@Z 000000018001e768     LookDBF.obj
+ 0003:00000774       $pdata$?EditField@LOOK@@QEAAGE@Z 000000018001e774     LookDBF.obj
+ 0003:00000780       $pdata$?EditHeader@LOOK@@QEAAXXZ 000000018001e780     LookDBF.obj
+ 0003:0000078c       $pdata$0$?EditHeader@LOOK@@QEAAXXZ 000000018001e78c     LookDBF.obj
+ 0003:00000798       $pdata$1$?EditHeader@LOOK@@QEAAXXZ 000000018001e798     LookDBF.obj
+ 0003:000007a4       $pdata$?EditRecord@LOOK@@QEAAGXZ 000000018001e7a4     LookDBF.obj
+ 0003:000007b0       $pdata$3$?EditRecord@LOOK@@QEAAGXZ 000000018001e7b0     LookDBF.obj
+ 0003:000007bc       $pdata$5$?EditRecord@LOOK@@QEAAGXZ 000000018001e7bc     LookDBF.obj
+ 0003:000007c8       $pdata$?Exec@EditDialog@@QEAAFXZ 000000018001e7c8     LookDBF.obj
+ 0003:000007d4       $pdata$?ExpDbf@LOOK@@QEAAGXZ 000000018001e7d4     LookDBF.obj
+ 0003:000007e0       $pdata$1$?ExpDbf@LOOK@@QEAAGXZ 000000018001e7e0     LookDBF.obj
+ 0003:000007ec       $pdata$?ExpHtm@LOOK@@QEAAGXZ 000000018001e7ec     LookDBF.obj
+ 0003:000007f8       $pdata$1$?ExpHtm@LOOK@@QEAAGXZ 000000018001e7f8     LookDBF.obj
+ 0003:00000804       $pdata$?ExpRec0@LOOK@@QEAAGXZ 000000018001e804     LookDBF.obj
+ 0003:00000810       $pdata$?ExpRec1@LOOK@@QEAAGXZ 000000018001e810     LookDBF.obj
+ 0003:0000081c       $pdata$?ExpRec2@LOOK@@QEAAGXZ 000000018001e81c     LookDBF.obj
+ 0003:00000828       $pdata$?ExpTxt@LOOK@@QEAAGXZ 000000018001e828     LookDBF.obj
+ 0003:00000834       $pdata$1$?ExpTxt@LOOK@@QEAAGXZ 000000018001e834     LookDBF.obj
+ 0003:00000840       $pdata$2$?ExpTxt@LOOK@@QEAAGXZ 000000018001e840     LookDBF.obj
+ 0003:0000084c       $pdata$3$?ExpTxt@LOOK@@QEAAGXZ 000000018001e84c     LookDBF.obj
+ 0003:00000858       $pdata$?Export@LOOK@@QEAAGXZ 000000018001e858     LookDBF.obj
+ 0003:00000864       $pdata$?FieldCompare@LOOK@@QEAAFFPEATCondValue@@0@Z 000000018001e864     LookDBF.obj
+ 0003:00000870       $pdata$0$?FieldCompare@LOOK@@QEAAFFPEATCondValue@@0@Z 000000018001e870     LookDBF.obj
+ 0003:0000087c       $pdata$2$?FieldCompare@LOOK@@QEAAFFPEATCondValue@@0@Z 000000018001e87c     LookDBF.obj
+ 0003:00000888       $pdata$?FieldItem@LOOK@@QEAAPEAUColumn@@F@Z 000000018001e888     LookDBF.obj
+ 0003:00000894       $pdata$?FieldItemType@LOOK@@QEAAPEADFPEAD@Z 000000018001e894     LookDBF.obj
+ 0003:000008a0       $pdata$?FieldValue@LOOK@@QEAAXGPEATCondValue@@@Z 000000018001e8a0     LookDBF.obj
+ 0003:000008ac       $pdata$?FindAskSample@LOOK@@QEAAFXZ 000000018001e8ac     LookDBF.obj
+ 0003:000008b8       $pdata$?FindCompare@LOOK@@QEAAFG@Z 000000018001e8b8     LookDBF.obj
+ 0003:000008c4       $pdata$?FindFin@LOOK@@QEAAPEAUColumn@@F@Z 000000018001e8c4     LookDBF.obj
+ 0003:000008d0       $pdata$?FindMark@LOOK@@QEAAKG@Z 000000018001e8d0     LookDBF.obj
+ 0003:000008dc       $pdata$1$?FindMark@LOOK@@QEAAKG@Z 000000018001e8dc     LookDBF.obj
+ 0003:000008e8       $pdata$2$?FindMark@LOOK@@QEAAKG@Z 000000018001e8e8     LookDBF.obj
+ 0003:000008f4       $pdata$3$?FindMark@LOOK@@QEAAKG@Z 000000018001e8f4     LookDBF.obj
+ 0003:00000900       $pdata$4$?FindMark@LOOK@@QEAAKG@Z 000000018001e900     LookDBF.obj
+ 0003:0000090c       $pdata$5$?FindMark@LOOK@@QEAAKG@Z 000000018001e90c     LookDBF.obj
+ 0003:00000918       $pdata$6$?FindMark@LOOK@@QEAAKG@Z 000000018001e918     LookDBF.obj
+ 0003:00000924       $pdata$?FindNext@LOOK@@QEAAKPEAFF@Z 000000018001e924     LookDBF.obj
+ 0003:00000930       $pdata$?GetConfig@LOOK@@QEAAX_N@Z 000000018001e930     LookDBF.obj
+ 0003:0000093c       $pdata$?GetTemplate@LOOK@@QEAAXXZ 000000018001e93c     LookDBF.obj
+ 0003:00000948       $pdata$2$?GetTemplate@LOOK@@QEAAXXZ 000000018001e948     LookDBF.obj
+ 0003:00000954       $pdata$3$?GetTemplate@LOOK@@QEAAXXZ 000000018001e954     LookDBF.obj
+ 0003:00000960       $pdata$4$?GetTemplate@LOOK@@QEAAXXZ 000000018001e960     LookDBF.obj
+ 0003:0000096c       $pdata$5$?GetTemplate@LOOK@@QEAAXXZ 000000018001e96c     LookDBF.obj
+ 0003:00000978       $pdata$?GoAsk@LOOK@@QEAAGXZ 000000018001e978     LookDBF.obj
+ 0003:00000984       $pdata$?GoBot@LOOK@@QEAAGXZ 000000018001e984     LookDBF.obj
+ 0003:00000990       $pdata$0$?GoBot@LOOK@@QEAAGXZ 000000018001e990     LookDBF.obj
+ 0003:0000099c       $pdata$2$?GoBot@LOOK@@QEAAGXZ 000000018001e99c     LookDBF.obj
+ 0003:000009a8       $pdata$4$?GoBot@LOOK@@QEAAGXZ 000000018001e9a8     LookDBF.obj
+ 0003:000009b4       $pdata$8$?GoBot@LOOK@@QEAAGXZ 000000018001e9b4     LookDBF.obj
+ 0003:000009c0       $pdata$10$?GoBot@LOOK@@QEAAGXZ 000000018001e9c0     LookDBF.obj
+ 0003:000009cc       $pdata$?GoDn@LOOK@@QEAAGG@Z 000000018001e9cc     LookDBF.obj
+ 0003:000009d8       $pdata$1$?GoDn@LOOK@@QEAAGG@Z 000000018001e9d8     LookDBF.obj
+ 0003:000009e4       $pdata$3$?GoDn@LOOK@@QEAAGG@Z 000000018001e9e4     LookDBF.obj
+ 0003:000009f0       $pdata$7$?GoDn@LOOK@@QEAAGG@Z 000000018001e9f0     LookDBF.obj
+ 0003:000009fc       $pdata$9$?GoDn@LOOK@@QEAAGG@Z 000000018001e9fc     LookDBF.obj
+ 0003:00000a08       $pdata$10$?GoDn@LOOK@@QEAAGG@Z 000000018001ea08     LookDBF.obj
+ 0003:00000a14       $pdata$?GoField@LOOK@@QEAAGH@Z 000000018001ea14     LookDBF.obj
+ 0003:00000a20       $pdata$2$?GoField@LOOK@@QEAAGH@Z 000000018001ea20     LookDBF.obj
+ 0003:00000a2c       $pdata$3$?GoField@LOOK@@QEAAGH@Z 000000018001ea2c     LookDBF.obj
+ 0003:00000a38       $pdata$4$?GoField@LOOK@@QEAAGH@Z 000000018001ea38     LookDBF.obj
+ 0003:00000a44       $pdata$5$?GoField@LOOK@@QEAAGH@Z 000000018001ea44     LookDBF.obj
+ 0003:00000a50       $pdata$?GoFind@LOOK@@QEAAGF@Z 000000018001ea50     LookDBF.obj
+ 0003:00000a5c       $pdata$?GoFirst@LOOK@@QEAAGXZ 000000018001ea5c     LookDBF.obj
+ 0003:00000a68       $pdata$?GoLast@LOOK@@QEAAGXZ 000000018001ea68     LookDBF.obj
+ 0003:00000a74       $pdata$?GoLeft@LOOK@@QEAAGXZ 000000018001ea74     LookDBF.obj
+ 0003:00000a80       $pdata$?GoMouse@LOOK@@QEAAGPEAU_MOUSE_EVENT_RECORD@@@Z 000000018001ea80     LookDBF.obj
+ 0003:00000a8c       $pdata$?GoNextMark@LOOK@@QEAAGXZ 000000018001ea8c     LookDBF.obj
+ 0003:00000a98       $pdata$0$?GoNextMark@LOOK@@QEAAGXZ 000000018001ea98     LookDBF.obj
+ 0003:00000aa4       $pdata$2$?GoNextMark@LOOK@@QEAAGXZ 000000018001eaa4     LookDBF.obj
+ 0003:00000ab0       $pdata$4$?GoNextMark@LOOK@@QEAAGXZ 000000018001eab0     LookDBF.obj
+ 0003:00000abc       $pdata$?GoPrevMark@LOOK@@QEAAGXZ 000000018001eabc     LookDBF.obj
+ 0003:00000ac8       $pdata$0$?GoPrevMark@LOOK@@QEAAGXZ 000000018001eac8     LookDBF.obj
+ 0003:00000ad4       $pdata$2$?GoPrevMark@LOOK@@QEAAGXZ 000000018001ead4     LookDBF.obj
+ 0003:00000ae0       $pdata$4$?GoPrevMark@LOOK@@QEAAGXZ 000000018001eae0     LookDBF.obj
+ 0003:00000aec       $pdata$?GoRight@LOOK@@QEAAGXZ 000000018001eaec     LookDBF.obj
+ 0003:00000af8       $pdata$?GoTop@LOOK@@QEAAGXZ 000000018001eaf8     LookDBF.obj
+ 0003:00000b04       $pdata$0$?GoTop@LOOK@@QEAAGXZ 000000018001eb04     LookDBF.obj
+ 0003:00000b10       $pdata$2$?GoTop@LOOK@@QEAAGXZ 000000018001eb10     LookDBF.obj
+ 0003:00000b1c       $pdata$3$?GoTop@LOOK@@QEAAGXZ 000000018001eb1c     LookDBF.obj
+ 0003:00000b28       $pdata$4$?GoTop@LOOK@@QEAAGXZ 000000018001eb28     LookDBF.obj
+ 0003:00000b34       $pdata$?GoUp@LOOK@@QEAAGG@Z 000000018001eb34     LookDBF.obj
+ 0003:00000b40       $pdata$?Import@LOOK@@QEAAGXZ 000000018001eb40     LookDBF.obj
+ 0003:00000b4c       $pdata$2$?Import@LOOK@@QEAAGXZ 000000018001eb4c     LookDBF.obj
+ 0003:00000b58       $pdata$4$?Import@LOOK@@QEAAGXZ 000000018001eb58     LookDBF.obj
+ 0003:00000b64       $pdata$?Init@EditDialog@@QEAAGGGGE@Z 000000018001eb64     LookDBF.obj
+ 0003:00000b70       $pdata$?InitColumns@LOOK@@QEAAXXZ 000000018001eb70     LookDBF.obj
+ 0003:00000b7c       $pdata$1$?InitColumns@LOOK@@QEAAXXZ 000000018001eb7c     LookDBF.obj
+ 0003:00000b88       $pdata$2$?InitColumns@LOOK@@QEAAXXZ 000000018001eb88     LookDBF.obj
+ 0003:00000b94       $pdata$?KeyShow@LOOK@@QEAAXXZ 000000018001eb94     LookDBF.obj
+ 0003:00000ba0       $pdata$?Like@LOOK@@QEAA_NPEAE0@Z 000000018001eba0     LookDBF.obj
+ 0003:00000bac       $pdata$2$?Like@LOOK@@QEAA_NPEAE0@Z 000000018001ebac     LookDBF.obj
+ 0003:00000bb8       $pdata$4$?Like@LOOK@@QEAA_NPEAE0@Z 000000018001ebb8     LookDBF.obj
+ 0003:00000bc4       $pdata$6$?Like@LOOK@@QEAA_NPEAE0@Z 000000018001ebc4     LookDBF.obj
+ 0003:00000bd0       $pdata$?Line@EditDialog@@QEAAFPEBD0F0@Z 000000018001ebd0     LookDBF.obj
+ 0003:00000bdc       $pdata$0$?Line@EditDialog@@QEAAFPEBD0F0@Z 000000018001ebdc     LookDBF.obj
+ 0003:00000be8       $pdata$1$?Line@EditDialog@@QEAAFPEBD0F0@Z 000000018001ebe8     LookDBF.obj
+ 0003:00000bf4       $pdata$?MarkAlloc@LOOK@@QEAAGXZ 000000018001ebf4     LookDBF.obj
+ 0003:00000c00       $pdata$0$?MarkAlloc@LOOK@@QEAAGXZ 000000018001ec00     LookDBF.obj
+ 0003:00000c0c       $pdata$2$?MarkAlloc@LOOK@@QEAAGXZ 000000018001ec0c     LookDBF.obj
+ 0003:00000c18       $pdata$?MarkFindFirst@LOOK@@QEAAXXZ 000000018001ec18     LookDBF.obj
+ 0003:00000c24       $pdata$2$?MarkFindFirst@LOOK@@QEAAXXZ 000000018001ec24     LookDBF.obj
+ 0003:00000c30       $pdata$3$?MarkFindFirst@LOOK@@QEAAXXZ 000000018001ec30     LookDBF.obj
+ 0003:00000c3c       $pdata$4$?MarkFindFirst@LOOK@@QEAAXXZ 000000018001ec3c     LookDBF.obj
+ 0003:00000c48       $pdata$?MarkInvertAll@LOOK@@QEAAXXZ 000000018001ec48     LookDBF.obj
+ 0003:00000c54       $pdata$1$?MarkInvertAll@LOOK@@QEAAXXZ 000000018001ec54     LookDBF.obj
+ 0003:00000c60       $pdata$2$?MarkInvertAll@LOOK@@QEAAXXZ 000000018001ec60     LookDBF.obj
+ 0003:00000c6c       $pdata$?MarkNonActual@LOOK@@QEAAXXZ 000000018001ec6c     LookDBF.obj
+ 0003:00000c78       $pdata$0$?MarkNonActual@LOOK@@QEAAXXZ 000000018001ec78     LookDBF.obj
+ 0003:00000c84       $pdata$3$?MarkNonActual@LOOK@@QEAAXXZ 000000018001ec84     LookDBF.obj
+ 0003:00000c90       $pdata$4$?MarkNonActual@LOOK@@QEAAXXZ 000000018001ec90     LookDBF.obj
+ 0003:00000c9c       $pdata$5$?MarkNonActual@LOOK@@QEAAXXZ 000000018001ec9c     LookDBF.obj
+ 0003:00000ca8       $pdata$?Move@Indicator@@QEAA_NK@Z 000000018001eca8     LookDBF.obj
+ 0003:00000cb4       $pdata$1$?Move@Indicator@@QEAA_NK@Z 000000018001ecb4     LookDBF.obj
+ 0003:00000cc0       $pdata$2$?Move@Indicator@@QEAA_NK@Z 000000018001ecc0     LookDBF.obj
+ 0003:00000ccc       $pdata$?PackDbf@LOOK@@QEAAGXZ 000000018001eccc     LookDBF.obj
+ 0003:00000cd8       $pdata$3$?PackDbf@LOOK@@QEAAGXZ 000000018001ecd8     LookDBF.obj
+ 0003:00000ce4       $pdata$?PutTemplate@LOOK@@QEAAX_N@Z 000000018001ece4     LookDBF.obj
+ 0003:00000cf0       $pdata$?Replace@LOOK@@QEAAFXZ 000000018001ecf0     LookDBF.obj
+ 0003:00000cfc       $pdata$?ReplaceAll@LOOK@@QEAAXFK@Z 000000018001ecfc     LookDBF.obj
+ 0003:00000d08       $pdata$1$?ReplaceAll@LOOK@@QEAAXFK@Z 000000018001ed08     LookDBF.obj
+ 0003:00000d14       $pdata$2$?ReplaceAll@LOOK@@QEAAXFK@Z 000000018001ed14     LookDBF.obj
+ 0003:00000d20       $pdata$3$?ReplaceAll@LOOK@@QEAAXFK@Z 000000018001ed20     LookDBF.obj
+ 0003:00000d2c       $pdata$4$?ReplaceAll@LOOK@@QEAAXFK@Z 000000018001ed2c     LookDBF.obj
+ 0003:00000d38       $pdata$?ReplaceAsk@LOOK@@QEAAFXZ 000000018001ed38     LookDBF.obj
+ 0003:00000d44       $pdata$?ReplaceDlg@LOOK@@QEAAFXZ 000000018001ed44     LookDBF.obj
+ 0003:00000d50       $pdata$?ReplaceStr@LOOK@@QEAAFPEAD@Z 000000018001ed50     LookDBF.obj
+ 0003:00000d5c       $pdata$?ShowCur@LOOK@@QEAAXXZ 000000018001ed5c     LookDBF.obj
+ 0003:00000d68       $pdata$0$?ShowCur@LOOK@@QEAAXXZ 000000018001ed68     LookDBF.obj
+ 0003:00000d74       $pdata$1$?ShowCur@LOOK@@QEAAXXZ 000000018001ed74     LookDBF.obj
+ 0003:00000d80       $pdata$?ShowDBF@LOOK@@QEAAXXZ 000000018001ed80     LookDBF.obj
+ 0003:00000d8c       $pdata$1$?ShowDBF@LOOK@@QEAAXXZ 000000018001ed8c     LookDBF.obj
+ 0003:00000d98       $pdata$2$?ShowDBF@LOOK@@QEAAXXZ 000000018001ed98     LookDBF.obj
+ 0003:00000da4       $pdata$?ShowError@LOOK@@QEAAXH@Z 000000018001eda4     LookDBF.obj
+ 0003:00000db0       $pdata$0$?ShowError@LOOK@@QEAAXH@Z 000000018001edb0     LookDBF.obj
+ 0003:00000dbc       $pdata$1$?ShowError@LOOK@@QEAAXH@Z 000000018001edbc     LookDBF.obj
+ 0003:00000dc8       $pdata$?ShowExpMsg@LOOK@@QEAAXK@Z 000000018001edc8     LookDBF.obj
+ 0003:00000dd4       $pdata$?ShowF5@LOOK@@QEAAXXZ 000000018001edd4     LookDBF.obj
+ 0003:00000de0       $pdata$?ShowFields@LOOK@@QEAAHXZ 000000018001ede0     LookDBF.obj
+ 0003:00000dec       $pdata$?ShowFindMsg@LOOK@@QEAAXK@Z 000000018001edec     LookDBF.obj
+ 0003:00000df8       $pdata$0$?ShowFindMsg@LOOK@@QEAAXK@Z 000000018001edf8     LookDBF.obj
+ 0003:00000e04       $pdata$4$?ShowFindMsg@LOOK@@QEAAXK@Z 000000018001ee04     LookDBF.obj
+ 0003:00000e10       $pdata$5$?ShowFindMsg@LOOK@@QEAAXK@Z 000000018001ee10     LookDBF.obj
+ 0003:00000e1c       $pdata$6$?ShowFindMsg@LOOK@@QEAAXK@Z 000000018001ee1c     LookDBF.obj
+ 0003:00000e28       $pdata$?ShowMemo@LOOK@@QEAAXF@Z 000000018001ee28     LookDBF.obj
+ 0003:00000e34       $pdata$0$?ShowMemo@LOOK@@QEAAXF@Z 000000018001ee34     LookDBF.obj
+ 0003:00000e40       $pdata$1$?ShowMemo@LOOK@@QEAAXF@Z 000000018001ee40     LookDBF.obj
+ 0003:00000e4c       $pdata$?ShowPage@LOOK@@QEAAXXZ 000000018001ee4c     LookDBF.obj
+ 0003:00000e58       $pdata$6$?ShowPage@LOOK@@QEAAXXZ 000000018001ee58     LookDBF.obj
+ 0003:00000e64       $pdata$7$?ShowPage@LOOK@@QEAAXXZ 000000018001ee64     LookDBF.obj
+ 0003:00000e70       $pdata$?ShowReplMsg@LOOK@@QEAAXK@Z 000000018001ee70     LookDBF.obj
+ 0003:00000e7c       $pdata$?ShowStatus@LOOK@@QEAAXH@Z 000000018001ee7c     LookDBF.obj
+ 0003:00000e88       $pdata$?ShowStrI@LOOK@@QEAAXPEBDGGG@Z 000000018001ee88     LookDBF.obj
+ 0003:00000e94       $pdata$0$?ShowStrI@LOOK@@QEAAXPEBDGGG@Z 000000018001ee94     LookDBF.obj
+ 0003:00000ea0       $pdata$1$?ShowStrI@LOOK@@QEAAXPEBDGGG@Z 000000018001eea0     LookDBF.obj
+ 0003:00000eac       $pdata$?ShowSum@LOOK@@QEAAXXZ 000000018001eeac     LookDBF.obj
+ 0003:00000eb8       $pdata$4$?ShowSum@LOOK@@QEAAXXZ 000000018001eeb8     LookDBF.obj
+ 0003:00000ec4       $pdata$5$?ShowSum@LOOK@@QEAAXXZ 000000018001eec4     LookDBF.obj
+ 0003:00000ed0       $pdata$6$?ShowSum@LOOK@@QEAAXXZ 000000018001eed0     LookDBF.obj
+ 0003:00000edc       $pdata$8$?ShowSum@LOOK@@QEAAXXZ 000000018001eedc     LookDBF.obj
+ 0003:00000ee8       $pdata$9$?ShowSum@LOOK@@QEAAXXZ 000000018001eee8     LookDBF.obj
+ 0003:00000ef4       $pdata$?SortAlloc@LOOK@@QEAAGXZ 000000018001eef4     LookDBF.obj
+ 0003:00000f00       $pdata$?SortFree@LOOK@@QEAAXXZ 000000018001ef00     LookDBF.obj
+ 0003:00000f0c       $pdata$?Start@Indicator@@QEAAXPEBDK@Z 000000018001ef0c     LookDBF.obj
+ 0003:00000f18       $pdata$?TableSelect@LOOK@@QEAAHXZ 000000018001ef18     LookDBF.obj
+ 0003:00000f24       $pdata$0$?TableSelect@LOOK@@QEAAHXZ 000000018001ef24     LookDBF.obj
+ 0003:00000f30       $pdata$1$?TableSelect@LOOK@@QEAAHXZ 000000018001ef30     LookDBF.obj
+ 0003:00000f3c       $pdata$2$?TableSelect@LOOK@@QEAAHXZ 000000018001ef3c     LookDBF.obj
+ 0003:00000f48       $pdata$3$?TableSelect@LOOK@@QEAAHXZ 000000018001ef48     LookDBF.obj
+ 0003:00000f54       $pdata$?TableSet@LOOK@@QEAAHH@Z 000000018001ef54     LookDBF.obj
+ 0003:00000f60       $pdata$?TopMouse@LOOK@@QEAAGHPEAU_MOUSE_EVENT_RECORD@@@Z 000000018001ef60     LookDBF.obj
+ 0004:0000046c       .idata$6                   000000018001f46c     kernel32:KERNEL32.dll
+ 0004:000004be       .idata$6                   000000018001f4be     user32:USER32.dll
+ 0004:00000510       .idata$6                   000000018001f510     advapi32:ADVAPI32.dll
+ 0005:00000060       $R000000                   0000000180020060     LookDBF.res

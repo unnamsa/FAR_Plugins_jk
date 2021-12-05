@@ -1,0 +1,72 @@
+--!Adobe Acrobat Reader RECENTFILES revealing
+
+local GUID, hInstA, hInstP, sTmpFile, sArg1, sArg2 = ... 
+local msg
+
+-- Get plugin handle
+local hInst = hInstA  or hInstP  or  unpack({nil, far.Message("No HIVER instance found", "ERROR")})
+if  not hInst then return end
+
+-- Duplicate currently open HIVE handle
+local hHive = Plugin.SyncCall (GUID, hInst, "DupHandle")  or
+              unpack({nil, far.Message("HIVER DupHandle not successfull", "ERROR")})
+if  not hHive then return end
+
+-- Open the output file
+local hTmp  = assert(io.open(sTmpFile, "a+"))
+if  not hTmp  then return end
+hTmp:write [[
+;;;;====================================================================
+;;;;                   Acrobat Reader RECENTFILES
+;;;;====================================================================
+]]
+
+-- Set current virtual directory to Acrobat Reader home
+local sDir         = "/TreeView/Software/Adobe/Acrobat Reader"
+local bRet, nItems = Plugin.SyncCall (GUID, hHive, "cd \""..sDir.."\"")
+--far.Message(string.format("cd <%s>\ntype(nItems)=%s", Plugin.SyncCall (GUID, hHive, "pwd"), type(nItems)), "point0")
+
+-- Iterate Acrobat Reader directory
+if bRet then for i = 1, nItems do
+
+    local result       = {}
+    local sRdrVer      = Plugin.SyncCall (GUID, hHive, "getitem", i)
+    local bRet, nLines = Plugin.SyncCall (GUID, hHive, "cd \""..sRdrVer.."/AVGeneral/cRecentFiles\"")
+    hTmp:write (string.format("\n;;;;%s\n\n", Plugin.SyncCall (GUID, hHive, "pwd") ))
+
+    -- Iterate the cRecentFiles virt directory
+    if bRet then for j = 1, nLines do
+        local cx, nTime  = Plugin.SyncCall (GUID, hHive, "getitem", j)
+        local _,  sValue = Plugin.SyncCall (GUID, hHive, "getitem "..cx.."/tDIText")
+
+        if sValue then
+            table.insert (result, {name=cx, time=nTime, file=sValue})
+        end
+    end
+    else
+        hTmp:write ("There is no\n"..sDir.."/"..sRdrVer.."/AVGeneral/cRecentFiles\nregistry key found...")
+    end
+   
+    table.sort (result, function(a,b)    -- Sort the saved data
+        return ( (a.time > b.time) or ((a.time == b.time) and (a.name < b.name)) )
+    end)
+
+    -- Write the results
+    hTmp:write (string.format("%-10s; %-16s; SubKey; Opened file\n", "Date", "Time"))
+    for i,v in ipairs(result) do
+        local sDate, sTime = Plugin.SyncCall (GUID, nil, "GetFileTime", result[i].time)
+        hTmp:write (string.format("%10s; %16s; %s; %s\n", sDate, sTime, result[i].name, result[i].file))
+    end
+
+    Plugin.SyncCall (GUID, hHive, "cd \""..sDir.."\"")
+end
+else
+    hTmp:write ("There is no\n"..sDir.."\nregistry key found...")
+end
+
+-- Close the TMP-file
+hTmp:close()
+
+-- Close the copy of the HIVE handle
+Plugin.SyncCall (GUID, hHive, "CloseHandle")
+return true

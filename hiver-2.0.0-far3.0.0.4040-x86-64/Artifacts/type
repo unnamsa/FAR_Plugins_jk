@@ -1,0 +1,26 @@
+-- The HIVE-file type revealing
+
+local EHDR = "HIVE-file type"
+local GUID, hInstA, hInstP, sTmpFile, sArg1, sArg2 = ... 
+
+-- Get plugin handle
+local hInst = hInstA  or hInstP  or  unpack({nil, far.Message("No HIVER instance found", EHDR.." ERROR")})
+if  not hInst then return end
+
+-- Duplicate currently open HIVE handle
+local hHive = Plugin.SyncCall (GUID, hInst, "DupHandle")  or
+              unpack({nil, far.Message("HIVER DupHandle not successfull", EHDR.." ERROR")})
+if  not hHive then return end
+
+-- Extract the hive's FileName from the hive's header
+local _, sFileName =  Plugin.SyncCall (GUID, hHive, "getitem /RawView/_HIVE_HEADER_/FileName")
+
+-- Include libhive.lua
+local libHive = dofile (debug.getinfo(1).source:match("@(.*\\)[^\\]*$").."Libs\\libhive.lua")
+
+-- Show the HIVE-file type
+far.Message (string.format("\n%s\n\nHIVE name (from the HIVE's header):\n%s", libHive.HiveType(GUID, hHive), sFileName), EHDR)
+
+-- Close the copy of the HIVE handle
+Plugin.SyncCall (GUID, hHive, "CloseHandle")
+return

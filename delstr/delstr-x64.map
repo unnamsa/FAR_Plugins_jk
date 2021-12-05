@@ -1,0 +1,1128 @@
+Archive member included because of file (symbol)
+
+D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+                              src\process.o (Far::Editor::set_position(long long, long long))
+D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+                              src\globalinfo.o (Far::GlobalInfo_i::~GlobalInfo_i())
+D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+                              src\process.o (Far::get_msg(long long))
+D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+                              src\process.o (Far::create_dialog_builder(_GUID const&, wchar_t const*, wchar_t const*, long long (*)(void*, long long, long long, void*), void*))
+D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+                              src\process.o (Far::create_edit(wchar_t*, long long, long long, wchar_t const*, bool, unsigned long long))
+D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+                              src\process.o (Far::create_checkbox(long long*, wchar_t const*, unsigned long long))
+D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+                              src\process.o (Far::create_separator(wchar_t const*, unsigned long long))
+D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+                              src\farplugin.o (Far::Plugin_i::~Plugin_i())
+D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+                              src\globalinfo.o (Far::Settings_t::~Settings_t())
+D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+                              D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o) (Far::FarDialogItem_t::~FarDialogItem_t())
+D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+                              D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o) (Far::PluginRadioButtonBinding::PluginRadioButtonBinding(void*&, long long, long long*, long long))
+D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+                              D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o) (Far::DialogItemBinding_i::~DialogItemBinding_i())
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmingwex.a(lib64_libmingwex_a-ilockexchadd64.o)
+                              src\main.o (_InterlockedExchangeAdd64)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01143.o)
+                              src\process.o (wcsstr)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01136.o)
+                              src\globalinfo.o (wcsncpy)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01024.o)
+                              D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o) (memcpy)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjh.o)
+                              c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01143.o) (_head_lib64_libmsvcrt_a)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjt.o)
+                              c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjh.o) (__lib64_libmsvcrt_a_iname)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00602.o)
+                              src\process.o (__imp_GetProcessHeap)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00732.o)
+                              src\process.o (__imp_HeapAlloc)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00738.o)
+                              src\process.o (__imp_HeapFree)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01352.o)
+                              D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o) (__imp_lstrcpynW)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01355.o)
+                              D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o) (__imp_lstrlenW)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxoh.o)
+                              c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00602.o) (_head_lib64_libkernel32_a)
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxot.o)
+                              c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxoh.o) (__lib64_libkernel32_a_iname)
+
+Discarded input sections
+
+ .text$_Znwy    0x0000000000000000       0x30 src\main.o
+ .xdata$_Znwy   0x0000000000000000        0x8 src\main.o
+ .pdata$_Znwy   0x0000000000000000        0xc src\main.o
+ .text$_Znay    0x0000000000000000       0x30 src\main.o
+ .xdata$_Znay   0x0000000000000000        0x8 src\main.o
+ .pdata$_Znay   0x0000000000000000        0xc src\main.o
+ .text$_ZdlPv   0x0000000000000000       0x30 src\main.o
+ .xdata$_ZdlPv  0x0000000000000000        0x8 src\main.o
+ .pdata$_ZdlPv  0x0000000000000000        0xc src\main.o
+ .text$_ZdaPv   0x0000000000000000       0x30 src\main.o
+ .xdata$_ZdaPv  0x0000000000000000        0x8 src\main.o
+ .pdata$_ZdaPv  0x0000000000000000        0xc src\main.o
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 src\main.o
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 src\main.o
+ .text$_Znwy    0x0000000000000000       0x30 src\globalinfo.o
+ .xdata$_Znwy   0x0000000000000000        0x8 src\globalinfo.o
+ .pdata$_Znwy   0x0000000000000000        0xc src\globalinfo.o
+ .text$_Znay    0x0000000000000000       0x30 src\globalinfo.o
+ .xdata$_Znay   0x0000000000000000        0x8 src\globalinfo.o
+ .pdata$_Znay   0x0000000000000000        0xc src\globalinfo.o
+ .text$_ZdlPv   0x0000000000000000       0x30 src\globalinfo.o
+ .xdata$_ZdlPv  0x0000000000000000        0x8 src\globalinfo.o
+ .pdata$_ZdlPv  0x0000000000000000        0xc src\globalinfo.o
+ .text$_ZdaPv   0x0000000000000000       0x30 src\globalinfo.o
+ .xdata$_ZdaPv  0x0000000000000000        0x8 src\globalinfo.o
+ .pdata$_ZdaPv  0x0000000000000000        0xc src\globalinfo.o
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 src\globalinfo.o
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 src\globalinfo.o
+ .text$_Znwy    0x0000000000000000       0x30 src\farplugin.o
+ .xdata$_Znwy   0x0000000000000000        0x8 src\farplugin.o
+ .pdata$_Znwy   0x0000000000000000        0xc src\farplugin.o
+ .text$_Znay    0x0000000000000000       0x30 src\farplugin.o
+ .xdata$_Znay   0x0000000000000000        0x8 src\farplugin.o
+ .pdata$_Znay   0x0000000000000000        0xc src\farplugin.o
+ .text$_ZdlPv   0x0000000000000000       0x30 src\farplugin.o
+ .xdata$_ZdlPv  0x0000000000000000        0x8 src\farplugin.o
+ .pdata$_ZdlPv  0x0000000000000000        0xc src\farplugin.o
+ .text$_ZdaPv   0x0000000000000000       0x30 src\farplugin.o
+ .xdata$_ZdaPv  0x0000000000000000        0x8 src\farplugin.o
+ .pdata$_ZdaPv  0x0000000000000000        0xc src\farplugin.o
+ .text$_Znwy    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .xdata$_Znwy   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .pdata$_Znwy   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .text$_Znay    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .xdata$_Znay   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .pdata$_Znay   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .text$_ZdlPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .xdata$_ZdlPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .pdata$_ZdlPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .text$_ZdaPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .xdata$_ZdaPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .pdata$_ZdaPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .text$_Znwy    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .xdata$_Znwy   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .pdata$_Znwy   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .text$_Znay    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .xdata$_Znay   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .pdata$_Znay   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .text$_ZdlPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .xdata$_ZdlPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .pdata$_ZdlPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .text$_ZdaPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .xdata$_ZdaPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .pdata$_ZdaPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .text$_Znwy    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .xdata$_Znwy   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .pdata$_Znwy   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .text$_Znay    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .xdata$_Znay   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .pdata$_Znay   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .text$_ZdlPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .xdata$_ZdlPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .pdata$_ZdlPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .text$_ZdaPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .xdata$_ZdaPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .pdata$_ZdaPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .text$_Znwy    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .xdata$_Znwy   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .pdata$_Znwy   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .text$_Znay    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .xdata$_Znay   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .pdata$_Znay   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .text$_ZdlPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .xdata$_ZdlPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .pdata$_ZdlPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .text$_ZdaPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .xdata$_ZdaPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .pdata$_ZdaPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .text$_Znwy    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .xdata$_Znwy   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .pdata$_Znwy   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .text$_Znay    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .xdata$_Znay   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .pdata$_Znay   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .text$_ZdlPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .xdata$_ZdlPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .pdata$_ZdlPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .text$_ZdaPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .xdata$_ZdaPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .pdata$_ZdaPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .text$_Znwy    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .xdata$_Znwy   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .pdata$_Znwy   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .text$_Znay    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .xdata$_Znay   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .pdata$_Znay   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .text$_ZdlPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .xdata$_ZdlPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .pdata$_ZdlPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .text$_ZdaPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .xdata$_ZdaPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .pdata$_ZdaPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .text$_Znwy    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .xdata$_Znwy   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .pdata$_Znwy   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .text$_Znay    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .xdata$_Znay   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .pdata$_Znay   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .text$_ZdlPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .xdata$_ZdlPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .pdata$_ZdlPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .text$_ZdaPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .xdata$_ZdaPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .pdata$_ZdaPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .text$_Znwy    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .xdata$_Znwy   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .pdata$_Znwy   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .text$_Znay    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .xdata$_Znay   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .pdata$_Znay   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .text$_ZdlPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .xdata$_ZdlPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .pdata$_ZdlPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .text$_ZdaPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .xdata$_ZdaPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .pdata$_ZdaPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .text$_Znwy    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .xdata$_Znwy   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .pdata$_Znwy   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .text$_Znay    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .xdata$_Znay   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .pdata$_Znay   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .text$_ZdlPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .xdata$_ZdlPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .pdata$_ZdlPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .text$_ZdaPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .xdata$_ZdaPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .pdata$_ZdaPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .text$_Znwy    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .xdata$_Znwy   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .pdata$_Znwy   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .text$_Znay    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .xdata$_Znay   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .pdata$_Znay   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .text$_ZdlPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .xdata$_ZdlPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .pdata$_ZdlPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .text$_ZdaPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .xdata$_ZdaPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .pdata$_ZdaPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .text$_Znwy    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .xdata$_Znwy   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .pdata$_Znwy   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .text$_Znay    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .xdata$_Znay   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .pdata$_Znay   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .text$_ZdlPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .xdata$_ZdlPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .pdata$_ZdlPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .text$_ZdaPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .xdata$_ZdaPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .pdata$_ZdaPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x0000000000000000       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .text$_Znwy    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .xdata$_Znwy   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .pdata$_Znwy   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .text$_Znay    0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .xdata$_Znay   0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .pdata$_Znay   0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .text$_ZdlPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .xdata$_ZdlPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .pdata$_ZdlPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .text$_ZdaPv   0x0000000000000000       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .xdata$_ZdaPv  0x0000000000000000        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .pdata$_ZdaPv  0x0000000000000000        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .debug_info    0x0000000000000000      0x1b5 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmingwex.a(lib64_libmingwex_a-ilockexchadd64.o)
+ .debug_abbrev  0x0000000000000000       0x67 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmingwex.a(lib64_libmingwex_a-ilockexchadd64.o)
+ .debug_aranges
+                0x0000000000000000       0x30 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmingwex.a(lib64_libmingwex_a-ilockexchadd64.o)
+ .debug_line    0x0000000000000000       0xf1 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmingwex.a(lib64_libmingwex_a-ilockexchadd64.o)
+ .debug_frame   0x0000000000000000       0x30 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmingwex.a(lib64_libmingwex_a-ilockexchadd64.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000062240000                __image_base__ = 0x62240000
+                0x0000000000000000                __dll__ = 0x0
+                0x0000000062240000                __ImageBase = 0x62240000
+                0x0000000000001000                __section_alignment__ = 0x1000
+                0x0000000000000200                __file_alignment__ = 0x200
+                0x0000000000000004                __major_os_version__ = 0x4
+                0x0000000000000000                __minor_os_version__ = 0x0
+                0x0000000000000000                __major_image_version__ = 0x0
+                0x0000000000000000                __minor_image_version__ = 0x0
+                0x0000000000000005                __major_subsystem_version__ = 0x5
+                0x0000000000000002                __minor_subsystem_version__ = 0x2
+                0x0000000000000003                __subsystem__ = 0x3
+                0x0000000000200000                __size_of_stack_reserve__ = 0x200000
+                0x0000000000001000                __size_of_stack_commit__ = 0x1000
+                0x0000000000100000                __size_of_heap_reserve__ = 0x100000
+                0x0000000000001000                __size_of_heap_commit__ = 0x1000
+                0x0000000000000000                __loader_flags__ = 0x0
+                0x0000000000000000                __dll_characteristics__ = 0x0
+LOAD ..\src\mainW.gcc.def
+LOAD src\process.o
+LOAD src\main.o
+LOAD src\guid.o
+LOAD src\globalinfo.o
+LOAD src\farplugin.o
+LOAD src\main.res
+LOAD D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a
+LOAD D:\projects\andrew-grechkin\libbase\Release-x64-NoStr/liblibbase.a
+LOAD c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmingwex.a
+LOAD c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a
+LOAD c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/libgcc.a
+LOAD c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a
+LOAD c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a
+LOAD c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libntdll.a
+                0x0000000000000318                . = SIZEOF_HEADERS
+                0x0000000000001000                . = ALIGN (__section_alignment__)
+
+.text           0x0000000062241000     0x4600
+ *(.init)
+ *(.text)
+ .text          0x0000000062241000      0x560 src\process.o
+                0x0000000062241030                delete_string(unsigned long long&, unsigned long long&, unsigned long long&)
+                0x0000000062241070                Execute()
+                0x0000000062241370                process()
+ .text          0x0000000062241560      0x2b0 src\main.o
+                0x0000000062241590                GetGlobalInfoW
+                0x0000000062241610                SetStartupInfoW
+                0x0000000062241640                ConfigureW
+                0x0000000062241660                GetPluginInfoW
+                0x00000000622416b0                OpenW
+                0x0000000062241700                ExitFARW
+                0x0000000062241750                DllMainCRTStartup
+                0x00000000622417c0                atexit
+                0x0000000062241800                __cxa_pure_virtual
+ .text          0x0000000062241810        0x0 src\guid.o
+ .text          0x0000000062241810      0x330 src\globalinfo.o
+                0x0000000062241840                FarGlobalInfo::get_author() const
+                0x0000000062241850                FarGlobalInfo::get_description() const
+                0x0000000062241860                FarGlobalInfo::get_guid() const
+                0x0000000062241870                FarGlobalInfo::get_title() const
+                0x0000000062241880                FarGlobalInfo::get_version() const
+                0x00000000622418b0                FarGlobalInfo::get_min_version() const
+                0x00000000622418e0                FarGlobalInfo::CreatePlugin(PluginStartupInfo const*) const
+                0x00000000622418f0                FarGlobalInfo::~FarGlobalInfo()
+                0x00000000622418f0                FarGlobalInfo::~FarGlobalInfo()
+                0x0000000062241900                FarGlobalInfo::~FarGlobalInfo()
+                0x0000000062241940                FarGlobalInfo::FarGlobalInfo()
+                0x0000000062241940                FarGlobalInfo::FarGlobalInfo()
+                0x0000000062241990                FarGlobalInfo::load_settings()
+                0x0000000062241a30                FarGlobalInfo::save_settings() const
+                0x0000000062241ab0                FarGlobalInfo::load_editor_info()
+                0x0000000062241b00                get_global_info()
+ .text          0x0000000062241b40      0x190 src\farplugin.o
+                0x0000000062241b40                FarPlugin::Open(OpenInfo const*)
+                0x0000000062241b50                FarPlugin::GetPluginInfo(PluginInfo*)
+                0x0000000062241bf0                FarPlugin::~FarPlugin()
+                0x0000000062241bf0                FarPlugin::~FarPlugin()
+                0x0000000062241c00                FarPlugin::~FarPlugin()
+                0x0000000062241c40                FarPlugin::FarPlugin(PluginStartupInfo const*)
+                0x0000000062241c40                FarPlugin::FarPlugin(PluginStartupInfo const*)
+                0x0000000062241c60                create_FarPlugin(PluginStartupInfo const*)
+                0x0000000062241cb0                destroy(Far::Plugin_i*)
+ .text          0x0000000062241cd0      0x7a0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+                0x0000000062241d00                Far::Editor::get_filename(wchar_t*, long long)
+                0x0000000062241dc0                Far::Editor::get_string(long long, wchar_t const*&)
+                0x0000000062241e50                Far::Editor::set_position(long long, long long)
+                0x0000000062241ee0                Far::Editor::set_string(long long, wchar_t const*, unsigned long long, wchar_t const*)
+                0x0000000062241f60                Far::Editor::insert_string(long long, wchar_t const*, int, wchar_t const*)
+                0x00000000622420f0                Far::Editor::del_string(long long)
+                0x00000000622421d0                Far::Editor::unselect_block()
+                0x0000000062242250                Far::Editor::start_undo()
+                0x00000000622422c0                Far::Editor::stop_undo()
+                0x0000000062242330                Far::Editor::redraw()
+                0x0000000062242390                Far::Editor::get_info(EditorInfo&)
+                0x0000000062242400                Far::Editor::get_string(unsigned long long, EditorGetString&)
+ .text          0x0000000062242470      0x1e0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+                0x0000000062242470                Far::GlobalInfo_i::~GlobalInfo_i()
+                0x0000000062242470                Far::GlobalInfo_i::~GlobalInfo_i()
+                0x00000000622424a0                Far::GlobalInfo_i::get_min_version() const
+                0x00000000622424d0                Far::GlobalInfo_i::Configure(ConfigureInfo const*)
+                0x00000000622424e0                Far::GlobalInfo_i::~GlobalInfo_i()
+                0x0000000062242520                Far::GlobalInfo_i::GetGlobalInfoW(GlobalInfo*) const
+                0x00000000622425d0                Far::GlobalInfo_i::ConfigureW(ConfigureInfo const*)
+                0x00000000622425f0                Far::GlobalInfo_i::SetStartupInfoW(PluginStartupInfo const*)
+                0x0000000062242620                Far::GlobalInfo_i::get_plugin() const
+                0x0000000062242630                Far::GlobalInfo_i::GlobalInfo_i()
+                0x0000000062242630                Far::GlobalInfo_i::GlobalInfo_i()
+ .text          0x0000000062242650       0xe0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+                0x0000000062242680                Far::get_msg(long long)
+ .text          0x0000000062242730     0x1540 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+                0x0000000062242760                Far::DialogBuilder_i::~DialogBuilder_i()
+                0x0000000062242760                Far::DialogBuilder_i::~DialogBuilder_i()
+                0x0000000062242770                Far::SimpleDialogBuilder_impl::add_empty_line_()
+                0x0000000062242780                Far::SimpleDialogBuilder_impl::start_column_()
+                0x0000000062242790                Far::SimpleDialogBuilder_impl::break_column_()
+                0x00000000622427a0                Far::SimpleDialogBuilder_impl::end_column_()
+                0x00000000622427b0                Far::SimpleDialogBuilder_impl::end_singlebox_()
+                0x00000000622427f0                Far::DialogBuilder_i::~DialogBuilder_i()
+                0x0000000062242820                Far::SimpleDialogBuilder_impl::~SimpleDialogBuilder_impl()
+                0x00000000622428e0                Far::SimpleDialogBuilder_impl::~SimpleDialogBuilder_impl()
+                0x00000000622428e0                Far::SimpleDialogBuilder_impl::~SimpleDialogBuilder_impl()
+                0x0000000062242980                Far::CompareX2_less(Far::FarDialogItem_t const&, Far::FarDialogItem_t const&)
+                0x0000000062242990                Far::CompareWidth_less(Far::FarDialogItem_t const&, Far::FarDialogItem_t const&)
+                0x00000000622429d0                Far::SimpleDialogBuilder_impl::GetMaxItemX2() const
+                0x0000000062242a60                Far::SimpleDialogBuilder_impl::save()
+                0x0000000062242a90                Far::SimpleDialogBuilder_impl::set_next_y(Far::FarDialogItem_t*)
+                0x0000000062242ad0                Far::SimpleDialogBuilder_impl::show_dialog_()
+                0x0000000062242c50                Far::SimpleDialogBuilder_impl::show_()
+                0x0000000062242d90                Far::SimpleDialogBuilder_impl::UpdateBorderSize()
+                0x0000000062242e70                Far::SimpleDialogBuilder_impl::add_dialog_item(Far::FarDialogItem_t*)
+                0x0000000062242f10                Far::SimpleDialogBuilder_impl::add_radiobuttons_(long long*, long long, Far::AddRadioButton_t const*, bool)
+                0x0000000062243160                Far::SimpleDialogBuilder_impl::add_item_(Far::FarDialogItem_t*)
+                0x0000000062243240                Far::SimpleDialogBuilder_impl::add_item_before_(Far::FarDialogItem_t*)
+                0x0000000062243350                Far::SimpleDialogBuilder_impl::add_item_after_(Far::FarDialogItem_t*)
+                0x0000000062243450                Far::SimpleDialogBuilder_impl::add_dialog_item(FARDIALOGITEMTYPES, wchar_t const*, unsigned long long)
+                0x00000000622434f0                Far::SimpleDialogBuilder_impl::start_singlebox_(long long, wchar_t const*, bool)
+                0x0000000062243610                Far::SimpleDialogBuilder_impl::create_border(wchar_t const*)
+                0x0000000062243700                Far::SimpleDialogBuilder_impl::SimpleDialogBuilder_impl(_GUID const&, wchar_t const*, wchar_t const*, long long (*)(void*, long long, long long, void*), void*)
+                0x0000000062243700                Far::SimpleDialogBuilder_impl::SimpleDialogBuilder_impl(_GUID const&, wchar_t const*, wchar_t const*, long long (*)(void*, long long, long long, void*), void*)
+                0x0000000062243820                Far::create_dialog_builder(_GUID const&, wchar_t const*, wchar_t const*, long long (*)(void*, long long, long long, void*), void*)
+                0x00000000622439c0                Far::SimpleDialogBuilder_impl::add_OKCancel_(wchar_t const*, wchar_t const*, wchar_t const*)
+ .text          0x0000000062243c70      0x2d0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+                0x0000000062243ca0                Far::PluginEditFieldBinding::get_width_() const
+                0x0000000062243cb0                Far::PluginEditFieldBinding::save_() const
+                0x0000000062243d20                Far::PluginEditFieldBinding::PluginEditFieldBinding(wchar_t*, long long)
+                0x0000000062243d20                Far::PluginEditFieldBinding::PluginEditFieldBinding(wchar_t*, long long)
+                0x0000000062243d50                Far::create_edit(wchar_t*, long long, long long, wchar_t const*, bool, unsigned long long)
+                0x0000000062243e60                Far::create_password(wchar_t*, long long, long long, unsigned long long)
+ .text          0x0000000062243f40      0x180 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+                0x0000000062243f70                Far::PluginCheckBoxBinding::get_width_() const
+                0x0000000062243f80                Far::PluginCheckBoxBinding::save_() const
+                0x0000000062243ff0                Far::PluginCheckBoxBinding::PluginCheckBoxBinding(long long*)
+                0x0000000062243ff0                Far::PluginCheckBoxBinding::PluginCheckBoxBinding(long long*)
+                0x0000000062244010                Far::create_checkbox(long long*, wchar_t const*, unsigned long long)
+ .text          0x00000000622440c0       0x60 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+                0x00000000622440c0                Far::create_separator(wchar_t const*, unsigned long long)
+ .text          0x0000000062244120      0x110 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+                0x0000000062244120                Far::Plugin_i::~Plugin_i()
+                0x0000000062244120                Far::Plugin_i::~Plugin_i()
+                0x0000000062244130                Far::Plugin_i::Open(OpenInfo const*)
+                0x0000000062244140                Far::Plugin_i::ExitFAR(ExitInfo const*)
+                0x0000000062244150                Far::Plugin_i::~Plugin_i()
+                0x0000000062244180                Far::Plugin_i::GetPluginInfoW(PluginInfo*)
+                0x00000000622441a0                Far::Plugin_i::OpenW(OpenInfo const*)
+                0x00000000622441c0                Far::Plugin_i::ExitFARW(ExitInfo const*)
+                0x00000000622441e0                Far::Plugin_i::Plugin_i(PluginStartupInfo const*)
+                0x00000000622441e0                Far::Plugin_i::Plugin_i(PluginStartupInfo const*)
+ .text          0x0000000062244230      0x900 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+                0x0000000062244260                Far::Settings_t::~Settings_t()
+                0x0000000062244260                Far::Settings_t::~Settings_t()
+                0x00000000622442c0                Far::Settings_t::Settings_t(_GUID const&)
+                0x00000000622442c0                Far::Settings_t::Settings_t(_GUID const&)
+                0x0000000062244350                Far::Settings_t::create_key(wchar_t const*, FARSETTINGS_SUBFOLDERS)
+                0x00000000622443c0                Far::Settings_t::open_key(wchar_t const*, FARSETTINGS_SUBFOLDERS) const
+                0x0000000062244430                Far::Settings_t::del(wchar_t const*, FARSETTINGS_SUBFOLDERS)
+                0x00000000622444a0                Far::Settings_t::get(wchar_t const*, void*, unsigned long long, FARSETTINGS_SUBFOLDERS) const
+                0x0000000062244570                Far::Settings_t::get(wchar_t const*, wchar_t const*, FARSETTINGS_SUBFOLDERS) const
+                0x0000000062244610                Far::Settings_t::get(wchar_t const*, unsigned long long, FARSETTINGS_SUBFOLDERS) const
+                0x00000000622446b0                Far::Settings_t::get(wchar_t const*, long long, FARSETTINGS_SUBFOLDERS) const
+                0x0000000062244760                Far::Settings_t::get(wchar_t const*, bool, FARSETTINGS_SUBFOLDERS) const
+                0x0000000062244810                Far::Settings_t::set(wchar_t const*, void const*, unsigned long long, FARSETTINGS_SUBFOLDERS)
+                0x00000000622448b0                Far::Settings_t::set(wchar_t const*, wchar_t const*, FARSETTINGS_SUBFOLDERS)
+                0x0000000062244950                Far::Settings_t::set(wchar_t const*, unsigned long long, FARSETTINGS_SUBFOLDERS)
+                0x00000000622449f0                Far::Settings_t::set(wchar_t const*, long long, FARSETTINGS_SUBFOLDERS)
+                0x0000000062244a90                Far::Settings_t::set(wchar_t const*, bool, FARSETTINGS_SUBFOLDERS)
+ .text          0x0000000062244b30      0x350 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+                0x0000000062244b30                Far::FarDialogItem_t::~FarDialogItem_t()
+                0x0000000062244b30                Far::FarDialogItem_t::~FarDialogItem_t()
+                0x0000000062244b50                Far::FarDialogItem_t::FarDialogItem_t(FARDIALOGITEMTYPES, wchar_t const*, unsigned long long)
+                0x0000000062244b50                Far::FarDialogItem_t::FarDialogItem_t(FARDIALOGITEMTYPES, wchar_t const*, unsigned long long)
+                0x0000000062244bf0                Far::FarDialogItem_t::FarDialogItem_t(Far::DialogItemBinding_i*, FARDIALOGITEMTYPES, wchar_t const*, unsigned long long)
+                0x0000000062244bf0                Far::FarDialogItem_t::FarDialogItem_t(Far::DialogItemBinding_i*, FARDIALOGITEMTYPES, wchar_t const*, unsigned long long)
+                0x0000000062244ca0                Far::FarDialogItem_t::FarDialogItem_t(Far::FarDialogItem_t&&)
+                0x0000000062244ca0                Far::FarDialogItem_t::FarDialogItem_t(Far::FarDialogItem_t&&)
+                0x0000000062244d20                Far::FarDialogItem_t::operator=(Far::FarDialogItem_t&&)
+                0x0000000062244da0                Far::FarDialogItem_t::get_height() const
+                0x0000000062244db0                Far::FarDialogItem_t::get_width() const
+                0x0000000062244e50                Far::FarDialogItem_t::set_dlg(void**)
+                0x0000000062244e60                Far::FarDialogItem_t::set_index(long long)
+                0x0000000062244e70                Far::FarDialogItem_t::save() const
+ .text          0x0000000062244e80       0xd0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+                0x0000000062244eb0                Far::PluginRadioButtonBinding::get_width_() const
+                0x0000000062244ec0                Far::PluginRadioButtonBinding::save_() const
+                0x0000000062244f30                Far::PluginRadioButtonBinding::PluginRadioButtonBinding(void*&, long long, long long*, long long)
+                0x0000000062244f30                Far::PluginRadioButtonBinding::PluginRadioButtonBinding(void*&, long long, long long*, long long)
+ .text          0x0000000062244f50       0xd0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+                0x0000000062244f50                Far::DialogItemBinding_i::~DialogItemBinding_i()
+                0x0000000062244f50                Far::DialogItemBinding_i::~DialogItemBinding_i()
+                0x0000000062244f60                Far::DialogItemBinding_i::get_height_() const
+                0x0000000062244f70                Far::DialogItemBinding_i::~DialogItemBinding_i()
+                0x0000000062244fa0                Far::DialogItemBinding_i::set_dlg(void**)
+                0x0000000062244fb0                Far::DialogItemBinding_i::set_index(long long)
+                0x0000000062244fc0                Far::DialogItemBinding_i::save() const
+                0x0000000062244fe0                Far::DialogItemBinding_i::get_height() const
+                0x0000000062245000                Far::DialogItemBinding_i::get_width() const
+ .text          0x0000000062245020       0x10 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmingwex.a(lib64_libmingwex_a-ilockexchadd64.o)
+                0x0000000062245020                _InterlockedExchangeAdd64
+                0x0000000062245020                InterlockedExchangeAdd64
+ .text          0x0000000062245030        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01143.o)
+                0x0000000062245030                wcsstr
+ .text          0x0000000062245038        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01136.o)
+                0x0000000062245038                wcsncpy
+ .text          0x0000000062245040        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01024.o)
+                0x0000000062245040                memcpy
+ *fill*         0x0000000062245048        0x8 
+ .text          0x0000000062245050        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjh.o)
+ .text          0x0000000062245050        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjt.o)
+ .text          0x0000000062245050        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00602.o)
+                0x0000000062245050                GetProcessHeap
+ .text          0x0000000062245058        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00732.o)
+                0x0000000062245058                HeapAlloc
+ .text          0x0000000062245060        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00738.o)
+                0x0000000062245060                HeapFree
+ .text          0x0000000062245068        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01352.o)
+                0x0000000062245068                lstrcpynW
+ .text          0x0000000062245070        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01355.o)
+                0x0000000062245070                lstrlenW
+ *fill*         0x0000000062245078        0x8 
+ .text          0x0000000062245080        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxoh.o)
+ .text          0x0000000062245080        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxot.o)
+ *(SORT(.text$*))
+ .text$_ZN3Far21PluginCheckBoxBindingD0Ev
+                0x0000000062245080       0x40 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+                0x0000000062245080                Far::PluginCheckBoxBinding::~PluginCheckBoxBinding()
+ .text$_ZN3Far21PluginCheckBoxBindingD1Ev
+                0x00000000622450c0       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+                0x00000000622450c0                Far::PluginCheckBoxBinding::~PluginCheckBoxBinding()
+ .text$_ZN3Far22PluginEditFieldBindingD0Ev
+                0x00000000622450d0       0x40 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+                0x00000000622450d0                Far::PluginEditFieldBinding::~PluginEditFieldBinding()
+ .text$_ZN3Far22PluginEditFieldBindingD1Ev
+                0x0000000062245110       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+                0x0000000062245110                Far::PluginEditFieldBinding::~PluginEditFieldBinding()
+ .text$_ZN3Far24PluginRadioButtonBindingD0Ev
+                0x0000000062245120       0x40 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+                0x0000000062245120                Far::PluginRadioButtonBinding::~PluginRadioButtonBinding()
+ .text$_ZN3Far24PluginRadioButtonBindingD1Ev
+                0x0000000062245160       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+                0x0000000062245160                Far::PluginRadioButtonBinding::~PluginRadioButtonBinding()
+ .text$_ZN4Base10shared_ptrIN3Far15DialogBuilder_iEE15shared_ptr_impl7del_ptrEv
+                0x0000000062245170       0x20 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+                0x0000000062245170                Base::shared_ptr<Far::DialogBuilder_i>::shared_ptr_impl::del_ptr()
+ .text$_ZN4Base10shared_ptrIN3Far15DialogBuilder_iEE15shared_ptr_implD0Ev
+                0x0000000062245190       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+                0x0000000062245190                Base::shared_ptr<Far::DialogBuilder_i>::shared_ptr_impl::~shared_ptr_impl()
+ .text$_ZN4Base10shared_ptrIN3Far15DialogBuilder_iEE15shared_ptr_implD1Ev
+                0x00000000622451c0       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+                0x00000000622451c0                Base::shared_ptr<Far::DialogBuilder_i>::shared_ptr_impl::~shared_ptr_impl()
+ .text$_ZNSt6vectorIN3Far15FarDialogItem_tESaIS1_EE19_M_emplace_back_auxIIR18FARDIALOGITEMTYPESRPKwRyEEEvDpOT_
+                0x00000000622451d0      0x170 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+                0x00000000622451d0                void std::vector<Far::FarDialogItem_t, std::allocator<Far::FarDialogItem_t> >::_M_emplace_back_aux<FARDIALOGITEMTYPES&, wchar_t const*&, unsigned long long&>(FARDIALOGITEMTYPES&, wchar_t const*&, unsigned long long&)
+                0x00000000622451d0                .weak._ZNSt6vectorIN3Far15FarDialogItem_tESaIS1_EE19_M_emplace_back_auxIJR18FARDIALOGITEMTYPESRPKwRyEEEvDpOT_._ZN3Far15DialogBuilder_iD2Ev
+ .text$_ZNSt6vectorIN3Far15FarDialogItem_tESaIS1_EE19_M_emplace_back_auxIIS1_EEEvDpOT_
+                0x0000000062245340      0x150 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+                0x0000000062245340                void std::vector<Far::FarDialogItem_t, std::allocator<Far::FarDialogItem_t> >::_M_emplace_back_aux<Far::FarDialogItem_t>(Far::FarDialogItem_t&&)
+                0x0000000062245340                .weak._ZNSt6vectorIN3Far15FarDialogItem_tESaIS1_EE19_M_emplace_back_auxIJS1_EEEvDpOT_._ZN3Far15DialogBuilder_iD2Ev
+ .text$_ZdaPv   0x0000000062245490       0x30 src\process.o
+                0x0000000062245490                operator delete[](void*)
+ .text$_ZdlPv   0x00000000622454c0       0x30 src\process.o
+                0x00000000622454c0                operator delete(void*)
+ .text$_Znay    0x00000000622454f0       0x30 src\process.o
+                0x00000000622454f0                operator new[](unsigned long long)
+ .text$_Znwy    0x0000000062245520       0x30 src\process.o
+                0x0000000062245520                operator new(unsigned long long)
+ *(.text.*)
+ *(.gnu.linkonce.t.*)
+ *(.glue_7t)
+ *(.glue_7)
+                0x0000000062245550                . = ALIGN (0x8)
+                0x0000000062245550                ___CTOR_LIST__ = .
+                0x0000000062245550                __CTOR_LIST__ = .
+                0x0000000062245550        0x4 LONG 0xffffffffffffffff
+                0x0000000062245554        0x4 LONG 0xffffffffffffffff
+ *(.ctors)
+ *(.ctor)
+ *(SORT(.ctors.*))
+                0x0000000062245558        0x4 LONG 0x0
+                0x000000006224555c        0x4 LONG 0x0
+                0x0000000062245560                ___DTOR_LIST__ = .
+                0x0000000062245560                __DTOR_LIST__ = .
+                0x0000000062245560        0x4 LONG 0xffffffffffffffff
+                0x0000000062245564        0x4 LONG 0xffffffffffffffff
+ *(.dtors)
+ *(.dtor)
+ *(SORT(.dtors.*))
+                0x0000000062245568        0x4 LONG 0x0
+                0x000000006224556c        0x4 LONG 0x0
+ *(.fini)
+ *(.gcc_exc)
+                0x0000000062245570                PROVIDE (etext, .)
+ *(.gcc_except_table)
+
+.data           0x0000000062246000      0x400
+                0x0000000062246000                __data_start__ = .
+ *(.data)
+ .data          0x0000000062246000        0x0 src\process.o
+ .data          0x0000000062246000       0x10 src\main.o
+ .data          0x0000000062246010        0x0 src\guid.o
+ .data          0x0000000062246010        0x0 src\globalinfo.o
+ .data          0x0000000062246010        0x0 src\farplugin.o
+ .data          0x0000000062246010        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .data          0x0000000062246010        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .data          0x0000000062246010        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .data          0x0000000062246010        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .data          0x0000000062246010        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .data          0x0000000062246010        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .data          0x0000000062246010        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .data          0x0000000062246010        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .data          0x0000000062246010        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .data          0x0000000062246010        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .data          0x0000000062246010        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .data          0x0000000062246010        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .data          0x0000000062246010        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmingwex.a(lib64_libmingwex_a-ilockexchadd64.o)
+ .data          0x0000000062246010        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01143.o)
+ .data          0x0000000062246010        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01136.o)
+ .data          0x0000000062246010        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01024.o)
+ .data          0x0000000062246010        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjh.o)
+ .data          0x0000000062246010        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjt.o)
+ .data          0x0000000062246010        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00602.o)
+ .data          0x0000000062246010        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00732.o)
+ .data          0x0000000062246010        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00738.o)
+ .data          0x0000000062246010        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01352.o)
+ .data          0x0000000062246010        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01355.o)
+ .data          0x0000000062246010        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxoh.o)
+ .data          0x0000000062246010        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxot.o)
+ *(.data2)
+ *(SORT(.data$*))
+ .data$_ZGVZN3Far8helper_t4instEvE3ret
+                0x0000000062246010       0x10 src\process.o
+                0x0000000062246010                guard variable for Far::helper_t::inst()::ret
+ .data$_ZTV13FarGlobalInfo
+                0x0000000062246020       0x60 src\globalinfo.o
+                0x0000000062246020                vtable for FarGlobalInfo
+ .data$_ZTV9FarPlugin
+                0x0000000062246080       0x40 src\farplugin.o
+                0x0000000062246080                vtable for FarPlugin
+ .data$_ZTVN3Far12GlobalInfo_iE
+                0x00000000622460c0       0x60 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+                0x00000000622460c0                vtable for Far::GlobalInfo_i
+ .data$_ZTVN3Far15DialogBuilder_iE
+                0x0000000062246120       0x80 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+                0x0000000062246120                vtable for Far::DialogBuilder_i
+ .data$_ZTVN3Far19DialogItemBinding_iE
+                0x00000000622461a0       0x40 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+                0x00000000622461a0                vtable for Far::DialogItemBinding_i
+ .data$_ZTVN3Far21PluginCheckBoxBindingE
+                0x00000000622461e0       0x40 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+                0x00000000622461e0                vtable for Far::PluginCheckBoxBinding
+ .data$_ZTVN3Far22PluginEditFieldBindingE
+                0x0000000062246220       0x40 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+                0x0000000062246220                vtable for Far::PluginEditFieldBinding
+ .data$_ZTVN3Far24PluginRadioButtonBindingE
+                0x0000000062246260       0x40 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+                0x0000000062246260                vtable for Far::PluginRadioButtonBinding
+ .data$_ZTVN3Far24SimpleDialogBuilder_implE
+                0x00000000622462a0       0x80 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+                0x00000000622462a0                vtable for Far::SimpleDialogBuilder_impl
+ .data$_ZTVN3Far8Plugin_iE
+                0x0000000062246320       0x40 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+                0x0000000062246320                vtable for Far::Plugin_i
+ .data$_ZTVN4Base10shared_ptrIN3Far15DialogBuilder_iEE15shared_ptr_implE
+                0x0000000062246360       0x40 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+                0x0000000062246360                vtable for Base::shared_ptr<Far::DialogBuilder_i>::shared_ptr_impl
+ .data$_ZZN3Far8helper_t4instEvE3ret
+                0x00000000622463a0       0x10 src\process.o
+                0x00000000622463a0                Far::helper_t::inst()::ret
+ *(.jcr)
+                0x00000000622463b0                __data_end__ = .
+ *(.data_cygwin_nocopy)
+
+.rdata          0x0000000062247000      0x400
+ *(.rdata)
+ .rdata         0x0000000062247000       0x20 src\process.o
+ .rdata         0x0000000062247020       0xd0 src\globalinfo.o
+ .rdata         0x00000000622470f0       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .rdata         0x0000000062247100       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ *(SORT(.rdata$*))
+ .rdata$DialogGuid
+                0x0000000062247130       0x10 src\guid.o
+                0x0000000062247130                DialogGuid
+ .rdata$GUID_DEVINTERFACE_CDCHANGER
+                0x0000000062247140       0x10 src\guid.o
+                0x0000000062247140                GUID_DEVINTERFACE_CDCHANGER
+ .rdata$GUID_DEVINTERFACE_CDROM
+                0x0000000062247150       0x10 src\guid.o
+                0x0000000062247150                GUID_DEVINTERFACE_CDROM
+ .rdata$GUID_DEVINTERFACE_COMPORT
+                0x0000000062247160       0x10 src\guid.o
+                0x0000000062247160                GUID_DEVINTERFACE_COMPORT
+ .rdata$GUID_DEVINTERFACE_DISK
+                0x0000000062247170       0x10 src\guid.o
+                0x0000000062247170                GUID_DEVINTERFACE_DISK
+ .rdata$GUID_DEVINTERFACE_FLOPPY
+                0x0000000062247180       0x10 src\guid.o
+                0x0000000062247180                GUID_DEVINTERFACE_FLOPPY
+ .rdata$GUID_DEVINTERFACE_MEDIUMCHANGER
+                0x0000000062247190       0x10 src\guid.o
+                0x0000000062247190                GUID_DEVINTERFACE_MEDIUMCHANGER
+ .rdata$GUID_DEVINTERFACE_PARTITION
+                0x00000000622471a0       0x10 src\guid.o
+                0x00000000622471a0                GUID_DEVINTERFACE_PARTITION
+ .rdata$GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR
+                0x00000000622471b0       0x10 src\guid.o
+                0x00000000622471b0                GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR
+ .rdata$GUID_DEVINTERFACE_STORAGEPORT
+                0x00000000622471c0       0x10 src\guid.o
+                0x00000000622471c0                GUID_DEVINTERFACE_STORAGEPORT
+ .rdata$GUID_DEVINTERFACE_TAPE
+                0x00000000622471d0       0x10 src\guid.o
+                0x00000000622471d0                GUID_DEVINTERFACE_TAPE
+ .rdata$GUID_DEVINTERFACE_VOLUME
+                0x00000000622471e0       0x10 src\guid.o
+                0x00000000622471e0                GUID_DEVINTERFACE_VOLUME
+ .rdata$GUID_DEVINTERFACE_WRITEONCEDISK
+                0x00000000622471f0       0x10 src\guid.o
+                0x00000000622471f0                GUID_DEVINTERFACE_WRITEONCEDISK
+ .rdata$IID_AsyncIUnknown
+                0x0000000062247200       0x10 src\guid.o
+                0x0000000062247200                IID_AsyncIUnknown
+ .rdata$IID_IAdviseSink
+                0x0000000062247210       0x10 src\guid.o
+                0x0000000062247210                IID_IAdviseSink
+ .rdata$IID_IBindCtx
+                0x0000000062247220       0x10 src\guid.o
+                0x0000000062247220                IID_IBindCtx
+ .rdata$IID_IBindStatusCallback
+                0x0000000062247230       0x10 src\guid.o
+                0x0000000062247230                IID_IBindStatusCallback
+ .rdata$IID_IBinding
+                0x0000000062247240       0x10 src\guid.o
+                0x0000000062247240                IID_IBinding
+ .rdata$IID_IClassFactory
+                0x0000000062247250       0x10 src\guid.o
+                0x0000000062247250                IID_IClassFactory
+ .rdata$IID_IDataObject
+                0x0000000062247260       0x10 src\guid.o
+                0x0000000062247260                IID_IDataObject
+ .rdata$IID_IDispatch
+                0x0000000062247270       0x10 src\guid.o
+                0x0000000062247270                IID_IDispatch
+ .rdata$IID_IEnumFORMATETC
+                0x0000000062247280       0x10 src\guid.o
+                0x0000000062247280                IID_IEnumFORMATETC
+ .rdata$IID_IEnumMoniker
+                0x0000000062247290       0x10 src\guid.o
+                0x0000000062247290                IID_IEnumMoniker
+ .rdata$IID_IEnumSTATDATA
+                0x00000000622472a0       0x10 src\guid.o
+                0x00000000622472a0                IID_IEnumSTATDATA
+ .rdata$IID_IEnumSTATSTG
+                0x00000000622472b0       0x10 src\guid.o
+                0x00000000622472b0                IID_IEnumSTATSTG
+ .rdata$IID_IEnumString
+                0x00000000622472c0       0x10 src\guid.o
+                0x00000000622472c0                IID_IEnumString
+ .rdata$IID_IEnumUnknown
+                0x00000000622472d0       0x10 src\guid.o
+                0x00000000622472d0                IID_IEnumUnknown
+ .rdata$IID_IErrorLog
+                0x00000000622472e0       0x10 src\guid.o
+                0x00000000622472e0                IID_IErrorLog
+ .rdata$IID_IMoniker
+                0x00000000622472f0       0x10 src\guid.o
+                0x00000000622472f0                IID_IMoniker
+ .rdata$IID_IPersist
+                0x0000000062247300       0x10 src\guid.o
+                0x0000000062247300                IID_IPersist
+ .rdata$IID_IPersistStream
+                0x0000000062247310       0x10 src\guid.o
+                0x0000000062247310                IID_IPersistStream
+ .rdata$IID_IPrintDialogCallback
+                0x0000000062247320       0x10 src\guid.o
+                0x0000000062247320                IID_IPrintDialogCallback
+ .rdata$IID_IPrintDialogServices
+                0x0000000062247330       0x10 src\guid.o
+                0x0000000062247330                IID_IPrintDialogServices
+ .rdata$IID_IRecordInfo
+                0x0000000062247340       0x10 src\guid.o
+                0x0000000062247340                IID_IRecordInfo
+ .rdata$IID_IRunningObjectTable
+                0x0000000062247350       0x10 src\guid.o
+                0x0000000062247350                IID_IRunningObjectTable
+ .rdata$IID_ISequentialStream
+                0x0000000062247360       0x10 src\guid.o
+                0x0000000062247360                IID_ISequentialStream
+ .rdata$IID_IStorage
+                0x0000000062247370       0x10 src\guid.o
+                0x0000000062247370                IID_IStorage
+ .rdata$IID_IStream
+                0x0000000062247380       0x10 src\guid.o
+                0x0000000062247380                IID_IStream
+ .rdata$IID_ITypeComp
+                0x0000000062247390       0x10 src\guid.o
+                0x0000000062247390                IID_ITypeComp
+ .rdata$IID_ITypeInfo
+                0x00000000622473a0       0x10 src\guid.o
+                0x00000000622473a0                IID_ITypeInfo
+ .rdata$IID_ITypeLib
+                0x00000000622473b0       0x10 src\guid.o
+                0x00000000622473b0                IID_ITypeLib
+ .rdata$MenuGuid
+                0x00000000622473c0       0x10 src\guid.o
+                0x00000000622473c0                MenuGuid
+ .rdata$PluginGuid
+                0x00000000622473d0       0x10 src\guid.o
+                0x00000000622473d0                PluginGuid
+                0x00000000622473e0                __rt_psrelocs_start = .
+ *(.rdata_runtime_pseudo_reloc)
+                0x00000000622473e0                __rt_psrelocs_end = .
+                0x0000000000000000                __rt_psrelocs_size = (__rt_psrelocs_end - __rt_psrelocs_start)
+                0x00000000622473e0                ___RUNTIME_PSEUDO_RELOC_LIST_END__ = .
+                0x00000000622473e0                __RUNTIME_PSEUDO_RELOC_LIST_END__ = .
+                0x00000000622473e0                ___RUNTIME_PSEUDO_RELOC_LIST__ = (. - __rt_psrelocs_size)
+                0x00000000622473e0                __RUNTIME_PSEUDO_RELOC_LIST__ = (. - __rt_psrelocs_size)
+
+.eh_frame
+ *(.eh_frame*)
+
+.pdata          0x0000000062248000      0x800
+ *(.pdata*)
+ .pdata         0x0000000062248000       0x30 src\process.o
+ .pdata$_Znwy   0x0000000062248030        0xc src\process.o
+ .pdata$_Znay   0x000000006224803c        0xc src\process.o
+ .pdata$_ZdlPv  0x0000000062248048        0xc src\process.o
+ .pdata$_ZdaPv  0x0000000062248054        0xc src\process.o
+ .pdata         0x0000000062248060       0x78 src\main.o
+ .pdata         0x00000000622480d8       0xb4 src\globalinfo.o
+ .pdata         0x000000006224818c       0x54 src\farplugin.o
+ .pdata         0x00000000622481e0       0x9c D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .pdata         0x000000006224827c       0x6c D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .pdata         0x00000000622482e8       0x18 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .pdata         0x0000000062248300      0x15c D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .pdata$_ZN4Base10shared_ptrIN3Far15DialogBuilder_iEE15shared_ptr_impl7del_ptrEv
+                0x000000006224845c        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .pdata$_ZN4Base10shared_ptrIN3Far15DialogBuilder_iEE15shared_ptr_implD1Ev
+                0x0000000062248468        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .pdata$_ZN4Base10shared_ptrIN3Far15DialogBuilder_iEE15shared_ptr_implD0Ev
+                0x0000000062248474        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .pdata$_ZNSt6vectorIN3Far15FarDialogItem_tESaIS1_EE19_M_emplace_back_auxIIS1_EEEvDpOT_
+                0x0000000062248480        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .pdata$_ZNSt6vectorIN3Far15FarDialogItem_tESaIS1_EE19_M_emplace_back_auxIIR18FARDIALOGITEMTYPESRPKwRyEEEvDpOT_
+                0x000000006224848c        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .pdata         0x0000000062248498       0x48 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .pdata$_ZN3Far22PluginEditFieldBindingD1Ev
+                0x00000000622484e0        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .pdata$_ZN3Far22PluginEditFieldBindingD0Ev
+                0x00000000622484ec        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .pdata         0x00000000622484f8       0x3c D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .pdata$_ZN3Far21PluginCheckBoxBindingD1Ev
+                0x0000000062248534        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .pdata$_ZN3Far21PluginCheckBoxBindingD0Ev
+                0x0000000062248540        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .pdata         0x000000006224854c        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .pdata         0x0000000062248558       0x60 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .pdata         0x00000000622485b8       0xc0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .pdata         0x0000000062248678       0x78 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .pdata         0x00000000622486f0       0x30 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .pdata$_ZN3Far24PluginRadioButtonBindingD1Ev
+                0x0000000062248720        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .pdata$_ZN3Far24PluginRadioButtonBindingD0Ev
+                0x000000006224872c        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .pdata         0x0000000062248738       0x60 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .pdata         0x0000000062248798        0xc c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmingwex.a(lib64_libmingwex_a-ilockexchadd64.o)
+
+.xdata          0x0000000062249000      0x600
+ *(.xdata*)
+ .xdata         0x0000000062249000       0x28 src\process.o
+ .xdata$_Znwy   0x0000000062249028        0x8 src\process.o
+ .xdata$_Znay   0x0000000062249030        0x8 src\process.o
+ .xdata$_ZdlPv  0x0000000062249038        0x8 src\process.o
+ .xdata$_ZdaPv  0x0000000062249040        0x8 src\process.o
+ .xdata         0x0000000062249048       0x50 src\main.o
+ .xdata         0x0000000062249098       0x54 src\globalinfo.o
+ .xdata         0x00000000622490ec       0x34 src\farplugin.o
+ .xdata         0x0000000062249120       0x74 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .xdata         0x0000000062249194       0x34 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .xdata         0x00000000622491c8       0x10 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .xdata         0x00000000622491d8      0x16c D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .xdata$_ZN4Base10shared_ptrIN3Far15DialogBuilder_iEE15shared_ptr_impl7del_ptrEv
+                0x0000000062249344        0x4 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .xdata$_ZN4Base10shared_ptrIN3Far15DialogBuilder_iEE15shared_ptr_implD1Ev
+                0x0000000062249348        0x4 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .xdata$_ZN4Base10shared_ptrIN3Far15DialogBuilder_iEE15shared_ptr_implD0Ev
+                0x000000006224934c        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .xdata$_ZNSt6vectorIN3Far15FarDialogItem_tESaIS1_EE19_M_emplace_back_auxIIS1_EEEvDpOT_
+                0x0000000062249354       0x18 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .xdata$_ZNSt6vectorIN3Far15FarDialogItem_tESaIS1_EE19_M_emplace_back_auxIIR18FARDIALOGITEMTYPESRPKwRyEEEvDpOT_
+                0x000000006224936c       0x18 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .xdata         0x0000000062249384       0x40 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .xdata$_ZN3Far22PluginEditFieldBindingD1Ev
+                0x00000000622493c4        0x4 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .xdata$_ZN3Far22PluginEditFieldBindingD0Ev
+                0x00000000622493c8        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .xdata         0x00000000622493d0       0x28 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .xdata$_ZN3Far21PluginCheckBoxBindingD1Ev
+                0x00000000622493f8        0x4 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .xdata$_ZN3Far21PluginCheckBoxBindingD0Ev
+                0x00000000622493fc        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .xdata         0x0000000062249404        0xc D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .xdata         0x0000000062249410       0x28 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .xdata         0x0000000062249438       0xb8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .xdata         0x00000000622494f0       0x34 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .xdata         0x0000000062249524       0x14 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .xdata$_ZN3Far24PluginRadioButtonBindingD1Ev
+                0x0000000062249538        0x4 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .xdata$_ZN3Far24PluginRadioButtonBindingD0Ev
+                0x000000006224953c        0x8 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .xdata         0x0000000062249544       0x24 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .xdata         0x0000000062249568        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmingwex.a(lib64_libmingwex_a-ilockexchadd64.o)
+
+.bss            0x000000006224a000       0xb0
+                0x000000006224a000                __bss_start__ = .
+ *(.bss)
+ .bss           0x000000006224a000       0x40 src\process.o
+ .bss           0x000000006224a040       0x40 src\main.o
+ .bss           0x000000006224a080        0x0 src\guid.o
+ .bss           0x000000006224a080        0x0 src\globalinfo.o
+ .bss           0x000000006224a080       0x30 src\farplugin.o
+ .bss           0x000000006224a0b0        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(editor.o)
+ .bss           0x000000006224a0b0        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(globalinfo_i.o)
+ .bss           0x000000006224a0b0        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(message.o)
+ .bss           0x000000006224a0b0        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(dialog_builder.o)
+ .bss           0x000000006224a0b0        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_edit.o)
+ .bss           0x000000006224a0b0        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_checkbox.o)
+ .bss           0x000000006224a0b0        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(create_separator.o)
+ .bss           0x000000006224a0b0        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(plugin_i.o)
+ .bss           0x000000006224a0b0        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(settings.o)
+ .bss           0x000000006224a0b0        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(FarDialogItem.o)
+ .bss           0x000000006224a0b0        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DlgBuilder_c.o)
+ .bss           0x000000006224a0b0        0x0 D:\projects\andrew-grechkin\libfar3\Release-x64-NoStr/liblibfar3.a(DialogItemBinding.o)
+ .bss           0x000000006224a0b0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmingwex.a(lib64_libmingwex_a-ilockexchadd64.o)
+ .bss           0x000000006224a0b0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01143.o)
+ .bss           0x000000006224a0b0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01136.o)
+ .bss           0x000000006224a0b0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01024.o)
+ .bss           0x000000006224a0b0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjh.o)
+ .bss           0x000000006224a0b0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjt.o)
+ .bss           0x000000006224a0b0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00602.o)
+ .bss           0x000000006224a0b0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00732.o)
+ .bss           0x000000006224a0b0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00738.o)
+ .bss           0x000000006224a0b0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01352.o)
+ .bss           0x000000006224a0b0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01355.o)
+ .bss           0x000000006224a0b0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxoh.o)
+ .bss           0x000000006224a0b0        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxot.o)
+ *(COMMON)
+                0x000000006224a0b0                __bss_end__ = .
+
+.edata          0x000000006224b000      0x200
+ *(.edata)
+ .edata         0x000000006224b000       0xbb dll stuff
+
+/DISCARD/
+ *(.debug$S)
+ *(.debug$T)
+ *(.debug$F)
+ *(.drectve)
+ *(.note.GNU-stack)
+ *(.gnu.lto_*)
+
+.idata          0x000000006224c000      0x200
+ SORT(*)(.idata$2)
+ .idata$2       0x000000006224c000       0x14 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxoh.o)
+                0x000000006224c000                _head_lib64_libkernel32_a
+ .idata$2       0x000000006224c014       0x14 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjh.o)
+                0x000000006224c014                _head_lib64_libmsvcrt_a
+ SORT(*)(.idata$3)
+                0x000000006224c028        0x4 LONG 0x0
+                0x000000006224c02c        0x4 LONG 0x0
+                0x000000006224c030        0x4 LONG 0x0
+                0x000000006224c034        0x4 LONG 0x0
+                0x000000006224c038        0x4 LONG 0x0
+ SORT(*)(.idata$4)
+ .idata$4       0x000000006224c03c        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxoh.o)
+ .idata$4       0x000000006224c03c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00602.o)
+ .idata$4       0x000000006224c044        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00732.o)
+ .idata$4       0x000000006224c04c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00738.o)
+ .idata$4       0x000000006224c054        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01352.o)
+ .idata$4       0x000000006224c05c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01355.o)
+ .idata$4       0x000000006224c064        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxot.o)
+ .idata$4       0x000000006224c06c        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjh.o)
+ .idata$4       0x000000006224c06c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01024.o)
+ .idata$4       0x000000006224c074        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01136.o)
+ .idata$4       0x000000006224c07c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01143.o)
+ .idata$4       0x000000006224c084        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjt.o)
+                0x000000006224c08c                __IAT_start__ = .
+ SORT(*)(.idata$5)
+ .idata$5       0x000000006224c08c        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxoh.o)
+ .idata$5       0x000000006224c08c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00602.o)
+                0x000000006224c08c                __imp_GetProcessHeap
+ .idata$5       0x000000006224c094        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00732.o)
+                0x000000006224c094                __imp_HeapAlloc
+ .idata$5       0x000000006224c09c        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00738.o)
+                0x000000006224c09c                __imp_HeapFree
+ .idata$5       0x000000006224c0a4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01352.o)
+                0x000000006224c0a4                __imp_lstrcpynW
+ .idata$5       0x000000006224c0ac        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01355.o)
+                0x000000006224c0ac                __imp_lstrlenW
+ .idata$5       0x000000006224c0b4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxot.o)
+ .idata$5       0x000000006224c0bc        0x0 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjh.o)
+ .idata$5       0x000000006224c0bc        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01024.o)
+                0x000000006224c0bc                __imp_memcpy
+ .idata$5       0x000000006224c0c4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01136.o)
+                0x000000006224c0c4                __imp_wcsncpy
+ .idata$5       0x000000006224c0cc        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01143.o)
+                0x000000006224c0cc                __imp_wcsstr
+ .idata$5       0x000000006224c0d4        0x8 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjt.o)
+                0x000000006224c0dc                __IAT_end__ = .
+ SORT(*)(.idata$6)
+ .idata$6       0x000000006224c0dc       0x12 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00602.o)
+ .idata$6       0x000000006224c0ee        0xc c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00732.o)
+ .idata$6       0x000000006224c0fa        0xc c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00738.o)
+ .idata$6       0x000000006224c106        0xc c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01352.o)
+ .idata$6       0x000000006224c112        0xc c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01355.o)
+ .idata$6       0x000000006224c11e        0xa c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01024.o)
+ .idata$6       0x000000006224c128        0xa c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01136.o)
+ .idata$6       0x000000006224c132        0xa c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01143.o)
+ SORT(*)(.idata$7)
+ .idata$7       0x000000006224c13c        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00602.o)
+ .idata$7       0x000000006224c140        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00732.o)
+ .idata$7       0x000000006224c144        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos00738.o)
+ .idata$7       0x000000006224c148        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01352.o)
+ .idata$7       0x000000006224c14c        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxos01355.o)
+ .idata$7       0x000000006224c150       0x10 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libkernel32.a(dgxot.o)
+                0x000000006224c150                __lib64_libkernel32_a_iname
+ .idata$7       0x000000006224c160        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01024.o)
+ .idata$7       0x000000006224c164        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01136.o)
+ .idata$7       0x000000006224c168        0x4 c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjs01143.o)
+ .idata$7       0x000000006224c16c        0xc c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.7.1/../../../../x86_64-w64-mingw32/lib/../lib/libmsvcrt.a(dozjt.o)
+                0x000000006224c16c                __lib64_libmsvcrt_a_iname
+
+.CRT            0x000000006224d000        0x0
+                0x000000006224d000                ___crt_xc_start__ = .
+ *(SORT(.CRT$XC*))
+                0x000000006224d000                ___crt_xc_end__ = .
+                0x000000006224d000                ___crt_xi_start__ = .
+ *(SORT(.CRT$XI*))
+                0x000000006224d000                ___crt_xi_end__ = .
+                0x000000006224d000                ___crt_xl_start__ = .
+ *(SORT(.CRT$XL*))
+                0x000000006224d000                ___crt_xp_start__ = .
+ *(SORT(.CRT$XP*))
+                0x000000006224d000                ___crt_xp_end__ = .
+                0x000000006224d000                ___crt_xt_start__ = .
+ *(SORT(.CRT$XT*))
+                0x000000006224d000                ___crt_xt_end__ = .
+
+.tls            0x000000006224d000        0x0
+                0x000000006224d000                ___tls_start__ = .
+ *(.tls)
+ *(.tls$)
+ *(SORT(.tls$*))
+                0x000000006224d000                ___tls_end__ = .
+
+.endjunk        0x000000006224d000        0x0
+                0x000000006224d000                PROVIDE (end, .)
+                0x000000006224d000                PROVIDE (_end, .)
+                0x000000006224d000                __end__ = .
+
+.rsrc           0x000000006224d000      0x400
+ *(.rsrc)
+ .rsrc          0x000000006224d000      0x300 src\main.res
+ *(SORT(.rsrc$*))
+
+.reloc          0x000000006224e000      0x200
+ *(.reloc)
+ .reloc         0x000000006224e000       0xac dll stuff
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame*)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_types
+ *(.debug_types .gnu.linkonce.wt.*)
+OUTPUT(delstr-x64.dll pei-x86-64)
+LOAD dll stuff

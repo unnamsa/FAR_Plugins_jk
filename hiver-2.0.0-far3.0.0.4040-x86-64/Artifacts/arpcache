@@ -1,0 +1,67 @@
+--!NTUSER.DAT: ARPCache contents revealing
+
+local EHDR = "ARPCache Explorer"
+local ffi  = require "ffi"
+ffi.cdef [[
+    typedef struct { uint32_t nUnk[4]; uint64_t tTime; uint32_t nZero; wchar_t sFName[?]; } CacheEntry;
+]]
+
+local GUID, hInstA, hInstP, sTmpFile, sArg1, sArg2 = ... 
+local msg
+
+-- Get plugin handle
+local hInst = hInstA  or hInstP  or  unpack({nil, far.Message("No HIVER instance found", EHDR.."ERROR")})
+if  not hInst then return end
+
+-- Duplicate currently open HIVE handle
+local hHive = Plugin.SyncCall (GUID, hInst, "DupHandle")  or
+              unpack({nil, far.Message("HIVER DupHandle not successfull", EHDR.."ERROR")})
+if  not hHive then return end
+
+-- Open the output file
+local hTmp  = assert(io.open(sTmpFile, "a+"))
+if  not hTmp  then return end
+hTmp:write [[
+;;;;====================================================================
+;;;;                   ARPCache contents
+;;;;====================================================================
+]]
+
+-- Set current virtual directory to ARPCache home
+local sDir         = "/TreeView/Software/Microsoft/Windows/CurrentVersion/App Management/ARPCache"
+local bRet, nItems = Plugin.SyncCall (GUID, hHive, "cd \""..sDir.."\"")
+--far.Message(string.format("cd <%s>\ntype(nItems)=%s", Plugin.SyncCall (GUID, hHive, "pwd"), type(nItems)), "point0")
+
+if bRet then
+    hTmp:write (string.format("\n;;%s; %s\n\n", Plugin.SyncCall (GUID, hHive, "pwd") ))
+    hTmp:write (string.format("%-10s; %-16s; AppName; Application file\n", "Date", "Time"))
+end
+
+-- Iterate ARPCache directory
+if bRet then for i = 1, nItems do
+
+    local sApp, nMT = Plugin.SyncCall (GUID, hHive, "getitem", i)
+    local _, xValue = Plugin.SyncCall (GUID, hHive, "getitem \""..sApp.."/SlowInfoCache\"")
+
+    -- The value MUST have <Binary> type
+    if  type(xValue) == "table"  and  type(xValue[1]) == "string"  then
+        local Entry  = ffi.cast    ("CacheEntry*", xValue[1])
+        local nLen   = ffi.C.wcslen(Entry.sFName)
+        local sTmp   = ffi.string  (Entry.sFName, nLen*2)
+        if  tonumber(Entry.tTime) > 0  then
+            nMT = tonumber(Entry.tTime)
+        end
+        local sDate, sTime = Plugin.SyncCall (GUID, nil, "GetFileTime", nMT)
+        hTmp:write (string.format("%10s; %16s; %s; %s\n", sDate, sTime, sApp, win.Utf16ToUtf8(sTmp)))
+    end
+end
+else
+    hTmp:write ("There is no\n"..sDir.."\nregistry key found...")
+end
+
+-- Close the TMP-file
+hTmp:close()
+
+-- Close the copy of the HIVE handle
+Plugin.SyncCall (GUID, hHive, "CloseHandle")
+return true

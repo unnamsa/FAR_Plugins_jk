@@ -1,0 +1,89 @@
+--!RE:/\\TreeView\\SAM\\([^\\]+\\)*F$/
+
+local EHDR = "SAM Account Descriptor Explorer"
+local GUID, hInstA, hInstP, sTmpFile, sArg1, xArg2 = ... 
+
+-- Include necessary libraries
+local libHive = dofile (debug.getinfo(1).source:match("@(.*\\)[^\\]*$").."..\\Libs\\libhive.lua")
+local libSAM  = dofile (debug.getinfo(1).source:match("@(.*\\)[^\\]*$").."..\\Libs\\libsam.lua")
+
+-- Get plugin handle
+local hInst = hInstA  or  hInstP  or  nil
+if  not hInst then return far.Message("No HIVER instance found", EHDR.." ERROR") end
+
+-- Duplicate currently open HIVE handle
+local hHive = Plugin.SyncCall (GUID, hInst, "DupHandle")
+if  not hHive then return far.Message("HIVER DupHandle not successfull", EHDR.." ERROR") end
+
+-- The type of the value MUST be binary
+if  not(type(xArg2) =="table")  or  not(type(xArg2[1]) == "string")  then
+    return far.Message("Invalid argument2 type\n"..type(xArg2), EHDR.." ERROR")
+end
+
+-- Parse the registry value
+local Parsed, ErrMsg = libSAM.Parse_F( xArg2[1] )
+if  not Parsed  then
+    return far.Message(ErrMsg, EHDR.." ERROR")
+end
+
+-- Open the output file
+local hTmp  = assert(io.open(sTmpFile, "a+"))
+if    hTmp    then
+
+    -- Output the rest of fields depending on the record format
+    if  (Parsed.nFormat == 0)  then
+        hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %s\n", 
+                                  sArg1, Parsed.nOffsLastLogin,  8,  0, "Last Login Time",
+                                  (Parsed.tLastLogin == 0)  and  "<Not Set>"  or
+                                  libHive.TimeStamp (GUID, Parsed.tLastLogin)                    ))
+
+        hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %s\n", 
+                                  sArg1, Parsed.nOffsCreated,    8,  0, "Creation Time", 
+                                  (Parsed.tCreated == 0)  and  "<Not Set>"  or
+                                  libHive.TimeStamp (GUID, Parsed.tCreated)                      ))
+
+        hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %s\n", 
+                                  sArg1, Parsed.nOffsExpire,     8,  0, "Expiration Time",
+                                  (Parsed.tExpire == 0)                  and "<Not Set>"       or
+                                  (Parsed.tExpire == 0x7FFFFFFFFFFFFFFF) and "<Never Expired>" or 
+                                  libHive.TimeStamp (GUID, Parsed.tExpire)                       ))
+
+        hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %s\n", 
+                                  sArg1, Parsed.nOffsLoginFail,  8,  0, "Last Login Failure",
+                                  (Parsed.tLoginFail == 0)  and  "<Not Set>"  or
+                                  libHive.TimeStamp (GUID, Parsed.tLoginFail)                    ))
+
+        hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %08X\n", 
+                                  sArg1, Parsed.nOffsRID,        4,  0, Parsed.sRIDType, Parsed.nRID ))
+
+        hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; 0x%04X\n", 
+                                  sArg1, Parsed.nOffsFlags,      2,  0, "Account Flags", Parsed.nFlags ))
+
+        hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %d\n", 
+                                  sArg1, Parsed.nOffsLgnCnt,     2,  0, "Login Count", Parsed.nLgnCnt ))
+    else
+        hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %s\n", 
+                                  sArg1, Parsed.nOffsCreated,    8,  0, "Creation Time", 
+                                  (Parsed.tCreated == 0)  and  "<Not Set>"  or
+                                  libHive.TimeStamp (GUID, Parsed.tCreated)                      ))
+
+        hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %08X\n", 
+                                  sArg1, Parsed.nOffsRID,        4,  0, Parsed.sRIDType, Parsed.nRID ))
+
+        if  (Parsed.nFormat == 1)  then
+            hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %s\n", 
+                                      sArg1, Parsed.nOffsBootCache1, #Parsed.sBootCache1,  0, "BootKey_Part1", 
+                                      "<RC4-encoded with SysKey, which must be derived from SYSTEM hive>" ))
+            hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %s\n", 
+                                      sArg1, Parsed.nOffsBootCache2, #Parsed.sBootCache2,  0, "BootKey_Part2", 
+                                      "<RC4-encoded with key, derived from decoded BootKey_Part1>" ))
+        end
+    end
+
+    -- Close the TMP-file
+    hTmp:close()
+else
+    return far.Message("Error opening TmpFile", EHDR.." ERROR")
+end
+
+return  true

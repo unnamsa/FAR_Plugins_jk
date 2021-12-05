@@ -1,0 +1,48 @@
+--!RE:/.*\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Taskband\\Favorites$/
+--!RE:/.*\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\StartPage(2)?\\Favorites$/
+
+local EHDR = "TaskBand/Favorites value Explorer"
+
+local GUID, hInstA, hInstP, sTmpFile, sArg1, xArg2 = ...
+--far.Message(sArg1, EHDR)
+
+-- Check LnkView plugin version
+local LnkGUID    = "53415453-E31E-4D4C-8FE5-D6B0C6853E7C"
+local LnkViewVer = Plugin.SyncCall (LnkGUID, "ver")  or  0
+if  LnkViewVer < 351  then
+    return far.Message ("LnkView plugin Version required: 3.5.1+", EHDR.." ERROR")
+end
+
+-- The type of the value MUST be binary
+if  not(type(xArg2) =="table")  or  not(type(xArg2[1]) == "string")  then
+    return far.Message("Invalid argument2 type", EHDR.." ERROR")
+end
+
+-- Parse the ProgramsCache value
+local Names,Values,Descs,Offsets,Lengths,Depths = Plugin.SyncCall (LnkGUID, "parse PCache", xArg2, 0)
+
+-- Open the output file
+local hTmp  = assert(io.open(sTmpFile, "a+"))
+if    hTmp    then
+        
+    local sIDListName
+
+    if  (type(Names) == "table")  then  for i,_ in ipairs(Names) do
+        if (Depths[i] == 1) then
+            sIDListName = Names[i]
+        end
+
+        if (Depths[i] > 0) then
+            hTmp:write (string.format("%s; 0x%08x; %5d; %3d; %-64s; %s\n", 
+                                      sIDListName, Offsets[i], Lengths[i], Depths[i]-1, Names[i], Descs[i]))
+        end
+    end end
+
+    -- Close the TMP-file
+    hTmp:close()
+else
+    return far.Message("Error opening TmpFile", EHDR.." ERROR")
+end
+
+-- return true if the parsing was successfull
+return  (type(Names) == "table")

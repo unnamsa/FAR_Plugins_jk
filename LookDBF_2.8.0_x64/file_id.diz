@@ -1,0 +1,33 @@
+  LookDBF version 2.8. 21.07.2016
+           Plug-In for 
+   Far Manager 1.75 and higher
+---------------------------------------
+MSVC++ sources included
+---------------------------------------
+DBF-files view, change, export and import
+Visual FoxPro binary fields support
+---------------------------------------
+Written by:
+Alexei Boltunov.
+alexbolt@mail.ru
+alexbolt@narod.ru
+Maintained by Andrew Nefedkin.
+https://github.com/Vertigo093i/Far-LookDBF
+Special thanks to Aleksander Buniak.
+
+
+  LookDBF версия 2.8. 21.07.2016
+   Плагин для Far 1.75 и выше
+---------------------------------------
+  С исходными текстами для MSVC++
+---------------------------------------
+DBF-файлы. Просмотр, редактирование,
+экспорт и импорт. Поддержка бинарных
+полей Visual FoxPro 5.0 и выше.
+---------------------------------------
+Алексей Болтунов.
+E-mail: alexbolt@mail.ru или alexbolt@narod.ru
+http://alexbolt.narod.ru
+Доработка и поддержка: Андрей Нефёдкин.
+https://github.com/Vertigo093i/Far-LookDBF
+Отдельное спасибо: Aleksander Buniak.

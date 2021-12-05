@@ -1,0 +1,545 @@
+.Language=English,English
+.PluginContents=Registry Browser Plugin
+
+@Contents
+$ #Registry Browser Plugin#
+
+   ~Description~@Description@
+
+   ~Keyboard Commands~@Keyboard@
+
+   ~Copy/Move/Rename Implementation~@CopyMove@
+
+   ~Creating~@CreateNew@ and ~Deleting~@Delete@ Keys and Values
+
+   ~Connecting to Network Registry~@Connect@
+
+   ~Browsing .reg files~@RegFiles@ and ~browsing hives~@Hives@
+
+   ~Automatic GUID/ProgID Lookup~@LookUp@
+   
+   ~Miscellaneous Notes~@Misc@
+
+   ~Configuration~@Config@
+
+@Description
+$ #Description#
+
+This plugin allows you to work with registry keys and values exactly in the
+same manner as with directories and files.
+
+There are two ~operation modes~@Modes@: "keys as directories" and "keys as files".
+"Keys as files" are exported and imported automatically in the standard .REG format
+to transform keys to files and to import them back to registry (when viewing ot editing).
+The plugin does export and import operations itself, but you can force it to use REGEDIT.
+
+Import and export of single registry variables is done by the plugin itself
+using usual file I/O operations. For string variables, the terminating zero is
+truncated on export and added on import. Multi-string variables, when edited, are converted
+to a set of CRLF-separated lines and converted back on import.
+
+Values of all variables and default values of all keys are shown in the
+standard Descriptions column. Binary values are converted to readable form.
+Symbolic link targets (if present) are also displayed in the Descriptions column.
+Key owners are displayed in the standard Owner column.
+
+Three panel modes are overridden in this plugin, 3, 6 and 7.
+
+You can see everything by yourself if you experiment pressing F3 or F4
+on registry keys and values.
+
+Prefix #reg:# can be used to enter this plugin from command line or from
+user menu, for example:
+
+@-
+C:\>reg:HKEY_CURRENT_USER\Software\Far
+@+
+
+On 64-bit Windows, prefixes #reg32:# and #reg64:# can be used to override the default registry
+and allows to open the proper 32- or 64-bit key from the command line independently on the running FAR platform. 
+
+The plugin can open #.reg# files and do exactly the same actions with them,
+but in read-only mode. See ~this section~@RegFiles@ for details.
+
+Also, you can save and open registry ~hives~@Hives@.
+
+#Basic advantages over regedit.exe#
+
+1. You can edit keys as text files with the FAR built-in editor
+   or with any other text editor (using file associations)
+   with automatic export and import.
+
+2. Enjoy full FAR integration: copy keys to the other panel of any type, sorting, Quick
+   View, shortcuts etc. For example, you can sort keys by their creation
+   date, or by default values.
+   You can open several keys in editor simultaneously and
+   perform a global replace, even with regular expressions
+   (using other FAR plugins).
+
+3. Directly jump to a key by its path pasted from clipboard (using command "cd"),
+   quick jump to predefined keys using FAR user menu or keyboard macros.
+
+4. Default values for all keys are displayed simultaneously.
+   Numerical values are displayed in readable format.
+
+5. Auto refresh, binary export, displaying owners of keys.
+
+6. You can easily change the value's type.
+
+7. You can export keys from a remote computer to .reg file.
+
+8. Long import/export operations can be stopped by the Esc key.
+
+9. Operating with .reg files and hives in the same way as with the system
+    registry.
+
+@+
+~Note.~ The plugin works more correctly than native Regedit!
+Try to do the following with Regedit: export a key with a string value 
+containing "carriage return/new line", then delete this value, and import the 
+key back. You'll lose the value! Then do the same with this plugin with "Use 
+Regedit" turned off...
+
+
+@Keyboard
+$ #Keyboard Commands#
+
+In addition to standard FAR keys, Registry Browser provides its own keys:
+
+@-
+#Ctrl-A#    Pressed on a value - Look/change the ~value type~@ChType@.
+          Pressed on a key - Invoke the key security editor (GUI dialog box).
+
+#Ctrl-G#    Put the value from Descriptions column to the command line.
+          Sometimes it's useful for automatic ~lookup~@LookUp@.
+
+#Ctrl-Z#    Edit the value shown in ~Descriptions~@ChValue@ column.
+
+#Ctrl-N#    Toggle display of binary values in the Descriptions column:
+          hex dump / decimal number - for four-byte values,
+          hex dump / ASCII string   - for other non-string values.
+
+#Ctrl-H#    Hide/show descriptions and owners for keys. This may speed
+           up directory scanning dramatically, since the plugin doesn't
+           open each key looking for its default value and security.
+
+#Ctrl-J#    ~Regedit Jump~@RegJump@
+#Shift-Enter# ~Regedit Jump~@RegJump@
+
+#Shift-F1#  Go to HKEY_CURRENT_USER\Software\Far
+            (or ...\Far2 for Unicode version).
+#Shift-F2#  Go to HKEY_LOCAL_MACHINE\Software\Far
+            (or ...\Far2 for Unicode version).
+#Ctrl-Shift-F1#  Pop up the ~Favorites Menu~@FavMenu@
+#Ctrl-Shift-F2#  Jump between HKEY_LOCAL_MACHINE and HKEY_CURRENT_USER
+                   to the same subkey as the current key
+
+#Shift-F3#  On 64-bit systems: toggle alternate registry view
+            (64-bit registry on the 32-bit plugin and vice versa)
+
+#Shift-F6#  Renames the key or the value under the cursor
+
+#Shift-F7#  Toggle between ~"Keys as files" / "Keys as directories"~@modes@.
+
+#Alt-Shift-F3# View the group of selected keys in a single viewer.
+#Alt-Shift-F4# Edit the group of selected keys in a single editor.
+
+Notes:
+1. Alt-Shift-NumPad5 works like Alt-Shift-F3.
+2. Alt-Shift-F4 is useful if you wish to edit the current value in .reg format
+instead of "raw" file.
+3. Alt-Shift-F3 and Alt-Shift-F4 #never# use Regedit.exe, even if the
+option "Use Regedit" is turned on.
+
+@WinError
+$ #Windows Error#
+
+This message is shown by Registry Browser when any Windows error is encountered.
+
+The message text is provided by Windows.
+
+@ChValue
+$ #Change Value#
+
+You can change the value you see in the Descriptions column with Crtl-Z.
+
+If this is a string value, just type a new string in the input line.
+
+If you are in hex-dump description mode (Ctrl-N) and this is a binary, DWORD or
+QWORD value, you can edit the dump. Make sure you enter only hex bytes
+separated by spaces or commas.
+
+If you are in numbers mode (you see DWORDs as decimal numbers), and this
+is a DWORD or QWORD value, type a new decimal number.
+You cannot edit values of other binary types in this mode.
+
+If you enter the key's default value with Ctrl-Z and it didn't exist before,
+its type is assumed as String (REG_SZ).
+
+If you edit the key's default value and change it to an empty string, the
+default value is deleted. (If you want to leave it but make it empty,
+edit the (Default) value inside the key).
+
+@ChType
+$ #Change Value Type#
+
+In this dialog box you can change the type of the current registry value.
+
+This dialog is also displayed when a new value is created to set its type properly.
+
+When this dialog box pops up, the current value type is selected
+initially. Thus, you can use this command just to look up the value type.
+
+#Don't change the type if you don't know exactly what you do!#
+
+Note: this command works only on single keys.
+
+@-
+Possible Types:
+---------------
+ None                     No defined value type.
+ String                   A null-terminated string.
+ Expanded String          A null-terminated string that contains
+                           unexpanded references to environment
+                           variables (for example, "%PATH%").
+ Binary                   Binary data in any form.
+ DWORD                    A 32-bit number (in little-endian format).
+ DWORD Big Endian         A 32-bit number in big-endian format.
+ Link                     A Unicode symbolic link.
+ Multi-String             An array of null-terminated strings,
+                           terminated by two null characters.
+ Resource List            A device-driver resource list
+                           in the resource map.
+ Full Resource Descriptor Resource list in the hardware description.
+ QWORD                    A 64-bit number (in little-endian format).
+@+
+
+@Modes
+$ #Operation modes#
+ The plugin can work in one of the two modes:
+
+#Keys as files.# Keys can be visually distinguished from variables only if file
+size is displayed; the "size" of keys is always 0. In this mode, you can browse keys
+in the Quick View panel. Also, you can edit keys with your alternate editor
+assigned to Alt-F4 key; Ctrl-Shift-F3 and Ctrl-Shift-F4 also work here.
+
+Disadvantages of this mode: since FAR doesn't allow plugins to override Ctrl-PgDn,
+this hotkey cannot be used to enter into a registry key like into a directory.
+To do this, use <Enter> or "cd" command. Also, it is hard to see the
+difference between keys and values on the panel.
+
+#Keys as directories.# Ctrl-PgDn works here. Keys are color-highlighted
+properly (if file highlighting is enabled in FAR) and displayed, according
+to sorting rules, before the values. View(F3) and Edit(F4) work exactly as in the
+"keys as files" mode, but Ctrl-Shift-F3, as for directories, displays the total
+size of their "files" (values). This size is also displayed in the QuickView panel.
+
+In most cases, "Keys as directories" is recommended, unless you want to
+QuickView the keys.
+
+To toggle between these modes, press #Shift-F7#.
+
+@CopyMove
+$ #Copy/Move#
+
+#Copy.#
+Any non-directory name entered in Copy dialog is treated as a file name,
+and the key or value is exported to this file. You cannot do it when
+multiple items are selected. If you put '\' in the end of the line, it is
+considered a directory name, and the directory is created if necessary.
+
+Keys are always exported as .reg files and never as directory trees of values,
+even in the "keys as directories" mode.
+
+It is possible to export registry keys in both .REG formats, the older REGEDIT4
+and the newer Unicode-based format which is native for Windows 2000 and later.
+The default depends on the plugin version (ANSI or Unicode), but you can change
+the format in the Copy dialog.
+
+The plugin generates .REG files itself, but you can force it to use regedit.exe.
+See ~Configuration~@Configuration@ for details.
+
+You can copy values (but not keys) to another registry panel.
+To copy a key to another place in registry, open it in editor (F4) and do
+a global replace of its name.
+
+You can save local keys as ~hives~@Hives@.
+
+#Move.#
+Move is not implemented (do you really need it?). Instead, Copy works only.
+
+#Rename.#
+To rename a key or value, press Shift-F6. Renaming keys is not supported on Windows 2000; you can
+use ~Regedit Jump~@RegJump@ command (Ctrl-J) and rename it in Regedit.
+
+@CreateNew
+$ #Creating new keys and values#
+
+You can create empty keys with F7, like usual directories.
+
+You can create new values either pressing Shift-F4, specifying the name of your
+new value and editing it, or copying a previously created file with the same
+name into the registry.
+
+If the imported file has .REG file format (begins with standard REG
+signature), then the file name doesn't matter, and import is done according
+to the file contents.
+
+#Warning!# The Unicode version of the plugin (FAR 2.0+) understands ANSI, Unicode and UTF-8
+code pages which can be selected in the Shift-F4 dialog.
+All other code pages are treated as ANSI and can be imported incorrectly.
+
+When you finish editing a new value and save it, a ~type selection dialog~@ChType@ is displayed to
+select its type. 
+
+If the type you choose is #DWORD# and the value contains an ASCII string
+with a number, it is converted to the binary form. The number may be 
+decimal, octal or hexadecimal. The octal number must begin with '0', 
+the hexadecimal number must begin with '0x'. If the string contains 
+invalid characters, it is assumed to be binary data and is not converted. 
+If the value is binary, and if its size is different from 4 (which is
+the correct size for DWORD), you are prompted either to fix it, or to let this 
+incorrect size be stored into the registry.
+
+You can always change the type of new value later with the
+~Ctrl-A~@ChType@ command, or use Alt-Shift-F4 to edit this value in .reg format.
+
+If several files are imported as new values, their types are assigned 
+automatically. If the value is either empty or contains control
+characters (except for 0A and 0D), then its type is Binary,
+otherwise it's String.
+
+@Delete
+$ #Deleting Keys And Values#
+
+When deleting a whole key, confirmation is asked only #once#, like on a usual
+file. (Like Regedit does, by the way.)
+
+If you delete a first-level subkey of HKEY_LOCAL_MACHINE or HKEY_USERS,
+then its hive is unloaded.
+
+@Connect
+$ #Connecting to Network Registry#
+You can connect to remote registry over the network from the command line
+using the following commands:
+
+ #reg:\\hostname#, or
+ #reg:\\hostname\keypath# - outside the plugin,
+ #cd \\hostname#, or
+ #cd \\hostname\keypath# - inside the plugin.
+
+You can use // instead of \\. Keep in mind that some root key names
+may not work over the network. Usually, HKEY_LOCAL_MACHINE and
+HKEY_USERS are valid; some other root keys may work in some cases.
+
+To return to your local registry, use prefix \\\ or ///, that is, use empty
+host name.
+
+To use this feature, you should have connection to the remote computer
+be established. The plugin doesn't establish connections itself. Use other
+FAR plugins, "net use" command or Network Neighborhood to do it.
+
+Make sure that Remote Registry service runs on the target computer and that
+firewalls (if enabled) are configured properly.
+
+
+@RegJump
+$ #Regedit Jump Command#
+
+Ctrl-J opens Regedit and jumps directly to the current key and value.
+It is useful:
+- for faster search;
+- for renaming keys and values;
+- for handy binary editing of values.
+
+@Misc
+$ #Miscellaneous Notes#
+
+#Search (Alt-F7)#. Even if keys are treated as files, they are directories
+in search operations. Strings are searched only in values, not in names.
+Binary values are taken physically rather than hex-formatted.
+
+Though it is possible to search the registry with the plugin, you may still
+prefer REGEDIT for searches. It works faster because FAR exports each value
+to a file, opens this file and reads it, and does all this for each value.
+You can always call REGEDIT and jump to the current key using the
+~Regedit Jump~@RegJump@ command (Ctrl-J).
+
+The #cd# command is supported. The plugin understands both complete
+(HKEY_CURRENT_USER) and short (HKCU) root handle names.
+They are case-insensitive. The key names can also be enclosed in quotes or 
+in square brackets for this command.
+You can also go directly to ~GUID/ProgID keys~@LookUp@.
+Also, you can open ~.reg~@RegFiles@ files and ~hives~@Hives@ with this command.
+
+Three panel modes are overridden, 3, 6 and 7.
+
+The plugin does not proceed the key HKEY_PERFORMANCE_DATA since its format
+is complicated and tells little in binary form. You can use various utilities,
+such as perfmon, do deal with it.
+
+All settings and the current path are saved before exit from the plugin.
+
+Also, the keys' owners are shown when key description display is turned on.
+
+@Config
+$ #Configuration#
+@-
+ The following configuration options are available.
+
+#Add to Disks Menu#   When checked, Registry Browser appears in the
+                    Disks menu (Alt-F1/Alt-F2).
+
+#Disks Menu hotkey ('1'-'9')#  The hotkey you want to assign to the
+                    plugin in Disks menu (version for FAR1 only).
+
+#Add to Plugins Menu# Uncheck it if you don't want the plugin
+                    to appear in Plugins menu (F11).
+
+#Special Panel Modes# You can change the column layout for three
+                    panel modes in this plugin. See the ~FAR help~@:PanelViewModes@
+                    for detalis.
+
+#Use Regedit.exe#     When checked, the plugin does all its
+                    export/import operations by running Regedit.
+                    You cannot break Regedit operations, and they
+                    typically take more time. Use it if you suspect 
+                    problems in the built-in export/import.
+
+#Browse .reg files#   When checked, ~.reg~@RegFiles@ files and ~hives~@Hives@ can be
+                    opened by this plugin for browsing. Otherwise,
+                    the plugin doesn't open them, leaving it for
+                    other plugins.
+#Skip "Access denied" messages#   When checked, "Access is denied" errors
+                    are always ignored and messages are not displayed.
+
+@+
+
+@RegFiles
+$ #Browsing .reg Files#
+
+You can open #.reg# files in both older REGEDIT4 (ANSI) format and newer Unicode
+format available in Win2000 and later. When you've opened the file, you can see everything as in your usual
+registry and do exactly the same operations with the keys and values.
+
+You can export separate keys and values from the .reg file to other files
+and even import them to your system registry (from panel to panel). In the latter case
+you cannot change the key's location, i.e. the key will be copied from .reg
+to your registry only to the same place as in source.
+
+You cannot modify .reg files with this plugin, that is, you cannot edit or delete keys and 
+values, or "import" into it.
+
+You open .reg files when you press Enter or PgDn on them. Make sure that
+no other plugin can open them, otherwise Registry Browser may
+not receive control from FAR. You can also disable browsing .reg files by
+Registry Browser if you want to give another plugin a chance to open .regs.
+
+With the plugin, Enter will no more "run" .reg files (that is, execute Regedit).
+Use Shift-Enter or Ctrl-Enter,Enter to run them. In some cases (e.g. running
+archived .reg directly from the archive), only Shift-Enter can be used.
+
+When a .reg file is opened, the plugin automatically goes deep into the 
+directory tree until there is more than one entry in the current directory.
+Thus, you don't have to press "down, enter" a lot of times.
+
+You can also open any .reg file from the command line and even go to
+any specific key in it. In the latter case, use ':' to separate the 
+filename from the registry path. For example:
+
+@-
+C:\>#reg:c:\temp\software.reg#
+@+
+
+will just open software.reg and
+
+@-
+C:\>#reg:c:\temp\software.reg:HKEY_CURRENT_USER\SOFTWARE\Microsoft#
+@+
+
+will go directly to the "Microsoft" key.
+
+The FAR bookmarks work here too, including regisry path inside the file.
+
+When you open large .reg files (more than 1M), description display is
+disabled automatically, since it slows down the performance. You 
+can switch them on with Ctrl-H as usual.
+
+@Hives
+$ #Hives#
+This plugin can save and browse registry "hives".
+
+A #hive# is a binary file used to store registry keys. This is the native
+format for registry in Windows.
+You can create such files yourself if you ~Copy~@CopyMove@ the key to a file
+when the #Export keys as# radio button is in #Binary files ("hives")#
+position.
+ 
+Hives are the files under system32\config directory and ntuser.dat under the user's directory. They 
+begin with the signature "regf".
+
+Is this version you can only edit values in hives. Other editing operations
+(deleting, import etc.) are not supported.
+
+The plugin does not parse hives itself, instead it uses the operating
+system's service to load the hive as a temporary key. This does the same
+operation as #Load Hive# command in regedit. When you close the file,
+it automatically unloads the hive.
+
+Warning! If you open a large hive, one of your system registry files may grow significantly.
+After unloading the hive, its size remains large! I tested it only once, but it was so...
+
+#Note:# to use this feature in Vista/Win7/Win8/Win10 where UAC (User Account Control) is turned on you must run FAR as administrator.
+
+@LookUp
+$ #GUID/ProgID Lookup#
+The plugin can look for some types of key names in special places automatically,
+so you don't need to specify their full path.
+
+If you specify GUID as a parameter of the #cd# command or #reg:# prefix,
+for example, you type
+@-
+#reg:{05589FA0-C356-11CE-BF01-00AA0055595A}#
+@+
+then this key is checked for presence under the following keys (consecutively):
+
+@-
+ HKEY_CLASSES_ROOT\CLSID
+ HKEY_CLASSES_ROOT\TypeLib
+ HKEY_CLASSES_ROOT\Interface
+ HKEY_CLASSES_ROOT\Component Categories
+ HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class
+ HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\DeviceClasses
+@+
+
+If it exists, you jump directly to that key.
+
+You can also type any ProgID, and if it exists under HKEY_CLASSES_ROOT, you
+will jump there. In fact, any name, after unsuccessful changing to it
+from the current key, will be looked up in these two places. You can use it
+even for file extensions: for example, try #reg:.txt#.
+
+The following key sequence is useful if you see GUID or ProgID
+in the Description column:
+@-
+#cd <Ctrl-G><Enter>#
+@+
+It will take you directly to the corresponding key.
+
+With remote registry, you can use this feature in two ways: either
+@-
+#reg:\\server1#
+#cd {05589FA0-C356-11CE-BF01-00AA0055595A}#
+or just
+#reg:\\server1\{05589FA0-C356-11CE-BF01-00AA0055595A}#
+
+@FavMenu
+$ #Favorites Menu#
+The Favorites menu contains items from Regedit's Favorites menu.
+
+@-
+#Ins#   Add the current key to Favorites
+#Del#   Remove the selected key from Favorites
+@+
+
+Note: network registry keys cannot be added to Favorites because Regedit doesn't understand it.
